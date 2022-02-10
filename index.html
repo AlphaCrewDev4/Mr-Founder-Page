@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Founder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9fec6034d2.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- START FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-app.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-functions.js"></script>
+    <!-- END FIREBASE -->
+    <!-- START FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- END FONT AWESOME -->
+    <link rel="stylesheet" href="./assets/css/intlTelInput.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="custom-nav">
+            <div class="custom-nav-body">
+                <div class="custom-nav-left">
+                    <ul class="custom-nav-list">
+                        <li class="custom-nav-item active">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="custom-nav-item">
+                            <a href="#">Reel</a>
+                        </li>
+                        <li class="custom-nav-item">
+                            <a href="#">About us</a>
+                        </li>
+                        <li class="custom-nav-item">
+                            <a href="#">Clients</a>
+                        </li>
+                        <li class="custom-nav-item">
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="custom-nav-right">
+                    <div class="custom-menu-responsive">
+                        <input id="menu-toggle" type="checkbox" />
+                        <label class='menu-button-container' for="menu-toggle">
+                            <div class='menu-button'></div>
+                        </label>
+                    </div>
+                    <div class="logo-container d-flex justify-content-end">
+                        <img class="logo" src="images/logo-horizontal.png" alt="logo-mrfounder" />
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="body" class="container-fluid">
+            <div class="row">
+                <section class="col-12 first-container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 custom-box-1">
+                                <div class="image-content d-flex justify-content-center">
+                                    <img src="images/assets/Artboard 2.png" alt="Artboard2" />
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 custom-box-2 d-flex flex-column justify-content-center">
+                                <div class="title-content">
+                                    <h1>We Help</h1>
+                                </div>
+                                <div class="subtitle-content">
+                                    <p>Companies & Startups Scale Faster</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-12 second-container">
+                    <div class="container">
+                        <div class="row">
+                            <div
+                                class="col-12 col-lg-6 d-flex flex-column justify-content-center custom-container-row-1">
+                                <div class="title-content">
+                                    <h2>Faster than traditional hiring</h2>
+                                </div>
+                                <div class="subtitle-content">
+                                    <p>We’ll synchronize your IT solution based on
+                                        your Marketing needs to meet your specific
+                                        business challenges without the hassle
+                                        and risk of the building a team from scratch</p>
+                                </div>
+                                <div class="description-content d-flex justify-content-center">
+                                    <div>
+                                        <p>No Interviews</p>
+                                        <p>No Unreliable freelancers</p>
+                                        <p>No Employee drama</p>
+                                        <p>No Contracts</p>
+                                        <p>No Commitments</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 custom-container-row-2">
+                                <div class="image-content d-flex justify-content-center align-items-center">
+                                    <img src="images/assets/Artboard-3-recorted.png" alt="Artboard3" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-12 thrid-container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="title-content">
+                                    <h2><span class="custom-text1">Our</span><span class="custom-text2">Services</span>
+                                    </h2>
+                                </div>
+                                <div class="custom-card-container">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-4">
+                                                <div class="custom-card">
+                                                    <div class="custom-card-image">
+                                                        <img src="images/image-test3.PNG" alt="Artboard5">
+                                                    </div>
+                                                    <div class="custom-card-body">
+                                                        <p>Animation</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-4">
+                                                <div class="custom-card">
+                                                    <div class="custom-card-image">
+                                                        <img src="images/image-test4.PNG" alt="Artboard6">
+                                                    </div>
+                                                    <div class="custom-card-body">
+                                                        <p>Full-Stack
+                                                            Engineering
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-4">
+                                                <div class="custom-card">
+                                                    <div class="custom-card-image">
+                                                        <img src="images/image-test5.PNG" alt="Artboard7">
+                                                    </div>
+                                                    <div class="custom-card-body">
+                                                        <p>Digital
+                                                            Marketing</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="button-container">
+                                    <a href="#">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-12 fourth-container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="title-content">
+                                    <h2>Testimonials</h2>
+                                </div>
+                                <div class="video-content">
+                                    <iframe style="width: 100%; height: 500px; border-radius: 25px;"
+                                        src="https://www.youtube.com/embed/La9IzR_m6rs" title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="container">
+                                    <div class="custom-slider owl-carousel">
+                                        <div class="custom-slide-card">
+                                            <div class="custom-card">
+                                                <div class="custom-card-head d-flex justify-content-between">
+                                                    <h3 class="custom-card-title" style="color: #333;">
+                                                        Karen L. Brown
+                                                    </h3>
+                                                    <img class="custom-card-image" src="images/facebook-icon.svg"
+                                                        alt="facebook-icon" />
+                                                </div>
+                                                <div class="custom-card-body">
+                                                    <p>"I just basically told them what I
+                                                        needed. Before I knew it, I had
+                                                        myself a stunningly appealing </p>
+                                                </div>
+                                                <div class="custom-card-footer">
+                                                    <a style="color: #EA00FF; text-decoration: none; font-weight: bold;"
+                                                        href="#">See More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="custom-slide-card">
+                                            <div class="custom-card">
+                                                <div class="custom-card-head d-flex justify-content-between">
+                                                    <h3 class="custom-card-title" style="color: #333;">
+                                                        Karen L. Brown
+                                                    </h3>
+                                                    <img class="custom-card-image" src="images/icon-instagram.png"
+                                                        alt="instagram-icon" />
+                                                </div>
+                                                <div class="custom-card-body">
+                                                    <p>"I just basically told them what I
+                                                        needed. Before I knew it, I had
+                                                        myself a stunningly appealing </p>
+                                                </div>
+                                                <div class="custom-card-footer">
+                                                    <a style="color: #EA00FF; text-decoration: none; font-weight: bold;"
+                                                        href="#">See More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="custom-slide-card">
+                                            <div class="custom-card">
+                                                <div class="custom-card-head d-flex justify-content-between">
+                                                    <h3 class="custom-card-title" style="color: #333;">
+                                                        Karen L. Brown
+                                                    </h3>
+                                                    <img class="custom-card-image" src="images/twitter-icon.png"
+                                                        alt="twitter-icon" />
+                                                </div>
+                                                <div class="custom-card-body">
+                                                    <p>"I just basically told them what I
+                                                        needed. Before I knew it, I had
+                                                        myself a stunningly appealing </p>
+                                                </div>
+                                                <div class="custom-card-footer">
+                                                    <a style="color: #EA00FF; text-decoration: none; font-weight: bold;"
+                                                        href="#">See More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="custom-slide-card">
+                                            <div class="custom-card">
+                                                <div class="custom-card-head d-flex justify-content-between">
+                                                    <h3 class="custom-card-title" style="color: #333;">
+                                                        Karen L. Brown
+                                                    </h3>
+                                                    <img class="custom-card-image" src="images/facebook-icon.svg"
+                                                        alt="facebook-icon" />
+                                                </div>
+                                                <div class="custom-card-body">
+                                                    <p>"I just basically told them what I
+                                                        needed. Before I knew it, I had
+                                                        myself a stunningly appealing </p>
+                                                </div>
+                                                <div class="custom-card-footer">
+                                                    <a style="color: #EA00FF; text-decoration: none; font-weight: bold;"
+                                                        href="#">See More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="custom-slide-card">
+                                            <div class="custom-card">
+                                                <div class="custom-card-head d-flex justify-content-between">
+                                                    <h3 class="custom-card-title" style="color: #333;">
+                                                        Karen L. Brown
+                                                    </h3>
+                                                    <img class="custom-card-image" src="images/icon-instagram.png"
+                                                        alt="instagram-icon" />
+                                                </div>
+                                                <div class="custom-card-body">
+                                                    <p>"I just basically told them what I
+                                                        needed. Before I knew it, I had
+                                                        myself a stunningly appealing </p>
+                                                </div>
+                                                <div class="custom-card-footer">
+                                                    <a style="color: #EA00FF; text-decoration: none; font-weight: bold;"
+                                                        href="#">See More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="custom-slide-card">
+                                            <div class="custom-card">
+                                                <div class="custom-card-head d-flex justify-content-between">
+                                                    <h3 class="custom-card-title" style="color: #333;">
+                                                        Karen L. Brown
+                                                    </h3>
+                                                    <img class="custom-card-image" src="images/twitter-icon.png"
+                                                        alt="twitter-icon" />
+                                                </div>
+                                                <div class="custom-card-body">
+                                                    <p>"I just basically told them what I
+                                                        needed. Before I knew it, I had
+                                                        myself a stunningly appealing </p>
+                                                </div>
+                                                <div class="custom-card-footer">
+                                                    <a style="color: #EA00FF; text-decoration: none; font-weight: bold;"
+                                                        href="#">See More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="custom-slider owl-carousel">
+                                        <div class="custom-slide-card">
+                                            <div class="custom-card">
+                                                <div class="custom-card-head d-flex justify-content-between">
+                                                    <h3 class="custom-card-title" style="color: #333;">
+                                                        Karen L. Brown
+                                                    </h3>
+                                                    <img class="custom-card-image" src="images/facebook-icon.svg"
+                                                        alt="facebook-icon" />
+                                                </div>
+                                                <div class="custom-card-body">
+                                                    <p>"I just basically told them what I
+                                                        needed. Before I knew it, I had
+                                                        myself a stunningly appealing </p>
+                                                </div>
+                                                <div class="custom-card-footer">
+                                                    <a style="color: #EA00FF; text-decoration: none; font-weight: bold;"
+                                                        href="#">See More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="custom-slide-card">
+                                            <div class="custom-card">
+                                                <div class="custom-card-head d-flex justify-content-between">
+                                                    <h3 class="custom-card-title" style="color: #333;">
+                                                        Karen L. Brown
+                                                    </h3>
+                                                    <img class="custom-card-image" src="images/icon-instagram.png"
+                                                        alt="instagram-icon" />
+                                                </div>
+                                                <div class="custom-card-body">
+                                                    <p>"I just basically told them what I
+                                                        needed. Before I knew it, I had
+                                                        myself a stunningly appealing </p>
+                                                </div>
+                                                <div class="custom-card-footer">
+                                                    <a style="color: #EA00FF; text-decoration: none; font-weight: bold;"
+                                                        href="#">See More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="custom-slide-card">
+                                            <div class="custom-card">
+                                                <div class="custom-card-head d-flex justify-content-between">
+                                                    <h3 class="custom-card-title" style="color: #333;">
+                                                        Karen L. Brown
+                                                    </h3>
+                                                    <img class="custom-card-image" src="images/twitter-icon.png"
+                                                        alt="twitter-icon" />
+                                                </div>
+                                                <div class="custom-card-body">
+                                                    <p>"I just basically told them what I
+                                                        needed. Before I knew it, I had
+                                                        myself a stunningly appealing </p>
+                                                </div>
+                                                <div class="custom-card-footer">
+                                                    <a style="color: #EA00FF; text-decoration: none; font-weight: bold;"
+                                                        href="#">See More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="custom-slide-card">
+                                            <div class="custom-card">
+                                                <div class="custom-card-head d-flex justify-content-between">
+                                                    <h3 class="custom-card-title" style="color: #333;">
+                                                        Karen L. Brown
+                                                    </h3>
+                                                    <img class="custom-card-image" src="images/facebook-icon.svg"
+                                                        alt="facebook-icon" />
+                                                </div>
+                                                <div class="custom-card-body">
+                                                    <p>"I just basically told them what I
+                                                        needed. Before I knew it, I had
+                                                        myself a stunningly appealing </p>
+                                                </div>
+                                                <div class="custom-card-footer">
+                                                    <a style="color: #EA00FF; text-decoration: none; font-weight: bold;"
+                                                        href="#">See More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="custom-slide-card">
+                                            <div class="custom-card">
+                                                <div class="custom-card-head d-flex justify-content-between">
+                                                    <h3 class="custom-card-title" style="color: #333;">
+                                                        Karen L. Brown
+                                                    </h3>
+                                                    <img class="custom-card-image" src="images/icon-instagram.png"
+                                                        alt="instagram-icon" />
+                                                </div>
+                                                <div class="custom-card-body">
+                                                    <p>"I just basically told them what I
+                                                        needed. Before I knew it, I had
+                                                        myself a stunningly appealing </p>
+                                                </div>
+                                                <div class="custom-card-footer">
+                                                    <a style="color: #EA00FF; text-decoration: none; font-weight: bold;"
+                                                        href="#">See More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="custom-slide-card">
+                                            <div class="custom-card">
+                                                <div class="custom-card-head d-flex justify-content-between">
+                                                    <h3 class="custom-card-title" style="color: #333;">
+                                                        Karen L. Brown
+                                                    </h3>
+                                                    <img class="custom-card-image" src="images/twitter-icon.png"
+                                                        alt="twitter-icon" />
+                                                </div>
+                                                <div class="custom-card-body">
+                                                    <p>"I just basically told them what I
+                                                        needed. Before I knew it, I had
+                                                        myself a stunningly appealing </p>
+                                                </div>
+                                                <div class="custom-card-footer">
+                                                    <a style="color: #EA00FF; text-decoration: none; font-weight: bold;"
+                                                        href="#">See More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-12 fifth-container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="title-content justify-content-start">
+                                    <h3>What makes</h3>
+                                </div>
+                                <div class="title-content justify-content-center">
+                                    <h2>Mr. Founder</h2>
+                                </div>
+                                <div class="title-content justify-content-end">
+                                    <h3>Different?</h3>
+                                </div>
+                                <div class="sub-content">
+                                    <p>We will engineer your <span style="color: #fff; font-weight: bold;">Front & Back
+                                            End</span> to enable
+                                        your <span style="color: #fff; font-weight: bold;">Branding & Messaging</span>
+                                        goals to turn
+                                        your vision for your business into reality.
+                                    </p>
+                                    <p>We can produce <span style="color: #fff; font-weight: bold;">high-quality video
+                                            animation</span> at a <span
+                                            style="color: #fff; font-weight: bold;">breakneck speed</span> to give you
+                                        the
+                                        ability
+                                        to publish lead-generating campaign assets frequently.</p>
+                                </div>
+                                <div class="image-content">
+                                    <div class="image">
+                                        <img src="images/assets/Artboard 8.png" alt="Artboard8" />
+                                    </div>
+                                    <div class="text-content-absolute">
+                                        <p>Multiple feedback instances for you to ensure we're all
+                                            on the same page toward your project's success so that
+                                            you can pivot and adjust on the go.</p>
+                                        <p>Deliverables will undergo a methodical quality control
+                                            process or 4 layers of revisions before we send them to
+                                            you.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-12 sixth-container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="title-content">
+                                    <h3>How it works?</h3>
+                                </div>
+                                <div class="sub-content">
+                                    <div class="custom-list">
+                                        <div class="custom-list-item d-flex align-items-center">
+                                            <p class="number">01</p>
+                                            <p class="text">Your account manager will work with you to define
+                                                your project scope.
+                                            </p>
+                                        </div>
+                                        <div class="custom-list-item d-flex align-items-center">
+                                            <p class="number">02</p>
+                                            <p class="text">We assign top professionals to kickstart your project,
+                                                matching you with full-stack engineers, digital
+                                                marketers, and any specific role your project may
+                                                need.
+                                            </p>
+                                        </div>
+                                        <div class="custom-list-item d-flex align-items-center">
+                                            <p class="number">03</p>
+                                            <p class="text">We help you decide on the most suitable tools,
+                                                technology & marketing stragegies for your project.
+                                            </p>
+                                        </div>
+                                        <div class="custom-list-item d-flex align-items-center">
+                                            <p class="number">04</p>
+                                            <p class="text">We build the roadmap and start working on your
+                                                project immediately.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="button-container">
+                                    <a href="#">See More</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 d-flex align-items-center">
+                                <div class="image-content" style="width: 100%;">
+                                    <img src="images/assets/Artboard 9.png" alt="Artboard9" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-12 seventh-container">
+                    <div id="mailCont" style="display:none;" >
+                        <div class="content">
+                            <h2>Enter your name</h2>
+                            <input type="text" id="userName">
+                            <h2>Enter your mail</h2>
+                            <input type="email" id="userMail">
+                            <h2>Enter your phone</h2>
+                            <input type="tel" id="userPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                            <button class="btn btn-light" onclick="saveMail()">Send</button>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-lg-6 inputCont">
+                                <h1>Calculator</h1>
+                                <h4 for="service" class="customTitle mt-4">If I hire</h4>
+                                <input class="form-check-input" type="radio" name="service" id="inHouse" value="inHouse" checked>
+                                <label class="form-check-label" for="inHouse">
+                                    In-house
+                                </label>
+                                <input class="form-check-input" type="radio" name="service" id="freelancers" value="freelancers">
+                                <label class="form-check-label" for="freelancers">
+                                    Freelancers
+                                </label>
+                                <input class="form-check-input" type="radio" name="service" id="VAs" value="VAs">
+                                <label class="form-check-label" for="VAs">
+                                    VAs
+                                </label>
+                                <input class="form-check-input" type="radio" name="service" id="agency" value="agency">
+                                <label class="form-check-label" for="agency">
+                                    An agency
+                                </label>
+                                <div id="customHours" class="mt-3">
+                                    <h5 for="customHoursRate">What’s one hour of your time worth?</h5>
+                                    <div class="customHoursCont">
+                                        <input type="number" class="form-control" id="customHoursRate" step="1" value="100" onkeyup="operations()"
+                                            onchange="operations()">
+                                        <label for="customHoursRate">/hour</label>
+                                    </div>
+                                </div>
+                                <h4 class="customTitle mt-3">Select the roles and # of hours you need:</h4>
+                                <div class="rolesCont">
+                                    <table class="principalTable">
+                                        <thead>
+                                            <tr>
+                                                <th class="hours" style="width:25%;">Hours</th>
+                                                <th style="width:25%;"># of Employees</th>
+                                                <th style="width:50%;">Job Title</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="hours">
+                                                    <input type="number" class="form-control customNumber" id="hours0" step="1"
+                                                        value="25" min="0" onkeyup="operations()" onchange="operations()">
+                                                </td>
+                                                <td>
+                                                    <input type="number" class="form-control customNumber" id="employees0" value="1"
+                                                        max="100" min="0" onkeyup="operations()" onchange="operations()">
+                                                </td>
+                                                <td>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="true" id="checkbox0"
+                                                            onchange="operations()" checked>
+                                                        <label class="form-check-label" for="fsEnfinner" id="name0">
+                                                            Full-stack engineer/s
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hours">
+                                                    <input type="number" class="form-control customNumber" id="hours1" step="1"
+                                                        value="25" min="0" onkeyup="operations()" onchange="operations()">
+                                                </td>
+                                                <td>
+                                                    <input type="number" class="form-control customNumber" id="employees1" value="1"
+                                                        max="100" min="0" onkeyup="operations()" onchange="operations()">
+                                                </td>
+                                                <td>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="true" id="checkbox1"
+                                                            onchange="operations()" checked>
+                                                        <label class="form-check-label" for="graphicDesigner" id="name1">
+                                                            Graphic designer/s
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hours">
+                                                    <input type="number" class="form-control customNumber" id="hours2" step="1"
+                                                        value="25" min="0" onkeyup="operations()" onchange="operations()">
+                                                </td>
+                                                <td>
+                                                    <input type="number" class="form-control customNumber" id="employees2" value="1"
+                                                        max="100" min="0" onkeyup="operations()" onchange="operations()">
+                                                </td>
+                                                <td>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="true" id="checkbox2"
+                                                            onchange="operations()" checked>
+                                                        <label class="form-check-label" for="uDesigners" id="name2">
+                                                            UX/UI designers
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hours">
+                                                    <input type="number" class="form-control customNumber" id="hours3" step="1"
+                                                        value="25" min="0" onkeyup="operations()" onchange="operations()">
+                                                </td>
+                                                <td>
+                                                    <input type="number" class="form-control customNumber" id="employees3" value="1"
+                                                        max="100" min="0" onkeyup="operations()" onchange="operations()">
+                                                </td>
+                                                <td>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="true" id="checkbox3"
+                                                            onchange="operations()" checked>
+                                                        <label class="form-check-label" for="animators" id="name3">
+                                                            Video animator/s
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hours">
+                                                    <input type="number" class="form-control customNumber" id="hours4" step="1"
+                                                        value="25" min="0" onkeyup="operations()" onchange="operations()">
+                                                </td>
+                                                <td>
+                                                    <input type="number" class="form-control customNumber" id="employees4" max="100"
+                                                        min="0" value="1" onkeyup="operations()" onchange="operations()">
+                                                </td>
+                                                <td>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="true" id="checkbox4"
+                                                            onchange="operations()" checked>
+                                                        <label class="form-check-label" for="marketer" id="name4">
+                                                            Marketer/s
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hours">
+                                                    <input type="number" class="form-control customNumber" id="hours5" step="1"
+                                                        value="25" min="0" onkeyup="operations()" onchange="operations()">
+                                                </td>
+                                                <td>
+                                                    <input type="number" class="form-control customNumber" id="employees5" max="100"
+                                                        min="0" value="1" onkeyup="operations()" onchange="operations()">
+                                                </td>
+                                                <td>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="true" id="checkbox5"
+                                                            onchange="operations()" checked>
+                                                        <label class="form-check-label" for="copywriter" id="name5">
+                                                            Copywriter/s
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hours">
+                                                    <input type="number" class="form-control customNumber" id="hours6" step="1"
+                                                        value="25" min="0" onkeyup="operations()" onchange="operations()">
+                                                </td>
+                                                <td>
+                                                    <input type="number" class="form-control customNumber" id="employees6" max="100"
+                                                        min="0" value="1" onkeyup="operations()" onchange="operations()">
+                                                </td>
+                                                <td>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="true" id="checkbox6"
+                                                            onchange="operations()" checked>
+                                                        <label class="form-check-label" for="copywriter" id="name6">
+                                                            Project Managers
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hours">
+                                                    <h5 class="sumHours">Total: <span id="totalHours"></span></h5>
+                                                </td>
+                
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-lg-6">
+                                <div id="inHouseCont">
+                                    <h2>In-House</h2>
+                                    <div class="accordion">
+                                        <button class="accordionButton"><i class="fas fa-sort-down" title="test"></i> Salaries/y: <span
+                                                id="salariesInHouse"></span></button>
+                                        <div class="section collapsible">
+                                            <div id="salariesInHouseCalcs">
+                                                <p class="opText">SUM (#Employees x Hourly Rate x 175/h x 12/m)</p>
+                                                <div class="customTable twoCols">
+                                                    <div class='title'>
+                                                        <div class="customRow">
+                                                            <div>
+                                                                <p>Type</p>
+                                                            </div>
+                                                            <div>
+                                                                <p>Yearly Salary</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="tableBodyCalc0" class="customBody">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion">
+                                        <button class="accordionButton"><i class="fas fa-sort-down"></i> Benefits (30%)/y: <span
+                                                id="benefitsInHouse"></span></button>
+                                        <div class="section collapsible">
+                                            <div id="benefitsInHouseCalcs">
+                                                <p class="opText">Salary x 30%</p>
+                                                <div id="inHouseCalc1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion">
+                                        <button class="accordionButton"><i class="fas fa-sort-down"></i> Payroll Taxes (8.24%)/y: <span
+                                                id="taxesInHouse"></span></button>
+                                        <div class="section collapsible">
+                                            <div id="taxesInHouseCalcs">
+                                                <p class="opText">Salary x 8.24%</p>
+                                                <div id="inHouseCalc2"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion">
+                                        <button class="accordionButton"><i class="fas fa-sort-down"></i> Recruting/Hiring (10%): <span
+                                                id="recrutingInHouse"></span></button>
+                                        <div class="section collapsible">
+                                            <div id="recrutingInHouseCalcs">
+                                                <p class="opText">Salary x 10%</p>
+                                                <div id="inHouseCalc3"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion">
+                                        <button class="accordionButton"><i class="fas fa-sort-down"></i> Equipment: <span
+                                                id="equipment"></span></button>
+                                        <div class="section collapsible">
+                                            <div id="equipmentInHouseCalcs">
+                                                <div id="recrutingInHouseCalcs">
+                                                    <p class="opText">(e.g. laptop, monitor, docking station, ...)</p>
+                                                    <div class="customTable twoCols">
+                                                        <div class='title'>
+                                                            <div class="customRow">
+                                                                <div>
+                                                                    <p>Type</p>
+                                                                </div>
+                                                                <div>
+                                                                    <p>Total</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="tableBodyCalc4" class="customBody">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion">
+                                        <button class="accordionButton"><i class="fas fa-sort-down"></i> Training: <span
+                                                id="training"></span></button>
+                                        <div class="section collapsible">
+                                            <div id="trainingInHouseCalcs">
+                                                <p class="opText">SUM(#Employees x 1500)</p>
+                                                <div class="customTable twoCols">
+                                                    <div class='title'>
+                                                        <div class="customRow">
+                                                            <div>
+                                                                <p>Type</p>
+                                                            </div>
+                                                            <div>
+                                                                <p>Total</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="tableBodyCalc5" class="customBody">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h5>Total (1st year): <span id="totalInHouse"></span></h5>
+                                    <p>Time to find the right candidate/s: At least 4-10 weeks</p>
+                                </div>
+                
+                                <div id="freelancersCont">
+                                    <h2>Freelancers</h2>
+                                    <h4>One Time Fees:</h4>
+                                    <div class="accordion">
+                                        <button class="accordionButton"><i class="fas fa-sort-down"></i> Prospecting (at least 5h of
+                                            interviews x role): <span id="prospecting"></span></button>
+                                        <div class="section collapsible">
+                                            <div id="trainingInHouseCalcs">
+                                                <p class="opText">SUM(5h x #Freelancers x Your Hourly Rate)</p>
+                                                <div class="customTable twoCols">
+                                                    <div class='title'>
+                                                        <div class="customRow">
+                                                            <div>
+                                                                <p>Type</p>
+                                                            </div>
+                                                            <div>
+                                                                <p>Total</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="tableBodyCalc6" class="customBody">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion">
+                                        <button class="accordionButton"><i class="fas fa-sort-down"></i> Hiring (1h/role): <span
+                                                id="hiring"></span></button>
+                                        <div class="section collapsible">
+                                            <div id="trainingInHouseCalcs">
+                                                <p class="opText">SUM(1h x #Freelancers x Your Hourly Rate)</p>
+                                                <div class="customTable twoCols">
+                                                    <div class='title'>
+                                                        <div class="customRow">
+                                                            <div>
+                                                                <p>Type</p>
+                                                            </div>
+                                                            <div>
+                                                                <p>Total</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="tableBodyCalc7" class="customBody">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion">
+                                        <button class="accordionButton"><i class="fas fa-sort-down"></i> Onboarding (10h/role): <span
+                                                id="onboarding"></span></button>
+                                        <div class="section collapsible">
+                                            <div id="trainingInHouseCalcs">
+                                                <p class="opText">SUM(10h x #Freelancers x Your Hourly Rate)</p>
+                                                <div class="customTable twoCols">
+                                                    <div class='title'>
+                                                        <div class="customRow">
+                                                            <div>
+                                                                <p>Type</p>
+                                                            </div>
+                                                            <div>
+                                                                <p>Total</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="tableBodyCalc8" class="customBody">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion">
+                                        <button class="accordionButton"><i class="fas fa-sort-down"></i> Training (5h/role): <span
+                                                id="trainingF"></span></button>
+                                        <div class="section collapsible">
+                                            <div id="trainingInHouseCalcs">
+                                                <p class="opText">SUM(5h x Employees x Your Hourly Rate)</p>
+                                                <div class="customTable twoCols">
+                                                    <div class='title'>
+                                                        <div class="customRow">
+                                                            <div>
+                                                                <p>Type</p>
+                                                            </div>
+                                                            <div>
+                                                                <p>Total</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="tableBodyCalc9" class="customBody">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4>Recurring Fees</h4>
+                                    <div class="accordion">
+                                        <button class="accordionButton"><i class="fas fa-sort-down"></i> Project Management(3h/week/role):
+                                            <span id="managingTime"></span></button>
+                                        <div class="section collapsible">
+                                            <div id="trainingInHouseCalcs">
+                                                <p class="opText">SUM(3h x 4 weeks x #Freelancers x Your Hourly Rate)</p>
+                                                <div class="customTable twoCols">
+                                                    <div class='title'>
+                                                        <div class="customRow">
+                                                            <div>
+                                                                <p>Type</p>
+                                                            </div>
+                                                            <div>
+                                                                <p>Total</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="tableBodyCalc10" class="customBody">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion">
+                                        <button class="accordionButton"><i class="fas fa-sort-down"></i> Freelancer Fees: <span
+                                                id="monthlyPayment"></span></button>
+                                        <div class="section collapsible">
+                                            <div id="trainingInHouseCalcs">
+                                                <p class="opText">SUM(Selected Hours x #Freelancers x Freelancers Hourly Rate)</p>
+                                                <div class="customTable twoCols">
+                                                    <div class='title'>
+                                                        <div class="customRow">
+                                                            <div class="customCol">
+                                                                <p>Type</p>
+                                                            </div>
+                                                            <div class="customCol2">
+                                                                <p>Total</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="tableBodyCalc11" class="customBody">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h5>Total: <span id="totalFreelancers"></span></h5>
+                                    <p>Time to find the right candidate/s: At least 2-4 weeks</p>
+                                </div>
+                
+                                <div id="VAsCont">
+                                    <h2>VAs</h2>
+                                    <p>You can find great VA’s for $10/h. However, they lack experience.</p>
+                                </div>
+                
+                                <div id="agencyCont">
+                                    <h2>Agency</h2>
+                                    <h4>Recurring Fees</h4>
+                                    <div class="accordion">
+                                        <button class="accordionButton"><i class="fas fa-sort-down"></i> Monthly Payment ($150/h): <span
+                                                id="montlyPaymentAgency"></span></button>
+                                        <div class="section collapsible">
+                                            <div id="trainingInHouseCalcs">
+                                                <p class="opText">SUM(Hours * Employees * Hourly Rate)</p>
+                                                <div class="customTable twoCols">
+                                                    <div class='title'>
+                                                        <div class="customRow">
+                                                            <div>
+                                                                <p>Type</p>
+                                                            </div>
+                                                            <div>
+                                                                <p>Total</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="tableBodyCalc12" class="customBody">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <p class="mt-5" style="font-size:14px;">Mr.Founder is 20x faster than traditional hiring, is reliable
+                                    and fully managed, and can easily scale
+                                    up or
+                                    down based
+                                    on your company needs. Built for the enterprise teams, it’s the perfect solution when you need to
+                                    hire
+                                    skilled talent,
+                                    but don’t have time to go through all the prospecting, hiring, onboarding, and training.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-12 eighth-container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="title-content justify-content-start">
+                                    <h3>We’re Already working</h3>
+                                </div>
+                                <div class="title-content justify-content-center">
+                                    <h2>With The Tools</h2>
+                                </div>
+                                <div class="title-content justify-content-end">
+                                    <h3>You Use</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-12 image-full-container">
+                    <div class="image-content">
+                        <div class="image">
+                            <img src="images/assets/Artboard 10.png" alt="Artboard10" />
+                        </div>
+                    </div>
+                </section>
+                <section class="col-12 nineth-container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="title-content justify-content-start">
+                                    <h3>Meet</h3>
+                                </div>
+                                <div class="title-content justify-content-center">
+                                    <h2>Mr. Founder</h2>
+                                </div>
+                                <div class="title-content justify-content-end">
+                                    <h3>Himself</h3>
+                                </div>
+                                <div class="sub-content">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-6 d-flex justify-content-end">
+                                                <div style="padding: 2rem; text-align: right; width: 80%;">
+                                                    <p>Hi, my name is <span style="font-weight: bold;">Ricky
+                                                            Flores</span> and I’m an
+                                                        engineer and entrepreneur. I believe
+                                                        that the best products are made with
+                                                        a focus on both the technology and
+                                                        the market.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div style="position: relative;">
+                                                    <img src="images/assets/Artboard 11.png" alt="Artboard" />
+                                                    <div class="button-absolute">
+                                                        <div class="button-container">
+                                                            <a href="#">See More</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-12 tenth-container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="title-content justify-content-center">
+                                    <h2>Blog</h2>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-4" style="padding: 0 2rem;">
+                                                <div class="blog-item">
+                                                    <div class="blog-title">
+                                                        <h4>The Disconnect Between Full-Stack Engineers And Digital
+                                                            Marketers</h4>
+                                                    </div>
+                                                    <div class="blog-text">
+                                                        <p>Whe we travel, we consider two things: the vehicle and the
+                                                            destination. Going to the Bahamas? A ship would serve you
+                                                            beast or a plane even. In the world of eCommerce, this can
+                                                            mean...</p>
+                                                    </div>
+                                                    <div class="blog-link">
+                                                        <a href="#">Learn More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-4" style="padding: 0 2rem;">
+                                                <div class="blog-item">
+                                                    <div class="blog-title">
+                                                        <h4>The Disconnect Between Full-Stack Engineers And Digital
+                                                            Marketers</h4>
+                                                    </div>
+                                                    <div class="blog-text">
+                                                        <p>Whe we travel, we consider two things: the vehicle and the
+                                                            destination. Going to the Bahamas? A ship would serve you
+                                                            beast or a plane even. In the world of eCommerce, this can
+                                                            mean...</p>
+                                                    </div>
+                                                    <div class="blog-link">
+                                                        <a href="#">Learn More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-4" style="padding: 0 2rem;">
+                                                <div class="blog-item">
+                                                    <div class="blog-title">
+                                                        <h4>The Disconnect Between Full-Stack Engineers And Digital
+                                                            Marketers</h4>
+                                                    </div>
+                                                    <div class="blog-text">
+                                                        <p>Whe we travel, we consider two things: the vehicle and the
+                                                            destination. Going to the Bahamas? A ship would serve you
+                                                            beast or a plane even. In the world of eCommerce, this can
+                                                            mean...</p>
+                                                    </div>
+                                                    <div class="blog-link">
+                                                        <a href="#">Learn More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-12 eleventh-container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="d-flex flex-column align-items-end">
+                                    <div class="title-content">
+                                        <h3>Contact us</h3>
+                                    </div>
+                                    <div class="text-content d-flex flex-column align-items-end">
+                                        <p>0999999999999</p>
+                                        <p><a href="#">mail@alphacrewstudio.com</a></p>
+                                        <p>Adress Adres</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="d-flex flex-column" style="margin-top: 5rem;">
+                                    <div class="input-container d-flex flex-column">
+                                        <input class="custom-input" type="text" placeholder="Name" />
+                                        <input class="custom-input active" type="text" placeholder="Number" />
+                                        <input class="custom-input" type="text" placeholder="Mail" />
+                                    </div>
+                                    <div class="button-container">
+                                        <a href="#">Send</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <footer></footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script>
+        $('.custom-slider').owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                767: {
+                    items: 2,
+                },
+                1200: {
+                    items: 3,
+                }
+            }
+        });
+    </script>
+    <script src="./assets/js/intlTelInput-jquery.min.js"></script>
+    <script src="./assets/js/intlTelInput.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script
+        type="text/javascript">var EhAPI = EhAPI || {}; EhAPI.after_load = function () { EhAPI.set_account('jbluj5hdprvu5bvfi2na9m0uub', 'alphacrewstudio'); EhAPI.execute('rules'); }; (function (d, s, f) { var sc = document.createElement(s); sc.type = 'text/javascript'; sc.async = true; sc.src = f; var m = document.getElementsByTagName(s)[0]; m.parentNode.insertBefore(sc, m); })(document, 'script', '//d2p078bqz5urf7.cloudfront.net/jsapi/ehform.js');</script>
+</body>
+
+</html>
