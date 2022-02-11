@@ -791,6 +791,23 @@ Accessibility
     z-index: -1;
 }
 
+/* Footer */
+.custom-footer {
+    background-color: #333;
+}
+
+.custom-footer .custom-footer-container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.custom-footer .custom-footer-container p {
+    color: #fff;
+    font-size: 12px;
+    margin: 0 !important;
+}
+
 /* Responsive */
 
 @media (max-width: 1200px) {
