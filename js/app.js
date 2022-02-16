@@ -24,4 +24,26 @@
 
         }
     });
+
+    //AOS function
+    AOS.init();
+
+    //Card Carrousel
+    $('.custom-slider').owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            767: {
+                items: 2,
+            },
+            1200: {
+                items: 3,
+            }
+        }
+    });
 })();
