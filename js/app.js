@@ -12,15 +12,29 @@
     const year = date.getFullYear();
     customYear.innerHTML = year;
 
-
+    // View menu responsive
     menuToggle.addEventListener('click', () => {
-        console.log(menu);
         if (menuToggle.checked === true) {
             $('.custom-nav-list').slideToggle('slow', 'swing', function () {
                 menu.classList.add('show-menu');
             });
 
 
+        } else {
+            $('.custom-nav-list').slideToggle('slow', 'swing', function () {
+                menu.classList.remove('show-menu');
+            });
+
+        }
+    });
+
+    // Close menu when click item menu
+    $('.custom-nav-item a').click(function () {
+        menuToggle.checked = false;
+        if (menuToggle.checked === true) {
+            $('.custom-nav-list').slideToggle('slow', 'swing', function () {
+                menu.classList.add('show-menu');
+            });
         } else {
             $('.custom-nav-list').slideToggle('slow', 'swing', function () {
                 menu.classList.remove('show-menu');
