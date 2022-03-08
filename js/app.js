@@ -52,6 +52,24 @@
         header.classList.toggle('sticky', window.scrollY > 50);
     });
 
+    // Video Carrousel 
+    const videoSlider = $('.video-slider').owlCarousel({
+        items: 1,
+        loop: true,
+        touchDrag: false,
+        mouseDrag: false,
+    });
+
+    // Go to the next item
+    $('.arrow-right span').click(function () {
+        videoSlider.trigger('next.owl.carousel', [1000]);
+    });
+
+    // Go to the previous item
+    $('.arrow-left span').click(function () {
+        videoSlider.trigger('prev.owl.carousel', [1000]);
+    });
+
     //Card Carrousel
     $('.custom-slider').owlCarousel({
         loop: true,
