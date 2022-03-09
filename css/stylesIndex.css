@@ -1,59 +1,4 @@
 /*General Styles*/
-ul, ol {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-img {
-    width: 100%;
-}
-
-input {
-    outline: none;
-}
-
-#body {
-    font-size: 24px;
-}
-
-#body section {
-    padding: 4rem 0;
-}
-
-.container-fluid {
-    padding: 0;
-    overflow: hidden;
-}
-
-.button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-}
-
-.button-container a {
-    font-size: 36px;
-    background-color: #00dcff;
-    border: 2px solid #00dcff;
-    color: #fff;
-    cursor: pointer;
-    padding: 1rem 6rem;
-    border-radius: 50px;
-    transition: all 0.3s ease-in-out;
-}
-
-.button-container a:hover {
-    background-color: #fff;
-    color: #00dcff;
-}
-
-.button-container a:active {
-    animation: pressButton 0.3s ease-in-out;
-}
-
 .title-content .title-1 h3 {
     font-size: 84px;
     font-weight: 500;
@@ -621,20 +566,12 @@ input {
 }
 
 @media (max-width: 1199px) {
-    #body {
-        font-size: 18px;
-    }
-
     .title-content .title-1 h3 {
         font-size: 64px;
     }
 
     .title-content .title-2 h2 {
         font-size: 120px;
-    }
-
-    .button-container a {
-        font-size: 28px;
     }
 
     .first-container .title-content h1 {
@@ -722,33 +659,15 @@ input {
     .eleventh-container .title-content h3 {
         font-size: 100px;
     }
-    
-    .eleventh-container .button-container a {
-        font-size: 20px;
-    }
 }
 
 @media (max-width: 991px) {
-    #body section {
-        padding: 1rem;
-    }
-
     .title-content .title-1 h3 {
         font-size: 56px;
     }
 
     .title-content .title-2 h2 {
         font-size: 88px;
-    }
-
-    .custom-box-1 {
-        order: 2;
-    }
-
-    .custom-box-2 {
-        order: 1;
-        align-items: center;
-        margin-top: 0;
     }
 
     .first-container .custom-box-2 {
@@ -835,21 +754,12 @@ input {
 }
 
 @media (max-width: 767px) {
-    #body {
-        font-size: 16px;
-    }
-
     .title-content .title-1 h3 {
         font-size: 40px;
     }
 
     .title-content .title-2 h2 {
         font-size: 60px;
-    }
-
-    .button-container a {
-        font-size: 24px;
-        padding: 1rem 4rem;
     }
 
     .first-container .title-content h1 {
@@ -925,15 +835,6 @@ input {
 }
 
 @media (max-width: 575px) {
-    #body section {
-        padding: 0;
-    }
-
-    .button-container a {
-        font-size: 20px;
-        padding: 1rem 3rem;
-    }
-
     .first-container .title-content {
         text-align: center;
     }
@@ -1024,28 +925,6 @@ input {
 
     .nineth-container .button-absolute {
         right: 50px;
-    }
-
-    .nineth-container .button-container a {
-        font-size: 16px;
-    }
-}
-
-@keyframes pressButton {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(5px);
-    }
-}
-
-@keyframes mymove {
-    from {
-      top: -10%;
-    }
-    to {
-      top: 0%;
     }
 }
 

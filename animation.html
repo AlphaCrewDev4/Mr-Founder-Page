@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styleAnimation.css">
+    <link rel="stylesheet" href="css/stylesGeneral.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,11 +37,11 @@
             <div class="custom-nav-body">
                 <div class="custom-nav-left">
                     <ul class="custom-nav-list">
-                        <li class="custom-nav-item active">
-                            <a href="animation.html">Animation</a>
-                        </li>
                         <li class="custom-nav-item">
                             <a href="index.html">Home</a>
+                        </li>
+                        <li class="custom-nav-item active">
+                            <a href="#home">Animation</a>
                         </li>
                         <li class="custom-nav-item">
                             <a href="#">About us</a>
@@ -61,7 +62,7 @@
                         </label>
                     </div>
                     <div class="logo-container d-flex justify-content-end">
-                        <a class="d-flex justify-content-end custom-link-logo" href="#"><img class="logo"
+                        <a class="d-flex justify-content-end custom-link-logo" href="index.html"><img class="logo"
                                 src="images/logo-horizontal.png" alt="logo-mrfounder" /></a>
                     </div>
                 </div>
@@ -69,17 +70,23 @@
         </header>
         <section id="body" class="container-fluid">
             <div class="row">
-                <section class="col-12 first-container" data-aos="fade-up" data-aos-duration="1000">
+                <section class="col-12 first-container" id="home">
                     <div class="container">
                         <div class="row">
-                            <div class="col-12 col-lg-6 custom-box-1">
-                                <div class="image-content d-flex justify-content-center">
-                                    <img src="images/assets/Artboard 5.png" alt="Artboard-5" />
+                            <div class="col-12 col-lg-6 custom-box-2 d-flex flex-column justify-content-start align-items-center"
+                                data-aos="fade-up" data-aos-duration="2000">
+                                <div class="title-content">
+                                    <h1>Video Animation Services</h1>
+                                </div>
+                                <div class="buttons-content d-flex">
+                                    <div class="button-2">
+                                        <a href="#">Schedule A Demo</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-6 custom-box-2 d-flex flex-column justify-content-center">
-                                <div class="title-content">
-                                    <h1>Animation</h1>
+                            <div class="col-12 col-lg-6 custom-box-1" data-aos="fade-right" data-aos-duration="2000">
+                                <div class="image-content d-flex justify-content-center">
+                                    <img src="images/assets/Artboard 5.png" alt="Artboard2" />
                                 </div>
                             </div>
                         </div>
@@ -89,74 +96,52 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
-                                <div class="title-content justify-content-start">
-                                    <h3>Steal Your Competitors Audience With</h3>
-                                </div>
-                                <div class="title-content justify-content-center">
-                                    <h2>2D & 3D Animated</h2>
-                                </div>
-                                <div class="title-content justify-content-end">
-                                    <h3>Videos</h3>
+                                <div class="title-content d-flex flex-column">
+                                    <div class="title-1 d-flex justify-content-start" data-aos="fade-right"
+                                        data-aos-duration="2000">
+                                        <h3>Steal Your Competitors Audience With</h3>
+                                    </div>
+                                    <div class="title-2 d-flex justify-content-center" data-aos="fade-up"
+                                        data-aos-duration="2000">
+                                        <h2>2D & 3D Animated</h2>
+                                    </div>
+                                    <div class="title-1 d-flex justify-content-end" data-aos="fade-left"
+                                        data-aos-duration="2000">
+                                        <h3>Videos</h3>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="text-content">
-                                    <div class="title">
-                                        <h4>This is the best thing that could’ve happened
-                                            to your channel and/or your business!
-                                        </h4>
-                                    </div>
-                                    <div class="text-body">
-                                        <p>Why?</p>
-                                        <p>Your competitors are still stubbornly embracing the analog way of publishing
-                                            their campaign assets with:</p>
-                                        <div class="d-flex justify-content-center">
-                                            <div class="list-content">
-                                                <ul>
-                                                    <li>Physical books/magazines</li>
-                                                    <li>Dull online and offline press releases</li>
-                                                    <li>Hours worth of boring pre-recorded educational
-                                                        videos</li>
-                                                    <li>Dry animated videos produced by subpar
-                                                        animatorsth:</li>
-                                                </ul>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 custom-box-1" style="position: relative;">
+                                            <div class="image-content">
+                                                <img src="images/image-test7.PNG" alt="image-test" />
                                             </div>
                                         </div>
-                                        <p>Because of this…</p>
-                                        <p>And with the rise in popularity of 2D & 3D animation...</p>
-                                        <p>You now have the opportunity to:</p>
-                                        <div class="d-flex justify-content-center">
-                                            <div class="list-content">
-                                                <ul>
-                                                    <li>Steal your competitors’ audience</li>
-                                                    <li>Grow your audience</li>
-                                                    <li>Retain your audience</li>
-                                                    <li>Increase your brand awareness</li>
-                                                    <li>Increase your sales</li>
-                                                </ul>
+                                        <div class="col-12 col-lg-6 custom-box-2">
+                                            <div class="text-content">
+                                                <div class="title">
+                                                    <h4>This is the best thing that could’ve happened
+                                                        to your channel and/or your business!
+                                                    </h4>
+                                                </div>
+                                                <div class="text-body">
+                                                    <p>The way people consume content has
+                                                        always been evolving.</p>
+                                                    <p>→From textbooks to blogs. → From blogs to
+                                                        tweets. → From boring pre-recorded video
+                                                        content to engaging 2D &3D animations.</p>
+                                                    <p>Today, 66% of consumers prefer to watch
+                                                        videos about products/services rather than
+                                                        read about them.</p>
+                                                    <p class="custom-text">And this is the best thing that could’ve
+                                                        happened to your channel
+                                                        and/or your business</p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <p>And with Mr. Found3r’s storytelling abilities…</p>
-                                        <p>…along with our engineering approach to producing complex educational
-                                            video content…</p>
-                                        <p>…we will take your business and/or channel to new heights with video
-                                            animation. </p>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-12" style="position: relative;">
-                                <div class="text-content">
-                                    <div class="title">
-                                        <h4>We Produce 2D & 3D eLearning Videos and more
-                                            for Startups and Enterprises
-                                        </h4>
-                                    </div>
-                                </div>
-                                <div class="video-content">
-                                    <img src="images/image-test1.PNG" alt="video" />
-                                </div>
-                                <div class="button-container">
-                                    <a href="#">Schedule A Demo</a>
                                 </div>
                             </div>
                         </div>
@@ -166,252 +151,69 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
-                                <div class="title-content">
-                                    <h2>Testimonials</h2>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="container">
-                                    <div class="custom-slider owl-carousel">
-                                        <div class="custom-slide-card">
-                                            <div class="custom-card">
-                                                <div class="custom-card-head d-flex justify-content-between">
-                                                    <h3 class="custom-card-title" style="color: #333;">
-                                                        Karen L. Brown
-                                                    </h3>
-                                                    <img class="custom-card-image" src="images/facebook-icon.svg"
-                                                        alt="facebook-icon" />
+                                <div class="card-content">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-6 d-flex flex-column align-items-center">
+                                                <div class="title-content d-flex flex-column">
+                                                    <div class="title-1 d-flex justify-content-start"
+                                                        data-aos="fade-right" data-aos-duration="2000">
+                                                        <h3>Why choose</h3>
+                                                    </div>
+                                                    <div class="title-1 custom-title-1 d-flex justify-content-end"
+                                                        data-aos="fade-left" data-aos-duration="2000">
+                                                        <h3>this method?</h3>
+                                                    </div>
                                                 </div>
-                                                <div class="custom-card-body">
-                                                    <p>"I just basically told them what I
-                                                        needed. Before I knew it, I had
-                                                        myself a stunningly appealing </p>
-                                                </div>
-                                                <div class="custom-card-footer">
-                                                    <a style="color: #EA00FF; text-decoration: none; font-weight: bold;"
-                                                        href="#">See More</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="custom-slide-card">
-                                            <div class="custom-card">
-                                                <div class="custom-card-head d-flex justify-content-between">
-                                                    <h3 class="custom-card-title" style="color: #333;">
-                                                        Karen L. Brown
-                                                    </h3>
-                                                    <img class="custom-card-image" src="images/icon-instagram.png"
-                                                        alt="instagram-icon" />
-                                                </div>
-                                                <div class="custom-card-body">
-                                                    <p>"I just basically told them what I
-                                                        needed. Before I knew it, I had
-                                                        myself a stunningly appealing </p>
-                                                </div>
-                                                <div class="custom-card-footer">
-                                                    <a style="color: #EA00FF; text-decoration: none; font-weight: bold;"
-                                                        href="#">See More</a>
+                                                <div class="card-text">
+                                                    <p>Your competitors are still stubbornly embracing the
+                                                        analog way of publishing their campaign assets with:</p>
+                                                    <ol>
+                                                        <li>Physical books/ magazines / Flyers</li>
+                                                        <li>Dull online and offline press releases</li>
+                                                        <li>Hours worth of boring pre-recorded
+                                                            educational videos</li>
+                                                        <li>Dry animated videos produced by subpar animators</li>
+                                                    </ol>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="custom-slide-card">
-                                            <div class="custom-card">
-                                                <div class="custom-card-head d-flex justify-content-between">
-                                                    <h3 class="custom-card-title" style="color: #333;">
-                                                        Karen L. Brown
-                                                    </h3>
-                                                    <img class="custom-card-image" src="images/twitter-icon.png"
-                                                        alt="twitter-icon" />
-                                                </div>
-                                                <div class="custom-card-body">
-                                                    <p>"I just basically told them what I
-                                                        needed. Before I knew it, I had
-                                                        myself a stunningly appealing </p>
-                                                </div>
-                                                <div class="custom-card-footer">
-                                                    <a style="color: #EA00FF; text-decoration: none; font-weight: bold;"
-                                                        href="#">See More</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="custom-slide-card">
-                                            <div class="custom-card">
-                                                <div class="custom-card-head d-flex justify-content-between">
-                                                    <h3 class="custom-card-title" style="color: #333;">
-                                                        Karen L. Brown
-                                                    </h3>
-                                                    <img class="custom-card-image" src="images/facebook-icon.svg"
-                                                        alt="facebook-icon" />
-                                                </div>
-                                                <div class="custom-card-body">
-                                                    <p>"I just basically told them what I
-                                                        needed. Before I knew it, I had
-                                                        myself a stunningly appealing </p>
-                                                </div>
-                                                <div class="custom-card-footer">
-                                                    <a style="color: #EA00FF; text-decoration: none; font-weight: bold;"
-                                                        href="#">See More</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="custom-slide-card">
-                                            <div class="custom-card">
-                                                <div class="custom-card-head d-flex justify-content-between">
-                                                    <h3 class="custom-card-title" style="color: #333;">
-                                                        Karen L. Brown
-                                                    </h3>
-                                                    <img class="custom-card-image" src="images/icon-instagram.png"
-                                                        alt="instagram-icon" />
-                                                </div>
-                                                <div class="custom-card-body">
-                                                    <p>"I just basically told them what I
-                                                        needed. Before I knew it, I had
-                                                        myself a stunningly appealing </p>
-                                                </div>
-                                                <div class="custom-card-footer">
-                                                    <a style="color: #EA00FF; text-decoration: none; font-weight: bold;"
-                                                        href="#">See More</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="custom-slide-card">
-                                            <div class="custom-card">
-                                                <div class="custom-card-head d-flex justify-content-between">
-                                                    <h3 class="custom-card-title" style="color: #333;">
-                                                        Karen L. Brown
-                                                    </h3>
-                                                    <img class="custom-card-image" src="images/twitter-icon.png"
-                                                        alt="twitter-icon" />
-                                                </div>
-                                                <div class="custom-card-body">
-                                                    <p>"I just basically told them what I
-                                                        needed. Before I knew it, I had
-                                                        myself a stunningly appealing </p>
-                                                </div>
-                                                <div class="custom-card-footer">
-                                                    <a style="color: #EA00FF; text-decoration: none; font-weight: bold;"
-                                                        href="#">See More</a>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="image-content">
+                                                    <img src="images/image-test8.PNG" alt="image-test" />
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="custom-slider owl-carousel">
-                                        <div class="custom-slide-card">
-                                            <div class="custom-card">
-                                                <div class="custom-card-head d-flex justify-content-between">
-                                                    <h3 class="custom-card-title" style="color: #333;">
-                                                        Karen L. Brown
-                                                    </h3>
-                                                    <img class="custom-card-image" src="images/facebook-icon.svg"
-                                                        alt="facebook-icon" />
-                                                </div>
-                                                <div class="custom-card-body">
-                                                    <p>"I just basically told them what I
-                                                        needed. Before I knew it, I had
-                                                        myself a stunningly appealing </p>
-                                                </div>
-                                                <div class="custom-card-footer">
-                                                    <a style="color: #EA00FF; text-decoration: none; font-weight: bold;"
-                                                        href="#">See More</a>
+                                </div>
+                                <div class="card-content">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-6 custom-box-1">
+                                                <div class="image-content">
+                                                    <img src="images/image-test9.PNG" alt="image-test" />
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="custom-slide-card">
-                                            <div class="custom-card">
-                                                <div class="custom-card-head d-flex justify-content-between">
-                                                    <h3 class="custom-card-title" style="color: #333;">
-                                                        Karen L. Brown
-                                                    </h3>
-                                                    <img class="custom-card-image" src="images/icon-instagram.png"
-                                                        alt="instagram-icon" />
+                                            <div class="col-12 col-lg-6 custom-box-2 d-flex flex-column align-items-center">
+                                                <div class="title-content d-flex flex-column">
+                                                    <div class="title-1 d-flex justify-content-start"
+                                                        data-aos="fade-right" data-aos-duration="2000">
+                                                        <h3>It's the best</h3>
+                                                    </div>
+                                                    <div class="title-1 custom-title-2 d-flex justify-content-end"
+                                                        data-aos="fade-left" data-aos-duration="2000">
+                                                        <h3>opportunity For You</h3>
+                                                    </div>
                                                 </div>
-                                                <div class="custom-card-body">
-                                                    <p>"I just basically told them what I
-                                                        needed. Before I knew it, I had
-                                                        myself a stunningly appealing </p>
-                                                </div>
-                                                <div class="custom-card-footer">
-                                                    <a style="color: #EA00FF; text-decoration: none; font-weight: bold;"
-                                                        href="#">See More</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="custom-slide-card">
-                                            <div class="custom-card">
-                                                <div class="custom-card-head d-flex justify-content-between">
-                                                    <h3 class="custom-card-title" style="color: #333;">
-                                                        Karen L. Brown
-                                                    </h3>
-                                                    <img class="custom-card-image" src="images/twitter-icon.png"
-                                                        alt="twitter-icon" />
-                                                </div>
-                                                <div class="custom-card-body">
-                                                    <p>"I just basically told them what I
-                                                        needed. Before I knew it, I had
-                                                        myself a stunningly appealing </p>
-                                                </div>
-                                                <div class="custom-card-footer">
-                                                    <a style="color: #EA00FF; text-decoration: none; font-weight: bold;"
-                                                        href="#">See More</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="custom-slide-card">
-                                            <div class="custom-card">
-                                                <div class="custom-card-head d-flex justify-content-between">
-                                                    <h3 class="custom-card-title" style="color: #333;">
-                                                        Karen L. Brown
-                                                    </h3>
-                                                    <img class="custom-card-image" src="images/facebook-icon.svg"
-                                                        alt="facebook-icon" />
-                                                </div>
-                                                <div class="custom-card-body">
-                                                    <p>"I just basically told them what I
-                                                        needed. Before I knew it, I had
-                                                        myself a stunningly appealing </p>
-                                                </div>
-                                                <div class="custom-card-footer">
-                                                    <a style="color: #EA00FF; text-decoration: none; font-weight: bold;"
-                                                        href="#">See More</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="custom-slide-card">
-                                            <div class="custom-card">
-                                                <div class="custom-card-head d-flex justify-content-between">
-                                                    <h3 class="custom-card-title" style="color: #333;">
-                                                        Karen L. Brown
-                                                    </h3>
-                                                    <img class="custom-card-image" src="images/icon-instagram.png"
-                                                        alt="instagram-icon" />
-                                                </div>
-                                                <div class="custom-card-body">
-                                                    <p>"I just basically told them what I
-                                                        needed. Before I knew it, I had
-                                                        myself a stunningly appealing </p>
-                                                </div>
-                                                <div class="custom-card-footer">
-                                                    <a style="color: #EA00FF; text-decoration: none; font-weight: bold;"
-                                                        href="#">See More</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="custom-slide-card">
-                                            <div class="custom-card">
-                                                <div class="custom-card-head d-flex justify-content-between">
-                                                    <h3 class="custom-card-title" style="color: #333;">
-                                                        Karen L. Brown
-                                                    </h3>
-                                                    <img class="custom-card-image" src="images/twitter-icon.png"
-                                                        alt="twitter-icon" />
-                                                </div>
-                                                <div class="custom-card-body">
-                                                    <p>"I just basically told them what I
-                                                        needed. Before I knew it, I had
-                                                        myself a stunningly appealing </p>
-                                                </div>
-                                                <div class="custom-card-footer">
-                                                    <a style="color: #EA00FF; text-decoration: none; font-weight: bold;"
-                                                        href="#">See More</a>
+                                                <div class="card-text">
+                                                    <p>With the rise in popularity of 2D & 3D animation you
+                                                        now have the opportunity to:</p>
+                                                    <ol>
+                                                        <li>Steal your competitors' audience</li>
+                                                        <li>Grow your audience</li>
+                                                        <li>Retain your audience</li>
+                                                        <li>Increase your brand awareness</li>
+                                                        <li>Increase your sales</li>
+                                                    </ol>
                                                 </div>
                                             </div>
                                         </div>
@@ -425,96 +227,48 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
-                                <div class="title-content justify-content-start">
-                                    <h3>What</h3>
-                                </div>
-                                <div class="title-content justify-content-center">
-                                    <h2>can we do</h2>
-                                </div>
-                                <div class="title-content justify-content-end">
-                                    <h3>for you?</h3>
-                                </div>
-                                <div class="description-content">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-12 col-lg-6">
-                                                <div class="text-content">
-                                                    <div class="title">
-                                                        <h4>Explainer Videos</h4>
-                                                    </div>
-                                                    <div class="subtitle">
-                                                        <h5>Need an explainer video, but
-                                                            you don’t know where to start?</h5>
-                                                    </div>
-                                                    <div class="text-body">
-                                                        <p>Mr. Found3r is here to help!</p>
-                                                        <p>We make video explainers that help promote
-                                                            your business and sell your products and
-                                                            services effectively. </p>
-                                                        <p>Animated explainer videos can boost
-                                                            conversions, increase leads and improve
-                                                            brand visibility.</p>
-                                                        <p>Plus, our team of talented animators will work
-                                                            with you every step of the way to ensure that
-                                                            your video explainer is just the way you want it
-                                                            – perfect for promoting your business.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-lg-6">
-                                                <div class="text-content">
-                                                    <div class="img-content d-flex justify-content-center">
-                                                        <img src="images/image-test2.PNG" alt="image-test-2" />
-                                                    </div>
-                                                    <div class="subtitle">
-                                                        <h5>Need an explainer video, but
-                                                            you don’t know where to start?</h5>
-                                                    </div>
-                                                    <div class="text-body">
-                                                        <p>Helps showcase your brand in the best light</p>
-                                                        <p>Integrated infographics throughout the video to
-                                                            demonstrate important details/points</p>
-                                                        <p>Landing page animation that drives traffic back to
-                                                            your site while also demonstrating product features</p>
-                                                        <p>Convert prospects into customers with storytelling</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                <div class="title-content custom-box-1 d-flex flex-column">
+                                    <div class="title-1 d-flex justify-content-start" data-aos="fade-right"
+                                        data-aos-duration="2000">
+                                        <h3>And with</h3>
+                                    </div>
+                                    <div class="title-2 d-flex justify-content-center" data-aos="fade-up"
+                                        data-aos-duration="2000">
+                                        <h2>Mr. Found3r’s</h2>
+                                    </div>
+                                    <div class="title-1 custom-title-1 d-flex justify-content-end" data-aos="fade-left"
+                                        data-aos-duration="2000">
+                                        <h3>storytelling abilities</h3>
                                     </div>
                                 </div>
-                                <div class="button-content">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-12 col-sm-6 col-md-4">
-                                                <div class="button-container active">
-                                                    <a href="#">Explainer Videos</a>
+                            </div>
+                            <div class="col-12">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <div class="text-content">
+                                                <div class="text-body">
+                                                    <p>Along with our engineering approach we can
+                                                        produce state-of-the-art educational 2d and 3d
+                                                        animations that can help explain complex subjects
+                                                        to your audience.</p>
+                                                    <p>We’ve created thousands of animated videos for
+                                                        companies around the world.</p>
+                                                    <p>Our strength lies in our storytelling abilities and our
+                                                        engineering approach to producing complex
+                                                        educational content. </p>
+                                                    <p class="custom-text">We have the experience, skills, and tools to
+                                                        be able to take your ideas and turn them into something amazing!
+                                                    </p>
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-sm-6 col-md-4">
-                                                <div class="button-container">
-                                                    <a href="#">Explainer Videos</a>
-                                                </div>
+                                            <div class="button-container" data-aos="fade-up" data-aos-duration="2000">
+                                                <a href="#">Learn More</a>
                                             </div>
-                                            <div class="col-12 col-sm-6 col-md-4">
-                                                <div class="button-container">
-                                                    <a href="#">Explainer Videos</a>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-sm-6 col-md-4">
-                                                <div class="button-container">
-                                                    <a href="#">Explainer Videos</a>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-sm-6 col-md-4">
-                                                <div class="button-container">
-                                                    <a href="#">Explainer Videos</a>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-sm-6 col-md-4">
-                                                <div class="button-container">
-                                                    <a href="#">Explainer Videos</a>
-                                                </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6" style="position: relative;">
+                                            <div class="image-content">
+                                                <img src="images/image-test10.PNG" alt="image-test" />
                                             </div>
                                         </div>
                                     </div>
@@ -527,94 +281,891 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
-                                <div class="title-content justify-content-start">
-                                    <h3>The Way People</h3>
-                                </div>
-                                <div class="title-content justify-content-center">
-                                    <h2>consume content</h2>
-                                </div>
-                                <div class="title-content justify-content-end">
-                                    <h3>has Always Been Evolving</h3>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="text-content">
-                                    <div class="text-body">
-                                        <p>We now live in a fast-paced generation where people prefer to consume
-                                            content in bite-sized formats.</p>
-                                        <p>That’s why 350+ page textbooks were replaced with 12-minute blog posts.</p>
-                                        <p>Blogs were then replaced with 280-character Tweets. </p>
-                                        <p>Pretty soon, a 1-hour educational pre-recorded video - like books and blog
-                                            posts - will rarely be consumed.</p>
-                                        <p>But thanks to this evolution in content consumption, you now have a new
-                                            opportunity that you’ve never had before.</p>
+                                <div class="title-content d-flex flex-column">
+                                    <div class="title-1 d-flex justify-content-start" data-aos="fade-right"
+                                        data-aos-duration="2000">
+                                        <h3>We Produce 2D & 3D</h3>
+                                    </div>
+                                    <div class="title-2 d-flex justify-content-center" data-aos="fade-up"
+                                        data-aos-duration="2000">
+                                        <h2>eLearning Videos</h2>
+                                    </div>
+                                    <div class="title-1 d-flex justify-content-end" data-aos="fade-left"
+                                        data-aos-duration="2000">
+                                        <h3>and more for Startups and Enterprises</h3>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-12" style="position: relative;">
-                                <div class="text-content">
-                                    <div class="title">
-                                        <h4>The Shift From Recorded Videos To 2D & 3D Animation
-                                            Is The Best Thing That Could’ve Happened To You
-                                        </h4>
-                                    </div>
-                                    <div class="text-body">
-                                        <p>Video animation has become one of the most popular forms of
-                                            communication because it engages people emotionally.</p>
-                                        <p>Meaning they remember what they see more clearly than if they read it or
-                                            heard about it from someone else simply talking about it on a video. </p>
-                                        <p>And research has proven that a staggering 66% of consumers prefer
-                                            watching videos about products/services than reading about them!</p>
+                                <div class="video-content">
+                                    <div class="video-item">
+                                        <video controls>
+                                            <source src="https://res.cloudinary.com/dwxy3njrf/video/upload/v1645805688/cascade-video_fbsxqk.mp4" />
+                                        </video>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-12 sixth-container" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="title-content justify-content-start">
-                                    <h3>Reach New Heights With</h3>
-                                </div>
-                                <div class="title-content justify-content-center">
-                                    <h2>Video Animation</h2>
-                                </div>
-                                <div class="title-content justify-content-end">
-                                    <h3>Now</h3>
-                                </div>
-                                <div class="button-container">
+                                <div class="button-container" data-aos="fade-up" data-aos-duration="2000">
                                     <a href="#">Schedule A Demo</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="col-12 eleventh-container">
+                <section class="col-12 sixth-container">
                     <div class="container">
                         <div class="row">
-                            <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-                                <div class="d-flex flex-column align-items-end">
-                                    <div class="title-content">
-                                        <h3>Contact us</h3>
+                            <div class="col-12 d-flex flex-column align-items-center justify-content-center">
+                                <div class="title-content" data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="title-1">
+                                        <h3>Testimonials</h3>
                                     </div>
-                                    <div class="text-content d-flex flex-column align-items-end">
-                                        <p>0999999999999</p>
-                                        <p><a href="#">mail@alphacrewstudio.com</a></p>
-                                        <p>Adress Adres</p>
+                                </div>
+                                <div class="video-content" data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="video-slider owl-carousel">
+                                        <div class="video-item">
+                                            <video controls>
+                                                <source
+                                                    src="https://res.cloudinary.com/dwxy3njrf/video/upload/v1645805688/cascade-video_fbsxqk.mp4" />
+                                            </video>
+                                        </div>
+                                        <div class="video-item">
+                                            <video controls>
+                                                <source
+                                                    src="https://res.cloudinary.com/dwxy3njrf/video/upload/v1646674902/mixkit-waves-coming-to-the-beach-5016_i6yx2a.mp4" />
+                                            </video>
+                                        </div>
+                                        <div class="video-item">
+                                            <video controls>
+                                                <source
+                                                    src="https://res.cloudinary.com/dwxy3njrf/video/upload/v1646675081/mixkit-stars-in-space-1610_uaflt4.mp4" />
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="arrow-left" id="arrow-left-1">
+                                        <span>
+                                            <i class="fas fa-angle-left"></i>
+                                        </span>
+                                    </div>
+                                    <div class="arrow-right" id="arrow-right-1">
+                                        <span>
+                                            <i class="fas fa-angle-right"></i>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-                                <div class="d-flex flex-column" style="margin-top: 5rem;">
-                                    <div class="input-container d-flex flex-column">
+                            <div class="col-12 custom-slide-container">
+                                <div class="container">
+                                    <div class="custom-slider owl-carousel" data-aos="fade-right"
+                                        data-aos-duration="2000">
+                                        <div class="custom-slide-card">
+                                            <div class="custom-card">
+                                                <div class="custom-card-head d-flex justify-content-between">
+                                                    <h3 class="custom-card-title" style="color: #333;">
+                                                        Karen L. Brown
+                                                    </h3>
+                                                    <img class="custom-card-image" src="images/facebook-icon.svg"
+                                                        alt="facebook-icon" />
+                                                </div>
+                                                <div class="custom-card-body">
+                                                    <p>"I just basically told them what I
+                                                        needed. Before I knew it, I had
+                                                        myself a stunningly appealing </p>
+                                                </div>
+                                                <div class="custom-card-footer">
+                                                    <a style="color: #00dcff; text-decoration: none; font-weight: bold;"
+                                                        href="#">See More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="custom-slide-card">
+                                            <div class="custom-card">
+                                                <div class="custom-card-head d-flex justify-content-between">
+                                                    <h3 class="custom-card-title" style="color: #333;">
+                                                        Karen L. Brown
+                                                    </h3>
+                                                    <img class="custom-card-image" src="images/icon-instagram.png"
+                                                        alt="instagram-icon" />
+                                                </div>
+                                                <div class="custom-card-body">
+                                                    <p>"I just basically told them what I
+                                                        needed. Before I knew it, I had
+                                                        myself a stunningly appealing </p>
+                                                </div>
+                                                <div class="custom-card-footer">
+                                                    <a style="color: #00dcff; text-decoration: none; font-weight: bold;"
+                                                        href="#">See More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="custom-slide-card">
+                                            <div class="custom-card">
+                                                <div class="custom-card-head d-flex justify-content-between">
+                                                    <h3 class="custom-card-title" style="color: #333;">
+                                                        Karen L. Brown
+                                                    </h3>
+                                                    <img class="custom-card-image" src="images/twitter-icon.png"
+                                                        alt="twitter-icon" />
+                                                </div>
+                                                <div class="custom-card-body">
+                                                    <p>"I just basically told them what I
+                                                        needed. Before I knew it, I had
+                                                        myself a stunningly appealing </p>
+                                                </div>
+                                                <div class="custom-card-footer">
+                                                    <a style="color: #00dcff; text-decoration: none; font-weight: bold;"
+                                                        href="#">See More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="custom-slide-card">
+                                            <div class="custom-card">
+                                                <div class="custom-card-head d-flex justify-content-between">
+                                                    <h3 class="custom-card-title" style="color: #333;">
+                                                        Karen L. Brown
+                                                    </h3>
+                                                    <img class="custom-card-image" src="images/facebook-icon.svg"
+                                                        alt="facebook-icon" />
+                                                </div>
+                                                <div class="custom-card-body">
+                                                    <p>"I just basically told them what I
+                                                        needed. Before I knew it, I had
+                                                        myself a stunningly appealing </p>
+                                                </div>
+                                                <div class="custom-card-footer">
+                                                    <a style="color: #00dcff; text-decoration: none; font-weight: bold;"
+                                                        href="#">See More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="custom-slide-card">
+                                            <div class="custom-card">
+                                                <div class="custom-card-head d-flex justify-content-between">
+                                                    <h3 class="custom-card-title" style="color: #333;">
+                                                        Karen L. Brown
+                                                    </h3>
+                                                    <img class="custom-card-image" src="images/icon-instagram.png"
+                                                        alt="instagram-icon" />
+                                                </div>
+                                                <div class="custom-card-body">
+                                                    <p>"I just basically told them what I
+                                                        needed. Before I knew it, I had
+                                                        myself a stunningly appealing </p>
+                                                </div>
+                                                <div class="custom-card-footer">
+                                                    <a style="color: #00dcff; text-decoration: none; font-weight: bold;"
+                                                        href="#">See More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="custom-slide-card">
+                                            <div class="custom-card">
+                                                <div class="custom-card-head d-flex justify-content-between">
+                                                    <h3 class="custom-card-title" style="color: #333;">
+                                                        Karen L. Brown
+                                                    </h3>
+                                                    <img class="custom-card-image" src="images/twitter-icon.png"
+                                                        alt="twitter-icon" />
+                                                </div>
+                                                <div class="custom-card-body">
+                                                    <p>"I just basically told them what I
+                                                        needed. Before I knew it, I had
+                                                        myself a stunningly appealing </p>
+                                                </div>
+                                                <div class="custom-card-footer">
+                                                    <a style="color: #00dcff; text-decoration: none; font-weight: bold;"
+                                                        href="#">See More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="custom-slider owl-carousel" data-aos="fade-left"
+                                        data-aos-duration="2000">
+                                        <div class="custom-slide-card">
+                                            <div class="custom-card">
+                                                <div class="custom-card-head d-flex justify-content-between">
+                                                    <h3 class="custom-card-title" style="color: #333;">
+                                                        Karen L. Brown
+                                                    </h3>
+                                                    <img class="custom-card-image" src="images/facebook-icon.svg"
+                                                        alt="facebook-icon" />
+                                                </div>
+                                                <div class="custom-card-body">
+                                                    <p>"I just basically told them what I
+                                                        needed. Before I knew it, I had
+                                                        myself a stunningly appealing </p>
+                                                </div>
+                                                <div class="custom-card-footer">
+                                                    <a style="color: #00dcff; text-decoration: none; font-weight: bold;"
+                                                        href="#">See More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="custom-slide-card">
+                                            <div class="custom-card">
+                                                <div class="custom-card-head d-flex justify-content-between">
+                                                    <h3 class="custom-card-title" style="color: #333;">
+                                                        Karen L. Brown
+                                                    </h3>
+                                                    <img class="custom-card-image" src="images/icon-instagram.png"
+                                                        alt="instagram-icon" />
+                                                </div>
+                                                <div class="custom-card-body">
+                                                    <p>"I just basically told them what I
+                                                        needed. Before I knew it, I had
+                                                        myself a stunningly appealing </p>
+                                                </div>
+                                                <div class="custom-card-footer">
+                                                    <a style="color: #00dcff; text-decoration: none; font-weight: bold;"
+                                                        href="#">See More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="custom-slide-card">
+                                            <div class="custom-card">
+                                                <div class="custom-card-head d-flex justify-content-between">
+                                                    <h3 class="custom-card-title" style="color: #333;">
+                                                        Karen L. Brown
+                                                    </h3>
+                                                    <img class="custom-card-image" src="images/twitter-icon.png"
+                                                        alt="twitter-icon" />
+                                                </div>
+                                                <div class="custom-card-body">
+                                                    <p>"I just basically told them what I
+                                                        needed. Before I knew it, I had
+                                                        myself a stunningly appealing </p>
+                                                </div>
+                                                <div class="custom-card-footer">
+                                                    <a style="color: #00dcff; text-decoration: none; font-weight: bold;"
+                                                        href="#">See More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="custom-slide-card">
+                                            <div class="custom-card">
+                                                <div class="custom-card-head d-flex justify-content-between">
+                                                    <h3 class="custom-card-title" style="color: #333;">
+                                                        Karen L. Brown
+                                                    </h3>
+                                                    <img class="custom-card-image" src="images/facebook-icon.svg"
+                                                        alt="facebook-icon" />
+                                                </div>
+                                                <div class="custom-card-body">
+                                                    <p>"I just basically told them what I
+                                                        needed. Before I knew it, I had
+                                                        myself a stunningly appealing </p>
+                                                </div>
+                                                <div class="custom-card-footer">
+                                                    <a style="color: #00dcff; text-decoration: none; font-weight: bold;"
+                                                        href="#">See More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="custom-slide-card">
+                                            <div class="custom-card">
+                                                <div class="custom-card-head d-flex justify-content-between">
+                                                    <h3 class="custom-card-title" style="color: #333;">
+                                                        Karen L. Brown
+                                                    </h3>
+                                                    <img class="custom-card-image" src="images/icon-instagram.png"
+                                                        alt="instagram-icon" />
+                                                </div>
+                                                <div class="custom-card-body">
+                                                    <p>"I just basically told them what I
+                                                        needed. Before I knew it, I had
+                                                        myself a stunningly appealing </p>
+                                                </div>
+                                                <div class="custom-card-footer">
+                                                    <a style="color: #00dcff; text-decoration: none; font-weight: bold;"
+                                                        href="#">See More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="custom-slide-card">
+                                            <div class="custom-card">
+                                                <div class="custom-card-head d-flex justify-content-between">
+                                                    <h3 class="custom-card-title" style="color: #333;">
+                                                        Karen L. Brown
+                                                    </h3>
+                                                    <img class="custom-card-image" src="images/twitter-icon.png"
+                                                        alt="twitter-icon" />
+                                                </div>
+                                                <div class="custom-card-body">
+                                                    <p>"I just basically told them what I
+                                                        needed. Before I knew it, I had
+                                                        myself a stunningly appealing </p>
+                                                </div>
+                                                <div class="custom-card-footer">
+                                                    <a style="color: #00dcff; text-decoration: none; font-weight: bold;"
+                                                        href="#">See More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-12 seventh-container" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-center">
+                                <div class="title-content d-flex flex-column">
+                                    <div class="title-1 d-flex justify-content-start" data-aos="fade-right"
+                                        data-aos-duration="2000">
+                                        <h3>What</h3>
+                                    </div>
+                                    <div class="title-2 d-flex justify-content-center" data-aos="fade-up"
+                                        data-aos-duration="2000">
+                                        <h2>can we do</h2>
+                                    </div>
+                                    <div class="title-1 d-flex justify-content-end" data-aos="fade-left"
+                                        data-aos-duration="2000">
+                                        <h3>for you?</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-12 eighth-container" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                <div class="card-body">
+                                    <div class="card-title-1">
+                                        <h4>Explainer</h4>
+                                    </div>
+                                    <div class="card-title-2 d-flex justify-content-end">
+                                        <h4>Videos</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Need an explainer video, but you
+                                            don’t know where to start?</p>
+                                    </div>
+                                    <div class="button-container" data-aos="fade-up" data-aos-duration="2000">
+                                        <a href="#">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-8 d-flex justify-content-center align-items-center">
+                                <div class="video-content" data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="video-slider-2 owl-carousel">
+                                        <div class="video-item">
+                                            <video controls>
+                                                <source
+                                                    src="https://res.cloudinary.com/dwxy3njrf/video/upload/v1645805688/cascade-video_fbsxqk.mp4" />
+                                            </video>
+                                        </div>
+                                        <div class="video-item">
+                                            <video controls>
+                                                <source
+                                                    src="https://res.cloudinary.com/dwxy3njrf/video/upload/v1646674902/mixkit-waves-coming-to-the-beach-5016_i6yx2a.mp4" />
+                                            </video>
+                                        </div>
+                                        <div class="video-item">
+                                            <video controls>
+                                                <source
+                                                    src="https://res.cloudinary.com/dwxy3njrf/video/upload/v1646675081/mixkit-stars-in-space-1610_uaflt4.mp4" />
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="arrow-left" id="arrow-left-2">
+                                        <span>
+                                            <i class="fas fa-angle-left"></i>
+                                        </span>
+                                    </div>
+                                    <div class="arrow-right" id="arrow-right-2">
+                                        <span>
+                                            <i class="fas fa-angle-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-12 nineth-container" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-8 custom-box-1 d-flex justify-content-center align-items-center">
+                                <div class="video-content" data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="video-slider-3 owl-carousel">
+                                        <div class="video-item">
+                                            <video controls>
+                                                <source
+                                                    src="https://res.cloudinary.com/dwxy3njrf/video/upload/v1645805688/cascade-video_fbsxqk.mp4" />
+                                            </video>
+                                        </div>
+                                        <div class="video-item">
+                                            <video controls>
+                                                <source
+                                                    src="https://res.cloudinary.com/dwxy3njrf/video/upload/v1646674902/mixkit-waves-coming-to-the-beach-5016_i6yx2a.mp4" />
+                                            </video>
+                                        </div>
+                                        <div class="video-item">
+                                            <video controls>
+                                                <source
+                                                    src="https://res.cloudinary.com/dwxy3njrf/video/upload/v1646675081/mixkit-stars-in-space-1610_uaflt4.mp4" />
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="arrow-left" id="arrow-left-3">
+                                        <span>
+                                            <i class="fas fa-angle-left"></i>
+                                        </span>
+                                    </div>
+                                    <div class="arrow-right" id="arrow-right-3">
+                                        <span>
+                                            <i class="fas fa-angle-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 custom-box-2">
+                                <div class="card-body">
+                                    <div class="card-title-1">
+                                        <h4>Product Demo</h4>
+                                    </div>
+                                    <div class="card-title-2 d-flex justify-content-end">
+                                        <h4>Videos</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>You have a great product but don't
+                                            know how to explain it in a way that
+                                            your customers will understand?</p>
+                                    </div>
+                                    <div class="button-container" data-aos="fade-up" data-aos-duration="2000">
+                                        <a href="#">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-12 eighth-container" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                <div class="card-body">
+                                    <div class="card-title-1">
+                                        <h4>Marketing</h4>
+                                    </div>
+                                    <div class="card-title-2 d-flex justify-content-end">
+                                        <h4>Videos</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>You know you need to be using video in
+                                            your marketing, but you don’t have the time
+                                            or resources to make it happen.</p>
+                                    </div>
+                                    <div class="button-container" data-aos="fade-up" data-aos-duration="2000">
+                                        <a href="#">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-8 d-flex justify-content-center align-items-center">
+                                <div class="video-content" data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="video-slider-4 owl-carousel">
+                                        <div class="video-item">
+                                            <video controls>
+                                                <source
+                                                    src="https://res.cloudinary.com/dwxy3njrf/video/upload/v1645805688/cascade-video_fbsxqk.mp4" />
+                                            </video>
+                                        </div>
+                                        <div class="video-item">
+                                            <video controls>
+                                                <source
+                                                    src="https://res.cloudinary.com/dwxy3njrf/video/upload/v1646674902/mixkit-waves-coming-to-the-beach-5016_i6yx2a.mp4" />
+                                            </video>
+                                        </div>
+                                        <div class="video-item">
+                                            <video controls>
+                                                <source
+                                                    src="https://res.cloudinary.com/dwxy3njrf/video/upload/v1646675081/mixkit-stars-in-space-1610_uaflt4.mp4" />
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="arrow-left" id="arrow-left-4">
+                                        <span>
+                                            <i class="fas fa-angle-left"></i>
+                                        </span>
+                                    </div>
+                                    <div class="arrow-right" id="arrow-right-4">
+                                        <span>
+                                            <i class="fas fa-angle-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-12 tenth-container" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 custom-box-1">
+                                <div class="image-content">
+                                    <img src="images/image-test11.PNG" alt="image-test" />
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 custom-box-2 d-flex flex-column justify-content-center">
+                                <div class="title-content d-flex flex-column">
+                                    <div class="title-1 d-flex justify-content-start" data-aos="fade-right"
+                                        data-aos-duration="2000">
+                                        <h3>The Way People</h3>
+                                    </div>
+                                    <div class="title-2 d-flex justify-content-center" data-aos="fade-up"
+                                        data-aos-duration="2000">
+                                        <h2>consume content</h2>
+                                    </div>
+                                    <div class="title-1 d-flex justify-content-end" data-aos="fade-left"
+                                        data-aos-duration="2000">
+                                        <h3>has Always Been Evolving</h3>
+                                    </div>
+                                </div>
+                                <div class="text-content">
+                                    <p>We now live in a fast-paced generation where people
+                                        prefer to consume content in bite-sized formats.</p>
+                                    <p>That's why 350+ page textbooks were replaced with
+                                        12-minute blog posts. Blogs were then replaced with
+                                        280-character Tweets.</p>
+                                    <p>Pretty soon, a 1-hour educational pre-recorded video
+                                        - like books and blog posts - will rarely be consumed.</p>
+                                </div>
+                                <div class="text-content-color">
+                                    <p>But thanks to this evolution in content consumption,
+                                        you now have a new opportunity that you've
+                                        never had before.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-12 eleventh-container" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 d-flex flex-column justify-content-center" style="position: relative;">
+                                <div class="title-content d-flex flex-column">
+                                    <div class="title-1 d-flex justify-content-start" data-aos="fade-right"
+                                        data-aos-duration="2000">
+                                        <h3>The Shift From Recorded Videos To</h3>
+                                    </div>
+                                    <div class="title-2 d-flex justify-content-center" data-aos="fade-up"
+                                        data-aos-duration="2000">
+                                        <h2>2D & 3D Animation Is The Best Thing</h2>
+                                    </div>
+                                    <div class="title-1 d-flex justify-content-end" data-aos="fade-left"
+                                        data-aos-duration="2000">
+                                        <h3>That Could’ve Happened To You</h3>
+                                    </div>
+                                </div>
+                                <div class="card-container">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-4 card-color">
+                                                <div class="card-body d-flex">
+                                                    <div class="card-image">
+                                                        <img src="images/image-test12.PNG" alt="image-test" />
+                                                    </div>
+                                                    <div class="card-text">
+                                                        <p>Video animation has become
+                                                            one of the most popular forms of
+                                                            communication because it
+                                                            engages people emotionally.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-4 card-color">
+                                                <div class="card-body d-flex">
+                                                    <div class="card-image">
+                                                        <img src="images/image-test13.PNG" alt="image-test" />
+                                                    </div>
+                                                    <div class="card-text">
+                                                        <p>Meaning they remember what
+                                                            they see more clearly than if they
+                                                            read it or heard about it from
+                                                            someone else simply talking about
+                                                            it on a video.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-4 card-color">
+                                                <div class="card-body d-flex">
+                                                    <div class="card-image">
+                                                        <img src="images/image-test14.PNG" alt="image-test" />
+                                                    </div>
+                                                    <div class="card-text">
+                                                        <p>And research has proven that a
+                                                            staggering 66% of consumers
+                                                            prefer watching videos about
+                                                            products/services than reading
+                                                            about them!</p>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-12 twelfth-container" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+                                <div class="title-content d-flex flex-column">
+                                    <div class="title-1 d-flex justify-content-start" data-aos="fade-right"
+                                        data-aos-duration="2000">
+                                        <h3>Already Using</h3>
+                                    </div>
+                                    <div class="title-2 d-flex justify-content-center" data-aos="fade-up"
+                                        data-aos-duration="2000">
+                                        <h2>Animated Videos</h2>
+                                    </div>
+                                    <div class="title-1 d-flex justify-content-end" data-aos="fade-left"
+                                        data-aos-duration="2000">
+                                        <h3>But Still Not Getting Results?</h3>
+                                    </div>
+                                </div>
+                                <div class="text-content">
+                                    <p>It can be hard to find the time to create videos that are
+                                        both high quality and communicate your message
+                                        perfectly. </p>
+                                    <p>Not only do you need the time and resources, but you also
+                                        need the skill set to produce compelling videos.</p>
+                                    <p>And lone freelancers or even an agency without the
+                                        experiences and know-how will not be able to produce the
+                                        quality of videos that brings results.</p>
+                                </div>
+                                <div class="text-content-color">
+                                    <p>Because what you need is a team that can produce
+                                        engaging, high-quality videos that can make
+                                        complex educational content easy to consume.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="image-content">
+                                    <img src="images/image-test15.PNG" alt="image-test" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-12 thirteenth-container" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-4 custom-box-1">
+                                <div class="image-content">
+                                    <img src="images/assets/Artboard 6.png" alt="Artboard" />
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-8 custom-box-2">
+                                <div class="title-content d-flex flex-column">
+                                    <div class="title-1 d-flex justify-content-start" data-aos="fade-right"
+                                        data-aos-duration="2000">
+                                        <h3>Reach New Heights With</h3>
+                                    </div>
+                                    <div class="title-1 custom-title-1 d-flex justify-content-end" data-aos="fade-left"
+                                        data-aos-duration="2000">
+                                        <h3>Video Animation Now</h3>
+                                    </div>
+                                </div>
+                                <div class="text-content">
+                                    <p>Whether you’re a Youtube content creator, a startup, or a COO of
+                                        a company looking to achieve success using animated videos, we
+                                        got you!
+                                        </p>
+                                    <p>We have a 100% Money-Back Guarantee in case you’re not
+                                        satisfied with our services.</p>
+                                    <p>And not only will we give you a full refund, but we’ll also give you
+                                        $100 for wasting your time.</p>
+                                    <p>So schedule a call now and let’s start producing 2D & 3D animated
+                                        videos to you need to help your channel or business:</p>
+                                </div>
+                                <div class="list-content">
+                                    <div class="list-body d-flex">
+                                        <div class="list-item d-flex">
+                                            <div class="list-text">
+                                                <p>Steal your competitor’s
+                                                    audience</p>
+                                            </div>
+                                            <div class="list-image">
+                                                <img src="images/image-test16.PNG" alt="image-test" />
+                                            </div>
+                                        </div>
+                                        <div class="list-item d-flex">
+                                            <div class="list-text">
+                                                <p>Build brand awareness</p>
+                                            </div>
+                                            <div class="list-image">
+                                                <img src="images/image-test16.PNG" alt="image-test" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-body d-flex">
+                                        <div class="list-item d-flex">
+                                            <div class="list-text">
+                                                <p>Increase sales</p>
+                                            </div>
+                                            <div class="list-image">
+                                                <img src="images/image-test16.PNG" alt="image-test" />
+                                            </div>
+                                        </div>
+                                        <div class="list-item d-flex">
+                                            <div class="list-text">
+                                                <p>Educate your audience</p>
+                                            </div>
+                                            <div class="list-image">
+                                                <img src="images/image-test16.PNG" alt="image-test" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="button-container" data-aos="fade-up" data-aos-duration="2000">
+                                    <a href="#">Schedule A Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-12 contact-container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="d-flex flex-column" style="position: relative;" data-aos="fade-right"
+                                    data-aos-duration="2000">
+                                    <div class="title-content">
+                                        <h3>Contact us</h3>
+                                    </div>
+                                    <div class="text-content">
+                                        <p>Are you interested in our services?
+                                            Do not hesitate! contact us by any
+                                            means and we will gladly assist you.</p>
+                                    </div>
+                                    <div class="image-absolute">
+                                        <img src="images/image-test2.PNG" alt="image-test" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="input-body d-flex flex-column" data-aos="fade-left"
+                                    data-aos-duration="2000">
+                                    <div class="input-container d-flex">
                                         <input class="custom-input" type="text" placeholder="Name" />
-                                        <input class="custom-input active" type="text" placeholder="Number" />
-                                        <input class="custom-input" type="text" placeholder="Mail" />
+                                        <input class="custom-input" type="text" placeholder="Email" />
+                                    </div>
+                                    <div class="input-container d-flex">
+                                        <input class="custom-input" type="text" placeholder="Phone" />
+                                        <input class="custom-input" type="text" placeholder="Location" />
                                     </div>
                                     <div class="button-container">
-                                        <a href="#">Send</a>
+                                        <a href="#">Send Message</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-12 info-container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="info-body">
+                                    <div class="title-info image-info">
+                                        <img src="images/logo-info.png" alt="logo-info" />
+                                    </div>
+                                    <div class="custom-text-info">
+                                        <p>Our engineering and marketing
+                                            teams help companies &
+                                            startups scale without the
+                                            hassle, risk, and expense of
+                                            building a team from zero.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="info-body">
+                                    <div class="title-info">
+                                        <h4>Share With US</h4>
+                                    </div>
+                                    <div class="custom-text-info">
+                                        <p>Follow us on our social networks to
+                                            be aware of all our updates and
+                                            promotions</p>
+                                    </div>
+                                    <div class="icon-content d-flex">
+                                        <div class="icon-item">
+                                            <a href="#" target="_blank">
+                                                <span>
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="icon-item">
+                                            <a href="#" target="_blank">
+                                                <span>
+                                                    <i class="fab fa-instagram"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="icon-item">
+                                            <a href="#" target="_blank">
+                                                <span>
+                                                    <i class="fab fa-twitter"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="icon-item">
+                                            <a href="#" target="_blank">
+                                                <span>
+                                                    <i class="fab fa-youtube"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="info-body">
+                                    <div class="title-info">
+                                        <h4>Our Services</h4>
+                                    </div>
+                                    <div class="custom-text-info">
+                                        <p>Video Animation</p>
+                                        <p>Graphic Design UX / UI</p>
+                                        <p>IT & Engineering</p>
+                                        <p>Digital Marketing </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="info-body">
+                                    <div class="title-info">
+                                        <h4>Contact Info</h4>
+                                    </div>
+                                    <div class="custom-text-info">
+                                        <div class="info-item d-flex align-items-center">
+                                            <span>
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </span>
+                                            <p>433 Belle Grove Dr. #831372
+                                                Richardson, TX-75080
+                                            </p>
+                                        </div>
+                                        <div class="info-item d-flex align-items-center">
+                                            <span>
+                                                <i class="fas fa-phone-alt"></i>
+                                            </span>
+                                            <p>+1 (800) 685-1031
+                                            </p>
+                                        </div>
+                                        <div class="info-item d-flex align-items-center">
+                                            <span>
+                                                <i class="far fa-envelope"></i>
+                                            </span>
+                                            <p>contact@alphacrewstudio.com
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -624,11 +1175,25 @@
             </div>
         </section>
         <footer class="custom-footer">
-            <div class="custom-footer-container">
-                <p>
-                    Copyright <span id="custom-year"></span>, <a href="https://alphacrewstudio.com/"
-                        target="_blank">AlphaCrew Studio</a>, LLC All Rights Reserved.
-                </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 custom-footer-body d-flex justify-content-between">
+                        <div class="custom-footer-container">
+                            <p>
+                                Copyright <span id="custom-year"></span>, <a href="https://alphacrewstudio.com/"
+                                    target="_blank">AlphaCrew Studio</a>, LLC All Rights Reserved.
+                            </p>
+                        </div>
+                        <div class="custom-footer-terms">
+                            <div class="terms-list">
+                                <a href="#">Terms of Use</a>
+                                <a href="#">Privacy Policy</a>
+                                <a href="#">Cookie Policy</a>
+                                <a href="#">Disclaimer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>

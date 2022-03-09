@@ -1,3 +1,59 @@
+/*General Styles*/
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img,
+video {
+    width: 100%;
+}
+
+input {
+    outline: none;
+}
+
+#body {
+    font-size: 24px;
+}
+
+#body section {
+    padding: 4rem 0;
+}
+
+.container-fluid {
+    padding: 0;
+    overflow: hidden;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.button-container a {
+    background-color: #00dcff;
+    border: 2px solid #00dcff;
+    color: #fff;
+    cursor: pointer;
+    padding: 1rem 5rem;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.button-container a:hover {
+    background-color: #fff;
+    color: #00dcff;
+}
+
+.button-container a:active {
+    animation: pressButton 0.3s ease-in-out;
+}
+
 /* Nav Menu */
 .custom-nav {
     position: absolute;
@@ -252,7 +308,6 @@
     border: 2px solid #2d2d2d;
     background-color: #2d2d2d;
     color: #fff;
-    font-size: 24px;
     text-align: center;
     width: 100%;
 }
@@ -346,6 +401,10 @@
 }
 
 @media (max-width: 1199px) {
+    #body {
+        font-size: 18px;
+    }
+
     .contact-container .title-content h3 {
         font-size: 80px;
     }
@@ -356,6 +415,20 @@
 }
 
 @media (max-width: 991px) {
+    #body section {
+        padding: 1rem;
+    }
+
+    .custom-box-1 {
+        order: 2;
+    }
+
+    .custom-box-2 {
+        order: 1;
+        align-items: center;
+        margin-top: 0;
+    }
+
     .logo {
         margin-right: 0;
         width: 250px;
@@ -454,8 +527,16 @@
 }
 
 @media (max-width: 767px) {
+    #body {
+        font-size: 16px;
+    }
+
     .logo {
         width: 200px;
+    }
+
+    .contact-container {
+        padding: 5rem 0 !important;
     }
 
     .contact-container .title-content h3 {
@@ -503,6 +584,20 @@
     }
 }
 
+@media (max-width: 575px) {
+    #body section {
+        padding: 0;
+    }
+
+    .button-container a {
+        padding: 1rem 3rem;
+    }
+
+    .custom-nav-right {
+        padding: 0 1rem;
+    }
+}
+
 @media (max-width: 425px) {
     .custom-footer .terms-list a {
         margin-right: 0.5rem !important;
@@ -512,5 +607,24 @@
 @media ( min-width: 992px ) {
     .custom-nav-list {
         display: flex !important;
+    }
+}
+
+/* Animations */
+@keyframes pressButton {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+}
+
+@keyframes mymove {
+    from {
+      top: -10%;
+    }
+    to {
+      top: 0%;
     }
 }

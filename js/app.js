@@ -61,13 +61,97 @@
     });
 
     // Go to the next item
-    $('.arrow-right span').click(function () {
+    $('#arrow-right-1 span').click(function () {
         videoSlider.trigger('next.owl.carousel', [1000]);
     });
 
     // Go to the previous item
-    $('.arrow-left span').click(function () {
+    $('#arrow-left-1 span').click(function () {
         videoSlider.trigger('prev.owl.carousel', [1000]);
+    });
+
+    // Video Carrousel 2
+    const videoSlider2 = $('.video-slider-2').owlCarousel({
+        items: 2,
+        loop: true,
+        touchDrag: false,
+        mouseDrag: false,
+        dots: true,
+        dotsSpeed: 1000,
+        responsive:{
+            0:{
+                items:1,
+            },
+            767:{
+                items:2,
+            },
+        },
+    });
+
+    // Go to the next item
+    $('#arrow-right-2 span').click(function () {
+        videoSlider2.trigger('next.owl.carousel', [1000]);
+    });
+
+    // Go to the previous item
+    $('#arrow-left-2 span').click(function () {
+        videoSlider2.trigger('prev.owl.carousel', [1000]);
+    });
+
+    // Video Carrousel 3
+    const videoSlider3 = $('.video-slider-3').owlCarousel({
+        items: 2,
+        loop: true,
+        touchDrag: false,
+        mouseDrag: false,
+        dots: true,
+        dotsSpeed: 1000,
+        responsive:{
+            0:{
+                items:1,
+            },
+            767:{
+                items:2,
+            },
+        },
+    });
+
+    // Go to the next item
+    $('#arrow-right-3 span').click(function () {
+        videoSlider3.trigger('next.owl.carousel', [1000]);
+    });
+
+    // Go to the previous item
+    $('#arrow-left-3 span').click(function () {
+        videoSlider3.trigger('prev.owl.carousel', [1000]);
+    });
+
+    // Video Carrousel 4
+    const videoSlider4 = $('.video-slider-4').owlCarousel({
+        items: 2,
+        loop: true,
+        touchDrag: false,
+        mouseDrag: false,
+        dots: true,
+        dotsSpeed: 1000,
+        responsive:{
+            0:{
+                items:1,
+            },
+            767:{
+                items:2,
+            },
+        },
+    });
+
+    // Go to the next item
+    $('#arrow-right-4 span').click(function () {
+        videoSlider4.trigger('next.owl.carousel', [1000]);
+    });
+
+    // Go to the previous item
+    $('#arrow-left-4 span').click(function () {
+        videoSlider4.trigger('prev.owl.carousel', [1000]);
     });
 
     //Card Carrousel
