@@ -1,0 +1,437 @@
+:root {
+  --white: #ffffff;
+  --dark: rgb(45, 45, 45);
+  --darkStrong: rgb(24, 24, 24);
+  --pinkStrong: rgb(234, 0, 255);
+  --blueLight: rgb(0, 155, 219);
+  --blueMoreLigth: rgb(0, 220, 255);
+  --pinkMoreStrong: rgb(234, 0, 255);
+  --gray: rgb(65, 64, 64);
+  --line: rgb(191, 194, 196);
+  --light: rgb(220, 245, 251);
+}
+
+body {
+  font-size: 24px;
+}
+
+/*Globals*/
+.imageLogo {
+  margin: 2rem;
+}
+
+.button-dark {
+  margin: 2rem;
+  display: block;
+  text-transform: capitalize;
+  text-align: center;
+  background-color: var(--dark);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+}
+.button-light {
+  margin: 2rem;
+  display: block;
+  text-transform: capitalize;
+  text-align: center;
+  background-color: var(--pinkStrong);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+}
+.tc-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tc-center-only {
+  display: flex;
+  justify-content: center;
+}
+.btn-more {
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  color: white;
+  background-color: var(--blueLight);
+  font-size: 1.5rem;
+  text-align: center;
+}
+.line {
+  padding: 0;
+  margin: 0;
+  height: 5px;
+  background-color: var(--line);
+  margin-bottom: 4rem;
+}
+
+/**Header*/
+header {
+  background-color: var(--blueLight);
+}
+.content-justify {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#mrfounder {
+  width: 10rem;
+}
+ul {
+  gap: 2rem;
+  font-size: 1rem;
+}
+
+h1 {
+  color: white;
+  font-size: 3.5rem;
+}
+
+/**first*/
+.first h2 {
+  font-size: 2rem;
+}
+
+.title-margin,
+.first-text {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+.title-color {
+  font-size: 3.5rem;
+  color: var(--pinkStrong);
+}
+.title-margin {
+  font-size: 2rem;
+}
+
+.first {
+  background-color: var(--light);
+}
+.first-content {
+  z-index: 1;
+}
+.guy1 {
+  display: flex;
+  justify-content: center;
+}
+.first-items {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 1rem;
+}
+.first h3 {
+  font-size: 1rem;
+  color: var(--blueMoreLigth);
+}
+.tds {
+  gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .guy1 {
+    position: relative;
+    left: 4rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .title-margin,
+  .first-text {
+    margin-left: 4rem;
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+  .first-btn {
+    margin-right: 5rem;
+  }
+}
+
+/**second*/
+.second-cards {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+.up {
+  font-size: 1rem;
+  color: white;
+  background-color: var(--dark);
+  padding: 2rem 2rem 4rem 2rem;
+}
+.down {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  background-color: var(--blueLight);
+  padding: 4rem 2rem 2rem 2rem;
+}
+
+/**Three*/
+.three {
+  background-color: var(--light);
+}
+.three h2 {
+  font-size: 2rem;
+}
+.three-ft2 {
+  color: var(--blueLight);
+  font-size: 4rem;
+  font-weight: bold;
+}
+.three-ft3 {
+  font-size: 2rem;
+}
+
+.three-p {
+  font-size: 1.2rem;
+}
+.three-p ul {
+  line-height: 2;
+}
+
+@media screen and (min-width: 768px) {
+  .three-ft2 {
+    color: var(--blueLight);
+    font-size: 4rem;
+    font-weight: bold;
+    margin-left: 4rem;
+  }
+  .three-ft3 {
+    font-size: 2rem;
+    margin-left: 25rem;
+  }
+}
+
+/**Four*/
+.four h2 {
+  color: var(--blueLight);
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.four-card {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  padding: 0;
+}
+
+.four-card h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+.four-blue {
+  color: var(--blueLight);
+}
+
+.four-row-pink {
+  padding: 1.5rem 5rem;
+  background-color: var(--pinkMoreStrong);
+  color: white;
+  font-size: 2.5rem;
+}
+.four-cards {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.card {
+  background-color: rgb(0, 155, 219);
+  font-size: 1rem;
+  color: white;
+  padding: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .four-card {
+    width: 60%;
+  }
+  .four-content {
+    padding: 4rem;
+  }
+  .four h2 {
+    color: var(--blueLight);
+    font-size: 4rem;
+    font-weight: bold;
+    margin-left: 4rem;
+  }
+  .f-margin {
+    margin-left: 2rem;
+  }
+  .fb-ma {
+    margin-left: 4rem;
+  }
+
+  .four-card h2 {
+    text-align: left;
+  }
+  .four-cards {
+    padding: 5rem;
+  }
+}
+
+/*five*/
+.five {
+  background-color: var(--light);
+}
+.five-content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.five-title-color {
+  color: var(--blueLight);
+  font-size: 3.5rem;
+}
+
+.five p {
+  line-height: 1.1;
+  font-size: 1.3rem;
+}
+.five-cards {
+  padding: 0;
+  position: relative;
+  bottom: 2rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.five-cards .card {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  padding: 0;
+  color: var(--dark);
+}
+.five-cards .tc-center {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+@media screen and (min-width: 768px) {
+  .five-content h2 {
+    padding: 0 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .five-title-color {
+    color: var(--blueLight);
+    font-size: 3.5rem;
+    margin-left: 7rem;
+  }
+  .five-title-margin {
+    margin-left: 14rem;
+  }
+  .five-content {
+    width: 80%;
+    padding: 4rem 4rem 4rem 4rem;
+  }
+}
+
+/*six*/
+.six .title-color {
+  color: var(--blueLight);
+}
+
+.six .five-title-color {
+  color: var(--pinkStrong);
+}
+.six-btn {
+  background-color: var(--pinkStrong);
+}
+
+/*seven*/
+.ten {
+  background-color: rgb(190, 219, 228);
+}
+
+.ten-targets {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.iconFounder {
+  width: 2rem;
+}
+
+.ten-fc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ten-fct {
+  display: flex;
+  justify-content: center;
+}
+
+.titleFounder {
+  font-family: "Coming Soon", cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+.ten p {
+  font-size: 0.8rem;
+  line-height: 1.2;
+}
+.ten-fct .seven-lin {
+  line-height: 0.8;
+}
+.ten h2 {
+  font-size: 1.5rem;
+}
+.guy5 {
+  width: 70%;
+}
+.b {
+  border: 1px solid white;
+}
+
+/**footer*/
+footer {
+  background-color: var(--dark);
+  color: var(--white);
+  font-size: 1rem;
+  padding: 1.5rem 0;
+}
+
+footer a {
+  text-decoration: none;
+  margin-left: 1rem;
+  height: 30%;
+  color: var(--white);
+}
+
+footer {
+  text-align: center;
+}
+
+footer nav {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.terms {
+  text-align: end;
+}
+@media screen and (min-width: 768px) {
+  .b {
+    border: 0px solid white;
+  }
+
+  footer {
+    text-align: left;
+  }
+  footer nav {
+    display: flex;
+    flex-direction: row;
+  }
+}
