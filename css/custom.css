@@ -12,7 +12,7 @@
 }
 
 body {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 /*Globals*/
@@ -291,14 +291,16 @@ background-color: var(--light);
   background-color: var(--light);
 }
 .five-content h2 {
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 .five-title-color {
   color: var(--blueLight);
   font-size: 3.5rem;
 }
-
+.l1{
+  font-size: 2rem;
+}
 
 .five-cards {
   padding: 0;
@@ -317,7 +319,7 @@ background-color: var(--light);
 }
 .five-cards p{
   font-size: 1.2rem;
-width: 75%;
+width: 25rem;
 line-height: 1;
  padding: 2rem 1rem;
   
@@ -596,7 +598,9 @@ line-height: 1;
   }
   
  
- 
+  .l1{
+    font-size: 4rem;
+  }
  
 
 
@@ -662,6 +666,7 @@ line-height: 1;
   .logo-top{
     margin-top: 7rem;
   }
+ 
  }
 
 

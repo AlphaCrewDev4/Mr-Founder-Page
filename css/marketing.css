@@ -29,13 +29,14 @@ html {
 
 body {
   font-size: 20px !important;
-  
+
   font-family: Verdana, Geneva, Tahoma, sans-serif !important;
 }
 .img-adaptation {
   object-fit: cover;
   object-position: center;
 }
+
 
 /*header*/
 header {
@@ -60,7 +61,7 @@ header {
 }
 .centeri{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 .btn-first {
@@ -68,8 +69,8 @@ header {
 
   background-color: var(--dark);
   color: white;
-font-size: 1.6rem;
-  padding: 1.5rem 2rem;
+  font-size: 1.6rem;
+  padding: 1.5rem 3rem;
   font-weight: bold;
   border-radius: 1.8rem;
 }
@@ -94,7 +95,6 @@ header ul li {
 }
 
 /*Second*/
-/*Segundo*/
 .second h2 {
   color: var(--pinkStrong);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -179,7 +179,7 @@ h3 {
   color: white;
   font-size: 1.6rem;
   font-weight: bold;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 3rem;
   border-radius: 2rem;
 }
 
@@ -255,8 +255,8 @@ h3 {
 }
 
 .expect-options {
-  
-  text-align: left;
+
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -264,11 +264,13 @@ h3 {
   line-height: 1;
 }
 .expect-options p {
-  width: 100%;
+  text-align: justify;
+width: 100%;
   display: flex;
   font-size: 1.6rem;
- line-height: 1.7;
-  justify-content: center;
+ line-height: 1.2;
+ 
+
 }
 
 .get-started {
@@ -328,6 +330,15 @@ h3 {
 .six-second-row span{
  margin-left: 0rem;
 color: var(--blueLight);
+}
+.six-parag{
+  line-height: 1.2;
+  font-size: 1.8rem;
+}
+.steps-p{
+  line-height: 1;
+  font-size: 1.8rem;
+
 }
 
 
@@ -391,7 +402,17 @@ color: var(--blueLight);
 .cont-seven{
   width: 100%;
 }
+.seven-three-text{
+  padding: 4rem;
+}
+.guy4{
+  display: inline;
+  margin: auto;
 
+}
+#title1{
+  width: 50rem;
+}
 /**Eight*/
 
 
@@ -677,7 +698,7 @@ footer h3{
 color: var(--blueLight);
 }
 .eight p{
-  line-height: 1;
+  line-height: 1.2;
 }
 
 footer {
@@ -763,6 +784,13 @@ footer h3{
   }
   .cont-seven{
     width: 70%;
+  }
+  .seven-three-text{
+    padding: 0 8rem;
+  }
+  .guy4{
+    display: block;
+    margin: auto;
   }
   
 }
