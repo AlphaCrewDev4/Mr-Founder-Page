@@ -11,13 +11,14 @@
   --light: rgb(220, 245, 251);
 }
 
-body {
-  font-size: 20px;
-}
 
 /*Globals*/
-.imageLogo {
-  width: 100%;
+
+
+body {
+  font-size: 20px !important;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
 }
 
 .button-dark {
@@ -68,31 +69,62 @@ body {
   margin-bottom: 4rem;
 }
 
-/**Header*/
+/*header*/
 header {
-  background-color: var(--blueLight);
+  background-image: url("../images/imagesCustom/1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
 }
-.content-justify {
-  background-color: var(--blueLight);
+.cont-nav {
   display: flex;
-  padding: 1.5rem 0;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  column-gap: 12rem;
+}
+.mf-logo {
+  width: 12rem;
 }
 .logo-top{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.prin-title{
+  margin-top: 1rem;
+}
+.centeri{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.btn-first {
   margin-top: 2rem;
-}
-#mrfounder {
-  width: 10rem;
-}
-ul {
-  gap: 2rem;
-  font-size: 1rem;
-}
 
-h1 {
+  background-color: var(--dark);
   color: white;
-  font-size: 3.5rem;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  border-radius: 1.4rem;
+}
+h1 {
+
+  font-size: 3rem;
+  color: var(--white);
+  text-align: center;
+}
+header ul li {
+  font-size: 18px;
+}
+.phone {
+
+  width: 80%;
+}
+.phone-tp {
+  margin-top: 0;
+}
+.color-phone{
+  background-color: var(--blueLight);
 }
 
 /**first*/
@@ -115,7 +147,9 @@ h1 {
 }
 
 .first {
-  background-color: var(--light);
+  background-image: url("../images/imagesCustom/2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .first .title-color {
   font-size: 2rem;
@@ -141,27 +175,51 @@ h1 {
 .tds {
   gap: 1rem;
 }
+.first-items h3{
+  font-size: 1rem;
+}
 
 /**second*/
 .second-cards p {
-  font-size: 16px;
+  font-size: 10px;
   color: var(--white);
+  padding: 3rem;
 }
 
 .up {
   font-size: 1rem;
   color: white;
-  background-color: var(--dark);
-  padding: 2rem 2rem 4rem 2rem;
+
 }
+.up1{
+  background-image: url("../images/imagesCustom/9.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.up2{
+  background-image: url("../images/imagesCustom/10.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.up3{
+  background-image: url("../images/imagesCustom/11.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.up4{
+  background-image: url("../images/imagesCustom/12.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .down {
   font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   color: white;
-  background-color: var(--blueLight);
-  padding: 4rem 2rem 2rem 2rem;
+
+  
 }
 .second-cont .title-color{
   font-size: 3rem;
@@ -174,12 +232,12 @@ background-color: var(--light);
 
 
 .three ul {
-  line-height: 1.3;
-  font-size: 1.6rem;
+  line-height: 1.1;
+  font-size: 1.2rem;
 }
 
 .three-subtitle {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .card{
   padding: 0 !important;
@@ -220,6 +278,7 @@ background-color: var(--light);
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   padding: 0;
+  width: 95%;
 }
 
 .four-card h2 {
@@ -284,7 +343,11 @@ background-color: var(--light);
   padding: 2rem;
   font-size: 1.3rem;
 }
-
+.guy2{
+  display: block;
+  margin: 0 auto;
+ width: 20rem;
+}
 
 /*five*/
 .five {
@@ -300,6 +363,9 @@ background-color: var(--light);
 }
 .l1{
   font-size: 2rem;
+}
+.l11{
+  font-size: 1.4rem;
 }
 
 .five-cards {
@@ -334,7 +400,9 @@ line-height: 1;
   width: 8rem;
 }
 
-
+.l3{
+  font-size: 1.2rem;
+}
 
 /*six*/
 .six .title-color {
@@ -348,7 +416,7 @@ line-height: 1;
   background-color: var(--pinkStrong);
 }
 .six-p{
-  font-size: 2rem;
+  font-size: 1.4rem;
   
 }
 
@@ -599,7 +667,7 @@ line-height: 1;
   
  
   .l1{
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
  
 
@@ -611,16 +679,11 @@ line-height: 1;
 
 
 @media (min-width: 992px) { 
-  .guy1 {
-    position: relative;
-    left: 4rem;
-    display: flex;
-    justify-content: flex-end;
-  }
+  
   .first-text {
     
     margin-left: 8rem;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     line-height: 1.2;
   
   }
@@ -648,12 +711,12 @@ line-height: 1;
   }
   .five-content h2 {
     padding: 0 2rem;
-    font-size: 2.5rem;
+    font-size: 1.6rem;
     font-weight: bold;
   }
   .five-title-color {
     color: var(--blueLight);
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-left: 7rem;
   }
   .five-title-margin {
@@ -666,13 +729,28 @@ line-height: 1;
   .logo-top{
     margin-top: 7rem;
   }
+  
+.four-card {
+
+  width: 70%;
+}
  
  }
 
 
 
 @media (min-width: 1200px) { 
-
+  .guy1 {
+    position: relative;
+    left: 6rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .guy2{
+    width: 40rem;
+    position: relative;
+    right: 4rem;
+  }
  }
 
 
