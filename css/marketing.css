@@ -27,6 +27,16 @@ html {
   src: url("../assets/fonts/HeyComic.ttf");
 }
 
+button:hover{
+
+  border: 2px solid white;
+  
+  color: white !important;
+ 
+  padding: 1rem 2rem;
+  
+
+}
 body {
   font-size: 20px !important;
 
@@ -296,6 +306,18 @@ width: 100%;
 }
 
 /*Six*/
+
+.six-first-text {
+  color: var(--blueLight);
+  font-weight: bold;
+}
+.six-second-text {
+  color: var(--darkStrong);
+  font-weight: bold;
+}
+.six-first-row p{
+  line-height: 1.4;
+}
 .four-items-first h2 {
   
   font-weight: bold;
@@ -412,11 +434,7 @@ color: var(--blueLight);
 #title1{
   width: 50rem;
 }
-/**Eight*/
 
-
-/*Foooter*/
-/**footer*/
 footer {
   background-color: var(--dark);
   color: var(--white);

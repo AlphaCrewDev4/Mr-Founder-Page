@@ -9,11 +9,22 @@
   --gray: rgb(65, 64, 64);
   --line: rgb(191, 194, 196);
   --light: rgb(220, 245, 251);
+  --letterBlueStrong: rgb(35, 168,224);
 }
 
 
 /*Globals*/
 
+button:hover{
+
+  border: 2px solid white;
+  
+  color: white !important;
+ 
+  padding: 1rem 2rem;
+  
+
+}
 
 body {
   font-size: 20px !important;
@@ -352,10 +363,12 @@ background-color: var(--light);
 /*five*/
 .five {
   background-color: var(--light);
+
 }
 .five-content h2 {
   font-size: 1rem;
   font-weight: bold;
+  
 }
 .five-title-color {
   color: var(--blueLight);
@@ -369,12 +382,13 @@ background-color: var(--light);
 }
 
 .five-cards {
-  padding: 0;
-  position: relative;
-  bottom: 2rem;
+  padding: 2rem;
+
   padding: 1rem;
   display: flex;
   justify-content: space-evenly;
+
+  
 }
 .five-cards .card {
   background-color: white;
@@ -382,12 +396,23 @@ background-color: var(--light);
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   padding: 0;
   color: var(--dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.five-cards img{
+  padding: 1rem;
 }
 .five-cards p{
-  font-size: 1.2rem;
-width: 25rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  padding: 0 0.5rem;
+width: 100%;
 line-height: 1;
- padding: 2rem 1rem;
+
   
 }
 .five-cards .tc-center {
