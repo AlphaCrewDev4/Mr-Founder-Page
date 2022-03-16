@@ -224,6 +224,7 @@ h3 {
 
 .four-item-second p {
   opacity: 0.5;
+
 }
 .four-items-second{
   padding: 4rem 2.5rem;
@@ -279,8 +280,8 @@ h3 {
   text-align: justify;
 width: 100%;
   display: flex;
-  font-size: 1.6rem;
- line-height: 1.2;
+  font-size: 1.7rem;
+ line-height: 1.5;
  
 
 }
@@ -358,12 +359,16 @@ color: var(--blueLight);
 }
 .steps-p{
   line-height: 1;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 
 }
 
 
 /**Seven*/
+
+.seven-first-text{
+  padding: 0 4rem;
+}
 .cont-seven{
   width: 100%;
 }
@@ -373,9 +378,8 @@ color: var(--blueLight);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
-  font-weight: bold;
-  font-size: 2rem;
+
+ 
   position: relative;
 
  
@@ -429,8 +433,7 @@ color: var(--blueLight);
 .seven-target {
   background-color: var(--blueLight);
   color: white;
-  width: 50%;
- 
+  
 }
 .content-targets{
   display: flex;
@@ -442,12 +445,24 @@ color: var(--blueLight);
   font-size: 1.6rem;
 }
 .content-target{
-  padding: 0 10rem;
+  padding: 0 4rem;
 }
 .prin-targets{
   width: 100%;
   padding:4rem 1rem;
 }
+
+
+.prin-targets img{
+  width: 35%;
+}
+.prin-targets p{
+  width: 100%;
+  
+  padding: 0 3rem;
+  height: 18rem;
+}
+
 .content-target1{
   display: flex;
   justify-content: space-evenly;
@@ -461,8 +476,14 @@ color: var(--blueLight);
   margin: auto;
 
 }
+.title{
+  width: 80%;
+}
 #title1{
-  width: 50rem;
+ z-index: 1;
+}
+#title2{
+  z-index: -1;
 }
 
 footer {
@@ -502,16 +523,15 @@ footer h3{
   text-align: end;
 }
 
-/*Conctac*/
 /* contact section */
 .contact-container {
-  padding: 1rem 0 !important;
+  padding: 10rem 0 !important;
   background: rgb(0,155,219);
   background: linear-gradient(0deg, rgba(0,155,219,1) 0%, rgba(0,216,240,1) 75%);
 }
 
 .contact-container .title-content h3 {
-  font-size: 6rem;
+  font-size: 120px;
   font-weight: bold;
 }
 
@@ -545,15 +565,12 @@ footer h3{
 }
 
 .contact-container .image-absolute {
- position: relative;
- left: 30rem;
- bottom: 8rem;
- width: 1rem;
+  position: absolute;
+  width: 30%;
+  right: 0;
+  bottom: -15%;
+  z-index: -1;
 }
-.contact-container .image-absolute img{
-
-  width: 10rem;
- }
 
 .contact-container .input-body {
   margin-left: 3rem;
@@ -605,6 +622,7 @@ footer h3{
   background-color: #fff;
   color: #2d2d2d;
 }
+
 
 .button-container {
   display: flex;
@@ -710,9 +728,23 @@ footer h3{
 
 
 
-
+@media (min-width:400px) {
+  .prin-targets p{
+    width: 100%;
+    padding: 0 3rem;
+    height: 24rem;
+  }
+  
+}
 
 @media (min-width: 576px) {
+  .content-target{
+    padding: 0 10rem;
+  }
+  .prin-targets p{
+
+    height: 40rem;
+  }
   
 }
 
@@ -797,7 +829,13 @@ footer h3{
   .prin-title{
     margin-top: 4rem;
   }
- 
+  .prin-targets img{
+    width: 20%;
+  }
+  .prin-targets p{
+    
+    height: 10rem;
+  }
 }
 
 
@@ -832,6 +870,8 @@ footer h3{
   }
   .network-text{
     padding: 8rem 8rem !important;
+   font-size: 1.8rem;
+   line-height: 1.5;
   }
   .cont-seven{
     width: 70%;
@@ -843,10 +883,35 @@ footer h3{
     display: block;
     margin: auto;
   }
+  .prin-targets{
+    width: 50rem;
+    padding:4rem 1rem;
+  }
+
+  .prin-targets img{
+    width: 30%;
+  }
+  .prin-targets p{
+    
+    height: 20rem;
+  }
+  .mov{
+    position: relative;
+    left: 5rem;
+    top: 5rem;
+  }
   
 }
 
 @media (min-width: 1200px) {
+  .prin-targets img{
+    width: 40%;
+  }
+  .mov{
+    position: relative;
+    left: 5rem;
+    top: 5rem;
+  }
  
 }
 
@@ -854,7 +919,15 @@ footer h3{
 }
 
 
+@media (max-width: 1399px) {
+  .contact-container .title-content h3 {
+      font-size: 100px;
+  }
 
+  .contact-container .image-absolute {
+      bottom: 5%;
+  }
+}
 
 
 @media (max-width: 1199px) {
@@ -863,6 +936,7 @@ footer h3{
   .info-container .title-info h4 {
       font-size: 24px;
   }
+
   .contact-container .title-content h3 {
     font-size: 80px;
 }
@@ -875,6 +949,7 @@ footer h3{
 .contact-container .image-absolute {
     bottom: 0;
 }
+
 }
 
 @media (max-width:767px){
@@ -908,7 +983,6 @@ footer h3{
 .info-container .info-item {
   justify-content: center;
 }
-
 .contact-container {
   padding: 5rem 0 !important;
 }
