@@ -9,15 +9,27 @@
   --gray: rgb(65, 64, 64);
   --line: rgb(191, 194, 196);
   --light: rgb(220, 245, 251);
+  --letterBlueStrong: rgb(35, 168,224);
+}
+
+
+/*Globals*/
+
+button:hover{
+
+  border: 2px solid white;
+  
+  color: white !important;
+ 
+  padding: 1rem 2rem;
+  
+
 }
 
 body {
-  font-size: 24px;
-}
+  font-size: 20px !important;
 
-/*Globals*/
-.imageLogo {
-  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
 }
 
 .button-dark {
@@ -36,6 +48,7 @@ body {
   display: block;
   text-transform: capitalize;
   text-align: center;
+  font-size: 1.6rem;
   background-color: var(--pinkStrong);
   color: white;
   padding: 1rem 2rem;
@@ -68,31 +81,64 @@ body {
   margin-bottom: 4rem;
 }
 
-/**Header*/
+/*header*/
 header {
-  background-color: var(--blueLight);
-}
-.content-justify {
-  background-color: var(--blueLight);
-  display: flex;
-  padding: 1.5rem 0;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.logo-top{
-  margin-top: 2rem;
-}
-#mrfounder {
-  width: 10rem;
-}
-ul {
-  gap: 2rem;
-  font-size: 1rem;
+  background-image: url("../images/imagesCustom/1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+
 }
 
-h1 {
+.cont-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  column-gap: 12rem;
+}
+.mf-logo {
+  width: 12rem;
+}
+.logo-top{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.prin-title{
+  margin-top: 1rem;
+}
+.centeri{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.btn-first {
+  margin-top: 2rem;
+
+  background-color: var(--dark);
   color: white;
-  font-size: 3.5rem;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  border-radius: 1.4rem;
+}
+h1 {
+
+  font-size: 3rem;
+  color: var(--white);
+  text-align: center;
+}
+header ul li {
+  font-size: 18px;
+}
+.phone {
+
+  width: 80%;
+}
+.phone-tp {
+  margin-top: 0;
+}
+.color-phone{
+  background-color: var(--blueLight);
 }
 
 /**first*/
@@ -110,12 +156,14 @@ h1 {
   
 }
 .title-color {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: var(--pinkStrong);
 }
 
 .first {
-  background-color: var(--light);
+  background-image: url("../images/imagesCustom/2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .first .title-color {
   font-size: 2rem;
@@ -129,8 +177,7 @@ h1 {
 
 }
 .first-items {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;display: flex;
   gap: 1rem;
   padding: 1rem 1rem;
 }
@@ -141,27 +188,51 @@ h1 {
 .tds {
   gap: 1rem;
 }
+.first-items h3{
+  font-size: 1rem;
+}
 
 /**second*/
 .second-cards p {
-  font-size: 16px;
+  font-size: 10px;
   color: var(--white);
+  padding: 3rem;
 }
 
 .up {
   font-size: 1rem;
   color: white;
-  background-color: var(--dark);
-  padding: 2rem 2rem 4rem 2rem;
+
 }
+.up1{
+  background-image: url("../images/imagesCustom/9.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.up2{
+  background-image: url("../images/imagesCustom/10.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.up3{
+  background-image: url("../images/imagesCustom/11.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.up4{
+  background-image: url("../images/imagesCustom/12.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .down {
   font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   color: white;
-  background-color: var(--blueLight);
-  padding: 4rem 2rem 2rem 2rem;
+
+  
 }
 .second-cont .title-color{
   font-size: 3rem;
@@ -174,12 +245,12 @@ background-color: var(--light);
 
 
 .three ul {
-  line-height: 1.3;
-  font-size: 1.6rem;
+  line-height: 1.1;
+  font-size: 1.2rem;
 }
 
 .three-subtitle {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .card{
   padding: 0 !important;
@@ -210,6 +281,37 @@ background-color: var(--light);
 
 
 /**Four*/
+.cont-seven{
+  width: 100%;
+}
+.cont-flu-seven{
+
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+
+  position: relative;
+
+ 
+}
+.cont-flu-seven::before{
+  content: '';
+
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../images/imagesCustom/23.png') 
+      no-repeat center center/cover;
+     
+  position: absolute;
+  width: 100%;
+  height: 40rem; 
+  bottom: 15rem; 
+  z-index: -1;
+  
+
+  
+ }
+
 .four h2 {
   color: var(--blueLight);
   font-size: 3rem;
@@ -220,6 +322,9 @@ background-color: var(--light);
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   padding: 0;
+  width: 95%;
+ 
+  background-color: white;
 }
 
 .four-card h2 {
@@ -251,7 +356,7 @@ background-color: var(--light);
   width: 20rem;
 }
 .four-text{
-  padding: 0rem;
+  padding: 1.5rem;
 }
 .content-card{
   margin-top: auto;
@@ -284,42 +389,69 @@ background-color: var(--light);
   padding: 2rem;
   font-size: 1.3rem;
 }
-
+.guy2{
+  display: block;
+  margin: 0 auto;
+ width: 20rem;
+}
 
 /*five*/
 .five {
   background-color: var(--light);
+
 }
 .five-content h2 {
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: bold;
+  
 }
 .five-title-color {
   color: var(--blueLight);
   font-size: 3.5rem;
 }
-
+.l1{
+  font-size: 2rem;
+}
+.l11{
+  font-size: 1.4rem;
+}
 
 .five-cards {
-  padding: 0;
-  position: relative;
-  bottom: 2rem;
+
+  padding: 2rem;
+
   padding: 1rem;
   display: flex;
   justify-content: space-evenly;
+
+  
 }
+
+
 .five-cards .card {
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   padding: 0;
   color: var(--dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.five-cards img{
+  padding: 1rem;
 }
 .five-cards p{
-  font-size: 1.2rem;
-width: 75%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  padding: 0 0.5rem;
+width: 100%;
 line-height: 1;
- padding: 2rem 1rem;
+
   
 }
 .five-cards .tc-center {
@@ -332,7 +464,10 @@ line-height: 1;
   width: 8rem;
 }
 
-
+.l3{
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
 
 /*six*/
 .six .title-color {
@@ -346,7 +481,7 @@ line-height: 1;
   background-color: var(--pinkStrong);
 }
 .six-p{
-  font-size: 2rem;
+  font-size: 1.4rem;
   
 }
 
@@ -556,8 +691,52 @@ line-height: 1;
 }
 
 
-
-
+/**Trrgets**/
+.targetOne{
+  font-size:0.8rem;
+ background-color: var(--dark);
+ 
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  padding: 1rem;
+  height: 8rem;
+}
+.targetTwo{
+  font-size:0.8rem;
+        background-color: var(--blueLight);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-end;
+        height: 8rem;
+        padding: 1rem;
+}
+.targetThree{
+  font-size:0.8rem;
+      background-color: var(--dark);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        padding: 1rem;
+        height: 8rem;
+}
+.targetFour{
+  font-size:0.8rem;
+       background-color: var(--blueLight);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-end;
+        height: 8rem;
+        padding: 1rem;
+}
 
 
 @media (min-width: 576px) { 
@@ -596,7 +775,9 @@ line-height: 1;
   }
   
  
- 
+  .l1{
+    font-size: 3.5rem;
+  }
  
 
 
@@ -607,16 +788,11 @@ line-height: 1;
 
 
 @media (min-width: 992px) { 
-  .guy1 {
-    position: relative;
-    left: 4rem;
-    display: flex;
-    justify-content: flex-end;
-  }
+  
   .first-text {
     
     margin-left: 8rem;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     line-height: 1.2;
   
   }
@@ -644,12 +820,12 @@ line-height: 1;
   }
   .five-content h2 {
     padding: 0 2rem;
-    font-size: 2.5rem;
+    font-size: 1.6rem;
     font-weight: bold;
   }
   .five-title-color {
     color: var(--blueLight);
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-left: 7rem;
   }
   .five-title-margin {
@@ -657,17 +833,68 @@ line-height: 1;
   }
   .five-content {
     width: 80%;
-    padding: 4rem 4rem 4rem 4rem;
+    padding: 4rem 4rem 2rem 4rem;
   }
   .logo-top{
     margin-top: 7rem;
   }
+  
+.four-card {
+
+  width: 70%;
+}
+.five-cards p{
+  height: 12rem;
+ 
+
+  
+}
  }
 
 
 
 @media (min-width: 1200px) { 
+  .guy1 {
+    position: relative;
+    left: 6rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .guy2{
+    width: 40rem;
+    position: relative;
+    right: 4rem;
+  }
+  .targetOne{
+    background-image: url(../images/imagesCustom/9.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 17rem;
+}
+.targetTwo{
+height: 17rem;
+background-image: url(../images/imagesCustom/10.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+.targetThree{
+height: 17rem;
+background-image: url(../images/imagesCustom/11.png);
+background-size: cover;
+background-repeat: no-repeat;
+}
+.targetFour{
+height: 17rem;
+background-image: url(../images/imagesCustom/12.png);
+background-size: cover;
+background-repeat: no-repeat;
+}
+.five-cards p{
+  height: 5rem;
 
+
+  
+}
  }
 
 
@@ -756,4 +983,39 @@ line-height: 1;
       margin-right: 0.5rem !important;
   }
 }
+.posicion{
 
+  background-image: url("../images/imagesCustom/1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+position: relative;
+
+}
+.posicion::before{
+  content: '';
+  background-color: rgb(219,246,251);
+    position: absolute;
+       
+  bottom: 0;
+        width: 100vw;
+        height: 100%;
+        z-index: -10;
+  }
+
+  .posicion2{
+
+   
+   
+  position: relative;
+  
+  }
+  .posicion2::before{
+    content: '';
+    background-color:rgb(219, 246, 251);
+      position: absolute;
+         
+    top: 0;
+          width: 100vw;
+          height: 50%;
+          z-index: -10;
+    }

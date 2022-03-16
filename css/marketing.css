@@ -27,9 +27,19 @@ html {
   src: url("../assets/fonts/HeyComic.ttf");
 }
 
+button:hover{
+
+  border: 2px solid white;
+  
+  color: white !important;
+ 
+  padding: 1rem 2rem;
+  
+
+}
 body {
   font-size: 20px !important;
-  
+
   font-family: Verdana, Geneva, Tahoma, sans-serif !important;
 }
 .img-adaptation {
@@ -37,9 +47,12 @@ body {
   object-position: center;
 }
 
+
 /*header*/
 header {
-  background-color: var(--blueLight);
+  background-image: url("../images/imagesMarketing/2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
 }
 .cont-nav {
@@ -60,7 +73,7 @@ header {
 }
 .centeri{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 .btn-first {
@@ -68,8 +81,8 @@ header {
 
   background-color: var(--dark);
   color: white;
-font-size: 1.6rem;
-  padding: 1.5rem 2rem;
+  font-size: 1.6rem;
+  padding: 1.5rem 3rem;
   font-weight: bold;
   border-radius: 1.8rem;
 }
@@ -94,7 +107,6 @@ header ul li {
 }
 
 /*Second*/
-/*Segundo*/
 .second h2 {
   color: var(--pinkStrong);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -179,7 +191,7 @@ h3 {
   color: white;
   font-size: 1.6rem;
   font-weight: bold;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 3rem;
   border-radius: 2rem;
 }
 
@@ -212,6 +224,7 @@ h3 {
 
 .four-item-second p {
   opacity: 0.5;
+
 }
 .four-items-second{
   padding: 4rem 2.5rem;
@@ -255,8 +268,8 @@ h3 {
 }
 
 .expect-options {
-  
-  text-align: left;
+
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -264,11 +277,13 @@ h3 {
   line-height: 1;
 }
 .expect-options p {
-  width: 100%;
+  text-align: justify;
+width: 100%;
   display: flex;
-  font-size: 1.6rem;
- line-height: 1.7;
-  justify-content: center;
+  font-size: 1.7rem;
+ line-height: 1.5;
+ 
+
 }
 
 .get-started {
@@ -292,6 +307,18 @@ h3 {
 }
 
 /*Six*/
+
+.six-first-text {
+  color: var(--blueLight);
+  font-weight: bold;
+}
+.six-second-text {
+  color: var(--darkStrong);
+  font-weight: bold;
+}
+.six-first-row p{
+  line-height: 1.4;
+}
 .four-items-first h2 {
   
   font-weight: bold;
@@ -299,9 +326,6 @@ h3 {
   font-size: 5rem;
 }
 .four-items-first h3 {
-
-  
-  font-weight: bold;
   color: var(--dark);
   font-size: 2.25rem;
 }
@@ -329,9 +353,53 @@ h3 {
  margin-left: 0rem;
 color: var(--blueLight);
 }
+.six-parag{
+  line-height: 1.2;
+  font-size: 1.8rem;
+}
+.steps-p{
+  line-height: 1;
+  font-size: 1.7rem;
+
+}
 
 
 /**Seven*/
+
+.seven-first-text{
+  padding: 0 4rem;
+}
+.cont-seven{
+  width: 100%;
+}
+.cont-flu-seven{
+
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ 
+  position: relative;
+
+ 
+}
+.cont-flu-seven::before{
+  content: '';
+
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url('../images/imagesMarketing/16.png') 
+      no-repeat center center/cover;
+     
+  position: absolute;
+  width: 100%;
+  height: 55rem; 
+  bottom: 35rem; 
+  z-index: -1;
+  
+
+  
+ }
+
 .title-ceo {
   color: var(--blueMoreLigth);
   font-size: 5rem;
@@ -365,8 +433,7 @@ color: var(--blueLight);
 .seven-target {
   background-color: var(--blueLight);
   color: white;
-  width: 50%;
- 
+  
 }
 .content-targets{
   display: flex;
@@ -378,25 +445,47 @@ color: var(--blueLight);
   font-size: 1.6rem;
 }
 .content-target{
-  padding: 0 10rem;
+  padding: 0 4rem;
 }
 .prin-targets{
   width: 100%;
   padding:4rem 1rem;
 }
+
+
+.prin-targets img{
+  width: 35%;
+}
+.prin-targets p{
+  width: 100%;
+  
+  padding: 0 3rem;
+  height: 18rem;
+}
+
 .content-target1{
   display: flex;
   justify-content: space-evenly;
 }
-.cont-seven{
-  width: 100%;
+
+.seven-three-text{
+  padding: 4rem;
+}
+.guy4{
+  display: inline;
+  margin: auto;
+
+}
+.title{
+  width: 80%;
+}
+#title1{
+ z-index: 1;
+}
+#title2{
+  z-index: -1;
 }
 
-/**Eight*/
-
-
-/*Foooter*/
-/**footer*/
 footer {
   background-color: var(--dark);
   color: var(--white);
@@ -434,109 +523,7 @@ footer h3{
   text-align: end;
 }
 
-/*Conctac*/
-/* contact section */
-.contact-container {
-  padding: 1rem 0 !important;
-  background: rgb(0,155,219);
-  background: linear-gradient(0deg, rgba(0,155,219,1) 0%, rgba(0,216,240,1) 75%);
-}
 
-.contact-container .title-content h3 {
-  font-size: 6rem;
-  font-weight: bold;
-}
-
-.contact-container .text-content {
-  color: #333;
-  margin-left: 1rem;
-  margin-top: 1rem;
-  position: relative;
-  text-align: center;
-  width: 70%;
-}
-
-.contact-container .text-content::before {
-  background-color: #000;
-  content: "";
-  height: 4px;
-  left: 10%;
-  position: absolute;
-  top: -5%;
-  width: 80%;
-}
-
-.contact-container .text-content::after {
-  background-color: #000;
-  content: "";
-  height: 4px;
-  left: 10%;
-  position: absolute;
-  bottom: 0%;
-  width: 80%;
-}
-
-.contact-container .image-absolute {
- position: relative;
- left: 30rem;
- bottom: 8rem;
- width: 1rem;
-}
-.contact-container .image-absolute img{
-
-  width: 10rem;
- }
-
-.contact-container .input-body {
-  margin-left: 3rem;
-  margin-top: 3rem;
-}
-
-.contact-container .input-container {
-  width: 100%;
-}
-
-.contact-container .custom-input {
-  border: 3px solid rgb(224, 224, 224);
-  color: rgb(211, 211, 211);
-  background-color: transparent;
-  padding: 1rem;
-  margin-right: 2rem;
-  margin-bottom: 2rem;
-  border-radius: 75px;
-  width: 100%;
-  transition: all 0.3s ease-in-out;
-}
-
-.contact-container .custom-input:hover {
-  padding-left: 2rem;
-}
-
-.contact-container .custom-input:focus {
-  color: #fff;
-}
-
-.contact-container .custom-input::placeholder {
-  color: rgb(224, 224, 224);
-}
-
-.contact-container .button-container {
-  margin-top: 0;
-}
-
-.contact-container .button-container a {
-  border: 2px solid #2d2d2d;
-  background-color: #2d2d2d;
-  color: #fff;
-  text-align: center;
-  width: 100%;
-}
-
-.contact-container .button-container a:hover {
-  border: 2px solid #2d2d2d;
-  background-color: #fff;
-  color: #2d2d2d;
-}
 
 .button-container {
   display: flex;
@@ -618,6 +605,105 @@ footer h3{
   margin-bottom: 0;
 }
 
+/* contact section */
+.contact-container {
+  padding: 10rem 0 !important;
+  background: rgb(0,155,219);
+  background: linear-gradient(0deg, rgba(0,155,219,1) 0%, rgba(0,216,240,1) 75%);
+}
+
+.contact-container .title-content h3 {
+  font-size: 120px;
+  font-weight: bold;
+}
+
+.contact-container .text-content {
+  color: #333;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  position: relative;
+  text-align: center;
+  width: 70%;
+}
+
+.contact-container .text-content::before {
+  background-color: #000;
+  content: "";
+  height: 4px;
+  left: 10%;
+  position: absolute;
+  top: -5%;
+  width: 80%;
+}
+
+.contact-container .text-content::after {
+  background-color: #000;
+  content: "";
+  height: 4px;
+  left: 10%;
+  position: absolute;
+  bottom: 0%;
+  width: 80%;
+}
+
+.contact-container .image-absolute {
+  position: absolute;
+  width: 30%;
+  right: 0;
+  bottom: -15%;
+  z-index: -1;
+}
+
+.contact-container .input-body {
+  margin-left: 3rem;
+  margin-top: 3rem;
+}
+
+.contact-container .input-container {
+  width: 100%;
+}
+
+.contact-container .custom-input {
+  border: 3px solid rgb(224, 224, 224);
+  color: rgb(211, 211, 211);
+  background-color: transparent;
+  padding: 1rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 75px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-container .custom-input:hover {
+  padding-left: 2rem;
+}
+
+.contact-container .custom-input:focus {
+  color: #fff;
+}
+
+.contact-container .custom-input::placeholder {
+  color: rgb(224, 224, 224);
+}
+
+.contact-container .button-container {
+  margin-top: 0;
+}
+
+.contact-container .button-container a {
+  border: 2px solid #2d2d2d;
+  background-color: #2d2d2d;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+.contact-container .button-container a:hover {
+  border: 2px solid #2d2d2d;
+  background-color: #fff;
+  color: #2d2d2d;
+}
 
  /* Footer */
  .custom-footer {
@@ -642,9 +728,23 @@ footer h3{
 
 
 
-
+@media (min-width:400px) {
+  .prin-targets p{
+    width: 100%;
+    padding: 0 3rem;
+    height: 24rem;
+  }
+  
+}
 
 @media (min-width: 576px) {
+  .content-target{
+    padding: 0 10rem;
+  }
+  .prin-targets p{
+
+    height: 40rem;
+  }
   
 }
 
@@ -660,7 +760,11 @@ footer h3{
     color: var(--blueLight);
   }
   .second-p p {
+    margin-top: 5rem;
     padding: 0rem;
+    font-size: 2rem;
+    line-height: 1.4;
+
   }
   .four-content {
     padding: 0rem;
@@ -677,7 +781,7 @@ footer h3{
 color: var(--blueLight);
 }
 .eight p{
-  line-height: 1;
+  line-height: 1.2;
 }
 
 footer {
@@ -704,16 +808,6 @@ footer h3{
   align-items: center;
 }
 
-.contact-container .image-absolute {
-  position: relative;
-  left: 46rem;
-  bottom: 8rem;
-  width: 1rem;
- }
- .contact-container .image-absolute img{
- 
-   width: 10rem;
-  }
 
   .mf-logo {
     width: 22.5rem;
@@ -725,7 +819,13 @@ footer h3{
   .prin-title{
     margin-top: 4rem;
   }
- 
+  .prin-targets img{
+    width: 20%;
+  }
+  .prin-targets p{
+    
+    height: 10rem;
+  }
 }
 
 
@@ -760,14 +860,48 @@ footer h3{
   }
   .network-text{
     padding: 8rem 8rem !important;
+   font-size: 1.8rem;
+   line-height: 1.5;
   }
   .cont-seven{
     width: 70%;
+  }
+  .seven-three-text{
+    padding: 0 8rem;
+  }
+  .guy4{
+    display: block;
+    margin: auto;
+  }
+  .prin-targets{
+    width: 50rem;
+    padding:4rem 1rem;
+  }
+
+  .prin-targets img{
+    width: 30%;
+  }
+  .prin-targets p{
+    
+    height: 20rem;
+  }
+  .mov{
+    position: relative;
+    left: 5rem;
+    top: 5rem;
   }
   
 }
 
 @media (min-width: 1200px) {
+  .prin-targets img{
+    width: 40%;
+  }
+  .mov{
+    position: relative;
+    left: 5rem;
+    top: 5rem;
+  }
  
 }
 
@@ -775,18 +909,27 @@ footer h3{
 }
 
 
+@media (max-width: 1399px) {
+  .contact-container .title-content h3 {
+    font-size: 100px;
+}
 
+.contact-container .image-absolute {
+    bottom: 5%;
+}
+}
 
 
 @media (max-width: 1199px) {
-
+  .contact-container .title-content h3 {
+    font-size: 80px;
+}
 
   .info-container .title-info h4 {
       font-size: 24px;
   }
-  .contact-container .title-content h3 {
-    font-size: 80px;
-}
+
+  
 }
 @media (max-width:991px) {
   .contact-container .input-body {
@@ -796,12 +939,14 @@ footer h3{
 .contact-container .image-absolute {
     bottom: 0;
 }
+
 }
 
 @media (max-width:767px){
   .custom-footer-body {
     flex-direction: column;
     justify-content: center !important;
+    
 }
 
 .custom-footer .custom-footer-container, .custom-footer-terms {
