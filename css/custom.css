@@ -279,6 +279,37 @@ background-color: var(--light);
 
 
 /**Four*/
+.cont-seven{
+  width: 100%;
+}
+.cont-flu-seven{
+
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+
+  position: relative;
+
+ 
+}
+.cont-flu-seven::before{
+  content: '';
+
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../images/imagesCustom/23.png') 
+      no-repeat center center/cover;
+     
+  position: absolute;
+  width: 100%;
+  height: 40rem; 
+  bottom: 15rem; 
+  z-index: -1;
+  
+
+  
+ }
+
 .four h2 {
   color: var(--blueLight);
   font-size: 3rem;
@@ -290,6 +321,7 @@ background-color: var(--light);
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   padding: 0;
   width: 95%;
+  background-color: white;
 }
 
 .four-card h2 {
