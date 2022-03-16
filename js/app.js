@@ -5,6 +5,9 @@
     const menu = document.querySelector('.custom-nav-list');
     const customYear = document.querySelector('#custom-year');
     const header = document.querySelector('.custom-nav');
+    const personItem = document.querySelectorAll('#personItem');
+    const meetVideo = document.querySelectorAll("#meetVideo");
+
 
 
     // Get year for footer
@@ -29,7 +32,7 @@
     });
 
     // Close menu when click item menu
-    $('.custom-nav-item a').click(function () {
+    /*$('.custom-nav-item a').click(function () {
         menuToggle.checked = false;
         if (menuToggle.checked === true) {
             $('.custom-nav-list').slideToggle('slow', 'swing', function () {
@@ -41,7 +44,7 @@
             });
 
         }
-    });
+    });*/
 
     //AOS function
     AOS.init();
@@ -50,6 +53,48 @@
 
     window.addEventListener('scroll', () => {
         header.classList.toggle('sticky', window.scrollY > 50);
+    });
+
+    // Function Meet
+    const meetEvent = ({page}) => {
+        _.map(personItem, (item, index) => {
+            if(index === page.index) {
+                item.classList.add('active-person');
+                meetVideo[index].play();
+            } else {
+                item.classList.remove('active-person');
+                meetVideo[index].pause();
+            }
+        });
+    }
+
+    // Meet Carrousel 
+    const meetSlider = $('#meetSlide').owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 32,
+        startPosition: 0,
+        touchDrag: false,
+        mouseDrag: false,
+        onTranslate: meetEvent,
+    });
+
+    // Click meet person
+
+    _.map(personItem, (item, index) => {
+        item.addEventListener('click', () => {
+            meetSlider.trigger('to.owl.carousel', [index, 1000]);
+        })
+    });
+
+    // Go to the next item
+    $('#arrow-right-5 span').click(function () {
+        meetSlider.trigger('next.owl.carousel', [1000]);
+    });
+
+    // Go to the previous item
+    $('#arrow-left-5 span').click(function () {
+        meetSlider.trigger('prev.owl.carousel', [1000]);
     });
 
     // Video Carrousel 
