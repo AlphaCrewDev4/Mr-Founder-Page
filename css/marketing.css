@@ -523,6 +523,88 @@ footer h3{
   text-align: end;
 }
 
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.button-container a {
+  background-color: #00dcff;
+  border: 2px solid #00dcff;
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem 5rem;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.button-container a:hover {
+  background-color: #fff;
+  color: #00dcff;
+}
+
+.button-container a:active {
+  animation: pressButton 0.3s ease-in-out;
+}
+
+
+
+/*Info*/
+
+/* Info section */
+.info-container {
+  background-color: #DCF3FA;
+  color: #333;
+  font-size: 20px;
+}
+
+.info-container .image-info {
+  width: 80%;
+}
+
+.info-container .title-info h4 {
+  font-size: 32px;
+  margin-bottom: 1rem;
+}
+
+.info-container .info-body {
+  padding: 1rem;
+}
+
+.info-container .icon-content .icon-item {
+  background-color: #2d2d2d;
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 25px;
+  margin-right: 1rem;
+  padding: 1rem;
+  width: 25px;
+}
+
+.info-container .icon-content .icon-item a {
+  display: flex;
+}
+
+.info-container .icon-content .icon-item span {
+  color: #fff;
+  font-size: 16px;
+}
+
+.info-container .info-item{
+  margin-bottom: 1rem;
+}
+
+.info-container .info-item p {
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+
 /* contact section */
 .contact-container {
   padding: 10rem 0 !important;
@@ -622,88 +704,6 @@ footer h3{
   background-color: #fff;
   color: #2d2d2d;
 }
-
-
-.button-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
-.button-container a {
-  background-color: #00dcff;
-  border: 2px solid #00dcff;
-  color: #fff;
-  cursor: pointer;
-  padding: 1rem 5rem;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-  text-decoration: none;
-}
-
-.button-container a:hover {
-  background-color: #fff;
-  color: #00dcff;
-}
-
-.button-container a:active {
-  animation: pressButton 0.3s ease-in-out;
-}
-
-
-
-/*Info*/
-
-/* Info section */
-.info-container {
-  background-color: #DCF3FA;
-  color: #333;
-  font-size: 20px;
-}
-
-.info-container .image-info {
-  width: 80%;
-}
-
-.info-container .title-info h4 {
-  font-size: 32px;
-  margin-bottom: 1rem;
-}
-
-.info-container .info-body {
-  padding: 1rem;
-}
-
-.info-container .icon-content .icon-item {
-  background-color: #2d2d2d;
-  border-radius: 50%;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 25px;
-  margin-right: 1rem;
-  padding: 1rem;
-  width: 25px;
-}
-
-.info-container .icon-content .icon-item a {
-  display: flex;
-}
-
-.info-container .icon-content .icon-item span {
-  color: #fff;
-  font-size: 16px;
-}
-
-.info-container .info-item{
-  margin-bottom: 1rem;
-}
-
-.info-container .info-item p {
-  margin-left: 1rem;
-  margin-bottom: 0;
-}
-
 
  /* Footer */
  .custom-footer {
@@ -808,16 +808,6 @@ footer h3{
   align-items: center;
 }
 
-.contact-container .image-absolute {
-  position: relative;
-  left: 46rem;
-  bottom: 8rem;
-  width: 1rem;
- }
- .contact-container .image-absolute img{
- 
-   width: 10rem;
-  }
 
   .mf-logo {
     width: 22.5rem;
@@ -921,25 +911,25 @@ footer h3{
 
 @media (max-width: 1399px) {
   .contact-container .title-content h3 {
-      font-size: 100px;
-  }
+    font-size: 100px;
+}
 
-  .contact-container .image-absolute {
-      bottom: 5%;
-  }
+.contact-container .image-absolute {
+    bottom: 5%;
+}
 }
 
 
 @media (max-width: 1199px) {
-
+  .contact-container .title-content h3 {
+    font-size: 80px;
+}
 
   .info-container .title-info h4 {
       font-size: 24px;
   }
 
-  .contact-container .title-content h3 {
-    font-size: 80px;
-}
+  
 }
 @media (max-width:991px) {
   .contact-container .input-body {
@@ -956,6 +946,7 @@ footer h3{
   .custom-footer-body {
     flex-direction: column;
     justify-content: center !important;
+    
 }
 
 .custom-footer .custom-footer-container, .custom-footer-terms {
@@ -983,6 +974,7 @@ footer h3{
 .info-container .info-item {
   justify-content: center;
 }
+
 .contact-container {
   padding: 5rem 0 !important;
 }
