@@ -460,18 +460,47 @@ header ul li {
 
 /*Conctac*/
 /* contact section */
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.button-container a {
+  background-color: #00dcff;
+  border: 2px solid #00dcff;
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem 5rem;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.button-container a:hover {
+  background-color: #fff;
+  color: #00dcff;
+}
+
+.button-container a:active {
+  animation: pressButton 0.3s ease-in-out;
+}
+
+/*Contact*/
+
 .contact-container {
-  padding: 1rem 0 !important;
-  background: rgb(0, 155, 219);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 155, 219, 1) 0%,
-    rgba(0, 216, 240, 1) 75%
-  );
+  background: url("../images/assets-animation/22.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 8rem 0 !important;
+  overflow: hidden;
 }
 
 .contact-container .title-content h3 {
-  font-size: 6rem;
+  font-size: 120px;
   font-weight: bold;
 }
 
@@ -505,13 +534,11 @@ header ul li {
 }
 
 .contact-container .image-absolute {
-  position: relative;
-  left: 30rem;
-  bottom: 8rem;
-  width: 1rem;
-}
-.contact-container .image-absolute img {
-  width: 10rem;
+  position: absolute;
+  width: 50%;
+  right: -20%;
+  bottom: -10%;
+  z-index: -1;
 }
 
 .contact-container .input-body {
@@ -565,37 +592,10 @@ header ul li {
   color: #2d2d2d;
 }
 
-.button-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
-.button-container a {
-  background-color: #00dcff;
-  border: 2px solid #00dcff;
-  color: #fff;
-  cursor: pointer;
-  padding: 1rem 5rem;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-  text-decoration: none;
-}
-
-.button-container a:hover {
-  background-color: #fff;
-  color: #00dcff;
-}
-
-.button-container a:active {
-  animation: pressButton 0.3s ease-in-out;
-}
-
-/*Info*/
 
 /* Info section */
 .info-container {
-  background-color: #dcf3fa;
+  background-color: #DCF3FA;
   color: #333;
   font-size: 20px;
 }
@@ -607,6 +607,7 @@ header ul li {
 .info-container .title-info h4 {
   font-size: 32px;
   margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 .info-container .info-body {
@@ -634,7 +635,7 @@ header ul li {
   font-size: 16px;
 }
 
-.info-container .info-item {
+.info-container .info-item{
   margin-bottom: 1rem;
 }
 
@@ -642,6 +643,7 @@ header ul li {
   margin-left: 1rem;
   margin-bottom: 0;
 }
+
 
 /* Footer */
 .custom-footer {
@@ -904,32 +906,38 @@ header ul li {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1399px) {
   .contact-container .title-content h3 {
     font-size: 100px;
-  }
+}
 
-  .contact-container .image-absolute {
+.contact-container .image-absolute {
     bottom: 5%;
-  }
+}
 }
 
 @media (max-width: 1199px) {
   .info-container .title-info h4 {
     font-size: 24px;
-  }
-  .contact-container .title-content h3 {
+}
+  .contact-container {
+    padding: 5rem 0 !important;
+}
+
+.contact-container .title-content h3 {
     font-size: 80px;
-  }
+}
+  
 }
 @media (max-width: 991px) {
+  
   .contact-container .input-body {
     margin-left: 0;
-  }
+}
 
-  .contact-container .image-absolute {
+.contact-container .image-absolute {
     bottom: 0;
-  }
+}
 }
 
 @media (max-width: 767px) {
@@ -952,34 +960,41 @@ header ul li {
     padding-bottom: 0;
     order: 1;
   }
+ 
   .info-container .info-body {
     text-align: center;
-  }
+}
 
-  .info-container .image-info {
+.info-container .image-info {
     margin: 0 auto;
-  }
+}
 
-  .info-container .icon-content,
-  .info-container .info-item {
+.info-container .icon-content,
+.info-container .info-item {
     justify-content: center;
-  }
+}
 
   .contact-container {
-    padding: 5rem 0 !important;
-  }
+    padding: 2rem 0 !important;
+}
 
-  .contact-container .title-content h3 {
+.contact-container .title-content h3 {
     font-size: 80px;
-  }
+}
 
-  .contact-container .title-content h3 {
+.contact-container .title-content h3 {
     font-size: 60px;
-  }
+}
 
-  .contact-container .input-container {
+.contact-container .input-container {
     flex-direction: column;
-  }
+}
+
+.contact-container::before {
+    bottom: -15%;
+}
+
+
 }
 
 @media (max-width: 425px) {
