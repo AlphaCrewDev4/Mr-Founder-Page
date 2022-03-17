@@ -11,7 +11,7 @@
   --light: rgb(220, 245, 251);
   --letterBlueStrong: rgb(35, 168,224);
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Zen+Kaku+Gothic+Antique:wght@300;700&display=swap');
 
 /*Globals*/
 
@@ -29,7 +29,7 @@ button:hover{
 body {
   font-size: 20px !important;
 
-  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+font-family: 'Zen Kaku Gothic Antique', sans-serif !important;
 }
 
 .button-dark {
@@ -48,7 +48,7 @@ body {
   display: block;
   text-transform: capitalize;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   background-color: var(--pinkStrong);
   color: white;
   padding: 1rem 2rem;
@@ -60,6 +60,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 .tc-center-only {
   display: flex;
@@ -156,7 +157,7 @@ header ul li {
   
 }
 .title-color {
-  font-size: 3.5rem;
+  font-size: 2rem;
   color: var(--pinkStrong);
 }
 
@@ -235,7 +236,7 @@ header ul li {
   
 }
 .second-cont .title-color{
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 /**Three*/
@@ -281,6 +282,7 @@ background-color: var(--light);
 
 
 /**Four*/
+
 .cont-seven{
   width: 100%;
 }
@@ -314,7 +316,7 @@ background-color: var(--light);
 
 .four h2 {
   color: var(--blueLight);
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -368,9 +370,7 @@ background-color: var(--light);
 .for-bottom{
   margin-bottom: 4rem;
 }
-.four h2{
-  font-size: 3rem;
-}
+
 /**/
 .content-boxs{
   display: flex;
@@ -405,10 +405,7 @@ background-color: var(--light);
   font-weight: bold;
   
 }
-.five-title-color {
-  color: var(--blueLight);
-  font-size: 3.5rem;
-}
+
 .l1{
   font-size: 2rem;
 }
@@ -459,6 +456,7 @@ line-height: 1;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  
 }
 .number{
   width: 8rem;
@@ -466,7 +464,24 @@ line-height: 1;
 
 .l3{
   font-size: 1.2rem;
-  line-height: 1.2;
+  line-height: 1.4;
+}
+.al {
+  line-height: 2;
+}
+
+.five-content h2{
+  font-size: 1.5rem;
+  text-align: center;
+}
+.five-content .five-title-color{
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--pinkStrong);
+}
+.five-content .five-title-margin{
+
+  text-align: center;
 }
 
 /*six*/
@@ -474,9 +489,7 @@ line-height: 1;
   color: var(--blueLight);
 }
 
-.six .five-title-color {
-  color: var(--pinkStrong);
-}
+
 .six-btn {
   background-color: var(--pinkStrong);
 }
@@ -745,7 +758,7 @@ line-height: 1;
    
   }
   .second-cont .title-color{
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
  }
@@ -764,7 +777,7 @@ line-height: 1;
   }
 
   .four h2{
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .four-text{
     padding: 2rem;
@@ -780,6 +793,14 @@ line-height: 1;
   }
  
 
+  .second-cont .title-color{
+    font-size: 4rem;
+  }
+
+  .title-color {
+    font-size: 2.5rem;
+    color: var(--pinkStrong);
+  }
 
 
  }
@@ -797,40 +818,64 @@ line-height: 1;
   
   }
   .three-1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: start;
     margin-left: 5rem;
   }
   .three-2{
     color: var(--blueLight);
     text-align: center;
-    font-size: 5rem;
+    font-size: 3rem;
   }
   .three-3{
     text-align: end;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
+
+
+  
+  .five .three-1 {
+    font-size: 1.5rem;
+    text-align: start;
+    margin-left: 5rem;
+  }
+  .five .three-2{
+    color: var(--blueLight);
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .five .three-3{
+    text-align: end;
+    font-size: 1.5rem;
+  }
+
   .four h2{
-    font-size: 5rem;
+    font-size: 4rem;
   }
   .content-card{
     margin-top: 4rem;
   position: relative;
   left: 2rem;
   }
-  .five-content h2 {
-    padding: 0 2rem;
-    font-size: 1.6rem;
-    font-weight: bold;
+ 
+  .five-content h2{
+    font-size: 1.5rem;
+    text-align: start;
   }
-  .five-title-color {
-    color: var(--blueLight);
-    font-size: 3rem;
-    margin-left: 7rem;
+  .five-content .five-title-color{
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--pinkStrong);
   }
-  .five-title-margin {
-   text-align: end;
+  .five-content .five-title-margin{
+  
+    text-align: end;
   }
+
+
+
+
+  
   .five-content {
     width: 80%;
     padding: 4rem 4rem 2rem 4rem;
@@ -849,6 +894,11 @@ line-height: 1;
 
   
 }
+.title-color {
+  font-size: 3rem;
+  color: var(--pinkStrong);
+}
+
  }
 
 
@@ -894,6 +944,38 @@ background-repeat: no-repeat;
 
 
   
+}
+.five .three-1 {
+  font-size: 1.5rem;
+  text-align: start;
+  margin-left: 5rem;
+}
+.five .three-2{
+  color: var(--blueLight);
+  text-align: center;
+  font-size: 3rem;
+}
+.five .three-3{
+  text-align: end;
+  font-size: 1.5rem;
+}
+
+.five-content h2{
+  font-size: 1.5rem;
+  text-align: start;
+}
+.five-content .five-title-color{
+  font-size: 3rem;
+  text-align: center;
+  color: var(--pinkStrong);
+}
+.five-content .five-title-margin{
+
+  text-align: end;
+}
+.title-color {
+  font-size: 3.5rem;
+  color: var(--pinkStrong);
 }
  }
 
@@ -1019,3 +1101,43 @@ position: relative;
           height: 50%;
           z-index: -10;
     }
+
+    .posicion3{
+
+   
+   
+      position: relative;
+      
+      }
+      .posicion3::after{
+        content: '';
+        background-color:rgb(219, 246, 251);
+          position: absolute;
+             
+        bottom: 0;
+              width: 100vw;
+              height: 50%;
+              z-index: -10;
+        }
+
+
+.top-card{
+  position: relative;
+}
+
+.top-card::before{
+  content: '';
+        background-color:red;
+          position: absolute;
+             
+        bottom: 0;
+      width: 100%;
+              height: 50%;
+              z-index: 10;
+        
+}
+
+.move-row{
+  position: relative;
+  top: 3rem;
+}

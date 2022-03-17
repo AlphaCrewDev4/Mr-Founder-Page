@@ -20,12 +20,9 @@ html {
 *:after {
   box-sizing: inherit;
 }
-@import url("https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap");
 
-@font-face {
-  font-family: "HeyComic";
-  src: url("../assets/fonts/HeyComic.ttf");
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Zen+Kaku+Gothic+Antique:wght@300;700&display=swap');
 
 button:hover{
 
@@ -40,7 +37,9 @@ button:hover{
 body {
   font-size: 20px !important;
 
-  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+ 
+font-family: 'Zen Kaku Gothic Antique', sans-serif !important;
+
 }
 .img-adaptation {
   object-fit: cover;
@@ -109,7 +108,9 @@ header ul li {
 /*Second*/
 .second h2 {
   color: var(--pinkStrong);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+font-family: 'Zen Kaku Gothic Antique', sans-serif !important;
+
   font-size: 5rem;
   font-weight: bolder;
 }
@@ -198,7 +199,9 @@ h3 {
 /**Cuatro*/
 .four h2 {
   color: var(--blueMoreLigth) !important;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+font-family: 'Zen Kaku Gothic Antique', sans-serif !important;
+
   font-size: 5rem;
   font-weight: bolder;
 }
@@ -268,13 +271,11 @@ h3 {
 }
 
 .expect-options {
-
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  line-height: 1;
+  line-height: 0;
 }
 .expect-options p {
   text-align: justify;
@@ -997,7 +998,6 @@ footer h3{
       margin-right: 0.5rem !important;
   }
 }
-
 
 
 
