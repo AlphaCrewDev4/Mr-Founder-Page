@@ -77,7 +77,30 @@ body {
   background-color: var(--line);
   margin-bottom: 4rem;
 }
+.space{
+  height: 15px;
+}
 
+.size-icon{
+  width: 20%;
+}
+.posicionar{
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-size{
+  margin: 0 auto;
+  width: 100%;
+}
+.phone-size2{
+  margin: 0 auto;
+  width: 100%;
+}
+.l33{
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
 /*header*/
 header {
   background-image: url("../images/imagesCustom/1.png");
@@ -138,6 +161,13 @@ header ul li {
 /**first*/
 .first h2 {
   text-align: left;
+  font-size: 1.6rem;
+  text-align: center;
+
+}
+.first .title-color {
+  font-size: 2.35rem;
+  
 }
 .first-content {
   z-index: 1;
@@ -145,6 +175,7 @@ header ul li {
 
 .first-text {
   font-size: 1.5rem;
+  padding: 0 2rem;
 }
 .title-color {
   font-size: 2rem;
@@ -156,9 +187,8 @@ header ul li {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.first .title-color {
-  font-size: 2rem;
-}
+
+
 
 .guy1 {
   display: flex;
@@ -167,8 +197,8 @@ header ul li {
 .first-items {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: flex;
-  gap: 1rem;
-  padding: 1rem 1rem;
+  justify-content: space-between;
+  padding: 0rem 0.5rem;
 }
 .first h3 {
   font-size: 1rem;
@@ -178,7 +208,8 @@ header ul li {
   gap: 1rem;
 }
 .first-items h3 {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
 }
 
 /**second*/
@@ -236,6 +267,7 @@ header ul li {
 
 .three-subtitle {
   font-size: 1.2rem;
+  padding: 0 2rem;
 }
 .card {
   padding: 0 !important;
@@ -283,7 +315,7 @@ header ul li {
 
   position: absolute;
   width: 100%;
-  height: 40rem;
+  height: 35rem;
   bottom: 15rem;
   z-index: -1;
 }
@@ -312,11 +344,13 @@ header ul li {
 }
 
 .four-row-pink {
-  padding: 1.5rem 5rem;
+  padding: 1rem 1rem;
   background-color: var(--pinkMoreStrong);
   color: white;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
+
+
 .four-cards {
   padding: 1rem;
   display: flex;
@@ -329,13 +363,13 @@ header ul li {
   padding: 2rem;
 }
 .title {
-  width: 20rem;
+  
 }
 .four-text {
-  padding: 1.5rem;
+  padding:  0.5rem 0.5rem;
 }
 .content-card {
-  margin-top: auto;
+  padding: 2rem;
 }
 .for-top {
   margin-top: 4rem;
@@ -363,9 +397,7 @@ header ul li {
   font-size: 1.3rem;
 }
 .guy2 {
-  display: block;
-  margin: 0 auto;
-  width: 20rem;
+
 }
 
 /*five*/
@@ -429,8 +461,9 @@ header ul li {
   font-size: 1.2rem;
   line-height: 1.4;
 }
+
 .al {
-  line-height: 2;
+  line-height: 1.6;
 }
 
 .five-content h2 {
@@ -715,7 +748,7 @@ header ul li {
 
 @media (min-width: 576px) {
   .first .title-color {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .second-cont .title-color {
     font-size: 3rem;
@@ -724,7 +757,7 @@ header ul li {
 
 @media (min-width: 768px) {
   .title-margin {
-    margin-left: 10rem;
+    margin-left: 5rem;
   }
 
   .first-btn {
@@ -735,12 +768,10 @@ header ul li {
     font-size: 3rem;
   }
   .four-text {
-    padding: 2rem;
+    padding:  1rem 0.5rem;
     text-align: center;
   }
-  .title {
-    width: 35rem;
-  }
+ 
 
   .l1 {
     font-size: 3.5rem;
@@ -754,11 +785,19 @@ header ul li {
     font-size: 2.5rem;
     color: var(--pinkStrong);
   }
+ 
+.phone-size{
+  width: 62.5%;
+}
+.phone-size2{
+ 
+  width: 62.5%;
+}
 }
 
 @media (min-width: 992px) {
   .first-text {
-    margin-left: 8rem;
+    margin-left: 0rem;
     font-size: 1.2rem;
     line-height: 1.2;
   }
@@ -795,11 +834,7 @@ header ul li {
   .four h2 {
     font-size: 4rem;
   }
-  .content-card {
-    margin-top: 4rem;
-    position: relative;
-    left: 2rem;
-  }
+
 
   .five-content h2 {
     font-size: 1.5rem;
@@ -832,20 +867,82 @@ header ul li {
     font-size: 3rem;
     color: var(--pinkStrong);
   }
+  .move-first{
+    position: relative;
+    bottom: 5rem;
+    right: 5rem;
+  }
+  .espace{
+    height: 150px;
+  }
+  .first h2 {
+   
+    text-align: left;
+  
+  }
+  .size-icon{
+    width: 25%;
+  }
+  .first-items h3 {
+    font-size: 0.9rem;
+    
+  }
+  .four-row-pink {
+    padding: 1.5rem 5rem;
+
+    font-size: 2.5rem;
+  }
+  .guy2 {
+ 
+   width: 31rem;
+  }
+  .four-move1{
+    position: relative;
+    bottom: 2rem;
+    right: 3rem;
+  }
+  .move-container{
+    position: relative;
+    top: 1rem;
+  }
+  .move-cart{
+    position: relative;
+    bottom: 1.5rem;
+  }
+  .move-text{
+    position: relative;
+    left: 5rem;
+  }
+  .title {
+    position: relative;
+    left: 5rem;
+
+    width: 30rem;
+  }
+  .phone-size{
+    width: 100%;
+  }
+  .phone-size2{
+  
+    width: 100%;
+  }
+  .l3 {
+    font-size: 1.1rem;
+    line-height: 1.1;
+  }
 }
 
 @media (min-width: 1200px) {
   .guy1 {
     position: relative;
-    left: 6rem;
+    left: 2rem;
     display: flex;
     justify-content: flex-end;
   }
   .guy2 {
-    width: 40rem;
-    position: relative;
-    right: 4rem;
-  }
+ 
+    width: 36rem;
+   }
   .targetOne {
     background-image: url(../images/imagesCustom/9.png);
     background-size: cover;
@@ -904,6 +1001,34 @@ header ul li {
     font-size: 3.5rem;
     color: var(--pinkStrong);
   }
+  .move-first{
+    position: relative;
+    right: 2.5rem;  bottom: 0rem;
+  }
+  .espace{
+    height: 135px;
+  }
+  .move-container{
+    position: relative;
+    top: 3rem;
+  }
+  .move-cart{
+    position: relative;
+    bottom: 1.5rem;
+  }
+  .phone-size{
+    width: 100%;
+  }
+  .phone-size2{
+  
+    width: 100%;
+  }
+  .l3 {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+
 }
 
 @media (min-width: 1399px) {
@@ -913,6 +1038,24 @@ header ul li {
 
 .contact-container .image-absolute {
     bottom: 5%;
+}
+.move-guy{
+  position: relative;
+  bottom: 5rem;
+}
+.espace{
+  height: 160px;
+}
+.guy2 {
+ 
+  width: 36rem;
+ }
+ .phone-size{
+  width: 80%;
+}
+.l33{
+  font-size: 1.2rem;
+  line-height: 1.4;
 }
 }
 

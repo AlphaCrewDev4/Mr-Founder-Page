@@ -62,44 +62,63 @@
       <section class="custom-nav">
         <div class="custom-nav-body">
           <div class="custom-nav-left">
-              <ul class="custom-nav-list">
-                  <li class="custom-nav-item">
-                      <a href="index.html">Home</a>
+            <ul class="custom-nav-list">
+              <li class="custom-nav-item">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="custom-nav-item">
+                <a
+                  class="dropdown-toggle"
+                  type="button"
+                  id="dropdownMenu2"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul
+                  class="dropdown-menu custom-burger-item"
+                  aria-labelledby="dropdownMenu2"
+                >
+                  <li class="active"><a href="#home">Animation</a></li>
+                  <li class="">
+                    <a href="custom.html">Software Development</a>
                   </li>
-                  <li class="custom-nav-item">
-                      <a class="dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                        Services
-                      </a>
-                      <ul class="dropdown-menu custom-burger-item" aria-labelledby="dropdownMenu2">
-                        <li class="active"><a href="#home">Animation</a></li>
-                        <li class=""><a href="custom.html">Software Development</a></li>
-                        <li class=""><a href="marketing.html">Digital Marketing</a></li>
-                      </ul>
+                  <li class="">
+                    <a href="marketing.html">Digital Marketing</a>
                   </li>
-                  <li class="custom-nav-item">
-                      <a href="#">About us</a>
-                  </li>
-                  <li class="custom-nav-item">
-                      <a href="#">Clients</a>
-                  </li>
-                  <li class="custom-nav-item">
-                      <a href="#">Contact</a>
-                  </li>
-              </ul>
+                </ul>
+              </li>
+              <li class="custom-nav-item">
+                <a href="#">About us</a>
+              </li>
+              <li class="custom-nav-item">
+                <a href="#">Clients</a>
+              </li>
+              <li class="custom-nav-item">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
           </div>
           <div class="custom-nav-right">
-              <div class="custom-menu-responsive">
-                  <input id="menu-toggle" type="checkbox" />
-                  <label class='menu-button-container' for="menu-toggle">
-                      <div class='menu-button'></div>
-                  </label>
-              </div>
-              <div class="logo-container d-flex justify-content-end">
-                  <a class="d-flex justify-content-end custom-link-logo" href="index.html"><img class="logo"
-                          src="images/Assets-Home/3.png" alt="logo-mrfounder" /></a>
-              </div>
+            <div class="custom-menu-responsive">
+              <input id="menu-toggle" type="checkbox" />
+              <label class="menu-button-container" for="menu-toggle">
+                <div class="menu-button"></div>
+              </label>
+            </div>
+            <div class="logo-container d-flex justify-content-end">
+              <a
+                class="d-flex justify-content-end custom-link-logo"
+                href="index.html"
+                ><img
+                  class="logo"
+                  src="images/Assets-Home/3.png"
+                  alt="logo-mrfounder"
+              /></a>
+            </div>
           </div>
-      </div>
+        </div>
       </section>
 
       <section class="posicion">
@@ -109,7 +128,7 @@
           <div class="row">
             <div
               class="col-lg-6 phone-tp"
-              data-aos="fade-down"
+              data-aos="fade-left"
               data-aos-anchor-placement="top-bottom"
               data-aos-delay="250"
               data-aos-duration="2500"
@@ -143,14 +162,14 @@
             </div>
           </div>
         </div>
-        <div style="height: 160px"></div>
+        <div class="espace"></div>
       </section>
       <main class="first">
         <section class="container">
           <div class="row">
             <div
-              class="col-xl-6 guy1"
-              data-aos="fade-left"
+              class="col-lg-6 guy1 move-guy order-last order-lg-first"
+              data-aos="blank"
               data-aos-anchor-placement="top-bottom"
               data-aos-delay="250"
               data-aos-duration="2500"
@@ -159,47 +178,51 @@
                 class="card border-0 h-100"
                 style="background-color: transparent"
               >
-                <img
-                  class="img-fluid flex-md-grow-1"
-                  src="./images/imagesCustom/4.png"
-                  alt="guy1"
-                />
+                <div class="guy1">
+                  <img
+                    class="flex-lg-grow-1"
+                    src="./images/imagesCustom/4.png"
+                    alt="guy1"
+                  />
+                </div>
               </div>
             </div>
             <div
-              class="col-xl-6 first-content"
-              data-aos="fade-up"
+              class="col-lg-6 first-content move-first"
+              data-aos="blank"
               data-aos-anchor-placement="top-bottom"
               data-aos-delay="250"
               data-aos-duration="2500"
             >
-              <h2 class="mb-5 mt-5 fw-bold">
-                Wondering if<br />
-                <span class="title-color">Software Development</span><br />
-                <span class="title-margin"
-                  >is the right step for your business?</span
-                >
-              </h2>
+              <div class="p-2">
+                <h2 class="mb-5 mt-5 fw-bold">
+                  Wondering if<br />
+                  <span class="title-color">Software Development</span><br />
+                  <span class="title-margin"
+                    >is the right step for your business?</span
+                  >
+                </h2>
+              </div>
+              <div class="title-margin">
+                <p class="first-text">
+                  Mr. Found3r has been in the software development business for
+                  over 5 years, and we know that not every company needs or
+                  wants custom software.<br /><br />
 
-              <p class="first-text">
-                Mr. Found3r has been in the software development<br />
-                business for over 5 years, and we know that not every<br />
-                company needs or wants custom software.<br /><br />
+                  That’s why we offer a wide range of services – so you can find
+                  the perfect one for your business.<br /><br />
 
-                That’s why we offer a wide range of services – so you<br />
-                can find the perfect one for your business.<br /><br />
+                  We also have a team of experienced developers who are
+                  passionate about helping businesses grow.<br /><br />
 
-                We also have a team of experienced developers who<br />
-                are passionate about helping businesses grow.<br /><br />
-
-                <span class="fw-bold">What To Expect:</span><br />
-              </p>
-
+                  <span class="fw-bold">What To Expect:</span><br />
+                </p>
+              </div>
               <div class="container-lg">
                 <div class="row">
                   <div
                     class="col-lg-6 my-2"
-                    data-aos="zoom-in-up"
+                    data-aos="blank"
                     data-aos-anchor-placement="top-bottom"
                     data-aos-delay="250"
                     data-aos-duration="2500"
@@ -207,24 +230,28 @@
                     <div class="bg-primary text-light">
                       <div class="first-items bg-white">
                         <img
-                          class="img-fluid"
-                          style="width: 5rem"
+                          class="img-fluid size-icon"
                           src="./images/imagesCustom/5.png"
                           alt="mini1"
                         />
-                        <h3
-                          class="text-center tc-center fw-bold"
-                          style="color: var(--letterBlueStrong)"
+
+                        <div
+                          style="width: 100%"
+                          class="d-flex justify-content-center align-content-center"
                         >
-                          Customized service<br />
-                          tailored to your needs
-                        </h3>
+                          <h3
+                            class="text-center tc-center fw-bold"
+                            style="color: var(--letterBlueStrong)"
+                          >
+                            Customized service tailored to your needs
+                          </h3>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div
                     class="col-lg-6 my-2"
-                    data-aos="zoom-in-up"
+                    data-aos="blank"
                     data-aos-anchor-placement="top-bottom"
                     data-aos-delay="250"
                     data-aos-duration="2500"
@@ -232,17 +259,21 @@
                     <div class="bg-primary text-light">
                       <div class="first-items bg-white">
                         <img
-                          class="img-fluid"
-                          style="width: 5rem"
+                          class="img-fluid size-icon"
                           src="./images/imagesCustom/6.png"
                           alt="mini1"
                         />
-                        <h3
-                          class="text-center tc-center fw-bold"
-                          style="color: var(--letterBlueStrong)"
+                        <div
+                          style="width: 100%"
+                          class="d-flex justify-content-center align-content-center"
                         >
-                          Guaranteed deliverables
-                        </h3>
+                          <h3
+                            class="text-center tc-center fw-bold"
+                            style="color: var(--letterBlueStrong)"
+                          >
+                            Guaranteed deliverables
+                          </h3>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -252,7 +283,7 @@
                 <div class="row">
                   <div
                     class="col-lg-6 my-2"
-                    data-aos="zoom-in-up"
+                    data-aos="blank"
                     data-aos-anchor-placement="top-bottom"
                     data-aos-delay="250"
                     data-aos-duration="2500"
@@ -260,24 +291,27 @@
                     <div class="bg-primary text-light">
                       <div class="first-items bg-white">
                         <img
-                          class="img-fluid"
-                          style="width: 5rem"
+                          class="img-fluid size-icon"
                           src="./images/imagesCustom/7.png"
                           alt="mini1"
                         />
-                        <h3
-                          class="text-center tc-center fw-bold"
-                          style="color: var(--letterBlueStrong)"
+                        <div
+                          style="width: 100%"
+                          class="d-flex justify-content-center align-content-center"
                         >
-                          Highly efficient<br />
-                          development process
-                        </h3>
+                          <h3
+                            class="text-center tc-center fw-bold"
+                            style="color: var(--letterBlueStrong)"
+                          >
+                            Highly efficient development process
+                          </h3>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div
                     class="col-lg-6 my-2"
-                    data-aos="zoom-in-up"
+                    data-aos="blank"
                     data-aos-anchor-placement="top-bottom"
                     data-aos-delay="250"
                     data-aos-duration="2500"
@@ -285,27 +319,30 @@
                     <div class="bg-primary text-light">
                       <div class="first-items bg-white">
                         <img
-                          class="img-fluid"
-                          style="width: 5rem"
+                          class="img-fluid size-icon"
                           src="./images/imagesCustom/8.png"
                           alt="mini1"
                         />
-                        <h3
-                          class="text-center tc-center fw-bold"
-                          style="color: var(--letterBlueStrong)"
+                        <div
+                          style="width: 100%"
+                          class="d-flex justify-content-center align-content-center"
                         >
-                          Fixed cost or on a time<br />
-                          and materials, basis
-                        </h3>
+                          <h3
+                            class="text-center tc-center fw-bold"
+                            style="color: var(--letterBlueStrong)"
+                          >
+                            Fixed cost or on a time and materials, basis
+                          </h3>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="tc-center">
-                <button class="btn button-dark first-btn">
-                  Book your free Consultation
-                </button>
+                <div class="tc-center">
+                  <button class="btn button-dark first-btn">
+                    Book your free Consultation
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -330,7 +367,7 @@
           <div class="row d-flex justify-content-center align-content-center">
             <div
               class="col-xl-2 mx-1 my-2 targetOne"
-              data-aos="fade-right"
+              data-aos="blank"
               data-aos-anchor-placement="top-bottom"
               data-aos-delay="250"
               data-aos-duration="2500"
@@ -345,7 +382,7 @@
 
             <div
               class="col-xl-2 mx-2 my-2 targetTwo"
-              data-aos="zoom-in-up"
+              data-aos="blank"
               data-aos-anchor-placement="top-bottom"
               data-aos-delay="250"
               data-aos-duration="2500"
@@ -358,7 +395,7 @@
 
             <div
               class="col-xl-2 mx-2 my-2 targetThree"
-              data-aos="zoom-in-up"
+              data-aos="blank"
               data-aos-anchor-placement="top-bottom"
               data-aos-delay="250"
               data-aos-duration="2500"
@@ -372,8 +409,8 @@
             <div
               class="col-xl-2 myx-2 my-2 targetFour"
               style="padding: 4rem 1rem 0.5rem 1rem"
-              data-aos="fade-right"
-              data-aos-anchor-placement="fade-left"
+              data-aos="blank"
+              data-aos-anchor-placement="blank"
               data-aos-delay="250"
               data-aos-duration="2500"
             >
@@ -406,7 +443,7 @@
           <div class="row">
             <div
               class="col-lg-6 d-flex flex-column align-items-center"
-              data-aos="fade-right"
+              data-aos="blank"
               data-aos-anchor-placement="top-bottom"
               data-aos-delay="250"
               data-aos-duration="2500"
@@ -443,7 +480,7 @@
 
             <div
               class="col-lg-6"
-              data-aos="fade-down"
+              data-aos="blank"
               data-aos-anchor-placement="top-bottom"
               data-aos-delay="250"
               data-aos-duration="2500"
@@ -478,35 +515,49 @@
       <div class="container-fluid cont-flu-seven">
         <section class="container four-card">
           <div
-            class="row move-row"
-            data-aos="zoom-in-up"
+            class="row move-container"
+            data-aos="blank"
             data-aos-anchor-placement="top-bottom"
             data-aos-delay="250"
             data-aos-duration="2500"
           >
             <div class="col-lg-6 content-card">
               <div class="d-flex flex-column align-items-center">
-                <div class="card border-0 h-100">
+                <div class="card border-0 h-100"
+                style="background-color: transparent;">
+
+                  <div class="title">
                   <img
-                    class="title img-fluid flex-md-grow-1 img-adaptation"
-                    src="./images/imagesCustom/title.PNG"
+                    class="img-fluid flex-md-grow-1 "
+                    src="./images/imagesCustom/24.png"
                     alt="title"
                   />
                 </div>
+                </div>
+                <div class="move-text">
                 <p class="four-text">
                   This will give you the opportunity to test and measure
                   customer reactions, as well as make sure the business model is
                   sound before investing too much time or money into it.
                 </p>
               </div>
+              </div>
             </div>
             <div class="col-lg-6 four-move1">
-              <img class="guy2" src="./images/imagesCustom/15.png" alt="guy2" />
+              <div class="card border-0 h-100"
+              style="background-color: transparent;">
+                <div class="guy2">
+                <img class="img-fluid flex-md-grow-0"
+                src="./images/imagesCustom/15.png" 
+                alt="guy2" />
+              </div>
+              </div>
+           
             </div>
           </div>
           <div
-            class="row"
-            data-aos="fade-up"
+            class="row move-cart"
+            data-aos="blank"
             data-aos-anchor-placement="top-bottom"
             data-aos-delay="250"
             data-aos-duration="2500"
@@ -520,7 +571,7 @@
           </div>
           <div class="row">
             <div class="col-12">
-              <p class="text-center mt-3">
+              <p class="text-center mt-3 p-2">
                 Mr. Found3r will handle all of the technical aspects so that
                 <br />
                 you can get back to doing what’s important
@@ -529,7 +580,7 @@
               <p class="text-center fw-bold">growing your business!</p>
               <div
                 class="tc-center p-4"
-                data-aos="zoom-in-up"
+                data-aos="blank"
                 data-aos-anchor-placement="top-bottom"
                 data-aos-delay="250"
                 data-aos-duration="2500"
@@ -545,7 +596,7 @@
         <div class="row content-boxs ps-5 pe-5">
           <div
             class="col-md-6 my-2 mx-3 color-card"
-            data-aos="zoom-in-up"
+            data-aos="blank"
             data-aos-anchor-placement="top-bottom"
             data-aos-delay="250"
             data-aos-duration="2500"
@@ -563,7 +614,7 @@
           </div>
           <div
             class="col-md-6 my-2 mx-3 color-card"
-            data-aos="zoom-in-up"
+            data-aos="blank"
             data-aos-anchor-placement="top-bottom"
             data-aos-delay="250"
             data-aos-duration="2500"
@@ -580,7 +631,7 @@
           </div>
           <div
             class="col-md-6 my-2 mx-3 color-card"
-            data-aos="zoom-in-down"
+            data-aos="blank"
             data-aos-anchor-placement="top-bottom"
             data-aos-delay="250"
             data-aos-duration="2500"
@@ -597,7 +648,7 @@
           </div>
           <div
             class="col-md-6 my-2 mx-3 color-card"
-            data-aos="zoom-in-up"
+            data-aos="blank"
             data-aos-anchor-placement="top-bottom"
             data-aos-delay="250"
             data-aos-duration="2500"
@@ -638,7 +689,7 @@
               <div class="three-h1-content">
                 <h2 class="three-1 fw-bold mt-5">That's where we come in</h2>
                 <h2 class="three-2 fw-bold">Let us take care of everything</h2>
-                <h2 class="three-3 fw-bold mb-5">
+                <h2 class="three-3 fw-bold ">
                   so you can focus on what you're good at
                 </h2>
               </div>
@@ -647,7 +698,7 @@
           <div class="row">
             <div
               class="col-lg-6"
-              data-aos="fade-right"
+              data-aos="blank"
               data-aos-anchor-placement="top-bottom"
               data-aos-delay="250"
               data-aos-duration="2500"
@@ -656,21 +707,23 @@
                 class="card border-0 h-100"
                 style="background-color: transparent"
               >
+              <div class="phone-size">
                 <img
-                  class="img-fluid flex-md-grow-1 img-adaptation"
+                  class=" flex-md-grow-0"
                   src="./images/imagesCustom/20.png"
                   alt="phone"
                 />
               </div>
+              </div>
             </div>
             <div
               class="col-lg-6"
-              data-aos="fade-down"
+              data-aos="blank"
               data-aos-anchor-placement="top-bottom"
               data-aos-delay="250"
               data-aos-duration="2500"
             >
-              <p class="tc-center al mt-5 l3">
+              <p class="tc-center al mt-5  p-2">
                 We've been doing this for a long time, and we know what works
                 and what doesn't when it comes to developing web apps and
                 interactive websites.<br /><br />
@@ -686,7 +739,7 @@
                 mobile presence, so we're offering our services at a fraction of
                 the cost of our competitors.
               </p>
-              <p><span class="fw-bold">What To Expect:</span></p>
+              <p><span class="fw-bold pt-0 ps-2 pb-0 pe-0">What To Expect:</span></p>
             </div>
           </div>
         </div>
@@ -697,7 +750,7 @@
           <div class="row five-cards">
             <div
               class="col-lg-3 my-2"
-              data-aos="zoom-in-up"
+              data-aos="blank"
               data-aos-anchor-placement="top-bottom"
               data-aos-delay="250"
               data-aos-duration="2500"
@@ -716,7 +769,7 @@
 
             <div
               class="col-lg-3 my-2"
-              data-aos="zoom-in-up"
+              data-aos="blank"
               data-aos-anchor-placement="top-bottom"
               data-aos-delay="250"
               data-aos-duration="2500"
@@ -735,7 +788,7 @@
 
             <div
               class="col-lg-3 my-2"
-              data-aos="zoom-in-up"
+              data-aos="blank"
               data-aos-anchor-placement="top-bottom"
               data-aos-delay="250"
               data-aos-duration="2500"
@@ -759,7 +812,7 @@
       <div class="tc-center p-0 m-0">
         <button
           class="btn button-light mb-5"
-          data-aos="fade-up"
+          data-aos="blank"
           data-aos-anchor-placement="top-bottom"
           data-aos-delay="250"
           data-aos-duration="2500"
@@ -787,19 +840,18 @@
       <section class="five six">
         <div class="five-content container">
           <div class="row">
-            <h2 class="mt-md-5 mt-xl-3">Wondering if you're</h2>
+            <h2 class="mt-3 mt-xl-3">Wondering if you're</h2>
             <h2 class="five-title-color">Doing enough to get ahead</h2>
-            <h2 class="five-title-margin mb-5 mt-2">of the competition?</h2>
+            <h2 class="five-title-margin mt-2">of the competition?</h2>
           </div>
           <div class="row">
             <div
               class="col-lg-6"
-              data-aos="fade-right"
-              data-aos-anchor-placement="top-bottom"
-              data-aos-delay="250"
-              data-aos-duration="2500"
+             
             >
-              <p class="l3">
+              <p class="l33">
+                <br>
+                <br>
                 You're not alone. A lot of business owners feel like they need
                 to do more, but don't know where to start.<br /><br />
 
@@ -822,20 +874,19 @@
             </div>
             <div
               class="col-lg-6"
-              data-aos="fade-down"
-              data-aos-anchor-placement="top-bottom"
-              data-aos-delay="250"
-              data-aos-duration="2500"
+          
             >
               <div
                 class="card border-0 h-100"
                 style="background-color: transparent"
               >
+              <div class="phone-size2">
                 <img
-                  class="img-fluid flex-md-grow-1 img-adaptation"
+                  class="flex-md-grow-0 "
                   src="./images/imagesCustom/21.png"
                   alt="phone2"
                 />
+              </div>
               </div>
             </div>
           </div>
@@ -847,7 +898,7 @@
           <div class="row five-cards">
             <div
               class="col-lg-3 my-2"
-              data-aos="zoom-in-up"
+              data-aos="blank"
               data-aos-anchor-placement="top-bottom"
               data-aos-delay="250"
               data-aos-duration="2500"
@@ -866,7 +917,7 @@
 
             <div
               class="col-lg-3 my-2"
-              data-aos="zoom-in-up"
+              data-aos="blank"
               data-aos-anchor-placement="top-bottom"
               data-aos-delay="250"
               data-aos-duration="2500"
@@ -885,7 +936,7 @@
 
             <div
               class="col-lg-3 my-2"
-              data-aos="zoom-in-up"
+              data-aos="blank"
               data-aos-anchor-placement="top-bottom"
               data-aos-delay="250"
               data-aos-duration="2500"
@@ -908,7 +959,7 @@
       <div class="tc-center p-0 mb-5">
         <button
           class="btn btn-more fw-bold six-btn mt-4"
-          data-aos="fade-down"
+          data-aos="blank"
           data-aos-anchor-placement="top-bottom"
           data-aos-delay="250"
           data-aos-duration="2500"
@@ -917,161 +968,189 @@
         </button>
       </div>
 
-   
-      <section class="col-12 contact-container"
-      data-aos="zoom-in-up"
-      data-aos-anchor-placement="top-bottom"
-      data-aos-delay="250"
-      data-aos-duration="2500">
+      <section
+        class="col-12 contact-container"
+        data-aos="blank"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-delay="250"
+        data-aos-duration="2500"
+      >
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <div class="d-flex flex-column" style="position: relative;" data-aos="fade-right"
-                        data-aos-duration="2000">
-                        <div class="title-content">
-                            <h3>Contact us</h3>
-                        </div>
-                        <div class="text-content">
-                            <p>Are you interested in our services?
-                                Do not hesitate! contact us by any
-                                means and we will gladly assist you.</p>
-                        </div>
-                        <div class="image-absolute">
-                            <img src="images/Assets-Home/13.png" alt="image-test" />
-                        </div>
-                    </div>
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div
+                class="d-flex flex-column"
+                style="position: relative"
+                data-aos="blank"
+                data-aos-duration="2000"
+              >
+                <div class="title-content">
+                  <h3>Contact us</h3>
                 </div>
-                <div class="col-12 col-lg-6">
-                    <div class="input-body d-flex flex-column" data-aos="fade-left"
-                        data-aos-duration="2000">
-                        <div class="input-container d-flex">
-                            <input class="custom-input" type="text" placeholder="Name" />
-                            <input class="custom-input" type="text" placeholder="Email" />
-                        </div>
-                        <div class="input-container d-flex">
-                            <input class="custom-input" type="text" placeholder="Phone" />
-                            <input class="custom-input" type="text" placeholder="Location" />
-                        </div>
-                        <div class="button-container">
-                            <a href="#">Send Message</a>
-                        </div>
-                    </div>
+                <div class="text-content">
+                  <p>
+                    Are you interested in our services? Do not hesitate! contact
+                    us by any means and we will gladly assist you.
+                  </p>
                 </div>
+                <div class="image-absolute">
+                  <img src="images/Assets-Home/13.png" alt="image-test" />
+                </div>
+              </div>
             </div>
+            <div class="col-12 col-lg-6">
+              <div
+                class="input-body d-flex flex-column"
+                data-aos="blank"
+                data-aos-duration="2000"
+              >
+                <div class="input-container d-flex">
+                  <input class="custom-input" type="text" placeholder="Name" />
+                  <input class="custom-input" type="text" placeholder="Email" />
+                </div>
+                <div class="input-container d-flex">
+                  <input class="custom-input" type="text" placeholder="Phone" />
+                  <input
+                    class="custom-input"
+                    type="text"
+                    placeholder="Location"
+                  />
+                </div>
+                <div class="button-container">
+                  <a href="#">Send Message</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
       <!--info-->
-      <section class="col-12 info-container pt-4 pb-4"
-      class="col-12 info-container"
-      data-aos="fade-down"
-      data-aos-anchor-placement="top-bottom"
-      data-aos-delay="250"
-      data-aos-duration="2500">
+      <section
+        class="col-12 info-container pt-4 pb-4"
+        class="col-12 info-container"
+        data-aos="blank"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-delay="250"
+        data-aos-duration="2500"
+      >
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="info-body" data-aos="fade-up" data-aos-duration="2000">
-                        <div class="title-info image-info">
-                            <img src="images/logo-info.png" alt="logo-info" />
-                        </div>
-                        <div class="custom-text-info">
-                            <p>Our engineering and marketing
-                                teams help companies &
-                                startups scale without the
-                                hassle, risk, and expense of
-                                building a team from zero.</p>
-                        </div>
-                    </div>
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+              <div
+                class="info-body"
+                data-aos="blank"
+                data-aos-duration="2000"
+              >
+                <div class="title-info image-info">
+                  <img src="images/logo-info.png" alt="logo-info" />
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="info-body" data-aos="fade-up" data-aos-duration="2000">
-                        <div class="title-info">
-                            <h4>Share With US</h4>
-                        </div>
-                        <div class="custom-text-info">
-                            <p>Follow us on our social networks to
-                                be aware of all our updates and
-                                promotions</p>
-                        </div>
-                        <div class="icon-content d-flex">
-                            <div class="icon-item">
-                                <a href="#" target="_blank">
-                                    <span>
-                                    <i class="fab fa-facebook-f"></i>
-                                </span>
-                                </a>
-                            </div>
-                            <div class="icon-item">
-                                <a href="#" target="_blank">
-                                    <span>
-                                    <i class="fab fa-instagram"></i>
-                                </span>
-                                </a>
-                            </div>
-                            <div class="icon-item">
-                                <a href="#" target="_blank">
-                                    <span>
-                                    <i class="fab fa-twitter"></i>
-                                </span>
-                                </a>
-                            </div>
-                            <div class="icon-item">
-                                <a href="#" target="_blank">
-                                    <span>
-                                    <i class="fab fa-youtube"></i>
-                                </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="custom-text-info">
+                  <p>
+                    Our engineering and marketing teams help companies &
+                    startups scale without the hassle, risk, and expense of
+                    building a team from zero.
+                  </p>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="info-body" data-aos="fade-up" data-aos-duration="2000">
-                        <div class="title-info">
-                            <h4>Our Services</h4>
-                        </div>
-                        <div class="custom-text-info">
-                            <p>Video Animation</p>
-                            <p>Graphic Design UX / UI</p>
-                            <p>IT & Engineering</p>
-                            <p>Digital Marketing </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="info-body" data-aos="fade-up" data-aos-duration="2000">
-                        <div class="title-info">
-                            <h4>Contact Info</h4>
-                        </div>
-                        <div class="custom-text-info">
-                            <div class="info-item d-flex align-items-center">
-                                <span>
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </span>
-                                <p>433 Belle Grove Dr. #831372
-                                    Richardson, TX-75080
-                                </p>
-                            </div>
-                            <div class="info-item d-flex align-items-center">
-                                <span>
-                                    <i class="fas fa-phone-alt"></i>
-                                </span>
-                                <p>+1 (800) 685-1031
-                                </p>
-                            </div>
-                            <div class="info-item d-flex align-items-center">
-                                <span>
-                                    <i class="far fa-envelope"></i>
-                                </span>
-                                <p>contact@alphacrewstudio.com
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div
+                class="info-body"
+                data-aos="blank"
+                data-aos-duration="2000"
+              >
+                <div class="title-info">
+                  <h4>Share With US</h4>
+                </div>
+                <div class="custom-text-info">
+                  <p>
+                    Follow us on our social networks to be aware of all our
+                    updates and promotions
+                  </p>
+                </div>
+                <div class="icon-content d-flex">
+                  <div class="icon-item">
+                    <a href="#" target="_blank">
+                      <span>
+                        <i class="fab fa-facebook-f"></i>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="icon-item">
+                    <a href="#" target="_blank">
+                      <span>
+                        <i class="fab fa-instagram"></i>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="icon-item">
+                    <a href="#" target="_blank">
+                      <span>
+                        <i class="fab fa-twitter"></i>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="icon-item">
+                    <a href="#" target="_blank">
+                      <span>
+                        <i class="fab fa-youtube"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div
+                class="info-body"
+                data-aos="blank"
+                data-aos-duration="2000"
+              >
+                <div class="title-info">
+                  <h4>Our Services</h4>
+                </div>
+                <div class="custom-text-info">
+                  <p>Video Animation</p>
+                  <p>Graphic Design UX / UI</p>
+                  <p>IT & Engineering</p>
+                  <p>Digital Marketing</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div
+                class="info-body"
+                data-aos="blank"
+                data-aos-duration="2000"
+              >
+                <div class="title-info">
+                  <h4>Contact Info</h4>
+                </div>
+                <div class="custom-text-info">
+                  <div class="info-item d-flex align-items-center">
+                    <span>
+                      <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <p>433 Belle Grove Dr. #831372 Richardson, TX-75080</p>
+                  </div>
+                  <div class="info-item d-flex align-items-center">
+                    <span>
+                      <i class="fas fa-phone-alt"></i>
+                    </span>
+                    <p>+1 (800) 685-1031</p>
+                  </div>
+                  <div class="info-item d-flex align-items-center">
+                    <span>
+                      <i class="far fa-envelope"></i>
+                    </span>
+                    <p>contact@alphacrewstudio.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
       <footer class="custom-footer">
         <div class="container">
           <div class="row">
