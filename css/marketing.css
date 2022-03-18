@@ -106,6 +106,7 @@ header ul li {
   font-weight: bolder;
 }
 .phone2 {
+  width: 70%;
   margin: 0 auto;
 }
 .second-p p {
@@ -171,7 +172,7 @@ h3 {
 }
 .guy1 {
   margin: 0 auto;
-  height: 80%;
+  width: 70%;
 }
 .tc-center {
   display: flex;
@@ -231,7 +232,7 @@ h3 {
 }
 .network {
   margin: 0 auto;
-  height: 100%;
+  width: 70%;
 }
 .network-text {
   padding: 1rem 1rem !important;
@@ -695,6 +696,7 @@ footer h3 {
 .custom-footer .terms-list a {
   margin-right: 1rem !important;
 }
+/*Imágenes*/
 
 @media (min-width: 400px) {
   .prin-targets p {
@@ -786,6 +788,16 @@ footer h3 {
   .prin-targets p {
     height: 10rem;
   }
+  .guy1 {
+    width: 62.5%;
+  }
+  .phone2 {
+    width: 62.5%;
+  }
+  .network { 
+    width: 62.5%;
+  }
+ 
 }
 
 @media (min-width: 992px) {
@@ -848,6 +860,21 @@ footer h3 {
     left: 5rem;
     top: 5rem;
   }
+
+  .guy1 {
+    width: 100%;
+  }
+  .phone2 {
+    width: 100%;
+  }
+  .network { 
+    margin-top: 8rem;
+    width: 100%;
+  }
+  .guy2{
+  
+  width: 85%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -859,9 +886,38 @@ footer h3 {
     left: 5rem;
     top: 5rem;
   }
+  .guy1 {
+    width: 82.5%;
+  }
+  .phone2 {
+    width: 100%;
+  }
+  .network { 
+    margin-top: 10rem;
+    width: 70%;
+  }
+  .guy2{
+    width: 70%;
+    }
 }
 
 @media (min-width: 1400px) {
+  .guy1 {
+    width: 62.5%;
+  }
+  .phone2 {
+
+    width: 85%;
+    margin-top: 2rem;
+  }
+  .network { 
+    margin-top: 4rem;
+    width: 70%;
+  }
+  .guy2{
+  
+    width: 50%;
+    }
 }
 
 @media (max-width: 1399px) {
