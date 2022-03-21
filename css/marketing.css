@@ -40,7 +40,73 @@ body {
   object-position: center;
 }
 
+
 /*header*/
+.cont-popup{
+  width: 200px;
+  position: absolute;
+  top: 50rem;
+  z-index: 100;
+}
+.div-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  width: 20px;
+  background-color: rgb(234, 0, 255);
+  color: white;
+  padding: 1.5rem;
+  z-index: 10;
+  font-weight: bold;
+}
+.div-title h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 2.2rem;
+}
+.containt {
+  width: 150px;
+  height: 190px;
+  background-color: gray;
+}
+.list a {
+  text-decoration: none;
+  color: rgb(178, 178, 178);
+
+}
+
+.list {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.show-list{
+  display: flex;
+}
+.hide-list{
+  display: none;
+}
+
+nav {
+  align-items: center;
+}
+.item {
+  width: 100%;
+  font-size: 1.8rem;
+  padding: 1rem 1rem;
+  background-color: white;
+  color: rgb(208, 208, 208);
+}
+#rotate {
+  transform: rotate(-90deg);
+}
+.general {
+  display: flex;
+  width: 235px;
+}
 header {
   background-image: url("../images/imagesMarketing/2.png");
   background-size: cover;
@@ -82,12 +148,16 @@ h1 {
   font-size: 6rem;
   color: var(--white);
   text-align: center;
+  font-weight: 500;
+  font-family: "Zen Kaku Gothic Antique", sans-serif !important;
+
 }
 header ul li {
   font-size: 18px;
 }
 .phone {
-  width: 80%;
+  margin: 0 auto;
+  width: 100%;
 }
 .phone-tp {
   margin-top: 0;
@@ -404,9 +474,10 @@ h3 {
   background-color: var(--pinkStrong);
   color: var(--white);
   padding: 2rem 0;
+  z-index: 100;
 }
 .seven-second-text h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 .get-started2 {
@@ -475,7 +546,7 @@ h3 {
   z-index: 1;
 }
 #title2 {
-  z-index: -1;
+  z-index: 10;
 }
 
 /*Eight*/
@@ -651,7 +722,7 @@ footer h3 {
   width: 30%;
   right: 0;
   bottom: -15%;
-  z-index: -1;
+  z-index: 1;
 }
 
 .contact-container .input-body {
@@ -839,8 +910,8 @@ footer h3 {
   }
   .title {
     margin: 0 auto;
-    padding: 2rem;
-    width: 80%;
+  
+    width: 100%;
   }
   .guy4 {
     margin: 0 auto;
@@ -942,7 +1013,7 @@ footer h3 {
     width: 100%;
   }
   .seven-first-text {
-    font-size: 1.6rem;
+    font-size:2rem;
     padding: 0 1rem;
   }
   .three h2 {
@@ -951,16 +1022,28 @@ footer h3 {
     margin-left: 4rem;
     margin-bottom: 4rem;
   }
+  .move-f-t{
+    height:100px;
+ 
+  }
+  .phone {
+    margin: 0 auto;
+    width: 90%;
+  }
 }
+
 
 @media (min-width: 1200px) {
   .prin-targets img {
     width: 40%;
   }
+  .prin-targets p {
+    height: 18rem;
+  }
   .mov {
     position: relative;
     left: 5rem;
-    top: 5rem;
+    top: 0rem;
   }
   .guy1 {
     width: 82.5%;
@@ -1013,6 +1096,14 @@ footer h3 {
     margin-left: 4rem;
     margin-bottom: 4rem;
   }
+  h1 {
+    font-size: 7rem;
+   
+  }
+  .second h2 {
+    font-size: 6rem;
+  
+  }
 }
 
 @media (min-width: 1400px) {
@@ -1054,15 +1145,72 @@ footer h3 {
     padding: 0 4rem;
   }
   .title {
-    margin: 1rem auto;
-    padding: 4rem;
+    margin: 0rem auto;
+
     width: 50rem;
   }
   .guy4 {
     margin: 0 auto;
-    width: 95%;
+    width: 90%;
+  }
+  
+ 
+h1 {
+  font-size: 8rem;
+  
+  color: var(--white);
+  text-align: center;
+  font-weight: 500;
+  font-family: "Zen Kaku Gothic Antique", sans-serif !important;
+
+}
+.btn-first {
+  margin-top: 2rem;
+
+  font-size: 2rem;
+ 
+}
+.phone {
+  margin: 0 auto;
+  width: 100%;
+}
+.prin-targets p {
+  height: 12rem;
+}
+}
+
+@media (min-width:1600px){
+  .move-f-t{
+    height: 125px;
+  }
+  h1 {
+    font-size: 8rem;
+   
+  }
+  .guy4 {
+    margin: 0 auto;
+    width: 75%;
   }
 }
+@media (min-width:1800px){
+  .move-f-t{
+    height: 175px;
+  }
+  .guy4 {
+    margin: 0 auto;
+    width: 70%;
+  }
+}
+@media (min-width:1920px){
+  .move-f-t{
+    height: 250px;
+  }
+  .guy4 {
+    margin: 0 auto;
+    width: 60%;
+  }
+}
+
 
 @media (max-width: 1399px) {
   .contact-container .title-content h3 {

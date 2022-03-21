@@ -101,6 +101,10 @@ body {
   font-size: 1.1rem;
   line-height: 1.2;
 }
+.font-sc{
+  font-size: 1rem;
+ 
+}
 /*header*/
 header {
   background-image: url("../images/imagesCustom/1.png");
@@ -568,10 +572,10 @@ header ul li {
 
 .contact-container .image-absolute {
   position: absolute;
-  width: 50%;
-  right: -20%;
-  bottom: -10%;
-  z-index: -1;
+  width: 30%;
+  right: 0;
+  bottom: -15%;
+  z-index: 1;
 }
 
 .contact-container .input-body {
@@ -701,49 +705,49 @@ header ul li {
 
 /**Trrgets**/
 .targetOne {
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   background-color: var(--dark);
-
-  color: white;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: flex-start;
-  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  padding: 2rem;
   height: 8rem;
 }
 .targetTwo {
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   background-color: var(--blueLight);
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   height: 8rem;
-  padding: 1rem;
+  padding: 2rem;
 }
 .targetThree {
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   background-color: var(--dark);
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: flex-start;
-  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
   height: 8rem;
 }
 .targetFour {
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   background-color: var(--blueLight);
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   height: 8rem;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 @media (min-width: 576px) {
@@ -947,25 +951,45 @@ header ul li {
     background-image: url(../images/imagesCustom/9.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 17rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    height: 22rem;
+    padding: 1rem;
   }
   .targetTwo {
-    height: 17rem;
+    height: 22rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
     background-image: url(../images/imagesCustom/10.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
   }
   .targetThree {
-    height: 17rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 1rem;
+    height: 22rem;
     background-image: url(../images/imagesCustom/11.png);
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
   }
   .targetFour {
-    height: 17rem;
-    background-image: url(../images/imagesCustom/12.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    height: 22rem;
+    font-size: 1.1rem;
+     background-image: url(../images/imagesCustom/12.png);
+     background-size: contain;
+     background-repeat: no-repeat;
+     padding: 1rem;
   }
   .five-cards p {
     height: 5rem;
@@ -1057,6 +1081,21 @@ header ul li {
   font-size: 1.2rem;
   line-height: 1.4;
 }
+.targetFour {
+  height: 22rem;
+ font-size: 1.1rem;
+  background-image: url(../images/imagesCustom/12.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+}
+@media  (min-width:1920px) {
+  .targetFour {
+    height: 22rem;
+    background-image: url(../images/imagesCustom/12.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 @media (max-width: 1199px) {
