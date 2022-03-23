@@ -8,15 +8,16 @@
     const personItem = document.querySelectorAll('#personItem');
     const meetVideo = document.querySelectorAll("#meetVideo");
 
-
-
+    //AOS function
+    AOS.init();
+    
     // Get year for footer
     const date = new Date();
     const year = date.getFullYear();
     customYear.innerHTML = year;
 
     // View menu responsive
-    menuToggle.addEventListener('click', () => {
+    menuToggle?.addEventListener('click', () => {
         if (menuToggle.checked === true) {
             $('.custom-nav-list').slideToggle('slow', 'swing', function () {
                 menu.classList.add('show-menu');
@@ -45,9 +46,6 @@
 
         }
     });*/
-
-    //AOS function
-    AOS.init();
 
     // Sticky Menu
 
