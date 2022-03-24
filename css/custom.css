@@ -77,33 +77,32 @@ body {
   background-color: var(--line);
   margin-bottom: 4rem;
 }
-.space{
+.space {
   height: 15px;
 }
 
-.size-icon{
+.size-icon {
   width: 20%;
 }
-.posicionar{
+.posicionar {
   display: flex;
   flex-direction: column;
 }
 
-.phone-size{
+.phone-size {
   margin: 0 auto;
   width: 100%;
 }
-.phone-size2{
+.phone-size2 {
   margin: 0 auto;
   width: 100%;
 }
-.l33{
+.l33 {
   font-size: 1.1rem;
   line-height: 1.2;
 }
-.font-sc{
+.font-sc {
   font-size: 1rem;
- 
 }
 /*header*/
 header {
@@ -127,7 +126,7 @@ header {
   margin-bottom: 1rem;
 }
 .prin-title {
-  margin-top: 1rem;
+  margin-top: 4rem;
 }
 .centeri {
   display: flex;
@@ -145,7 +144,7 @@ header {
   border-radius: 1.4rem;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: var(--white);
   text-align: center;
 }
@@ -153,7 +152,7 @@ header ul li {
   font-size: 18px;
 }
 .phone {
-  width: 80%;
+  width: 100%;
 }
 .phone-tp {
   margin-top: 0;
@@ -167,11 +166,9 @@ header ul li {
   text-align: left;
   font-size: 1.6rem;
   text-align: center;
-
 }
 .first .title-color {
   font-size: 2.35rem;
-  
 }
 .first-content {
   z-index: 1;
@@ -191,8 +188,6 @@ header ul li {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-
 
 .guy1 {
   display: flex;
@@ -266,11 +261,11 @@ header ul li {
 
 .three ul {
   line-height: 1.1;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .three-subtitle {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   padding: 0 2rem;
 }
 .card {
@@ -300,13 +295,11 @@ header ul li {
 /**Four*/
 
 .cont-seven {
-  width: 100%;
+
 }
 .cont-flu-seven {
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ 
   color: black;
 
   position: relative;
@@ -331,11 +324,12 @@ header ul li {
 }
 
 .four-card {
+  width: 70%;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   padding: 0;
-  width: 95%;
 
+  
   background-color: white;
 }
 
@@ -354,7 +348,6 @@ header ul li {
   font-size: 2rem;
 }
 
-
 .four-cards {
   padding: 1rem;
   display: flex;
@@ -367,10 +360,12 @@ header ul li {
   padding: 2rem;
 }
 .title {
-  
+  margin: 0 auto;
+
+  width: 100%;
 }
 .four-text {
-  padding:  0.5rem 0.5rem;
+  padding: 0.5rem 4rem;
 }
 .content-card {
   padding: 2rem;
@@ -401,7 +396,6 @@ header ul li {
   font-size: 1.3rem;
 }
 .guy2 {
-
 }
 
 /*five*/
@@ -430,8 +424,7 @@ header ul li {
 
 .five-cards .card {
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   padding: 0;
   color: var(--dark);
   display: flex;
@@ -629,10 +622,9 @@ header ul li {
   color: #2d2d2d;
 }
 
-
 /* Info section */
 .info-container {
-  background-color: #DCF3FA;
+  background-color: #dcf3fa;
   color: #333;
   font-size: 20px;
 }
@@ -672,7 +664,7 @@ header ul li {
   font-size: 16px;
 }
 
-.info-container .info-item{
+.info-container .info-item {
   margin-bottom: 1rem;
 }
 
@@ -680,7 +672,6 @@ header ul li {
   margin-left: 1rem;
   margin-bottom: 0;
 }
-
 
 /* Footer */
 .custom-footer {
@@ -771,10 +762,6 @@ header ul li {
   .four h2 {
     font-size: 3rem;
   }
-  .four-text {
-    padding:  1rem 0.5rem;
-    text-align: center;
-  }
  
 
   .l1 {
@@ -789,35 +776,42 @@ header ul li {
     font-size: 2.5rem;
     color: var(--pinkStrong);
   }
- 
-.phone-size{
-  width: 62.5%;
-}
-.phone-size2{
- 
-  width: 62.5%;
-}
+
+  .phone-size {
+    width: 62.5%;
+  }
+  .phone-size2 {
+    width: 62.5%;
+  }
+  .title {
+    width: 40rem;
+  }
 }
 
 @media (min-width: 992px) {
+  .four-text {
+    width: 20rem;
+    padding: 1rem 0.5rem;
+    text-align: center;
+  }
   .first-text {
     margin-left: 0rem;
     font-size: 1.2rem;
     line-height: 1.2;
   }
   .three-1 {
-    font-size: 1.5rem;
+    font-size: 2.25rem;
     text-align: start;
     margin-left: 5rem;
   }
   .three-2 {
     color: var(--blueLight);
     text-align: center;
-    font-size: 3rem;
+    font-size: 4.5rem;
   }
   .three-3 {
     text-align: end;
-    font-size: 1.5rem;
+    font-size: 2.25rem;
   }
 
   .five .three-1 {
@@ -838,7 +832,6 @@ header ul li {
   .four h2 {
     font-size: 4rem;
   }
-
 
   .five-content h2 {
     font-size: 1.5rem;
@@ -861,9 +854,7 @@ header ul li {
     margin-top: 7rem;
   }
 
-  .four-card {
-    width: 70%;
-  }
+  
   .five-cards p {
     height: 12rem;
   }
@@ -871,25 +862,22 @@ header ul li {
     font-size: 3rem;
     color: var(--pinkStrong);
   }
-  .move-first{
+  .move-first {
     position: relative;
     bottom: 5rem;
     right: 5rem;
   }
-  .espace{
+  .espace {
     height: 150px;
   }
   .first h2 {
-   
     text-align: left;
-  
   }
-  .size-icon{
+  .size-icon {
     width: 25%;
   }
   .first-items h3 {
     font-size: 0.9rem;
-    
   }
   .four-row-pink {
     padding: 1.5rem 5rem;
@@ -897,37 +885,36 @@ header ul li {
     font-size: 2.5rem;
   }
   .guy2 {
- 
-   width: 31rem;
-  }
-  .four-move1{
-    position: relative;
-    bottom: 2rem;
-    right: 3rem;
-  }
-  .move-container{
-    position: relative;
-    top: 1rem;
-  }
-  .move-cart{
-    position: relative;
-    bottom: 1.5rem;
-  }
-  .move-text{
-    position: relative;
-    left: 5rem;
+    width: 27rem;
   }
   .title {
     position: relative;
     left: 5rem;
-
-    width: 30rem;
+    width: 25rem;
   }
-  .phone-size{
+
+  .four-move1 {
+    position: relative;
+    bottom: 2rem;
+    right: 3rem;
+  }
+  .move-container {
+    position: relative;
+    top: 3rem;
+  }
+  .move-cart {
+    position: relative;
+    bottom: 1.5rem;
+  }
+  .move-text {
+    position: relative;
+    left: 5rem;
+  }
+  
+  .phone-size {
     width: 100%;
   }
-  .phone-size2{
-  
+  .phone-size2 {
     width: 100%;
   }
   .l3 {
@@ -944,9 +931,10 @@ header ul li {
     justify-content: flex-end;
   }
   .guy2 {
+   
+    width: 35rem;
+  }
  
-    width: 36rem;
-   }
   .targetOne {
     background-image: url(../images/imagesCustom/9.png);
     background-size: cover;
@@ -986,10 +974,10 @@ header ul li {
     align-items: flex-end;
     height: 22rem;
     font-size: 1.1rem;
-     background-image: url(../images/imagesCustom/12.png);
-     background-size: contain;
-     background-repeat: no-repeat;
-     padding: 1rem;
+    background-image: url(../images/imagesCustom/12.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 1rem;
   }
   .five-cards p {
     height: 5rem;
@@ -1025,101 +1013,190 @@ header ul li {
     font-size: 3.5rem;
     color: var(--pinkStrong);
   }
-  .move-first{
+  .move-first {
     position: relative;
-    right: 2.5rem;  bottom: 0rem;
+    right: 2.5rem;
+    bottom: 0rem;
   }
-  .espace{
-    height: 135px;
+  .espace {
+    height: 100px;
   }
-  .move-container{
-    position: relative;
-    top: 3rem;
-  }
-  .move-cart{
+  
+  .move-cart {
     position: relative;
     bottom: 1.5rem;
   }
-  .phone-size{
+  .phone-size {
     width: 100%;
   }
-  .phone-size2{
-  
+  .phone-size2 {
     width: 100%;
   }
   .l3 {
-  font-size: 1.2rem;
-  line-height: 1.4;
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+  .three-1 {
+    font-size: 2.5rem;
+    text-align: start;
+    margin-left: 5rem;
+  }
+  .three-2 {
+    color: var(--blueLight);
+    text-align: center;
+    font-size: 5rem;
+  }
+  .three-3 {
+    text-align: end;
+    font-size: 2.5rem;
+  }
+  .title {
+    position: relative;
+    left: 5rem;
+    width: 32rem;
+  }
+  .four-text{
+    width: 30rem;
+  }
+  .four-card {
+    width: 80%;
+  }
 }
-
-
+@media (min-width: 1300px) {
+  .espace {
+    height: 155px;
+  }
 }
 
 @media (min-width: 1399px) {
   .contact-container .title-content h3 {
     font-size: 100px;
+  }
+
+  .contact-container .image-absolute {
+    bottom: 5%;
+  }
+  .move-guy {
+    position: relative;
+    bottom: 5rem;
+  }
+  .espace {
+    height: 160px;
+  }
+  .guy2 {
+    width: 36rem;
+  }
+  .phone-size {
+    width: 80%;
+  }
+  .l33 {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+  .targetFour {
+    height: 22rem;
+    font-size: 1.1rem;
+    background-image: url(../images/imagesCustom/12.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .four-card {
+    width: 70%;
+  }
+  .first-items h3 {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 1600px) {
+  .guy2 {
+    width: 42rem;
+  }
+  .title {
+    position: relative;
+    left: 5rem;
+    width: 38rem;
+  }
+  .four-text{
+    width: 34rem;
+  }
+  .espace {
+    height: 255px;
+  }
+  .move-container {
+    position: relative;
+    top: 4rem;
+   
+  }
 }
 
-.contact-container .image-absolute {
-    bottom: 5%;
+@media (min-width: 1800px) {
+  .espace {
+    height: 370px;
+  }
+  .guy2 {
+    width: 47rem;
+  }
+  .title {
+    position: relative;
+    left: 5rem;
+    width: 45rem;
+  }
+  .four-text{
+    width: 37rem;
+  }
+  .move-container {
+    position: relative;
+    top: 4.25rem;
+   
+  }
 }
-.move-guy{
-  position: relative;
-  bottom: 5rem;
-}
-.espace{
-  height: 160px;
-}
-.guy2 {
- 
-  width: 36rem;
- }
- .phone-size{
-  width: 80%;
-}
-.l33{
-  font-size: 1.2rem;
-  line-height: 1.4;
-}
-.targetFour {
-  height: 22rem;
- font-size: 1.1rem;
-  background-image: url(../images/imagesCustom/12.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-}
-@media  (min-width:1920px) {
+@media (min-width: 1920px) {
   .targetFour {
     height: 22rem;
     background-image: url(../images/imagesCustom/12.png);
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  .guy2 {
+    width: 48rem;
+  }
+  .title {
+    position: relative;
+    left: 5rem;
+    width: 47rem;
+  }
+  .espace {
+    height: 450px;
+  }
+  .move-container {
+    position: relative;
+    top: 4.5rem;
+   
+  }
+  
 }
 
 @media (max-width: 1199px) {
   .info-container .title-info h4 {
     font-size: 24px;
-}
+  }
   .contact-container {
     padding: 5rem 0 !important;
-}
+  }
 
-.contact-container .title-content h3 {
+  .contact-container .title-content h3 {
     font-size: 80px;
-}
-  
+  }
 }
 @media (max-width: 991px) {
-  
   .contact-container .input-body {
     margin-left: 0;
-}
+  }
 
-.contact-container .image-absolute {
+  .contact-container .image-absolute {
     bottom: 0;
-}
+  }
 }
 
 @media (max-width: 767px) {
@@ -1142,41 +1219,39 @@ header ul li {
     padding-bottom: 0;
     order: 1;
   }
- 
+
   .info-container .info-body {
     text-align: center;
-}
+  }
 
-.info-container .image-info {
+  .info-container .image-info {
     margin: 0 auto;
-}
+  }
 
-.info-container .icon-content,
-.info-container .info-item {
+  .info-container .icon-content,
+  .info-container .info-item {
     justify-content: center;
-}
+  }
 
   .contact-container {
     padding: 2rem 0 !important;
-}
+  }
 
-.contact-container .title-content h3 {
+  .contact-container .title-content h3 {
     font-size: 80px;
-}
+  }
 
-.contact-container .title-content h3 {
+  .contact-container .title-content h3 {
     font-size: 60px;
-}
+  }
 
-.contact-container .input-container {
+  .contact-container .input-container {
     flex-direction: column;
-}
+  }
 
-.contact-container::before {
+  .contact-container::before {
     bottom: -15%;
-}
-
-
+  }
 }
 
 @media (max-width: 425px) {
@@ -1227,21 +1302,6 @@ header ul li {
   width: 100vw;
   height: 50%;
   z-index: -10;
-}
-
-.top-card {
-  position: relative;
-}
-
-.top-card::before {
-  content: "";
-  background-color: red;
-  position: absolute;
-
-  bottom: 0;
-  width: 100%;
-  height: 50%;
-  z-index: 10;
 }
 
 .move-row {
