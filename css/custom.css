@@ -292,10 +292,12 @@ header ul li {
   text-align: center;
 }
 
+
+
 /**Four*/
 
-.cont-seven {
-
+.four-text {
+  padding: 0.5rem 0rem;
 }
 .cont-flu-seven {
   height: 100%;
@@ -364,9 +366,7 @@ header ul li {
 
   width: 100%;
 }
-.four-text {
-  padding: 0.5rem 4rem;
-}
+
 .content-card {
   padding: 2rem;
 }
@@ -403,7 +403,7 @@ header ul li {
   background-color: var(--light);
 }
 .five-content h2 {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -475,6 +475,20 @@ header ul li {
 .five-content .five-title-margin {
   text-align: center;
 }
+.five .three-1 {
+  font-size: 2rem;
+  text-align: center;
+
+}
+.five .three-2 {
+  color: var(--blueLight);
+  text-align: center;
+  font-size: 3.75rem;
+}
+.five .three-3 {
+  text-align: center;
+  font-size: 2rem;
+}
 
 /*six*/
 .six .title-color {
@@ -486,6 +500,19 @@ header ul li {
 }
 .six-p {
   font-size: 1.4rem;
+}
+
+.six .six-h2{
+  font-size: 2rem;
+}
+.six .six-h2-big{
+font-size: 3rem;
+text-align: center;
+
+}
+.six .six-h2-low{
+font-size: 2rem;
+
 }
 
 /*Conctac*/
@@ -784,7 +811,7 @@ header ul li {
     width: 62.5%;
   }
   .title {
-    width: 40rem;
+    width: 32rem;
   }
 }
 
@@ -853,7 +880,9 @@ header ul li {
   .logo-top {
     margin-top: 7rem;
   }
-
+  .four-text {
+    padding: 0.5rem 4rem;
+  }
   
   .five-cards p {
     height: 12rem;
@@ -982,19 +1011,23 @@ header ul li {
   .five-cards p {
     height: 5rem;
   }
+  .three-h1-content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   .five .three-1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: start;
     margin-left: 5rem;
   }
   .five .three-2 {
     color: var(--blueLight);
     text-align: center;
-    font-size: 3rem;
+    font-size: 3.50rem;
   }
   .five .three-3 {
     text-align: end;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .five-content h2 {
@@ -1061,6 +1094,24 @@ header ul li {
   .four-card {
     width: 80%;
   }
+  #pad-six{
+ 
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+   .six .six-h2{
+        font-size: 2rem;
+    }
+    .six .six-h2-big{
+      font-size: 3.50rem;
+      text-align: center;
+      margin-left: 2rem;
+  }
+  .six .six-h2-low{
+    font-size: 2rem;
+    text-align: end;
+  }
+  
 }
 @media (min-width: 1300px) {
   .espace {
@@ -1106,6 +1157,34 @@ header ul li {
   .first-items h3 {
     font-size: 1.1rem;
   }
+  .five .three-1 {
+    font-size: 2.5rem;
+    text-align: start;
+    margin-left: 5rem;
+  }
+  .five .three-2 {
+    color: var(--blueLight);
+    text-align: center;
+    font-size: 4rem;
+  }
+  .five .three-3 {
+    text-align: end;
+    font-size: 2.5rem;
+  }
+ 
+   .six .six-h2{
+        font-size: 2.25rem;
+    }
+    .six .six-h2-big{
+      font-size: 3.75rem;
+      text-align: center;
+      margin-left: 2rem;
+  }
+  .six .six-h2-low{
+    font-size: 2.25rem;
+    text-align: end;
+  }
+  
 }
 @media (min-width: 1600px) {
   .guy2 {
