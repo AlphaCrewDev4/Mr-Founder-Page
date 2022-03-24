@@ -8,10 +8,11 @@ a {
   text-decoration: none;
 }
 
-img,
-video {
+ 
+img{
   width: 100%;
 }
+ 
 
 input {
   outline: none;
@@ -59,7 +60,7 @@ input {
 }
 
 .custom-nav-item a {
-  color: rgb(209, 209, 209);
+  color: white;
   font-size: 20px;
   position: relative;
   text-decoration: none;

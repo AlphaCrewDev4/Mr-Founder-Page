@@ -100,6 +100,7 @@ body {
 .l33 {
   font-size: 1.1rem;
   line-height: 1.2;
+  padding: 1rem;
 }
 .font-sc {
   font-size: 1rem;
@@ -297,7 +298,8 @@ header ul li {
 /**Four*/
 
 .four-text {
-  padding: 0.5rem 0rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
 }
 .cont-flu-seven {
   height: 100%;
@@ -439,7 +441,7 @@ header ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   padding: 0 0.5rem;
   width: 100%;
   line-height: 1;
@@ -820,6 +822,7 @@ font-size: 2rem;
     width: 20rem;
     padding: 1rem 0.5rem;
     text-align: center;
+    font-size: 1.4rem;
   }
   .first-text {
     margin-left: 0rem;
@@ -1089,7 +1092,7 @@ font-size: 2rem;
     width: 32rem;
   }
   .four-text{
-    width: 30rem;
+    width: 32rem;
   }
   .four-card {
     width: 80%;
@@ -1196,7 +1199,7 @@ font-size: 2rem;
     width: 38rem;
   }
   .four-text{
-    width: 34rem;
+    width: 36rem;
   }
   .espace {
     height: 255px;
@@ -1221,7 +1224,8 @@ font-size: 2rem;
     width: 45rem;
   }
   .four-text{
-    width: 37rem;
+    width: 47rem;
+    font-size: 1.6rem;
   }
   .move-container {
     position: relative;
