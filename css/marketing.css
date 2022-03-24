@@ -40,9 +40,8 @@ body {
   object-position: center;
 }
 
-
 /*header*/
-.cont-popup{
+.cont-popup {
   width: 200px;
   position: absolute;
   top: 50rem;
@@ -74,7 +73,6 @@ body {
 .list a {
   text-decoration: none;
   color: rgb(178, 178, 178);
-
 }
 
 .list {
@@ -84,10 +82,10 @@ body {
   flex-direction: column;
   gap: 1px;
 }
-.show-list{
+.show-list {
   display: flex;
 }
-.hide-list{
+.hide-list {
   display: none;
 }
 
@@ -151,7 +149,6 @@ h1 {
   text-align: center;
   font-weight: 500;
   font-family: "Zen Kaku Gothic Antique", sans-serif !important;
-
 }
 header ul li {
   font-size: 18px;
@@ -226,7 +223,7 @@ h3 {
   text-align: center;
   font-weight: bold;
 }
-#arrow {
+.steps .arrow {
   width: 1rem;
   height: 6rem;
 }
@@ -260,7 +257,7 @@ h3 {
 }
 
 /**Cuatro*/
-.four-text{
+.four-text {
   font-size: 2.2rem;
 }
 .four h2 {
@@ -377,10 +374,10 @@ h3 {
   margin: 0 auto;
   width: 100%;
 }
-.steps-final p{
+.steps-final p {
   font-size: 2.1rem;
 }
-.steps-first{
+.steps-first {
   font-size: 2.1rem;
 }
 .six-first-text {
@@ -418,13 +415,12 @@ h3 {
   left: 0rem;
 }
 .six-second-row h2 {
-
   padding: 0;
   margin: 0;
-  
+
   color: var(--dark);
 }
-.six h3{
+.six h3 {
   font-size: 2.5rem;
 }
 .six-second-row span {
@@ -444,22 +440,16 @@ h3 {
   width: 70%;
 }
 #ftitle {
-
-  
-display: flex ;
-justify-content: center ;
-align-items: center;
-width: 100%;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
-#ftitle span{
-color: var(--blueLight);
-
+#ftitle span {
+  color: var(--blueLight);
 }
-#ftitle h2{
+#ftitle h2 {
   color: black;
-
- 
 }
 
 /**Seven*/
@@ -512,7 +502,6 @@ color: var(--blueLight);
 }
 .seven-second-text h3 {
   font-size: 2.2rem;
-  
 }
 .get-started2 {
   background-color: var(--dark);
@@ -571,7 +560,6 @@ color: var(--blueLight);
   margin: 0 auto;
   width: 80%;
 }
-
 
 #title1 {
   z-index: 1;
@@ -699,7 +687,6 @@ footer h3 {
 }
 .guy5 {
   margin: 0 auto;
-
 }
 
 /*Contact*/
@@ -856,10 +843,10 @@ footer h3 {
   .title-ceo {
     font-size: 8rem;
   }
-  .six h3{
+  .six h3 {
     font-size: 3.5rem;
   }
-  .title-l1{
+  .title-l1 {
     width: 100%;
   }
   .three-left {
@@ -876,16 +863,13 @@ footer h3 {
     padding: 0rem;
   }
 
-  
-
-  
   .eight p {
     line-height: 1.2;
     font-size: 2rem;
   }
- .four h2 {
-font-size: 8rem;
- }
+  .four h2 {
+    font-size: 8rem;
+  }
   footer {
     text-align: left;
     font-size: 1.6rem;
@@ -939,23 +923,21 @@ font-size: 8rem;
   }
   .guy5 {
     margin: 0 auto;
-    
   }
   .guy3 {
     width: 50.5%;
   }
- 
-  .guy4 {
 
+  .guy4 {
     width: 80%;
   }
 }
 
 @media (min-width: 992px) {
-  #ftitle span{
+  #ftitle span {
     color: var(--blueLight);
-    margin-left:4rem;
-    }
+    margin-left: 4rem;
+  }
   .three-padding {
     padding: 0 10rem;
   }
@@ -1006,12 +988,12 @@ font-size: 8rem;
   .seven-three-text {
     padding: 0 8rem;
   }
- 
-    .mov{
-      position: relative;
-      left:  2rem;
-   }
-   .title {
+
+  .mov {
+    position: relative;
+    left: 2rem;
+  }
+  .title {
     margin: 0 auto;
     width: 40rem;
   }
@@ -1026,7 +1008,6 @@ font-size: 8rem;
   .prin-targets p {
     height: 20rem;
   }
-  
 
   .guy1 {
     width: 100%;
@@ -1051,14 +1032,13 @@ font-size: 8rem;
   }
   .guy5 {
     margin: 0 auto;
-    
   }
   .guy3 {
     width: 80.5%;
   }
-  
+
   .seven-first-text {
-    font-size:2rem;
+    font-size: 2rem;
     padding: 0 1rem;
   }
   .three h2 {
@@ -1067,9 +1047,8 @@ font-size: 8rem;
     margin-left: 2rem;
     margin-bottom: 4rem;
   }
-  .move-f-t{
-    height:100px;
- 
+  .move-f-t {
+    height: 100px;
   }
   .phone {
     margin: 0 auto;
@@ -1077,12 +1056,11 @@ font-size: 8rem;
   }
 }
 
-
 @media (min-width: 1200px) {
-  #ftitle span{
+  #ftitle span {
     color: var(--blueLight);
-    margin-left:8rem;
-    }
+    margin-left: 8rem;
+  }
   .prin-targets img {
     width: 40%;
   }
@@ -1093,7 +1071,7 @@ font-size: 8rem;
   .guy1 {
     width: 82.5%;
   }
- 
+
   .phone2 {
     width: 100%;
     margin-top: 1rem;
@@ -1104,7 +1082,6 @@ font-size: 8rem;
     font-size: 2.1rem;
   }
   .network {
-   
     width: 90%;
   }
   .guy2 {
@@ -1114,14 +1091,13 @@ font-size: 8rem;
     margin: 0 auto;
     width: 100%;
   }
- 
+
   .phone3 {
     margin: 2rem auto;
     width: 55rem;
   }
   .guy5 {
     margin: 0 auto;
-  
   }
   .rigth {
     position: relative;
@@ -1131,12 +1107,12 @@ font-size: 8rem;
   .guy3 {
     width: 70.5%;
   }
- 
+
   .guy4 {
     margin: 0 auto;
     width: 95%;
   }
- 
+
   .three h2 {
     font-size: 3.5rem;
     font-weight: bold;
@@ -1145,41 +1121,38 @@ font-size: 8rem;
   }
   h1 {
     font-size: 7rem;
-   
   }
   .second h2 {
     font-size: 8rem;
-  
   }
-  .mov{
+  .mov {
     position: relative;
-    left:  4rem;
- }
- .title {
-  margin: 0 auto;
-  width: 45rem;
-}
-.expect-options {
-  line-height: 0.5;
-}
-h3 {
-  font-size: 3.5rem;
-}
-.phone {
-  margin: 0 auto;
-  width: 90%;
-}
-.three-left {
-  margin-left: 8rem;
-  
-}
+    left: 4rem;
+  }
+  .title {
+    margin: 0 auto;
+    width: 45rem;
+  }
+  .expect-options {
+    line-height: 0.5;
+  }
+  h3 {
+    font-size: 3.5rem;
+  }
+  .phone {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .three-left {
+    margin-left: 8rem;
+  }
 }
 
 @media (min-width: 1400px) {
   .guy1 {
     width: 62.5%;
   }
- 
+
   .phone2 {
     width: 95%;
     margin-top: 2rem;
@@ -1200,15 +1173,13 @@ h3 {
     margin: 0 auto;
     width: 85%;
   }
-  
+
   .phone3 {
-    
     width: 90%;
   }
   .guy5 {
     display: flex;
     justify-content: center;
-    
   }
   .rigth {
     position: relative;
@@ -1221,70 +1192,65 @@ h3 {
   .seven-first-text {
     padding: 0 4rem;
   }
- 
+
   .guy4 {
     margin: 0 auto;
     width: 90%;
   }
-  
- 
-h1 {
-  font-size: 8rem;
-  
-  color: var(--white);
-  text-align: center;
-  font-weight: 500;
-  font-family: "Zen Kaku Gothic Antique", sans-serif !important;
 
-}
-.btn-first {
-  margin-top: 2rem;
+  h1 {
+    font-size: 8rem;
 
-  font-size: 2rem;
- 
-}
-.phone {
-  margin: 0 auto;
-  width: 90%;
-}
-.prin-targets p {
-  height: 16rem;
-}
-.mov{
-  position: relative;
-  left:  4rem;
-}
-.title {
-margin: 0 auto;
-width: 55rem;
-}
+    color: var(--white);
+    text-align: center;
+    font-weight: 500;
+    font-family: "Zen Kaku Gothic Antique", sans-serif !important;
+  }
+  .btn-first {
+    margin-top: 2rem;
+
+    font-size: 2rem;
+  }
+  .phone {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .prin-targets p {
+    height: 16rem;
+  }
+  .mov {
+    position: relative;
+    left: 4rem;
+  }
+  .title {
+    margin: 0 auto;
+    width: 55rem;
+  }
 }
 
-@media (min-width:1600px){
-  .move-f-t{
+@media (min-width: 1600px) {
+  .move-f-t {
     height: 125px;
   }
   h1 {
     font-size: 8rem;
-   
   }
   .guy4 {
     margin: 0 auto;
     width: 78%;
   }
-  .mov{
+  .mov {
     position: relative;
-    left:  6rem;
+    left: 6rem;
   }
   .title {
-  margin: 0 auto;
-  width: 60rem;
+    margin: 0 auto;
+    width: 60rem;
   }
-  .seven-first-text{
+  .seven-first-text {
     padding: 0;
   }
   .phone3 {
-    
     width: 100%;
   }
   .eight p {
@@ -1292,11 +1258,10 @@ width: 55rem;
   }
   .second h2 {
     font-size: 10rem;
-  
   }
 }
-@media (min-width:1800px){
-  .move-f-t{
+@media (min-width: 1800px) {
+  .move-f-t {
     height: 175px;
   }
   .guy4 {
@@ -1304,21 +1269,21 @@ width: 55rem;
     width: 70%;
   }
 }
-@media (min-width:1920px){
-  .move-f-t{
+@media (min-width: 1920px) {
+  .move-f-t {
     height: 250px;
   }
   .guy4 {
     margin: 0 auto;
     width: 75%;
   }
-  .mov{
+  .mov {
     position: relative;
-    left:  6rem;
+    left: 6rem;
   }
   .title {
-  margin: 0 auto;
-  width: 70rem;
+    margin: 0 auto;
+    width: 70rem;
   }
   .phone2 {
     width: 95%;
@@ -1329,9 +1294,7 @@ width: 55rem;
     line-height: 1.4;
     font-size: 2.2rem;
   }
-
 }
-
 
 @media (min-width: 1399px) {
   .contact-container .title-content h3 {
@@ -1354,9 +1317,6 @@ width: 55rem;
   .contact-container .title-content h3 {
     font-size: 80px;
   }
-  
-
- 
 }
 @media (max-width: 991px) {
   .contact-container .input-body {
@@ -1401,7 +1361,6 @@ width: 55rem;
     justify-content: center;
   }
 
- 
   .contact-container {
     padding: 2rem 0 !important;
   }
