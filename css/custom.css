@@ -11,6 +11,7 @@
   --light: rgb(220, 245, 251);
   --letterBlueStrong: rgb(35, 168, 224);
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Coming+Soon&family=Zen+Kaku+Gothic+Antique:wght@300;700&display=swap");
 
 /*Globals*/
@@ -100,6 +101,7 @@ body {
 .l33 {
   font-size: 1.1rem;
   line-height: 1.2;
+  padding: 1rem;
 }
 .font-sc {
   font-size: 1rem;
@@ -266,7 +268,6 @@ header ul li {
 
 .three-subtitle {
   font-size: 1.6rem;
-  padding: 0 2rem;
 }
 .card {
   padding: 0 !important;
@@ -292,16 +293,15 @@ header ul li {
   text-align: center;
 }
 
-
-
 /**Four*/
 
 .four-text {
-  padding: 0.5rem 0rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
 }
 .cont-flu-seven {
   height: 100%;
- 
+
   color: black;
 
   position: relative;
@@ -331,7 +331,6 @@ header ul li {
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   padding: 0;
 
-  
   background-color: white;
 }
 
@@ -424,7 +423,8 @@ header ul li {
 
 .five-cards .card {
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   padding: 0;
   color: var(--dark);
   display: flex;
@@ -439,7 +439,7 @@ header ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   padding: 0 0.5rem;
   width: 100%;
   line-height: 1;
@@ -478,7 +478,6 @@ header ul li {
 .five .three-1 {
   font-size: 2rem;
   text-align: center;
-
 }
 .five .three-2 {
   color: var(--blueLight);
@@ -502,17 +501,15 @@ header ul li {
   font-size: 1.4rem;
 }
 
-.six .six-h2{
+.six .six-h2 {
   font-size: 2rem;
 }
-.six .six-h2-big{
-font-size: 3rem;
-text-align: center;
-
+.six .six-h2-big {
+  font-size: 3rem;
+  text-align: center;
 }
-.six .six-h2-low{
-font-size: 2rem;
-
+.six .six-h2-low {
+  font-size: 2rem;
 }
 
 /*Conctac*/
@@ -789,7 +786,6 @@ font-size: 2rem;
   .four h2 {
     font-size: 3rem;
   }
- 
 
   .l1 {
     font-size: 3.5rem;
@@ -820,6 +816,7 @@ font-size: 2rem;
     width: 20rem;
     padding: 1rem 0.5rem;
     text-align: center;
+    font-size: 1.4rem;
   }
   .first-text {
     margin-left: 0rem;
@@ -883,7 +880,7 @@ font-size: 2rem;
   .four-text {
     padding: 0.5rem 4rem;
   }
-  
+
   .five-cards p {
     height: 12rem;
   }
@@ -939,7 +936,7 @@ font-size: 2rem;
     position: relative;
     left: 5rem;
   }
-  
+
   .phone-size {
     width: 100%;
   }
@@ -960,10 +957,9 @@ font-size: 2rem;
     justify-content: flex-end;
   }
   .guy2 {
-   
     width: 35rem;
   }
- 
+
   .targetOne {
     background-image: url(../images/imagesCustom/9.png);
     background-size: cover;
@@ -1009,7 +1005,7 @@ font-size: 2rem;
     padding: 1rem;
   }
   .five-cards p {
-    height: 5rem;
+    height: 8rem;
   }
   .three-h1-content {
     padding-left: 2rem;
@@ -1023,7 +1019,7 @@ font-size: 2rem;
   .five .three-2 {
     color: var(--blueLight);
     text-align: center;
-    font-size: 3.50rem;
+    font-size: 3.5rem;
   }
   .five .three-3 {
     text-align: end;
@@ -1054,7 +1050,7 @@ font-size: 2rem;
   .espace {
     height: 100px;
   }
-  
+
   .move-cart {
     position: relative;
     bottom: 1.5rem;
@@ -1088,30 +1084,28 @@ font-size: 2rem;
     left: 5rem;
     width: 32rem;
   }
-  .four-text{
-    width: 30rem;
+  .four-text {
+    width: 32rem;
   }
   .four-card {
     width: 80%;
   }
-  #pad-six{
- 
+  #pad-six {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-   .six .six-h2{
-        font-size: 2rem;
-    }
-    .six .six-h2-big{
-      font-size: 3.50rem;
-      text-align: center;
-      margin-left: 2rem;
+  .six .six-h2 {
+    font-size: 2rem;
   }
-  .six .six-h2-low{
+  .six .six-h2-big {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-left: 2rem;
+  }
+  .six .six-h2-low {
     font-size: 2rem;
     text-align: end;
   }
-  
 }
 @media (min-width: 1300px) {
   .espace {
@@ -1171,20 +1165,19 @@ font-size: 2rem;
     text-align: end;
     font-size: 2.5rem;
   }
- 
-   .six .six-h2{
-        font-size: 2.25rem;
-    }
-    .six .six-h2-big{
-      font-size: 3.75rem;
-      text-align: center;
-      margin-left: 2rem;
+
+  .six .six-h2 {
+    font-size: 2.25rem;
   }
-  .six .six-h2-low{
+  .six .six-h2-big {
+    font-size: 3.75rem;
+    text-align: center;
+    margin-left: 2rem;
+  }
+  .six .six-h2-low {
     font-size: 2.25rem;
     text-align: end;
   }
-  
 }
 @media (min-width: 1600px) {
   .guy2 {
@@ -1195,8 +1188,8 @@ font-size: 2rem;
     left: 5rem;
     width: 38rem;
   }
-  .four-text{
-    width: 34rem;
+  .four-text {
+    width: 36rem;
   }
   .espace {
     height: 255px;
@@ -1204,7 +1197,6 @@ font-size: 2rem;
   .move-container {
     position: relative;
     top: 4rem;
-   
   }
 }
 
@@ -1220,13 +1212,13 @@ font-size: 2rem;
     left: 5rem;
     width: 45rem;
   }
-  .four-text{
-    width: 37rem;
+  .four-text {
+    width: 47rem;
+    font-size: 1.6rem;
   }
   .move-container {
     position: relative;
     top: 4.25rem;
-   
   }
 }
 @media (min-width: 1920px) {
@@ -1251,9 +1243,7 @@ font-size: 2rem;
   .move-container {
     position: relative;
     top: 4.5rem;
-   
   }
-  
 }
 
 @media (max-width: 1199px) {

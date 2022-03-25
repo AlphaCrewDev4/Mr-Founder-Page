@@ -40,9 +40,8 @@ body {
   object-position: center;
 }
 
-
 /*header*/
-.cont-popup{
+.cont-popup {
   width: 200px;
   position: absolute;
   top: 50rem;
@@ -64,6 +63,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 2.2rem;
+  font-weight: bold;
 }
 .containt {
   width: 150px;
@@ -73,7 +73,6 @@ body {
 .list a {
   text-decoration: none;
   color: rgb(178, 178, 178);
-
 }
 
 .list {
@@ -83,10 +82,10 @@ body {
   flex-direction: column;
   gap: 1px;
 }
-.show-list{
+.show-list {
   display: flex;
 }
-.hide-list{
+.hide-list {
   display: none;
 }
 
@@ -150,7 +149,6 @@ h1 {
   text-align: center;
   font-weight: 500;
   font-family: "Zen Kaku Gothic Antique", sans-serif !important;
-
 }
 header ul li {
   font-size: 18px;
@@ -225,7 +223,7 @@ h3 {
   text-align: center;
   font-weight: bold;
 }
-#arrow {
+.steps .arrow {
   width: 1rem;
   height: 6rem;
 }
@@ -236,13 +234,14 @@ h3 {
   align-items: center;
 }
 .line {
+  width: 90%;
   height: 5px;
   background-color: var(--line);
   margin-bottom: 4rem;
 }
 .guy1 {
   margin: 0 auto;
-  width: 70%;
+  width: 100%;
 }
 .tc-center {
   display: flex;
@@ -258,6 +257,9 @@ h3 {
 }
 
 /**Cuatro*/
+.four-text {
+  font-size: 2.2rem;
+}
 .four h2 {
   color: var(--blueMoreLigth) !important;
 
@@ -276,7 +278,7 @@ h3 {
 }
 .four-items h2 {
   color: var(--pinkStrong);
-  font-size: 3.5rem;
+  font-size: 4.25rem;
   line-height: 1.5;
   font-weight: bolder;
   text-align: center;
@@ -325,7 +327,7 @@ h3 {
   margin-top: 2rem;
 }
 .five h2 {
-  font-size: 2.5rem;
+  font-size: 5rem;
   font-weight: bold;
   color: var(--blueMoreLigth);
   text-align: center;
@@ -336,13 +338,13 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  line-height: 0;
+  line-height: 1;
 }
 .expect-options p {
   text-align: justify;
   width: 100%;
   display: flex;
-  font-size: 1.7rem;
+  font-size: 2.2rem;
   line-height: 1.5;
 }
 
@@ -350,7 +352,7 @@ h3 {
   background-color: var(--pinkStrong);
   color: var(--white);
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 2.2rem;
   padding: 1rem 4rem;
   border-radius: 2rem;
 }
@@ -370,9 +372,14 @@ h3 {
 /*Six*/
 .phone7 {
   margin: 0 auto;
-  width: 70%;
+  width: 100%;
 }
-
+.steps-final p {
+  font-size: 2.1rem;
+}
+.steps-first {
+  font-size: 2.1rem;
+}
 .six-first-text {
   color: var(--blueLight);
   font-weight: bold;
@@ -387,7 +394,7 @@ h3 {
 .four-items-first h2 {
   font-weight: bold;
   color: var(--pinkStrong);
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .four-items-first h3 {
   color: var(--dark);
@@ -408,19 +415,21 @@ h3 {
   left: 0rem;
 }
 .six-second-row h2 {
-  font-size: 3.5rem;
+  padding: 0;
+  margin: 0;
 
-  line-height: 1.25;
   color: var(--dark);
 }
-
+.six h3 {
+  font-size: 2.5rem;
+}
 .six-second-row span {
-  margin-left: 0rem;
+  margin-left: 4rem;
   color: var(--blueLight);
 }
 .six-parag {
   line-height: 1.2;
-  font-size: 1.8rem;
+  font-size: 2.1rem;
 }
 .steps-p {
   line-height: 1.4;
@@ -430,9 +439,24 @@ h3 {
   margin: 0 auto;
   width: 70%;
 }
+#ftitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#ftitle span {
+  color: var(--blueLight);
+}
+#ftitle h2 {
+  color: black;
+}
 
 /**Seven*/
-
+.title {
+  margin: 0 auto;
+  width: 100%;
+}
 .seven-first-text {
   padding: 0 2rem;
 }
@@ -462,7 +486,7 @@ h3 {
 
 .title-ceo {
   color: var(--blueMoreLigth);
-  font-size: 4.5rem;
+  font-size: 5rem;
   font-weight: bold;
 }
 .seven-content {
@@ -477,8 +501,7 @@ h3 {
   z-index: 100;
 }
 .seven-second-text h3 {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 2.2rem;
 }
 .get-started2 {
   background-color: var(--dark);
@@ -491,7 +514,7 @@ h3 {
   align-items: center;
 }
 .get-started2-content button {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   border-radius: 2rem;
 }
 .seven-target {
@@ -504,7 +527,7 @@ h3 {
   align-items: center;
 }
 .content-targets p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 .content-target {
   padding: 0 4rem;
@@ -535,13 +558,9 @@ h3 {
 }
 .guy4 {
   margin: 0 auto;
-  width: 70%;
+  width: 80%;
 }
-.title {
-  margin: 0 auto;
-  padding: 2rem;
-  width: 100%;
-}
+
 #title1 {
   z-index: 1;
 }
@@ -552,7 +571,7 @@ h3 {
 /*Eight*/
 .phone3 {
   margin: 0 auto;
-  width: 70%;
+  width: 30rem;
 }
 
 footer {
@@ -616,8 +635,6 @@ footer h3 {
   animation: pressButton 0.3s ease-in-out;
 }
 
-/*Info*/
-
 /* Info section */
 .info-container {
   background-color: #dcf3fa;
@@ -632,6 +649,7 @@ footer h3 {
 .info-container .title-info h4 {
   font-size: 32px;
   margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 .info-container .info-body {
@@ -669,18 +687,18 @@ footer h3 {
 }
 .guy5 {
   margin: 0 auto;
-  width: 50%;
 }
 
-/* contact section */
+/*Contact*/
+
 .contact-container {
-  padding: 10rem 0 !important;
-  background: rgb(0, 155, 219);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 155, 219, 1) 0%,
-    rgba(0, 216, 240, 1) 75%
-  );
+  background: url("../images/assets-animation/22.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 8rem 0 !important;
+  overflow: hidden;
 }
 
 .contact-container .title-content h3 {
@@ -802,7 +820,7 @@ footer h3 {
   .prin-targets p {
     width: 100%;
     padding: 0 3rem;
-    height: 10rem;
+    height: 12rem;
   }
 }
 
@@ -817,13 +835,22 @@ footer h3 {
 
 @media (min-width: 768px) {
   .three h2 {
-    font-size: 2.4rem;
+    font-size: 3rem;
     font-weight: bold;
     margin-left: 4rem;
     margin-bottom: 4rem;
   }
+  .title-ceo {
+    font-size: 8rem;
+  }
+  .six h3 {
+    font-size: 3.5rem;
+  }
+  .title-l1 {
+    width: 100%;
+  }
   .three-left {
-    margin-left: 9rem;
+    margin-left: 4rem;
     color: var(--blueLight);
   }
   .second-p p {
@@ -836,20 +863,13 @@ footer h3 {
     padding: 0rem;
   }
 
-  .six-second-row h2 {
-    font-size: 3rem;
-    line-height: 1.25;
-    color: var(--dark);
-  }
-
-  .six-second-row span {
-    margin-left: 10rem;
-    color: var(--blueLight);
-  }
   .eight p {
     line-height: 1.2;
+    font-size: 2rem;
   }
-
+  .four h2 {
+    font-size: 8rem;
+  }
   footer {
     text-align: left;
     font-size: 1.6rem;
@@ -903,25 +923,34 @@ footer h3 {
   }
   .guy5 {
     margin: 0 auto;
-    width: 50%;
   }
   .guy3 {
     width: 50.5%;
   }
-  .title {
-    margin: 0 auto;
-  
-    width: 100%;
-  }
+
   .guy4 {
-    margin: 0 auto;
-    width: 100%;
+    width: 80%;
   }
 }
 
 @media (min-width: 992px) {
+  #ftitle span {
+    color: var(--blueLight);
+    margin-left: 4rem;
+  }
   .three-padding {
     padding: 0 10rem;
+  }
+  .four-items-first h2 {
+    font-size: 4rem;
+  }
+  .six-second-row span {
+    margin-left: 10rem;
+    color: var(--blueLight);
+  }
+  .six-second-row h2 {
+    font-size: 4rem;
+    line-height: 1.25;
   }
   .four-items h2 {
     text-align: left;
@@ -950,8 +979,8 @@ footer h3 {
   }
   .network-text {
     padding: 8rem 0rem 8rem 4rem !important;
-    font-size: 1.8rem;
-    line-height: 1.5;
+    font-size: 2.2rem;
+    line-height: 1.4;
   }
   .cont-seven {
     width: 70%;
@@ -959,9 +988,14 @@ footer h3 {
   .seven-three-text {
     padding: 0 8rem;
   }
-  .guy4 {
-    display: block;
-    margin: auto;
+
+  .mov {
+    position: relative;
+    left: 2rem;
+  }
+  .title {
+    margin: 0 auto;
+    width: 40rem;
   }
   .prin-targets {
     width: 50rem;
@@ -973,11 +1007,6 @@ footer h3 {
   }
   .prin-targets p {
     height: 20rem;
-  }
-  .mov {
-    position: relative;
-    left: 5rem;
-    top: 5rem;
   }
 
   .guy1 {
@@ -1003,28 +1032,23 @@ footer h3 {
   }
   .guy5 {
     margin: 0 auto;
-    width: 80%;
   }
   .guy3 {
     width: 80.5%;
   }
-  .title {
-    margin: 0 auto;
-    width: 100%;
-  }
+
   .seven-first-text {
-    font-size:2rem;
+    font-size: 2rem;
     padding: 0 1rem;
   }
   .three h2 {
-    font-size: 2.6rem;
+    font-size: 3rem;
     font-weight: bold;
-    margin-left: 4rem;
+    margin-left: 2rem;
     margin-bottom: 4rem;
   }
-  .move-f-t{
-    height:100px;
- 
+  .move-f-t {
+    height: 100px;
   }
   .phone {
     margin: 0 auto;
@@ -1032,43 +1056,48 @@ footer h3 {
   }
 }
 
-
 @media (min-width: 1200px) {
+  #ftitle span {
+    color: var(--blueLight);
+    margin-left: 8rem;
+  }
   .prin-targets img {
     width: 40%;
   }
   .prin-targets p {
-    height: 18rem;
+    height: 22rem;
   }
-  .mov {
-    position: relative;
-    left: 5rem;
-    top: 0rem;
-  }
+
   .guy1 {
     width: 82.5%;
   }
+
   .phone2 {
     width: 100%;
+    margin-top: 1rem;
+  }
+  .second-p p {
+    padding: 1rem;
+    line-height: 1.3;
+    font-size: 2.1rem;
   }
   .network {
-    margin-top: 10rem;
-    width: 70%;
+    width: 90%;
   }
   .guy2 {
-    width: 70%;
+    width: 100%;
   }
   .phone7 {
     margin: 0 auto;
-    width: 82.5%;
+    width: 100%;
   }
+
   .phone3 {
     margin: 2rem auto;
-    width: 85%;
+    width: 55rem;
   }
   .guy5 {
     margin: 0 auto;
-    width: 60%;
   }
   .rigth {
     position: relative;
@@ -1078,31 +1107,44 @@ footer h3 {
   .guy3 {
     width: 70.5%;
   }
-  .title {
-    margin: 0 auto;
-    width: 45rem;
-  }
+
   .guy4 {
     margin: 0 auto;
     width: 95%;
   }
-  .six-second-row h2 {
-    font-size: 4rem;
-    line-height: 1.25;
-  }
+
   .three h2 {
     font-size: 3.5rem;
     font-weight: bold;
-    margin-left: 4rem;
+    margin-left: 2rem;
     margin-bottom: 4rem;
   }
   h1 {
     font-size: 7rem;
-   
   }
   .second h2 {
-    font-size: 6rem;
-  
+    font-size: 8rem;
+  }
+  .mov {
+    position: relative;
+    left: 4rem;
+  }
+  .title {
+    margin: 0 auto;
+    width: 45rem;
+  }
+  .expect-options {
+    line-height: 0.5;
+  }
+  h3 {
+    font-size: 3.5rem;
+  }
+  .phone {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .three-left {
+    margin-left: 8rem;
   }
 }
 
@@ -1110,28 +1152,34 @@ footer h3 {
   .guy1 {
     width: 62.5%;
   }
+
   .phone2 {
-    width: 85%;
+    width: 95%;
     margin-top: 2rem;
   }
+  .second-p p {
+    padding: 1rem;
+    line-height: 1.4;
+    font-size: 2.2rem;
+  }
   .network {
-    margin-top: 4rem;
-    width: 70%;
+    margin-top: 2rem;
+    width: 80%;
   }
   .guy2 {
-    width: 50%;
+    width: 85%;
   }
   .phone7 {
     margin: 0 auto;
-    width: 62.5%;
+    width: 85%;
   }
+
   .phone3 {
-    margin: 0 20rem;
-    width: 68%;
+    width: 90%;
   }
   .guy5 {
-    margin: 0 auto;
-    width: 50%;
+    display: flex;
+    justify-content: center;
   }
   .rigth {
     position: relative;
@@ -1144,56 +1192,76 @@ footer h3 {
   .seven-first-text {
     padding: 0 4rem;
   }
-  .title {
-    margin: 0rem auto;
 
-    width: 50rem;
-  }
   .guy4 {
     margin: 0 auto;
     width: 90%;
   }
-  
- 
-h1 {
-  font-size: 8rem;
-  
-  color: var(--white);
-  text-align: center;
-  font-weight: 500;
-  font-family: "Zen Kaku Gothic Antique", sans-serif !important;
 
-}
-.btn-first {
-  margin-top: 2rem;
+  h1 {
+    font-size: 8rem;
 
-  font-size: 2rem;
- 
-}
-.phone {
-  margin: 0 auto;
-  width: 100%;
-}
-.prin-targets p {
-  height: 12rem;
-}
+    color: var(--white);
+    text-align: center;
+    font-weight: 500;
+    font-family: "Zen Kaku Gothic Antique", sans-serif !important;
+  }
+  .btn-first {
+    margin-top: 2rem;
+
+    font-size: 2rem;
+  }
+  .phone {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .prin-targets p {
+    height: 16rem;
+  }
+  .mov {
+    position: relative;
+    left: 4rem;
+  }
+  .title {
+    margin: 0 auto;
+    width: 55rem;
+  }
 }
 
-@media (min-width:1600px){
-  .move-f-t{
+@media (min-width: 1600px) {
+  .move-f-t {
     height: 125px;
   }
   h1 {
     font-size: 8rem;
-   
   }
   .guy4 {
     margin: 0 auto;
-    width: 75%;
+    width: 78%;
+  }
+  .mov {
+    position: relative;
+    left: 6rem;
+  }
+  .title {
+    margin: 0 auto;
+    width: 60rem;
+  }
+  .seven-first-text {
+    padding: 0;
+  }
+  .phone3 {
+    width: 100%;
+  }
+  .eight p {
+    line-height: 1.5;
+  }
+  .second h2 {
+    font-size: 10rem;
   }
 }
-@media (min-width:1800px){
-  .move-f-t{
+@media (min-width: 1800px) {
+  .move-f-t {
     height: 175px;
   }
   .guy4 {
@@ -1201,18 +1269,34 @@ h1 {
     width: 70%;
   }
 }
-@media (min-width:1920px){
-  .move-f-t{
+@media (min-width: 1920px) {
+  .move-f-t {
     height: 250px;
   }
   .guy4 {
     margin: 0 auto;
-    width: 60%;
+    width: 75%;
+  }
+  .mov {
+    position: relative;
+    left: 6rem;
+  }
+  .title {
+    margin: 0 auto;
+    width: 70rem;
+  }
+  .phone2 {
+    width: 95%;
+    margin-top: 2rem;
+  }
+  .second-p p {
+    padding: 1rem;
+    line-height: 1.4;
+    font-size: 2.2rem;
   }
 }
 
-
-@media (max-width: 1399px) {
+@media (min-width: 1399px) {
   .contact-container .title-content h3 {
     font-size: 100px;
   }
@@ -1223,12 +1307,15 @@ h1 {
 }
 
 @media (max-width: 1199px) {
-  .contact-container .title-content h3 {
-    font-size: 80px;
-  }
-
   .info-container .title-info h4 {
     font-size: 24px;
+  }
+  .contact-container {
+    padding: 5rem 0 !important;
+  }
+
+  .contact-container .title-content h3 {
+    font-size: 80px;
   }
 }
 @media (max-width: 991px) {
@@ -1275,7 +1362,7 @@ h1 {
   }
 
   .contact-container {
-    padding: 5rem 0 !important;
+    padding: 2rem 0 !important;
   }
 
   .contact-container .title-content h3 {
@@ -1288,6 +1375,10 @@ h1 {
 
   .contact-container .input-container {
     flex-direction: column;
+  }
+
+  .contact-container::before {
+    bottom: -15%;
   }
 }
 

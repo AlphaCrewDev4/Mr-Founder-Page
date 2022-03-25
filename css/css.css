@@ -8,8 +8,7 @@ a {
   text-decoration: none;
 }
 
-img,
-video {
+img {
   width: 100%;
 }
 
@@ -59,7 +58,7 @@ input {
 }
 
 .custom-nav-item a {
-  color: rgb(209, 209, 209);
+  color: white;
   font-size: 20px;
   position: relative;
   text-decoration: none;
@@ -114,39 +113,38 @@ input {
 }
 
 .custom-nav .custom-nav-item .custom-burger-item {
-    transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .custom-nav .custom-nav-item .custom-burger-item li {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .custom-nav .custom-nav-item .custom-burger-item li a {
-    color: #555 !important;
-    position: relative;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-    margin-bottom: 1rem;
-    text-align: center;
-    padding: 0 0.5rem;
+  color: #555 !important;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 1rem;
+  text-align: center;
+  padding: 0 0.5rem;
 }
 
 .custom-nav .custom-nav-item .custom-burger-item li a:hover {
-    color: #000 !important;
+  color: #000 !important;
 }
 
 .custom-nav .custom-nav-item .custom-burger-item li a:hover::before {
-    background-color: #000;
-    bottom: -2px;
-    content: "";
-    left: 0;
-    position: absolute;
-    transition: all 0.3s ease-in-out;
-    width: 100%;
-    height: 3px;
+  background-color: #000;
+  bottom: -2px;
+  content: "";
+  left: 0;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  height: 3px;
 }
-
 
 .custom-link-logo {
   transition: all 0.3s ease-in-out;
@@ -210,10 +208,10 @@ input {
 }
 
 .sticky {
-    animation: mymove 1s ease-in-out;
-    background: rgba(0,155,219, 1);
-    position: fixed;
-    padding: 1rem 0;
+  animation: mymove 1s ease-in-out;
+  background: rgba(0, 155, 219, 1);
+  position: fixed;
+  padding: 1rem 0;
 }
 
 .sticky .custom-nav-list {
@@ -338,7 +336,7 @@ input {
 
   .custom-nav .custom-nav-item .custom-burger-item {
     width: 100%;
-}
+  }
 }
 
 @media (max-width: 767px) {
