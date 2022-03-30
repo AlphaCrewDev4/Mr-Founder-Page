@@ -296,7 +296,7 @@
 
 .seventh-container .text-content::before {
     background-color: #DBF4FB;
-    bottom: -15%;
+    bottom: calc(0% - 75px);
     left: calc(50% - 75px);
     content: "";
     width: 150px; 
@@ -591,13 +591,13 @@
 
 .thirteenth-container .image-text p {
     position: absolute;
-    font-size: 16px;
-    line-height: 1rem;
+    font-size: 22px;
+    line-height: 1.2em;
     margin: 0;
 }
 
 .thirteenth-container .image-text .text-1 {
-    top: 35%;
+    top: 20%;
     padding-left: 9rem;
     padding-right: 2rem;
 }
@@ -968,6 +968,7 @@
     margin-top: -10%;
     position: relative;
     padding: 2rem;
+    z-index: 2;
 }
 
 .twenty-second-container .custom-container::before {
@@ -983,14 +984,14 @@
     -ms-transform: rotate(45deg) skew(15deg, 15deg);
     -o-transform: rotate(45deg) skew(15deg, 15deg);
     transform: rotate(45deg) skew(15deg, 15deg);
-    z-index: 0;
+    z-index: -1;
 }
 
 .twenty-second-container .image-content {
     position: absolute;
-    width: 110%;
-    bottom: -7%;
-    left: -7%;
+    width: 100%;
+    bottom: -4%;
+    left: 0%;
 }
 
 .twenty-second-container .title-content .custom-title h2 {
@@ -1305,6 +1306,12 @@
     background-color: #EA00FF;
 }
 
+.twenty-eighth-container .image-content {
+    position: absolute;
+    width: 125%;
+    left: 10%;
+}
+
 /* Twenty ninth section */
 .twenty-ninth-container {
     position: relative;
@@ -1435,11 +1442,15 @@
     }
 
     .thirteenth-container .image-text .text-1 {
-        top: 25%;
+        padding-left: 7rem;
+        padding-right: 1rem;
+        top: 15%;
     }
 
     .thirteenth-container .image-text .text-2 {
-        top: 20%;
+        padding-left: 3rem;
+        padding-right: 7rem;
+        top: 25%;
     }
 
     .twenty-second-container .custom-container-2 .image-content-absolute {
@@ -1479,6 +1490,10 @@
 
     .first-container .text-content p {
         margin: 0;
+    }
+
+    .thirteenth-container .image-text p {
+        font-size: 16px;
     }
 
     .thirteenth-container .image-text .text-1 {
@@ -1534,7 +1549,7 @@
     }
 
     .seventh-container .text-content::before {
-        bottom: -8%;
+        bottom: calc(0% - 50px);;
         left: calc(50% - 50px);
         height: 100px;
         width: 100px;
@@ -1621,7 +1636,6 @@
 
     .twenty-second-container .image-content {
         position: initial;
-        margin-top: -10%;
         width: 75%;
     }
 
@@ -1647,6 +1661,11 @@
 
     .twenty-eighth-container .custom-arrow .arrow-up {
         width: 80%;
+    }
+
+    .twenty-eighth-container .image-content {
+        position: initial;
+        width: 100%;
     }
 
     .thirty-one-container .text-content-2 .image-list-absolute {
@@ -1696,6 +1715,10 @@
         font-size: 1em;
     }
 
+    .fourth-container .text-person {
+        font-size: 12px;
+    }
+
     .sixth-container .custom-title {
         margin: 1rem 0;
         padding: 1rem 0;
@@ -1727,7 +1750,7 @@
     .thirteenth-container .image-text .text-2 {
         padding-left: 3rem;
         padding-right: 7rem;
-        top: 20%;
+        top: 40%;
     }
 
     .seventeenth-container .custom-content .custom-image {
@@ -1808,6 +1831,10 @@
 }
 
 @media ( max-width: 575px ) {
+    .first-container {
+        background-position: center 0;
+    }
+
     .first-container .text-content {
         padding: 1rem;
     }

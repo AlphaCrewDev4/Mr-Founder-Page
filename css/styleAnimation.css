@@ -316,6 +316,7 @@
 
 .eighth-container .card-title-2 {
     position: relative;
+    z-index: 2;
 }
 
 .eighth-container .card-title-2::before {
@@ -408,6 +409,7 @@
 
 .nineth-container .card-title-2 {
     position: relative;
+    z-index: 2;
 }
 
 .nineth-container .card-title-2::before {
