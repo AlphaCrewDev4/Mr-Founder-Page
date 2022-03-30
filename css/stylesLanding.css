@@ -112,10 +112,10 @@
 }
 
 .first-container .image-content {
-    bottom: -5%;
+    bottom: -15%;
     position: absolute;
-    right: 0;
-    width: 30%;
+    right: 10%;
+    width: 200%;
 }
 
 /* Second section */
@@ -1425,6 +1425,10 @@
 /* Responsive */
 
 @media ( max-width: 1399px ) {
+    .first-container .image-content {
+        bottom: -5%;
+    }
+
     .fourth-container .row-left {
         left: -15%;
     }
@@ -1521,7 +1525,8 @@
     }
 
     .first-container .image-content {
-        right: -10%;
+        position: initial;
+        width: 75%;
     }
 
     .fourth-container .card-content {
