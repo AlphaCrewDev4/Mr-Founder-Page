@@ -405,7 +405,7 @@
     background-position: center 0;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: -15%;
+    margin-top: -10%;
     padding-top: 15% !important;
 }
 
@@ -493,6 +493,11 @@
 
 .tenth-container .blog-item .blog-link a:hover {
     color: #00D8F0;
+}
+
+/* Image full container */
+.image-full-container .image {
+    width: 90%;
 }
 
 /* Meet Section */

@@ -212,6 +212,11 @@
     text-align: center;
 }
 
+/* Image container */
+.image-container .image-content {
+    width: 65%;
+}
+
 /* Sixth section */
 .sixth-container {
     background-color: #333;
@@ -1724,6 +1729,10 @@
         font-size: 12px;
     }
 
+    .image-container .image-content {
+        width: 100%;
+    }
+
     .sixth-container .custom-title {
         margin: 1rem 0;
         padding: 1rem 0;
@@ -1736,6 +1745,10 @@
 
     .seventh-container .custom-title .image-title {
         position: initial;
+    }
+
+    .image-container-2 .image-content {
+        width: 90%;
     }
 
     .tenth-container .title-content {
