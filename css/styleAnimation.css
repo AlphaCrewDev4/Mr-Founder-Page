@@ -502,10 +502,10 @@
 .tenth-container::before {
     background-color: #DCF4FB;
     content: "";
-    height: 60%;
+    height: 70%;
     left: 0;
     position: absolute;
-    top: 15%;
+    top: 10%;
     width: 100%;
     z-index: -1;
 }

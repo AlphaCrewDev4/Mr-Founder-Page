@@ -92,15 +92,102 @@ input {
 .custom-nav-left {
     display: flex;
     align-items: center;
+    width: 80%;
 }
 
 .custom-nav-list {
+    width: 100%;
+}
+
+.custom-nav-list .desktop-view {
+    display: flex;
+}
+
+.custom-nav-list .mobile-view {
+    display: none;
+}
+
+.custom-nav-buttons {
+    display: flex;
+    width: 30%;
+}
+
+.custom-nav-buttons a {
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 0.5rem 1.5rem;
+    margin: 0 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-nav-buttons a:hover {
+    opacity: 0.8;
+}
+
+.custom-nav-buttons .nav-button-1 a {
+    background-color: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+}
+
+.custom-nav-buttons .nav-button-2 a {
+    background-color: #fff;
+    border: 3px solid #fff;
+    color: #333;
+}
+
+.custom-nav-container {
+    display: flex;
     margin: 0;
+    padding: 0;
+    width: 70%;
 }
 
 .custom-nav-item {
     padding: 0 2rem;
     position: relative;
+}
+
+.custom-nav-item .custom-burger-item {
+    background-color: #fff;
+    border-radius: 10px;
+    display: none;
+    left: 0;
+    padding: 1rem;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+}
+
+.custom-item-toggle .toggle-item::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid rgb(209, 209, 209);
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-item-toggle:hover .toggle-item::after {
+    border-top: 0;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0.3em solid rgb(209, 209, 209);
+    border-left: 0.3em solid transparent;
+}
+
+.custom-item-toggle:hover .custom-burger-item {
+    display: block;
+}
+
+.custom-item-toggle:hover .custom-burger-item:hover {
+    display: block;
+}
+
+.custom-nav-item .custom-burger-item li:last-child a {
+    margin-bottom: 0 !important;
 }
 
 .custom-nav-item a {
@@ -158,10 +245,6 @@ input {
     height: 3px;
 }
 
-.custom-nav .custom-nav-item .custom-burger-item {
-    transition: all 0.3s ease-in-out;
-}
-
 .custom-nav .custom-nav-item .custom-burger-item li {
     display: flex;
     justify-content: center;
@@ -190,18 +273,6 @@ input {
     transition: all 0.3s ease-in-out;
     width: 100%;
     height: 3px;
-}
-
-.custom-link-logo {
-    transition: all 0.3s ease-in-out;
-}
-
-.custom-link-logo:hover {
-    transform: translateX(-1rem);
-}
-
-.logo {
-    margin-right: 3rem;
 }
 
 .custom-menu-responsive {
@@ -420,6 +491,35 @@ input {
     margin-bottom: 0;
 }
 
+.info-container .nav-footer {
+    padding-left: 0;
+}
+
+.info-container .nav-footer .nav-footer-item {
+    margin: 1rem 0;
+}
+
+.info-container .nav-footer .nav-footer-item a {
+    color: #333;
+    position: relative;
+}
+
+.info-container .nav-footer .nav-footer-item a::before {
+    background-color: #333;
+    bottom: -6px;
+    content: "";
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    width: 0;
+}
+
+.info-container .nav-footer .nav-footer-item a:hover::before {
+    left: 0;
+    width: 100%;
+}
+
 /* Footer */
 .custom-footer {
     background-color: #333;
@@ -539,6 +639,14 @@ input {
         font-size: 18px;
     }
 
+    .custom-nav-buttons a {
+        font-size: 15px;
+    }
+
+    .custom-nav-item {
+        padding: 0 1rem;
+    }
+
     .contact-container {
         padding: 5rem 0 !important;
     }
@@ -596,9 +704,37 @@ input {
         display: block;
     }
 
+    .custom-nav-left {
+        width: auto;
+    }
+
+    .custom-nav-buttons {
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 2rem;
+    }
+
+    .custom-nav-container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .custom-nav-buttons a {
+        font-size: 20px;
+        padding: 1rem 2rem;
+    }
+
+    .custom-nav-list .desktop-view {
+        display: none;
+    }
+
+    .custom-nav-list .mobile-view {
+        display: flex;
+    }
+
     .custom-nav-list {
-        background: rgb(0,155,219);
-        background: linear-gradient(0deg, rgba(0,155,219,1) 0%, rgba(0,216,240,1) 75%);
+        background-color: rgb(0,155,219);
         display: none;
         position: absolute;
         top: 3rem;
@@ -608,7 +744,7 @@ input {
         width: 100%;
         justify-content: center;
         align-items: center;
-        padding: 1rem;
+        padding: 2rem 1rem;
     }
 
     .sticky .custom-nav-list {
@@ -652,7 +788,7 @@ input {
     }
 
     .custom-nav-item {
-        padding: 0;
+        padding: 1rem 0;
     }
 
     .custom-nav-item a:hover {
@@ -664,7 +800,8 @@ input {
     }
 
     .custom-nav .custom-nav-item .custom-burger-item {
-        width: 100%;
+        left: -50%;
+        width: 200%;
     }
 
     .custom-nav .dropdown-toggle::after {

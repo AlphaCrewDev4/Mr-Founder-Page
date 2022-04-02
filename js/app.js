@@ -7,6 +7,7 @@
     const header = document.querySelector('.custom-nav');
     const personItem = document.querySelectorAll('#personItem');
     const meetVideo = document.querySelectorAll("#meetVideo");
+    const menuToggleItem = document.querySelector('#toggle-item');
 
     //AOS function
     AOS.init();
@@ -30,6 +31,10 @@
             });
 
         }
+    });
+
+    menuToggleItem?.addEventListener('click', (event)=> {
+        event.preventDefault();
     });
 
     // Close menu when click item menu

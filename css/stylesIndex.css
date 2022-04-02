@@ -72,7 +72,7 @@
     transition: all 0.3s ease-in-out;
 }
 
-.first-container .buttons-content .button-1:hover a {
+.first-container .buttons-content .button-1 a:hover {
     border: 2px solid #2D2D2D;
 }
 
@@ -86,7 +86,7 @@
     transition: all 0.3s ease-in-out;
 }
 
-.first-container .buttons-content .button-2:hover a {
+.first-container .buttons-content .button-2 a:hover {
     border: 2px solid #fff;
 }
 
@@ -642,7 +642,6 @@
     background-color: #2d2d2d;
     border: 1px solid #fff;
     color: #fff;
-    padding: 1rem 2rem;
     transition: all 0.3s ease-in-out;
 }
 
@@ -654,6 +653,8 @@
 .meet-container .arrow-left span,
 .meet-container .arrow-right span {
     font-size: 1.5em;
+    padding: 1rem 2rem;
+    line-height: 2.3em;
 }
 
 
@@ -1035,10 +1036,6 @@
         height: 100px;
     }
 
-    .meet-container .arrow-left, .meet-container .arrow-right {
-        padding: 0.5rem 1rem;
-    }
-
     .meet-container .arrows-content {
         bottom: 28%;
         left: 38%;
@@ -1124,6 +1121,12 @@
 
     .meet-container .person-info {
         border-radius: 25px;
+    }
+
+    .meet-container .arrow-left span, .meet-container .arrow-right span {
+        font-size: 1.5em;
+        padding: 1rem;
+        line-height: 2em;
     }
 }
 

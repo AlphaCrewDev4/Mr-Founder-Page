@@ -50,31 +50,46 @@
         <header class="custom-nav">
             <div class="custom-nav-body">
                 <div class="custom-nav-left">
-                    <ul class="custom-nav-list">
-                        <li class="custom-nav-item active">
-                            <a href="#home">Home</a>
-                        </li>
-                        <li class="custom-nav-item">
-                            <a class="dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Services
-                            </a>
-                            <ul class="dropdown-menu custom-burger-item" aria-labelledby="dropdownMenu2">
-                                <li><a href="animation.html">Animation</a></li>
-                                <li><a href="custom.html">Software Development</a></li>
-                                <li><a href="marketing.html">Digital Marketing</a></li>
-                            </ul>
-                        </li>
-                        <li class="custom-nav-item">
-                            <a href="#">About us</a>
-                        </li>
-                        <li class="custom-nav-item">
-                            <a href="#">Clients</a>
-                        </li>
-                        <li class="custom-nav-item">
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>
+                    <nav class="custom-nav-list">
+                        <div class="custom-nav-buttons desktop-view">
+                            <div class="nav-button-1">
+                                <a href="#">Sign In</a>
+                            </div>
+                            <div class="nav-button-2">
+                                <a href="#">Sign Up</a>
+                            </div>
+                        </div>
+                        <ul class="custom-nav-container">
+                            <li class="custom-nav-item active">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="custom-nav-item custom-item-toggle">
+                                <a class="toggle-item" id="toggle-item" href="#">Services</a>
+                                <ul class="custom-burger-item">
+                                    <li><a href="animation.html">Animation</a></li>
+                                    <li><a href="custom.html">Software Development</a></li>
+                                    <li><a href="marketing.html">Digital Marketing</a></li>
+                                </ul>
+                            </li>
+                            <li class="custom-nav-item">
+                                <a href="#">About us</a>
+                            </li>
+                            <li class="custom-nav-item">
+                                <a href="#">Clients</a>
+                            </li>
+                            <li class="custom-nav-item">
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="custom-nav-buttons mobile-view">
+                            <div class="nav-button-1">
+                                <a href="#">Sign In</a>
+                            </div>
+                            <div class="nav-button-2">
+                                <a href="#">Sign Up</a>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
                 <div class="custom-nav-right">
                     <div class="custom-menu-responsive">
@@ -84,8 +99,8 @@
                         </label>
                     </div>
                     <div class="logo-container d-flex justify-content-end">
-                        <a class="d-flex justify-content-end custom-link-logo" href="#home"><img class="logo"
-                                src="images/logo-actualizado/1.png" alt="logo-mrfounder" /></a>
+                        <a class="d-flex justify-content-end custom-link-logo" href="index.html"><img class="logo"
+                                src="images/logo-actualizado/1.png" alt="Mr.Founder logo" /></a>
                     </div>
                 </div>
             </div>
@@ -98,11 +113,11 @@
                             <div class="col-12 col-lg-6 custom-box-1 d-flex justify-content-center"
                                 data-aos="fade-right" data-aos-duration="1000">
                                 <div class="image-content d-flex justify-content-center">
-                                    <img src="images/Assets-Home/1.png" alt="Artboard2" />
+                                    <img src="images/Assets-Home/1.png" alt="Mr.Founder" />
                                 </div>
                             </div>
                             <div class="col-12 col-lg-6 custom-box-2 d-flex flex-column justify-content-start align-items-center"
-                                data-aos="fade-up" data-aos-duration="1000">
+                                data-aos="fade-up" data-aos-duration="1000" style="z-index: 3;">
                                 <div class="title-content">
                                     <h1>We Can Help!</h1>
                                 </div>
@@ -126,7 +141,7 @@
                         <div class="row">
                             <div class="col-12 d-flex justify-content-center custom-container-row-1">
                                 <div class="subtitle-content">
-                                    <p>We’ll synchronize your IT solution based on your Marketing needs to meet your
+                                    <p>We'll synchronize your IT solution based on your Marketing needs to meet your
                                         specific
                                         business challenges without the hassle and risk of the building a team from
                                         scratch
@@ -139,7 +154,7 @@
                                         <div class="col-12 col-md-6 col-lg-3 custom-box-1">
                                             <div class="card-body">
                                                 <div class="image-card">
-                                                    <img src="images/Assets-Home/5.png" />
+                                                    <img src="images/Assets-Home/5.png" alt="qualities of services 1" />
                                                 </div>
                                                 <div class="card-text">
                                                     <p>No Interviews &
@@ -148,7 +163,7 @@
                                             </div>
                                             <div class="card-body">
                                                 <div class="image-card">
-                                                    <img src="images/Assets-Home/6.png" />
+                                                    <img src="images/Assets-Home/6.png" alt="qualities of services 2" />
                                                 </div>
                                                 <div class="card-text">
                                                     <p>No Employee
@@ -160,7 +175,7 @@
                                             <div
                                                 class="card-body-principal d-flex flex-column align-items-center justify-content-center">
                                                 <div class="image-card-principal">
-                                                    <img src="images/Assets-Home/4.png" />
+                                                    <img src="images/Assets-Home/4.png" alt="Mr.Founder" />
                                                 </div>
                                                 <div class="card-text-principal">
                                                     <p><span style="color: #49C4DF;">Faster</span> than
@@ -171,7 +186,7 @@
                                         <div class="col-12 col-md-6 col-lg-3 custom-box-1">
                                             <div class="card-body">
                                                 <div class="image-card">
-                                                    <img src="images/Assets-Home/7.png" />
+                                                    <img src="images/Assets-Home/7.png" alt="qualities of services 3" />
                                                 </div>
                                                 <div class="card-text">
                                                     <p>No Unreliable
@@ -180,7 +195,7 @@
                                             </div>
                                             <div class="card-body">
                                                 <div class="image-card">
-                                                    <img src="images/Assets-Home/16.png" />
+                                                    <img src="images/Assets-Home/16.png" alt="qualities of services 4" />
                                                 </div>
                                                 <div class="card-text">
                                                     <p>No Contracts
@@ -203,7 +218,7 @@
                                         <h3>How it works?</h3>
                                     </div>
                                     <div class="image-content">
-                                        <img src="images/Assets-Home/9.png" alt="Artboard9" />
+                                        <img src="images/Assets-Home/9.png" alt="How it works?" />
                                     </div>
                                 </div>
                                 <div class="sub-content">
@@ -281,11 +296,10 @@
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-12 col-lg-4">
-                                                <div class="custom-card d-flex flex-column justify-content-center align-items-center"
-                                                    data-aos="fade-right" data-aos-duration="1000">
+                                                <div class="custom-card d-flex flex-column justify-content-center align-items-center">
                                                     <div class="custom-card-image">
                                                         <img class="image-1" src="images/assets/Artboard 5.png"
-                                                            alt="Artboard5">
+                                                            alt="Animation">
                                                     </div>
                                                     <div class="custom-card-body">
                                                         <p>Animation</p>
@@ -293,11 +307,10 @@
                                                 </div>
                                             </div>
                                             <div class="col-12 col-lg-4">
-                                                <div class="custom-card d-flex flex-column justify-content-center align-items-center"
-                                                    data-aos="fade-up" data-aos-duration="1000">
+                                                <div class="custom-card d-flex flex-column justify-content-center align-items-center">
                                                     <div class="custom-card-image">
                                                         <img class="image-2" src="images/assets/Artboard 6.png"
-                                                            alt="Artboard6">
+                                                            alt="Full-Stack Engineering">
                                                     </div>
                                                     <div class="custom-card-body">
                                                         <p>Full-Stack
@@ -307,11 +320,10 @@
                                                 </div>
                                             </div>
                                             <div class="col-12 col-lg-4">
-                                                <div class="custom-card custom-card d-flex flex-column justify-content-center align-items-center"
-                                                    data-aos="fade-left" data-aos-duration="1000">
+                                                <div class="custom-card custom-card d-flex flex-column justify-content-center align-items-center">
                                                     <div class="custom-card-image">
                                                         <img class="image-3" src="images/assets/Artboard 7.png"
-                                                            alt="Artboard7">
+                                                            alt="Digital Marketing">
                                                     </div>
                                                     <div class="custom-card-body">
                                                         <p>Digital
@@ -642,11 +654,11 @@
                             </div>
                             <div class="col-12 col-lg-6 custom-box-1 d-flex align-items-center justify-content-center">
                                 <div class="image">
-                                    <img src="images/assets/Artboard-8.png" alt="Artboard8" />
+                                    <img src="images/assets/Artboard-8.png" alt="Mr.Founder qualities" />
                                 </div>
                             </div>
                             <div class="col-12 col-lg-6 custom-box-2">
-                                <div class="sub-content" data-aos="fade-left" data-aos-duration="1000">
+                                <div class="sub-content">
                                     <div class="sub-text">
                                         <p>We will engineer yourFront & Back
                                             End to enable
@@ -655,7 +667,7 @@
                                             your vision for your business into reality.
                                         </p>
                                     </div>
-                                    <div class="sub-text" data-aos="fade-left" data-aos-duration="1000">
+                                    <div class="sub-text">
                                         <p>We can produce high-quality video
                                             animation at a breakneck
                                             speed to give you
@@ -663,12 +675,12 @@
                                             ability
                                             to publish lead-generating campaign assets frequently.</p>
                                     </div>
-                                    <div class="sub-text" data-aos="fade-left" data-aos-duration="1000">
+                                    <div class="sub-text">
                                         <p>Multiple feedback instances for you to ensure we're all
                                             on the same page toward your project's success so that
                                             you can pivot and adjust on the go.</p>
                                     </div>
-                                    <div class="sub-text" data-aos="fade-left" data-aos-duration="1000">
+                                    <div class="sub-text">
                                         <p>Deliverables will undergo a methodical quality control
                                             process or 4 layers of revisions before we send them to
                                             you.</p>
@@ -1401,7 +1413,7 @@
                             <div class="col-12">
                                 <div class="title-content d-flex flex-column">
                                     <div class="title-1 d-flex justify-content-start">
-                                        <h3>We’re Already working</h3>
+                                        <h3>We're Already working</h3>
                                     </div>
                                     <div class="title-2 d-flex justify-content-center">
                                         <h2>With The Tools</h2>
@@ -1417,7 +1429,7 @@
                 <section class="col-12 image-full-container" data-aos="fade-up" data-aos-duration="1000">
                     <div class="image-content d-flex justify-content-center">
                         <div class="image">
-                            <img src="images/assets-landing-page/76.png" alt="image-76" />
+                            <img src="images/assets-landing-page/76.png" alt="Tools" />
                         </div>
                     </div>
                 </section>
@@ -1426,7 +1438,7 @@
                         <div class="row">
                             <div class="col-12 col-lg-6 custom-box-1">
                                 <div class="image-content">
-                                    <img src="images/Assets-Home/12.png" alt="Artboard" />
+                                    <img src="images/Assets-Home/12.png" alt="Mr.Founder" />
                                 </div>
                             </div>
                             <div
@@ -1444,7 +1456,7 @@
                                 </div>
                                 <div class="text-description">
                                     <p>Hi, my name is <span style="font-weight: bold;">Ricky
-                                            Flores</span> and I’m an
+                                            Flores</span> and I'm an
                                         engineer and entrepreneur.</p>
                                     <p>I believe
                                         that the best products are made with
@@ -1544,24 +1556,26 @@
                                             means and we will gladly assist you.</p>
                                     </div>
                                     <div class="image-absolute">
-                                        <img src="images/Assets-Home/13.png" alt="image-test" />
+                                        <img src="images/Assets-Home/13.png" alt="Mr.Founder call icon" />
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-6">
-                                <div class="input-body d-flex flex-column">
-                                    <div class="input-container d-flex">
-                                        <input class="custom-input" type="text" placeholder="Name" />
-                                        <input class="custom-input" type="text" placeholder="Email" />
+                                <form action="#" method="POST">
+                                    <div class="input-body d-flex flex-column">
+                                        <div class="input-container d-flex">
+                                            <input class="custom-input" type="text" placeholder="Name" />
+                                            <input class="custom-input" type="text" placeholder="Email" />
+                                        </div>
+                                        <div class="input-container d-flex">
+                                            <input class="custom-input" type="text" placeholder="Phone" />
+                                            <input class="custom-input" type="text" placeholder="Location" />
+                                        </div>
+                                        <div class="button-container">
+                                            <a href="#">Send Message</a>
+                                        </div>
                                     </div>
-                                    <div class="input-container d-flex">
-                                        <input class="custom-input" type="text" placeholder="Phone" />
-                                        <input class="custom-input" type="text" placeholder="Location" />
-                                    </div>
-                                    <div class="button-container">
-                                        <a href="#">Send Message</a>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -1572,7 +1586,7 @@
                             <div class="col-12 col-md-6 col-lg-3">
                                 <div class="info-body">
                                     <div class="title-info image-info">
-                                        <img src="images/logo-actualizado/2.png" alt="logo-info" />
+                                        <img src="images/logo-actualizado/2.png" alt="Mr.Founder footer logo" />
                                     </div>
                                     <div class="custom-text-info">
                                         <p>Our engineering and marketing
@@ -1631,10 +1645,17 @@
                                         <h4>Our Services</h4>
                                     </div>
                                     <div class="custom-text-info">
-                                        <p>Video Animation</p>
-                                        <p>Graphic Design UX / UI</p>
-                                        <p>IT & Engineering</p>
-                                        <p>Digital Marketing </p>
+                                        <ul class="nav-footer">
+                                            <li class="nav-footer-item">
+                                                <a href="custom.html">Software Development</a>
+                                            </li>
+                                            <li class="nav-footer-item">
+                                                <a href="animation.html">Video Animation</a>
+                                            </li>
+                                            <li class="nav-footer-item">
+                                                <a href="marketing.html">Digital Marketing</a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
