@@ -5,7 +5,7 @@
     
     const containt = document.querySelector(".containt");
     containt.style.backgroundColor = "transparent";
-    let show = false;
+    let show = true;
     const services = document.querySelector("#services");
     services.addEventListener("click", ()=>{
     

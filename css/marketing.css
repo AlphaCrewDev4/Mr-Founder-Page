@@ -110,7 +110,7 @@ nav {
   width: 235px;
 }
 
-header {
+aside {
   background-image: url("../images/imagesMarketing/2.png");
 
     background-position: center;
@@ -586,7 +586,7 @@ h3 {
 footer {
   background-color: var(--dark);
   color: var(--white);
-  font-size: 1rem;
+
   padding: 1.5rem 0;
 }
 
@@ -1161,12 +1161,4 @@ footer h3 {
 .contact-container .container{
 padding-top: 4rem;
 padding-bottom: 4rem;
-}
-.contact-container h3 {
- 
-  font-size: 8rem !important;
-}
-.contact-container p{
-  line-height: 1.3;
-  font-size: 25px;
 }
