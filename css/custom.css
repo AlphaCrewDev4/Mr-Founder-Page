@@ -936,9 +936,6 @@ header ul li {
 }
 
 @media (min-width: 1399px) {
-  .contact-container .title-content h3 {
-    font-size: 100px;
-  }
   h1 {
     font-size: 4rem;
     
@@ -1146,10 +1143,6 @@ header ul li {
   top: 3rem;
 }
 
-.contact-container p{
-  line-height: 1.5;
-  font-size: 24px;
-}
 @media (min-width:2400px){
   .phone {
     width: 60rem;

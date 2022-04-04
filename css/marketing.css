@@ -1158,7 +1158,45 @@ footer h3 {
     width: 90rem;
   }
 }
+
 .contact-container .container{
-padding-top: 4rem;
-padding-bottom: 4rem;
+  padding: 4rem 2rem;
+}
+
+.contact-container .custom-input {
+  padding: 1.5rem;
+}
+
+.custom-nav-item {
+  padding: 0 2.5rem;
+}
+
+.custom-nav-buttons a {
+  padding: 1rem 2rem;
+}
+
+.info-container .icon-content .icon-item {
+  padding: 1.5rem;
+}
+
+@media (max-width: 1199px){
+  .custom-nav-item {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 991px){
+  .custom-nav-item {
+    padding: 1.5rem 0;
+  }
+
+  .custom-nav-buttons a {
+    padding: 1.5rem 2.5rem;
+  }
+}
+
+@media (max-width: 575px){
+  .contact-container .container{
+    padding: 1rem;
+  }
 }

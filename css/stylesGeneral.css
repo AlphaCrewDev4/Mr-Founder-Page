@@ -344,6 +344,7 @@ input {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-size: 24px;
     position: relative;
     padding: 8rem 0 !important;
     overflow: hidden;
@@ -390,8 +391,8 @@ input {
 }
 
 .contact-container .input-body {
-    margin-left: 3rem;
-    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
 }
 
 .contact-container .input-container {
@@ -653,6 +654,7 @@ input {
 
     .contact-container {
         padding: 5rem 0 !important;
+        font-size: 18px;
     }
 
     .info-container .title-info h4 {
@@ -814,6 +816,7 @@ input {
     }
 
     .contact-container .input-body {
+        margin-top: 3rem;
         margin-left: 0;
     }
 
@@ -851,6 +854,7 @@ input {
     }
 
     .contact-container {
+        font-size: 16px;
         padding: 2rem 0 !important;
     }
 
