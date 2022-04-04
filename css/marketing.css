@@ -11,7 +11,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 70.5%;
   box-sizing: border-box;
 }
 
@@ -31,9 +31,12 @@ button:hover {
   padding: 1rem 2rem;
 }
 body {
-  font-size: 20px !important;
+  font-size: 18px !important;
 
   font-family: "Zen Kaku Gothic Antique", sans-serif !important;
+}
+body section {
+  padding: 4rem 0;
 }
 .img-adaptation {
   object-fit: cover;
@@ -106,11 +109,17 @@ nav {
   display: flex;
   width: 235px;
 }
+
 header {
   background-image: url("../images/imagesMarketing/2.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 8rem !important;
+    padding-bottom: 0 !important;
+    position: relative;
+
 }
 .cont-nav {
   display: flex;
@@ -155,7 +164,7 @@ header ul li {
 }
 .phone {
   margin: 0 auto;
-  width: 100%;
+  width: 75%;
 }
 .phone-tp {
   margin-top: 0;
@@ -635,186 +644,6 @@ footer h3 {
   animation: pressButton 0.3s ease-in-out;
 }
 
-/* Info section */
-.info-container {
-  background-color: #dcf3fa;
-  color: #333;
-  font-size: 20px;
-}
-
-.info-container .image-info {
-  width: 80%;
-}
-
-.info-container .title-info h4 {
-  font-size: 32px;
-  margin-bottom: 1rem;
-  font-weight: bold;
-}
-
-.info-container .info-body {
-  padding: 1rem;
-}
-
-.info-container .icon-content .icon-item {
-  background-color: #2d2d2d;
-  border-radius: 50%;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 25px;
-  margin-right: 1rem;
-  padding: 1rem;
-  width: 25px;
-}
-
-.info-container .icon-content .icon-item a {
-  display: flex;
-}
-
-.info-container .icon-content .icon-item span {
-  color: #fff;
-  font-size: 16px;
-}
-
-.info-container .info-item {
-  margin-bottom: 1rem;
-}
-
-.info-container .info-item p {
-  margin-left: 1rem;
-  margin-bottom: 0;
-}
-.guy5 {
-  margin: 0 auto;
-}
-
-/*Contact*/
-
-.contact-container {
-  background: url("../images/assets-animation/22.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  padding: 8rem 0 !important;
-  overflow: hidden;
-}
-
-.contact-container .title-content h3 {
-  font-size: 120px;
-  font-weight: bold;
-}
-
-.contact-container .text-content {
-  color: #333;
-  margin-left: 1rem;
-  margin-top: 1rem;
-  position: relative;
-  text-align: center;
-  width: 70%;
-}
-
-.contact-container .text-content::before {
-  background-color: #000;
-  content: "";
-  height: 4px;
-  left: 10%;
-  position: absolute;
-  top: -5%;
-  width: 80%;
-}
-
-.contact-container .text-content::after {
-  background-color: #000;
-  content: "";
-  height: 4px;
-  left: 10%;
-  position: absolute;
-  bottom: 0%;
-  width: 80%;
-}
-
-.contact-container .image-absolute {
-  position: absolute;
-  width: 30%;
-  right: 0;
-  bottom: -15%;
-  z-index: 1;
-}
-
-.contact-container .input-body {
-  margin-left: 3rem;
-  margin-top: 3rem;
-}
-
-.contact-container .input-container {
-  width: 100%;
-}
-
-.contact-container .custom-input {
-  border: 3px solid rgb(224, 224, 224);
-  color: rgb(211, 211, 211);
-  background-color: transparent;
-  padding: 1rem;
-  margin-right: 2rem;
-  margin-bottom: 2rem;
-  border-radius: 75px;
-  width: 100%;
-  transition: all 0.3s ease-in-out;
-}
-
-.contact-container .custom-input:hover {
-  padding-left: 2rem;
-}
-
-.contact-container .custom-input:focus {
-  color: #fff;
-}
-
-.contact-container .custom-input::placeholder {
-  color: rgb(224, 224, 224);
-}
-
-.contact-container .button-container {
-  margin-top: 0;
-}
-
-.contact-container .button-container a {
-  border: 2px solid #2d2d2d;
-  background-color: #2d2d2d;
-  color: #fff;
-  text-align: center;
-  width: 100%;
-}
-
-.contact-container .button-container a:hover {
-  border: 2px solid #2d2d2d;
-  background-color: #fff;
-  color: #2d2d2d;
-}
-
-/* Footer */
-.custom-footer {
-  background-color: #333;
-  font-size: 12px;
-}
-
-.custom-footer .custom-footer-container,
-.custom-footer-terms {
-  padding: 1rem 0;
-}
-
-.custom-footer .custom-footer-container p,
-.custom-footer a {
-  color: #fff;
-  margin: 0 !important;
-  text-decoration: none;
-}
-.custom-footer .terms-list a {
-  margin-right: 1rem !important;
-}
-/*Imágenes*/
 
 @media (min-width: 400px) {
   .prin-targets p {
@@ -829,7 +658,7 @@ footer h3 {
     padding: 0 10rem;
   }
   .prin-targets p {
-    height: 10rem;
+    height: 15rem;
   }
 }
 
@@ -998,7 +827,7 @@ footer h3 {
     width: 40rem;
   }
   .prin-targets {
-    width: 50rem;
+   
     padding: 4rem 1rem;
   }
 
@@ -1006,7 +835,8 @@ footer h3 {
     width: 30%;
   }
   .prin-targets p {
-    height: 20rem;
+    font-size: 16px;
+    height: 30rem;
   }
 
   .guy1 {
@@ -1052,11 +882,17 @@ footer h3 {
   }
   .phone {
     margin: 0 auto;
-    width: 90%;
+  
+  }
+  h1 {
+    font-size: 4rem;
   }
 }
 
 @media (min-width: 1200px) {
+  .move-title {
+    margin-left: 10rem;
+  }
   #ftitle span {
     color: var(--blueLight);
     margin-left: 8rem;
@@ -1065,7 +901,8 @@ footer h3 {
     width: 40%;
   }
   .prin-targets p {
-    height: 22rem;
+    font-size: 20px;
+    height: 26rem;
   }
 
   .guy1 {
@@ -1120,7 +957,7 @@ footer h3 {
     margin-bottom: 4rem;
   }
   h1 {
-    font-size: 7rem;
+    font-size: 5rem;
   }
   .second h2 {
     font-size: 8rem;
@@ -1141,7 +978,7 @@ footer h3 {
   }
   .phone {
     margin: 0 auto;
-    width: 90%;
+    width: 35rem;
   }
   .three-left {
     margin-left: 8rem;
@@ -1199,7 +1036,7 @@ footer h3 {
   }
 
   h1 {
-    font-size: 8rem;
+    font-size: 6rem;
 
     color: var(--white);
     text-align: center;
@@ -1213,10 +1050,10 @@ footer h3 {
   }
   .phone {
     margin: 0 auto;
-    width: 90%;
+    width: 40rem;
   }
   .prin-targets p {
-    height: 16rem;
+    height: 25rem;
   }
   .mov {
     position: relative;
@@ -1226,6 +1063,9 @@ footer h3 {
     margin: 0 auto;
     width: 55rem;
   }
+  .phone{
+    width: 45rem;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -1233,7 +1073,7 @@ footer h3 {
     height: 125px;
   }
   h1 {
-    font-size: 8rem;
+    font-size: 6rem;
   }
   .guy4 {
     margin: 0 auto;
@@ -1258,6 +1098,14 @@ footer h3 {
   }
   .second h2 {
     font-size: 10rem;
+  }
+  .prin-targets p {
+    font-size: 22px;
+    height: 15rem;
+  }
+  .phone {
+
+    width:55rem;
   }
 }
 @media (min-width: 1800px) {
@@ -1294,96 +1142,31 @@ footer h3 {
     line-height: 1.4;
     font-size: 2.2rem;
   }
-}
-
-@media (min-width: 1399px) {
-  .contact-container .title-content h3 {
-    font-size: 100px;
-  }
-
-  .contact-container .image-absolute {
-    bottom: 5%;
-  }
-}
-
-@media (max-width: 1199px) {
-  .info-container .title-info h4 {
-    font-size: 24px;
-  }
-  .contact-container {
-    padding: 5rem 0 !important;
-  }
-
-  .contact-container .title-content h3 {
-    font-size: 80px;
-  }
-}
-@media (max-width: 991px) {
-  .contact-container .input-body {
-    margin-left: 0;
-  }
-
-  .contact-container .image-absolute {
-    bottom: 0;
-  }
-}
-
-@media (max-width: 767px) {
-  .custom-footer-body {
-    flex-direction: column;
-    justify-content: center !important;
-  }
-
-  .custom-footer .custom-footer-container,
-  .custom-footer-terms {
-    display: flex;
-    justify-content: center;
-  }
-
-  .custom-footer .custom-footer-container {
-    order: 2;
-  }
-
-  .custom-footer .custom-footer-terms {
-    padding-bottom: 0;
-    order: 1;
-  }
-  .info-container .info-body {
-    text-align: center;
-  }
-
-  .info-container .image-info {
+  .phone {
     margin: 0 auto;
-  }
-
-  .info-container .icon-content,
-  .info-container .info-item {
-    justify-content: center;
-  }
-
-  .contact-container {
-    padding: 2rem 0 !important;
-  }
-
-  .contact-container .title-content h3 {
-    font-size: 80px;
-  }
-
-  .contact-container .title-content h3 {
-    font-size: 60px;
-  }
-
-  .contact-container .input-container {
-    flex-direction: column;
-  }
-
-  .contact-container::before {
-    bottom: -15%;
+  
   }
 }
-
-@media (max-width: 425px) {
-  .custom-footer .terms-list a {
-    margin-right: 0.5rem !important;
+@media (min-width:2048px){
+  .phone {
+    margin: 0 auto;
+    width: 80rem;
   }
+}
+@media (min-width:3000px){
+  .phone{
+    width: 90rem;
+  }
+}
+.contact-container .container{
+padding-top: 4rem;
+padding-bottom: 4rem;
+}
+.contact-container h3 {
+ 
+  font-size: 8rem !important;
+}
+.contact-container p{
+  line-height: 1.3;
+  font-size: 25px;
 }
