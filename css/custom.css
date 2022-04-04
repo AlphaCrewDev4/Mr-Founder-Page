@@ -129,9 +129,7 @@ header {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.prin-title {
-  margin-top: 4rem;
-}
+
 .centeri {
   display: flex;
   justify-content: space-evenly;
@@ -142,8 +140,8 @@ header {
 
   background-color: var(--dark);
   color: white;
-  font-size: 1.2rem;
-  padding: 1.5rem 4rem;
+  font-size: 1.1rem;
+  padding: 1rem 2.5rem;
   font-weight: bold;
   border-radius: 2.5rem;
 }
@@ -298,8 +296,9 @@ header ul li {
 /**Four*/
 
 .four-text {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
+
+  font-size: 1.6rem;
+ 
 }
 .cont-flu-seven {
   height: 100%;
@@ -394,7 +393,7 @@ header ul li {
 }
 .color-card p {
   padding: 2rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 .guy2 {
 }
@@ -601,10 +600,7 @@ header ul li {
 }
 
 @media (min-width: 768px) {
-  .title-margin {
-    margin-left: 5rem;
-  }
-
+ 
   .first-btn {
     margin-right: 5rem;
   }
@@ -639,8 +635,8 @@ header ul li {
 
 @media (min-width: 992px) {
   .four-text {
-    width: 20rem;
-    padding: 1rem 0.5rem;
+ 
+    padding: 0  ;
     text-align: center;
     font-size: 1.4rem;
   }
@@ -704,7 +700,7 @@ header ul li {
     margin-top: 7rem;
   }
   .four-text {
-    padding: 0.5rem 4rem;
+    padding: 2rem ;
   }
 
   .five-cards p {
@@ -759,6 +755,7 @@ header ul li {
   .move-text {
     position: relative;
     left: 5rem;
+    
   }
 
   .phone-size {
@@ -774,6 +771,13 @@ header ul li {
 }
 
 @media (min-width: 1200px) {
+  .title-margin {
+    margin-left: 5rem;
+  }
+
+  .prin-title {
+    margin-top: 4rem;
+  }
   .guy1 {
     position: relative;
     left: 2rem;
@@ -1004,7 +1008,7 @@ header ul li {
   
     background-color: var(--dark);
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.1rem;
     padding: 1.5rem 4rem;
     font-weight: bold;
     border-radius: 2.5rem;
@@ -1087,7 +1091,7 @@ header ul li {
     top: 4.5rem;
   }
   .phone {
-    width: 52rem;
+    width: 56rem;
     position: relative;
     left: 5rem;
   }
