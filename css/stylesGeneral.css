@@ -520,6 +520,10 @@ input {
     width: 100%;
 }
 
+.info-container .icon-content {
+    margin-bottom: 1rem;
+}
+
 /* Footer */
 .custom-footer {
     background-color: #333;
