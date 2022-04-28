@@ -157,6 +157,53 @@
     text-align: center;
 }
 
+.thrid-container .custom-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.thrid-container .custom-content .custom-item-line {
+    position: relative;
+    width: 33.3%;
+}
+
+.thrid-container .custom-content .custom-item-line::before {
+    background-color: #fff;
+    content: "";
+    height: 6px;
+    left: 5%;
+    position: absolute;
+    top: calc(50% - 3px);
+    width: 90%;
+}
+
+.thrid-container .custom-content .custom-item-text {
+    color: #fff;
+    text-align: center;
+    width: 33.3%;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+.thrid-container .custom-content .custom-item-text p {
+    margin: 0;
+}
+
+.thrid-container .custom-content .custom-item-image {
+    width: 33.3%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.thrid-container .custom-content .custom-item-image .image-content {
+    width: 50%;
+    padding-left: 1rem;
+}
+
 /* Fourth section */
 .fourth-container {
     position: relative;
@@ -964,8 +1011,12 @@
 
 /* Twenty second section */
 .twenty-second-container {
-    background-color: #E1E1E1;
+    background-color: #fff;
     position: relative;
+}
+
+.custom-section-2 {
+    background-color: #E1E1E1;
 }
 
 .twenty-second-container .custom-container {
@@ -1423,6 +1474,20 @@
     color: #EA00FF;
 }
 
+/* Testimonial section */
+
+.testimonial-container .button-container a {
+    background-color: #EA00FF;
+    border: 2px solid #EA00FF;
+    font-size: 24px ;
+}
+
+.testimonial-container .button-container a:hover {
+    background-color: #fff;
+    color: #EA00FF;
+    border: 2px solid #EA00FF;
+}
+
 /* Responsive */
 
 @media ( max-width: 1399px ) {
@@ -1517,6 +1582,10 @@
 
     .twenty-eighth-container {
         padding-bottom: 5rem !important;
+    }
+
+    .testimonial-container .button-container a {
+        font-size: 20px ;
     }
 }
 
@@ -1721,6 +1790,14 @@
         font-size: 1em;
     }
 
+    .thrid-container .custom-content .custom-item-text {
+        font-size: 1em;
+    }
+    
+    .thrid-container .custom-content .custom-item-image .image-content {
+        width: 75%;
+    }
+
     .fourth-container .text-person {
         font-size: 12px;
     }
@@ -1841,6 +1918,10 @@
 
     .twenty-ninth-container .text-content {
         margin: 1rem 0;
+    }
+
+    .testimonial-container .button-container a {
+        font-size: 16px ;
     }
 }
 

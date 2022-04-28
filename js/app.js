@@ -2,7 +2,10 @@
 (() => {
     // Variables
     const menuToggle = document.querySelector('#menu-toggle');
+    const secondMenuBody = document.querySelector('#secondary-menu-body');
+    const secondMenuToggle = document.querySelector('#secondary-menu-toggle');
     const menu = document.querySelector('.custom-nav-list');
+    const secondMenu = document.querySelector('#secondary-menu');
     const customYear = document.querySelector('#custom-year');
     const header = document.querySelector('.custom-nav');
     const personItem = document.querySelectorAll('#personItem');
@@ -23,14 +26,25 @@
             $('.custom-nav-list').slideToggle('slow', 'swing', function () {
                 menu.classList.add('show-menu');
             });
-
-
         } else {
             $('.custom-nav-list').slideToggle('slow', 'swing', function () {
                 menu.classList.remove('show-menu');
             });
 
         }
+    });
+
+    //Secondary Menu
+
+    secondMenuToggle?.addEventListener('click', () => {
+        if(secondMenuBody.classList.contains('secondary-menu-active')) {
+            secondMenuBody.classList.remove('secondary-menu-active');
+        } else {
+            secondMenuBody.classList.add('secondary-menu-active');
+        }
+        $('#secondary-menu').slideToggle('slow', 'swing', function () {
+            secondMenu.classList.add('show-menu');
+        });
     });
 
     menuToggleItem?.addEventListener('click', (event)=> {
@@ -55,7 +69,7 @@
     // Sticky Menu
 
     window.addEventListener('scroll', () => {
-        header.classList.toggle('sticky', window.scrollY > 50);
+        header?.classList.toggle('sticky', window.scrollY > 50);
     });
 
     // Function Meet
