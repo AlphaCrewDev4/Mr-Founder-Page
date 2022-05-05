@@ -29,6 +29,10 @@ input {
     overflow: hidden;
 }
 
+.custom-w-100 {
+    width: 100%;
+}
+
 .custom-w-75 {
     width: 75%;
 }
@@ -41,6 +45,8 @@ input {
     width: 50%;
 }
 
+/* style general button */
+
 .button-container {
     display: flex;
     justify-content: center;
@@ -52,6 +58,7 @@ input {
     border: 2px solid #00dcff;
     color: #fff;
     cursor: pointer;
+    font-weight: bold;
     padding: 1rem 5rem;
     border-radius: 50px;
     transition: all 0.3s ease-in-out;
@@ -72,10 +79,59 @@ input {
     z-index: 9999;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 2rem;
     transition: all 0.3s ease-in-out;
+}
+
+.custom-bar {
+    background-color: #000;
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.custom-bar .custom-bar-body {
+    max-width: 1320px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 2rem;
+}
+
+.custom-bar .custom-bar-list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.custom-bar .custom-bar-item {
+    padding: 0 2rem;
+}
+
+.custom-bar .custom-bar-item a {
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-bar .custom-bar-item a::before {
+    background-color: #fff;
+    content: "";
+    bottom: -5px;
+    left: 50%;
+    height: 3px;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    width: 0;
+}
+
+.custom-bar .custom-bar-item a:hover::before {
+    left: 0;
+    width: 100%;
 }
 
 .custom-nav-body {
@@ -83,6 +139,7 @@ input {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    padding: 0 2rem;
 }
 
 .custom-nav-right {
@@ -107,40 +164,11 @@ input {
     display: none;
 }
 
-.custom-nav-buttons {
-    display: flex;
-    width: 30%;
-}
-
-.custom-nav-buttons a {
-    border-radius: 15px;
-    font-size: 20px;
-    padding: 0.5rem 1.5rem;
-    margin: 0 0.5rem;
-    transition: all 0.3s ease-in-out;
-}
-
-.custom-nav-buttons a:hover {
-    opacity: 0.8;
-}
-
-.custom-nav-buttons .nav-button-1 a {
-    background-color: transparent;
-    border: 3px solid #fff;
-    color: #fff;
-}
-
-.custom-nav-buttons .nav-button-2 a {
-    background-color: #fff;
-    border: 3px solid #fff;
-    color: #333;
-}
-
 .custom-nav-container {
     display: flex;
     margin: 0;
     padding: 0;
-    width: 70%;
+    width: 100%;
 }
 
 .custom-nav-item {
@@ -329,6 +357,7 @@ input {
     background: rgba(0,155,219, 1);
     position: fixed;
     padding: 1rem 0;
+    padding-top: 0;
 }
 
 .sticky .custom-nav-list {
@@ -339,12 +368,12 @@ input {
 .secondary-menu-left {
     position: fixed;
     left: 0;
-    top: calc(50vh - 150px);
+    top: calc(50vh - 125px);
     z-index: 9999999999;
 }
 
 .secondary-menu-active {
-    top: calc(50vh - 268px);
+    top: calc(50vh - 268px) !important;
 }
 
 .secondary-menu-body {
@@ -360,7 +389,7 @@ input {
     font-size: 28px;
     font-weight: bold;
     display: flex;
-    height: 300px;
+    height: 250px;
     transition: all 0.5s ease-in-out;
 }
 
@@ -371,6 +400,10 @@ input {
 .secondary-menu-body .secondary-menu-name p {
     margin: 0;
     transform: rotate(-90deg);
+}
+
+.secondary-menu-body .secondary-menu-mobile-icon {
+    display: none;
 }
 
 .secondary-menu-body .secondary-menu-content {
@@ -440,6 +473,10 @@ input {
     overflow: hidden;
 }
 
+.contact-container .title-content {
+    margin-bottom: 0 !important;
+}
+
 .contact-container .title-content h3 {
     font-size: 4em;
     font-weight: bold;
@@ -458,7 +495,7 @@ input {
     height: 4px;
     left: 10%;
     position: absolute;
-    top: -15%;
+    top: -1.5rem;
     width: 80%;
 }
 
@@ -468,7 +505,7 @@ input {
     height: 4px;
     left: 10%;
     position: absolute;
-    bottom: 0%;
+    bottom: -0.5rem;
     width: 80%;
 }
 
@@ -723,6 +760,18 @@ input {
     font-size: 6em;
 }
 
+.testimonial-container .owl-dots span {
+    background: transparent !important;
+}
+
+.testimonial-container .owl-dots .active span {
+    background: transparent !important;
+}
+
+.testimonial-container .owl-dots span:hover {
+    background: transparent !important;
+}
+
 
 /* Responsive */
 @media (max-width: 1399px) {
@@ -738,10 +787,6 @@ input {
         font-size: 15px;
     }
 
-    .custom-nav-item {
-        padding: 0 1rem;
-    }
-
     .contact-container {
         padding: 5rem 0 !important;
         font-size: 18px;
@@ -754,7 +799,7 @@ input {
 
 @media (max-width: 991px) {
     #body section {
-        padding: 1rem;
+        padding: 2rem 0;
     }
 
     .custom-box-1 {
@@ -782,6 +827,16 @@ input {
     .logo {
         margin-right: 0;
         width: 250px;
+    }
+
+    .custom-nav-body,
+    .custom-bar .custom-bar-body {
+        padding: 0;
+    }
+
+    .custom-bar .custom-bar-list {
+        justify-content: space-between;
+        width: 100%;
     }
 
     .custom-menu-responsive {
@@ -844,7 +899,7 @@ input {
     }
 
     .sticky .custom-nav-list {
-        top: 2rem;
+        top: 7.5rem;
     }
 
     #menu-toggle ~ .custom-nav-list li a {
@@ -932,6 +987,70 @@ input {
     .testimonial-container .custom-slide-card {
         width: 90%;
     }
+
+    .secondary-menu-left {
+        top: 0;  
+    }
+
+    .secondary-menu-body .secondary-menu-name {
+        font-size: 24px;
+    }
+
+    .secondary-menu-body .secondary-menu-name p {
+        display: none;
+    }
+    
+    .secondary-menu-body .secondary-menu-mobile-icon {
+        display: block;
+    }
+
+    .secondary-menu-body .secondary-menu-mobile-icon span {
+        font-size: 60px;
+        padding: 0 1rem;
+    }
+
+    .secondary-menu-body .secondary-menu-content {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .secondary-menu-body .secondary-menu-list {
+        text-align: center;
+        margin-top: 4.5rem;
+    }
+
+    .secondary-menu-body .secondary-menu-name {
+        z-index: 2;
+        height: 74px;
+        margin-top: calc(50vh - 37px);
+    }
+
+    .secondary-menu-active .secondary-menu-name {
+        z-index: 2;
+        height: 74px !important;
+        margin-top: 0;
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .secondary-menu-body .secondary-menu-name .close{
+        display: none;
+    }
+
+    .secondary-menu-active {
+        top: 0 !important;
+    }
+
+    .secondary-menu-active .close {
+        display: block !important;
+    }
+
+    .secondary-menu-active .open {
+        display: none;
+    }
 }
 
 @media (max-width: 767px) {
@@ -941,6 +1060,11 @@ input {
 
     .logo {
         width: 200px;
+    }
+
+    .custom-nav {
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .contact-container {
@@ -999,6 +1123,10 @@ input {
     .testimonial-container .custom-slide-card {
         width: 90%;
     }
+
+    .sticky .custom-nav-list {
+        top: 6.5rem;
+    }
 }
 
 @media (max-width: 575px) {
@@ -1027,7 +1155,7 @@ input {
     }
 
     .testimonial-container .video-content {
-        width: 80%;
+        width: 90%;
     }
 
     .testimonial-container .arrow-right,
@@ -1044,11 +1172,27 @@ input {
     .testimonial-container .arrow-right span:hover {
         font-size: 2.5em;
     }
+
+    .testimonial-container .arrow-right {
+        right: -5%;
+    }
+
+    .testimonial-container .arrow-left {
+        left: -5%;
+    }
+
+    .contact-container {
+        padding: 2rem !important;
+    }
 }
 
 @media (max-width: 425px) {
     .custom-footer .terms-list a {
         margin-right: 0.5rem !important;
+    }
+
+    .secondary-menu-body .secondary-menu-mobile-icon span {
+        font-size: 40px;
     }
 }
 

@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mr. Founder</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="css/stylesIndex.css" />
+  <link rel="stylesheet" href="css/stylesGeneral.css" />
+  <link rel="stylesheet" href="./css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/9fec6034d2.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ANIMATION AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <header class="custom-nav">
+      <div class="custom-nav-body">
+        <div class="custom-nav-left">
+          <nav class="custom-nav-list">
+            <div class="custom-nav-buttons desktop-view">
+              <div class="nav-button-1">
+                <a href="#">Sign In</a>
+              </div>
+              <div class="nav-button-2">
+                <a href="#">Sign Up</a>
+              </div>
+            </div>
+            <ul class="custom-nav-container">
+              <li class="custom-nav-item">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="custom-nav-item custom-item-toggle">
+                <a class="toggle-item" id="toggle-item" href="#">Services</a>
+                <ul class="custom-burger-item">
+                  <li><a href="animation.html">Animation</a></li>
+                  <li class="active">
+                    <a href="custom.html">Software Development</a>
+                  </li>
+                  <li><a href="marketing.html">Digital Marketing</a></li>
+                </ul>
+              </li>
+              <li class="custom-nav-item">
+                <a href="#">About us</a>
+              </li>
+              <li class="custom-nav-item">
+                <a href="#">Clients</a>
+              </li>
+              <li class="custom-nav-item">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="custom-nav-buttons mobile-view">
+              <div class="nav-button-1">
+                <a href="#">Sign In</a>
+              </div>
+              <div class="nav-button-2">
+                <a href="#">Sign Up</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="custom-nav-right">
+          <div class="custom-menu-responsive">
+            <input id="menu-toggle" type="checkbox" />
+            <label class="menu-button-container" for="menu-toggle">
+              <div class="menu-button"></div>
+            </label>
+          </div>
+          <div class="logo-container d-flex justify-content-end">
+            <a class="d-flex justify-content-end custom-link-logo" href="index.html"><img class="logo"
+                src="images/logo-actualizado/1.png" alt="Mr.Founder logo" /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="posicion">
+      <div class="container-fluid mt-5">
+        <div class="row p-5">
+          <div class="col-lg-6 phone-tp" data-aos="fade-left" data-aos-anchor-placement="top-bottom"
+            data-aos-delay="250" data-aos-duration="2500">
+            <div class="card border-0 h-100" style="background-color: transparent">
+              <div class="phone">
+                <img class="flex-md-grow-0" src="./images/imagesCustom/3.png"
+                  alt="Mr. Founder Custom Software Development Services" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex flex-column order-first order-lg-last" data-aos="fade-right"
+            data-aos-anchor-placement="top-bottom" data-aos-delay="250" data-aos-duration="2500">
+            <div class="d-flex flex-column align-items-center justify-content-center pt-5">
+              <h1 class="prin-title">Custom Software Development Services</h1>
+              <button class="btn btn-first">
+                Book Your Free Consultation
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="espace"></div>
+    </section>
+    <main class="first">
+      <section class="container">
+        <div class="row">
+          <div class="col-lg-6 guy1 move-guy order-last order-lg-first" data-aos="blank"
+            data-aos-anchor-placement="blank" data-aos-delay="250" data-aos-duration="2500">
+            <div class="card border-0 h-100" style="background-color: transparent">
+              <div class="guy1">
+                <img class="flex-lg-grow-1" src="./images/imagesCustom/4.png" alt="Mr. Founder Software Development" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 first-content move-first">
+            <div class="p-2">
+              <h2 class="mb-5 mt-5 fw-bold">
+                Wondering if<br />
+                <span class="title-color">Software Development</span><br />
+                <span class="title-margin">is the right step for your business?</span>
+              </h2>
+            </div>
+            <div class="title-margin">
+              <p class="first-text">
+                Mr. Found3r has been in the software development business for
+                over 5 years, and we know that not every company needs or
+                wants custom software.<br /><br />
+
+                That’s why we offer a wide range of services – so you can find
+                the perfect one for your business.<br /><br />
+
+                We also have a team of experienced developers who are
+                passionate about helping businesses grow.<br /><br />
+
+                <span class="fw-bold">What To Expect:</span><br />
+              </p>
+            </div>
+            <div class="container-lg">
+              <div class="row">
+                <div class="col-lg-6 my-2" data-aos="blank" data-aos-anchor-placement="blank" data-aos-delay="250"
+                  data-aos-duration="2500">
+                  <div class="bg-primary text-light">
+                    <div class="first-items bg-white">
+                      <img class="img-fluid size-icon" src="./images/imagesCustom/5.png" alt="Customized service" />
+
+                      <div style="width: 100%" class="d-flex justify-content-center align-content-center">
+                        <h3 class="text-center tc-center fw-bold" style="color: var(--letterBlueStrong)">
+                          Customized service tailored to your needs
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 my-2" data-aos="blank" data-aos-anchor-placement="blank" data-aos-delay="250"
+                  data-aos-duration="2500">
+                  <div class="bg-primary text-light">
+                    <div class="first-items bg-white">
+                      <img class="img-fluid size-icon" src="./images/imagesCustom/6.png"
+                        alt="Guaranteed deliverables" />
+                      <div style="width: 100%" class="d-flex justify-content-center align-content-center">
+                        <h3 class="text-center tc-center fw-bold" style="color: var(--letterBlueStrong)">
+                          Guaranteed deliverables
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-lg my-4">
+              <div class="row">
+                <div class="col-lg-6 my-2" data-aos="blank" data-aos-anchor-placement="blank" data-aos-delay="250"
+                  data-aos-duration="2500">
+                  <div class="bg-primary text-light">
+                    <div class="first-items bg-white">
+                      <img class="img-fluid size-icon" src="./images/imagesCustom/7.png" alt="Highly efficient" />
+                      <div style="width: 100%" class="d-flex justify-content-center align-content-center">
+                        <h3 class="text-center tc-center fw-bold" style="color: var(--letterBlueStrong)">
+                          Highly efficient development process
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 my-2" data-aos="blank" data-aos-anchor-placement="blank" data-aos-delay="250"
+                  data-aos-duration="2500">
+                  <div class="bg-primary text-light">
+                    <div class="first-items bg-white">
+                      <img class="img-fluid size-icon" src="./images/imagesCustom/8.png" alt="Fixed cost" />
+                      <div style="width: 100%" class="d-flex justify-content-center align-content-center">
+                        <h3 class="text-center tc-center fw-bold" style="color: var(--letterBlueStrong)">
+                          Fixed cost or on a time and materials, basis
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tc-center">
+                <button class="btn button-dark first-btn">
+                  Book your free Consultation
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="container second-cont">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="title-color text-center mb-3 fw-bold">eCommerce</h2>
+          <h3 class="text-center mb-5 mt-4">
+            Have you been looking for a way to get ahead in<br />
+
+            the eCommerce field?
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <div class="posicion3">
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center align-content-center">
+          <div class="col-xl-2 mx-1 my-2 targetOne" data-aos="blank" data-aos-anchor-placement="blank"
+            data-aos-delay="250" data-aos-duration="2500">
+            <div class="row">
+              <div class="col-12 text-center">
+                Our top engineers will design, develop, implement and maintain
+                market-leading eCommerce applications for your business.
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-2 mx-1 my-2 targetTwo" data-aos="blank" data-aos-anchor-placement="blank"
+            data-aos-delay="250" data-aos-duration="2500">
+            <div class="col-12 text-center">
+              We know that every company is different and has unique needs
+              when it comes to their tech stack.
+            </div>
+          </div>
+
+          <div class="col-xl-2 mx-1 my-2 targetThree" data-aos="blank" data-aos-anchor-placement="blank"
+            data-aos-delay="250" data-aos-duration="2500">
+            <div class="col-12 text-center">
+              That’s why our team of experts will work with you one on one
+              until we find a solution that works best for your business!
+            </div>
+          </div>
+
+          <div class="col-xl-2 myx-1 my-2 targetFour" data-aos="blank" data-aos-anchor-placement="blank"
+            data-aos-delay="250" data-aos-duration="2500">
+            <div class="col-12 text-center">
+              You can rest easy knowing that our team of experts is working
+              hard behind the scenes day in and day out to ensure all projects
+              go smoothly from start to finish.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Three-->
+    <section class="three">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="three-h1-content">
+              <h2 class="three-1 fw-bold mt-5">
+                With Mr. Found3r by your side You can focus on
+              </h2>
+              <h2 class="three-2 fw-bold">Growing your business</h2>
+              <h2 class="three-3 fw-bold mb-5">
+                while we handle everything else!
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row pb-5">
+          <div class="col-lg-6" data-aos="blank" data-aos-anchor-placement="blank" data-aos-delay="250"
+            data-aos-duration="2500">
+            <div class="">
+              <h3 class="three-subtitle">
+                Let us take care of all those pesky technical<br />
+                issues so you don't have to!<br /><br />
+
+                <span class="fw-bold">What To Expect:</span><br /><br />
+              </h3>
+              <ul class="three-subtitle">
+                <li>
+                  Maintain control of your codebase and<br />
+                  not be stuck with technology<br />
+                  that doesn't suit you<br /><br />
+                </li>
+
+                <li>Increase your ROI through innovation<br /><br /></li>
+
+                <li>Automate and eliminate mundane tasks<br /><br /></li>
+
+                <li>
+                  Work with the top engineers in the industry<br /><br />
+                </li>
+              </ul>
+            </div>
+
+            <div class="d-flex justify-content-center">
+              <button class="btn button-light">
+                Book your free Consultation
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="blank" data-aos-anchor-placement="blank" data-aos-delay="250"
+            data-aos-duration="2500">
+            <div class="card border-0 h-100" style="background-color: transparent">
+              <div class="e-commerce">
+                <img class="flex-md-grow-0" src="./images/imagesCustom/14.png"
+                  alt="Mr. Founder Growing your business" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Four-->
+    <section class="container four">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center for-top">MVP Development</h2>
+          <h3 class="text-center for-bottom">
+            Do you have an idea for a startup?
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <div class="cont-flu-seven">
+      <section class="container four-card">
+        <div class="row move-container">
+          <div class="col-lg-6 content-card">
+            <div class="d-flex flex-column align-items-center">
+              <div class="card border-0 h-100" style="background-color: transparent">
+                <div class="title">
+                  <img class="img-fluid flex-md-grow-1" src="./images/imagesCustom/24.png"
+                    alt="Mr. Founder Validate Your Idea" />
+                </div>
+              </div>
+              <div class="move-text">
+                <p class="four-text mb-4">
+                  This will give you the opportunity to test and measure
+                  customer reactions, as well as make sure the business model
+                  is sound before investing too much time or money into it.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 four-move1">
+            <div class="card border-0 h-100" style="background-color: transparent">
+              <div class="guy2">
+                <img class="img-fluid flex-md-grow-0" src="./images/imagesCustom/15.png"
+                  alt="Mr. Founder Validate Your Idea" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row move-cart">
+          <div class="col-lg-12">
+            <h3 class="text-center four-row-pink">
+              You can focus on what matters most <br />
+              your customers and their needs
+            </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p class="text-center mt-3 p-2" style="font-size: 1.6rem">
+              Mr. Found3r will handle all of the technical aspects so that
+              <br />
+              you can get back to doing what’s important
+            </p>
+
+            <p class="text-center fw-bold" style="font-size: 1.6rem">
+              growing your business!
+            </p>
+            <div class="tc-center p-4">
+              <button class="btn btn-more fw-bold">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <br /><br /><br />
+    <div class="container-fluid custom-content-1">
+      <div class="row content-boxs ps-5 pe-5">
+        <div class="col-md-6 my-2 mx-3 color-card" style="width: 18rem">
+          <img src="./images/imagesCustom/16.png" style="width: 50%" alt="fIcon1" />
+          <p class="text-center">
+            Begin to designing your product from the ground up with minimal
+            resources
+          </p>
+        </div>
+        <div class="col-md-6 my-2 mx-3 color-card" style="width: 18rem">
+          <img src="./images/imagesCustom/17.png" style="width: 50%" alt="fIcon2" />
+          <p class="text-center">
+            Unlock new revenue streams with quick prototypes
+          </p>
+        </div>
+        <div class="col-md-6 my-2 mx-3 color-card" style="width: 18rem">
+          <img src="./images/imagesCustom/18.png" style="width: 50%" alt="fIcon3" />
+          <p class="text-center">
+            Get feedback on your business model from stakeholders
+          </p>
+        </div>
+        <div class="col-md-6 my-2 mx-3 color-card" style="width: 18rem">
+          <img src="./images/imagesCustom/19.png" style="width: 50%" alt="fIcon4" />
+          <p class="text-center">
+            Make the best decisions regarding value proposition and business
+            model
+          </p>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+
+    <!--Five-->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="title-color l1 text-center fw-bold">
+            Mobile & Web Development
+          </h2>
+          <p class="text-center l11">
+            Don't have time to waste on developing a mobile app or website?
+          </p>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <section class="five">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="three-h1-content">
+              <h2 class="three-1 fw-bold mt-5">That's where we come in</h2>
+              <h2 class="three-2 fw-bold">Let us take care of everything</h2>
+              <h2 class="three-3 fw-bold">
+                so you can focus on what you're good at
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6" data-aos="blank" data-aos-anchor-placement="blank" data-aos-delay="250"
+            data-aos-duration="2500">
+            <div class="card border-0 h-100" style="background-color: transparent">
+              <div class="phone-size">
+                <img class="flex-md-grow-0" src="./images/imagesCustom/20.png" alt="Let us take care of everything" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="blank" data-aos-anchor-placement="blank" data-aos-delay="250"
+            data-aos-duration="2500">
+            <p class="tc-center al mt-5 p-2">
+              We've been doing this for a long time, and we know what works
+              and what doesn't when it comes to developing web apps and
+              interactive websites.<br /><br />
+
+              We'll make sure your customers have the best experience possible
+              with your brand, and that your employees are able to work more
+              efficiently than ever before.<br /><br />
+
+              Not only will you be getting a top-quality product, but you'll
+              also be getting it at an incredibly competitive price.<br /><br />
+
+              We want to help as many businesses as possible improve their
+              mobile presence, so we're offering our services at a fraction of
+              the cost of our competitors.
+            </p>
+            <p>
+              <span class="fw-bold pt-0 ps-2 pb-0 pe-0">What To Expect:</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="posicion2">
+      <div class="container-fluid al">
+        <div class="row five-cards">
+          <div class="col-lg-3 my-2" data-aos="blank" data-aos-anchor-placement="blank" data-aos-delay="250"
+            data-aos-duration="2500">
+            <div class="tc-center card">
+              <img class="number" src="./images/imagesCustom/one.PNG" alt="Engage" />
+              <p>
+                Engage more customers creating one-of-a-kind brand experiences
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 my-2" data-aos="blank" data-aos-anchor-placement="blank" data-aos-delay="250"
+            data-aos-duration="2500">
+            <div class="tc-center card">
+              <img class="number" src="./images/imagesCustom/two.PNG" alt="Reach" />
+              <p>
+                Reach more consumers through strategy, design, and technology
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 my-2" data-aos="blank" data-aos-anchor-placement="blank" data-aos-delay="250"
+            data-aos-duration="2500">
+            <div class="tc-center card">
+              <img class="number" src="./images/imagesCustom/three.PNG" alt="Increase" />
+              <p>
+                Increase profits with engaging and intuitive web and app
+                designs
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <div class="tc-center p-0 m-0">
+      <button class="btn button-light mb-5" data-aos="blank" data-aos-anchor-placement="blank" data-aos-delay="250"
+        data-aos-duration="2500">
+        Get Started
+      </button>
+      <div class="container line"></div>
+    </div>
+
+    <!--six-->
+    <div class="container">
+      <div class="row six">
+        <div class="col-12">
+          <h2 class="title-color text-center fw-bold">
+            Digital Acceleration
+          </h2>
+          <p class="text-center six-p mb-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing<br />
+            elit. Curabitur dapibus mi sed
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="five six">
+      <div class="five-content container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div id="pad-six">
+              <h2 class="six-h2 fw-bold mt-lg-1">Wondering if you're</h2>
+              <h2 class="six-h2-big fw-bold" style="color: var(--pinkStrong)">
+                Doing enough to get ahead
+              </h2>
+              <h2 class="six-h2-low fw-bold">of the competition?</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <p style="font-size: 1.4rem">
+              <br />
+              <br />
+              You're not alone. A lot of business owners feel like they need
+              to do more, but don't know where to start.<br /><br />
+
+              That's where we come in. We use readily-available resources
+              (especially cloud-based services), to accelerate business
+              transformation and make it a data-driven company.<br /><br />
+
+              This will increase the overall speed at which your business can
+              answer new challenges. So you can focus on what you're good at -
+              running your business.<br /><br />
+
+              With Mr. Found3r, you'll get - fast, accurate insights into your
+              business performance so you can make informed decisions quickly
+              and confidently.<br /><br />
+
+              Stop guessing and start knowing with Mr. Found3r<br /><br />
+              by your side!<br />
+            </p>
+            <p>
+              <span class="fw-bold" style="font-size: 1.4rem">What To Expect:</span>
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="card border-0 h-100" style="background-color: transparent">
+              <div class="phone-size2">
+                <img class="flex-md-grow-0" src="./images/imagesCustom/21.png" alt="Doing enough to get ahead" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="posicion2">
+      <div class="container-fluid">
+        <div class="row five-cards">
+          <div class="col-lg-3 my-2" data-aos="blank" data-aos-anchor-placement="blank" data-aos-delay="250"
+            data-aos-duration="2500">
+            <div class="tc-center card">
+              <img class="number" src="./images/imagesCustom/oneBlue.PNG" alt="Engage" />
+              <p>
+                Engage more customers creating one-of-a-kind brand experiences
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 my-2" data-aos="blank" data-aos-anchor-placement="blank" data-aos-delay="250"
+            data-aos-duration="2500">
+            <div class="tc-center card">
+              <img class="number" src="./images/imagesCustom/twoBlue.PNG" alt="Reach" />
+              <p>
+                Reach more consumers through strategy, design, and technology
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 my-2" data-aos="blank" data-aos-anchor-placement="blank" data-aos-delay="250"
+            data-aos-duration="2500">
+            <div class="tc-center card">
+              <img class="number" src="./images/imagesCustom/threeBlue.PNG" alt="Increase" />
+              <p>
+                Increase profits with engaging and intuitive web and app
+                designs
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tc-center p-0 mb-5">
+      <button class="btn btn-more fw-bold six-btn mt-4" data-aos="blank" data-aos-anchor-placement="blank"
+        data-aos-delay="250" data-aos-duration="2500">
+        Learn More
+      </button>
+    </div>
+
+    <section class="col-12 contact-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="d-flex flex-column" style="position: relative; z-index: 2">
+              <div class="title-content">
+                <h3>Contact us</h3>
+              </div>
+              <div class="text-content custom-w-60 text-center">
+                <p>
+                  Are you interested in our services? Do not hesitate! contact
+                  us by any means and we will gladly assist you.
+                </p>
+              </div>
+              <div class="image-absolute">
+                <img src="images/Assets-Home/13.png" alt="Mr.Founder call icon" />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <form action="#" method="POST">
+              <div class="input-body d-flex flex-column">
+                <div class="input-container d-flex">
+                  <input class="custom-input" type="text" placeholder="Name" />
+                  <input class="custom-input" type="text" placeholder="Email" />
+                </div>
+                <div class="input-container d-flex">
+                  <input class="custom-input" type="text" placeholder="Phone" />
+                  <input class="custom-input" type="text" placeholder="Location" />
+                </div>
+                <div class="button-container">
+                  <a href="#">Send Message</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="col-12 info-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="info-body">
+              <div class="title-info image-info">
+                <img src="images/logo-actualizado/2.png" alt="Mr.Founder footer logo" />
+              </div>
+              <div class="custom-text-info">
+                <p>
+                  Our engineering and marketing teams help companies &
+                  startups scale without the hassle, risk, and expense of
+                  building a team from zero.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="info-body">
+              <div class="title-info">
+                <h4>Share With US</h4>
+              </div>
+              <div class="custom-text-info">
+                <p>
+                  Follow us on our social networks to be aware of all our
+                  updates and promotions
+                </p>
+              </div>
+              <div class="icon-content d-flex">
+                <div class="icon-item">
+                  <a href="#" target="_blank">
+                    <span>
+                      <i class="fab fa-facebook-f"></i>
+                    </span>
+                  </a>
+                </div>
+                <div class="icon-item">
+                  <a href="#" target="_blank">
+                    <span>
+                      <i class="fab fa-instagram"></i>
+                    </span>
+                  </a>
+                </div>
+                <div class="icon-item">
+                  <a href="#" target="_blank">
+                    <span>
+                      <i class="fab fa-twitter"></i>
+                    </span>
+                  </a>
+                </div>
+                <div class="icon-item">
+                  <a href="#" target="_blank">
+                    <span>
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="info-body">
+              <div class="title-info">
+                <h4>Our Services</h4>
+              </div>
+              <div class="custom-text-info">
+                <ul class="nav-footer">
+                  <li class="nav-footer-item">
+                    <a href="custom.html">Software Development</a>
+                  </li>
+                  <li class="nav-footer-item">
+                    <a href="animation.html">Video Animation</a>
+                  </li>
+                  <li class="nav-footer-item">
+                    <a href="marketing.html">Digital Marketing</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="info-body">
+              <div class="title-info">
+                <h4>Contact Info</h4>
+              </div>
+              <div class="custom-text-info">
+                <div class="info-item d-flex align-items-center">
+                  <span>
+                    <i class="fas fa-map-marker-alt"></i>
+                  </span>
+                  <p>433 Belle Grove Dr. #831372 Richardson, TX-75080</p>
+                </div>
+                <div class="info-item d-flex align-items-center">
+                  <span>
+                    <i class="fas fa-phone-alt"></i>
+                  </span>
+                  <p>+1 (800) 685-1031</p>
+                </div>
+                <div class="info-item d-flex align-items-center">
+                  <span>
+                    <i class="far fa-envelope"></i>
+                  </span>
+                  <p>contact@alphacrewstudio.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="custom-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 custom-footer-body d-flex justify-content-between">
+            <div class="custom-footer-container">
+              <p>
+                Copyright <span id="custom-year"></span>,
+                <a href="https://alphacrewstudio.com/" target="_blank">AlphaCrew Studio</a>, LLC All Rights Reserved.
+              </p>
+            </div>
+            <div class="custom-footer-terms">
+              <div class="terms-list">
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">Disclaimer</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/app.js"></script>
+  </div>
+</body>
+
+</html>

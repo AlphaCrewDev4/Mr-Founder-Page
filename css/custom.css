@@ -576,6 +576,7 @@ header ul li {
   padding: 2rem;
   height: 8rem;
 }
+
 .targetFour {
   font-size: 1.1rem;
   background-color: var(--blueLight);
@@ -587,6 +588,21 @@ header ul li {
   height: 8rem;
   padding: 2rem;
 }
+
+
+
+
+
+
+/* Custom code */
+.custom-content-1 {
+  max-width: 1400px;
+}
+
+
+
+
+
 
 @media (min-width: 576px) {
   .first .title-color {

@@ -3,6 +3,7 @@
     // Variables
     const menuToggle = document.querySelector('#menu-toggle');
     const secondMenuBody = document.querySelector('#secondary-menu-body');
+    const secondMenuItem = document.querySelectorAll('.secondary-menu-item a');
     const secondMenuToggle = document.querySelector('#secondary-menu-toggle');
     const menu = document.querySelector('.custom-nav-list');
     const secondMenu = document.querySelector('#secondary-menu');
@@ -34,6 +35,10 @@
         }
     });
 
+    menuToggleItem?.addEventListener('click', (event)=> {
+        event.preventDefault();
+    });
+
     //Secondary Menu
 
     secondMenuToggle?.addEventListener('click', () => {
@@ -47,9 +52,20 @@
         });
     });
 
-    menuToggleItem?.addEventListener('click', (event)=> {
-        event.preventDefault();
+    _.map(secondMenuItem , (item) => {
+        item.addEventListener('click', () => {
+            if(secondMenuBody.classList.contains('secondary-menu-active')) {
+                secondMenuBody.classList.remove('secondary-menu-active');
+            } else {
+                secondMenuBody.classList.add('secondary-menu-active');
+            }
+            $('#secondary-menu').slideToggle('slow', 'swing', function () {
+                secondMenu.classList.add('show-menu');
+            });
+        });
     });
+
+    
 
     // Close menu when click item menu
     /*$('.custom-nav-item a').click(function () {

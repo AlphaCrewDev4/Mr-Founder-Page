@@ -1,0 +1,538 @@
+/*General Styles*/
+.title-content {
+    margin-bottom: 2rem;
+}
+
+.title-content .title-1 h2 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.title-content .title-2 h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.subtitle-content {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 500;
+}
+
+.custom-title-border {
+    border-top: 10px solid #ccc;
+    margin-top: 5rem;
+    padding-top: 5rem;
+}
+
+/* List with rounded numbers */
+.list-content p {
+    margin: 0;
+}
+
+.list-item {
+    height: 200px;
+}
+
+.list-number {
+    width: 25%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.list-number p {
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.5em;
+    line-height: 1em;
+    padding: 1rem;
+    position: relative;
+}
+
+.list-number p::before {
+    color: #009ADB;
+    bottom: -100%;
+    left: calc(50% - 26px);
+    content: "↓";
+    position: absolute;
+    font-size: 3em;
+}
+
+.list-content .list-item:last-child .list-number p::before {
+    display: none;
+}
+
+.list-text {
+    width: 75%;
+}
+
+
+/*Section 1*/
+.first-container {
+    background: url("../images/assets-marketing/2.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 12rem !important;
+    padding-bottom: 12% !important;
+    position: relative;
+}
+
+.first-container .image-content {
+    width: 100%;
+}
+
+.first-container .custom-box-2 {
+    margin-top: 8rem;
+}
+
+.first-container .title-content h1 {
+    color: #fff;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.first-container .subtitle-content h2 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.first-container .buttons-content {
+    margin-top: 2rem;
+}
+
+.first-container .buttons-content .button-1 a {
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 60px;
+    color: #2D2D2D;
+    margin: 0 1rem;
+    padding: 1rem 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.first-container .buttons-content .button-1 a:hover {
+    border: 2px solid #2D2D2D;
+}
+
+.first-container .buttons-content .button-2 a {
+    background-color: #2D2D2D;
+    border: 2px solid #2D2D2D;
+    border-radius: 60px;
+    color: #fff;
+    margin: 0 1rem;
+    padding: 1rem 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.first-container .buttons-content .button-2 a:hover {
+    border: 2px solid #fff;
+}
+
+/* Second Section */
+.second-container {
+    position: relative;
+    z-index: 2;
+}
+
+.second-container .custom-container {
+    margin-top: -15rem;
+}
+
+.second-container .card-content {
+    margin-top: 3rem;
+}
+
+.second-container .card-content .title-content {
+    margin-bottom: 0;
+}
+
+.second-container .button-container a {
+    background-color: #009bdb;
+    border: 2px solid #009bdb;
+    color: #fff;
+    padding: 1rem 3rem;
+}
+
+.second-container .button-container a:hover {
+    background-color: #fff;
+    border: 2px solid #009bdb;
+    color: #009bdb;
+}
+
+.second-container .custom-container-2 {
+    background-color: #333;
+    color: #fff;
+    padding: 4rem 0;
+    margin-top: 3rem;
+}
+
+.second-container .custom-container-2 .title-content {
+    margin-bottom: 0;
+}
+
+.second-container .custom-container-2 .text-content {
+    margin-left: 2rem;
+}
+
+.second-container .custom-container-3 {
+    margin-top: 4rem;
+}
+
+/* third section*/
+.third-container {
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+/* fourth section */
+.fourth-container {
+    position: relative;
+}
+
+.fourth-container .button-container a {
+    background-color: #EA00FF;
+    border: 2px solid #EA00FF;
+    color: #fff;
+}
+
+.fourth-container .button-container a:hover {
+    background-color: #fff;
+    border: 2px solid #EA00FF;
+    color: #EA00FF;
+}
+
+.fourth-container .list-content ul {
+    list-style: initial;
+}
+
+.fourth-container .list-content ul li {
+    margin-bottom: 1rem;
+}
+
+.fourth-container .custom-card-container .custom-title {
+    margin-bottom: 0;
+}
+
+.fourth-container .custom-button a {
+    background-color: #009bdb;
+    border: 2px solid #009bdb;
+    color: #fff;
+    padding: 1rem 3rem;
+}
+
+.fourth-container .custom-button a:hover {
+    background-color: #fff;
+    border: 2px solid #009bdb;
+    color: #009bdb;
+}
+
+/* fifth Section */
+.fifth-container {
+    position: relative;
+}
+
+.fifth-container .custom-container {
+    position: relative;
+}
+
+.fifth-container .custom-container::before {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/assets-marketing/16.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    height: 40rem;
+    left: -100%;
+    position: absolute;
+    top: 10%;
+    width: 300%;
+    z-index: -1;
+}
+
+.fifth-container .custom-container .custom-row {
+    background-color: #fff;
+    position: relative;
+    box-shadow: 1px 1px 20px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 5rem;
+    padding: 0;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    z-index: 2;
+}
+
+.fifth-container .custom-container .custom-row .col-12{
+    padding: 0;
+}
+
+.fifth-container .card-content {
+    padding: 0 3rem;
+}
+
+.fifth-container .image-content {
+    position: absolute;
+    z-index: -1;
+    width: 125%;
+    top: -5%;
+    left: -15%;
+}
+
+.fifth-container .custom-title {
+    background-color: #EA00FF;
+    margin-top: 1rem;
+    padding: 2rem 0;
+}
+
+.fifth-container .custom-title h2 {
+    font-size: 2em;
+}
+
+.fifth-container .custom-container-2 {
+    max-width: 1600px;
+    padding: 0 2rem;
+}
+
+.fifth-container .card-content-2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 6rem;
+}
+
+.fifth-container .card-content-2 .custom-card-item {
+    background-color: #009BDB;
+    color: #fff;
+    padding: 2rem;
+    margin-right: 4%;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fifth-container .card-content-2 .custom-card-item:last-child {
+    margin-right: 0;
+}
+
+.fifth-container .card-content-2 .custom-card-item .custom-card-image {
+    margin-bottom: 1rem;
+    width: 75%;
+}
+
+.fifth-container .card-content-2 .custom-card-item .custom-card-text {
+    text-align: center;
+}
+
+.fifth-container .button-container a {
+    background-color: #000;
+    border: 2px solid #000;
+    color: #fff;
+}
+
+.fifth-container .button-container a:hover {
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+}
+
+
+/* sixth section */
+
+.sixth-container {
+    position: relative;
+}
+
+.sixth-container .card-content {
+    margin-top: 3rem;
+}
+
+/* seventh section */
+.seventh-container {
+    position: relative;
+}
+
+.seventh-container .button-container a {
+    background-color: #009bdb;
+    border: 2px solid #009bdb;
+    color: #fff;
+    padding: 1rem 3rem;
+}
+
+.seventh-container .button-container a:hover {
+    background-color: #fff;
+    border: 2px solid #009bdb;
+    color: #009bdb;
+}
+
+
+
+/* Responsive */
+
+@media (max-width: 1399px) {
+    
+}
+
+@media (max-width: 1199px) {
+    .list-item {
+        height: 150px;
+    }
+
+    .list-number p::before {
+        bottom: -75%;
+        left: calc(50% - 19px);
+    }
+
+    .second-container .custom-container {
+        margin-top: -10rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .title-content {
+        margin-bottom: 1rem;
+    }
+
+    .title-content .title-2 h2 {
+        font-size: 1.5em;
+    }
+
+    .title-content .title-1 h2 {
+        font-size: 2.5em;
+    }
+
+    .subtitle-content {
+        font-size: 1.2em;
+    }
+
+    .custom-title-border {
+        margin-top: 3rem;
+        padding-top: 3rem;
+    }
+
+    .first-container .custom-box-2 {
+        margin-top: 2rem;
+    }
+
+    .second-container .card-content {
+        margin-top: 1rem;
+    }
+
+    .second-container .custom-container-2 {
+        margin-top: 1rem;
+        padding: 3rem 0;
+    }
+
+    .second-container .custom-container-3 {
+        margin-top: 2rem;
+    }
+
+    .fifth-container .image-content {
+        position: initial;
+        width: 100%;
+    }
+
+    .fifth-container .card-content-2 .custom-card-item {
+        margin-right: 0;
+        width: 45%;
+        margin-bottom: 2rem;
+    }
+
+    .fifth-container .card-content-2 .custom-card-item:nth-child(2n + 1) {
+        margin-right: 10%;
+        width: 45%;
+        margin-bottom: 3rem;
+    }
+
+    .fifth-container .custom-container-3,
+    .sixth-container .card-content {
+        margin-top: 1rem;
+    }
+
+    .fifth-container .custom-container .custom-row {
+        margin-top: 2rem;
+    }
+
+    .second-container .card-content .title-content,
+    .fourth-container .custom-card-container .custom-title,
+    .seventh-container .card-content .title-content {
+        width: 60%;
+    }
+}
+
+@media (max-width: 767px) {
+    .list-item {
+        height: 125px;
+    }
+
+    .fifth-container {
+        padding-bottom: 0 !important;
+    }
+
+    .fifth-container .title-content .title-1 h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .fifth-container .card-content-2 {
+        margin-top: 3rem;
+    }
+
+    .second-container .custom-container-2 .text-content {
+        margin-left: 0;
+    }
+
+    .second-container .card-content .title-content,
+    .fourth-container .custom-card-container .custom-title,
+    .seventh-container .card-content .title-content {
+        width: 75%;
+    }
+}
+
+@media (max-width: 575px) {
+    .title-content .title-2 h2 {
+        font-size: 1.2em;
+    }
+    
+    .title-content .title-1 h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .fifth-container .custom-container .custom-row {
+        margin: 1rem;
+    }
+
+    .fifth-container .card-content-2 .custom-card-item {
+        margin-right: 0 !important;
+        width: 100% !important;
+    }
+
+    .second-container .custom-container {
+        margin-top: -6rem;
+    }
+
+    .third-container {
+        padding: 2rem !important;
+    }
+}
+
+@media (max-width: 425px) {
+    .fourth-container .button-container a,
+    .second-container .button-container a,
+    .seventh-container .button-container a {
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+
+    .fifth-container .card-content {
+        padding: 0;
+    }
+
+    .fifth-container .custom-container .custom-row {
+        padding: 2rem 0;
+    }
+}

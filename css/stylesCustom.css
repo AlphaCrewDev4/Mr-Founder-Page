@@ -1,0 +1,664 @@
+/*General Styles*/
+.title-content {
+    margin-bottom: 2rem;
+}
+
+.title-content .title-1 h2 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.title-content .title-2 h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.subtitle-content {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+/*Section 1*/
+.first-container {
+    background: url("../images/assets-custom/1.png");
+    background-color: #DCF6FB;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 12rem !important;
+    padding-bottom: 15% !important;
+    position: relative;
+}
+
+.first-container .image-content {
+    width: 100%;
+}
+
+.first-container .custom-box-2 {
+    margin-top: 8rem;
+}
+
+.first-container .title-content h1 {
+    color: #fff;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.first-container .subtitle-content h2 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.first-container .buttons-content {
+    margin-top: 2rem;
+}
+
+.first-container .buttons-content .button-1 a {
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 60px;
+    color: #2D2D2D;
+    margin: 0 1rem;
+    padding: 1rem 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.first-container .buttons-content .button-1 a:hover {
+    border: 2px solid #2D2D2D;
+}
+
+.first-container .buttons-content .button-2 a {
+    background-color: #2D2D2D;
+    border: 2px solid #2D2D2D;
+    border-radius: 60px;
+    color: #fff;
+    margin: 0 1rem;
+    padding: 1rem 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.first-container .buttons-content .button-2 a:hover {
+    border: 2px solid #fff;
+}
+
+/* Second Section */
+.second-container {
+    background: url("../images/assets-custom/2.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 10rem !important;
+}
+
+.second-container .custom-container {
+    margin-top: -10rem;
+}
+
+.second-container .custom-card-content {
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.second-container .custom-card-content p {
+    margin: 0;
+}
+
+.second-container .custom-card-content .custom-card-item {
+    background-color: #fff;
+    padding: 1rem;
+    width: 47%;
+    box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 3rem;
+    height: 125px;
+}
+
+.second-container .custom-card-content .custom-card-item:nth-child(2n+1) {
+    margin-right: 6%;
+}
+
+.second-container .custom-card-content .custom-card-image{
+    width: 30%;
+}
+
+.second-container .custom-card-content .custom-card-text{
+    color: #009bdb;
+    text-align: center;
+    width: 70%;
+}
+
+.second-container .button-container a {
+    background-color: #000;
+    border: 2px solid #000;
+    color: #fff;
+}
+
+.second-container .button-container a:hover {
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+}
+
+.second-container .image-content {
+    position: absolute;
+}
+
+/* third section*/
+.third-container {
+    position: relative;
+    z-index: 2;
+}
+
+.third-container p {
+    margin: 0;
+}
+
+.third-container .sub-content {
+    margin: 3rem 0;
+    padding: 0 2rem;
+}
+
+.third-container .container {
+    max-width: 1600px !important;
+    margin-top: -6rem;
+}
+
+.third-container .sub-content .container-fluid {
+    padding: 0;
+}
+
+.third-container .sub-body {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    color: rgb(224, 224, 224);
+    display: flex;
+    font-size: 20px;
+    height: 400px;
+    padding: 2rem;
+    position: relative;
+    text-align: center;
+}
+
+.third-container .sub-content .container-fluid .row .col-12:nth-child(1) .sub-body {
+    background: url("../images/assets-custom/9.png");
+    background-position: center top !important;
+    align-items: flex-start;
+}
+
+.third-container .sub-content .container-fluid .row .col-12:nth-child(2) .sub-body {
+    background: url("../images/assets-custom/10.png");
+    background-position: center bottom !important;
+    align-items: flex-end;
+}
+
+.third-container .sub-content .container-fluid .row .col-12:nth-child(3) .sub-body {
+    background: url("../images/assets-custom/11.png");
+    background-position: center top !important;
+    align-items: flex-start;
+}
+
+.third-container .sub-content .container-fluid .row .col-12:nth-child(4) .sub-body {
+    background: url("../images/assets-custom/12.png");
+    background-position: center bottom !important;
+    align-items: flex-end;
+}
+
+.third-container .sub-text {
+    margin-top: 2rem;
+}
+
+/* fourth section */
+.fourth-container {
+    background-color: #DBF2FA;
+    margin-top: -20rem;
+    padding-top: 20rem !important;
+}
+
+.fourth-container .button-container a {
+    background-color: #EA00FF;
+    border: 2px solid #EA00FF;
+    color: #fff;
+}
+
+.fourth-container .button-container a:hover {
+    background-color: #fff;
+    border: 2px solid #EA00FF;
+    color: #EA00FF;
+}
+
+.fourth-container .list-content ul {
+    list-style: initial;
+}
+
+.fourth-container .list-content ul li {
+    margin-bottom: 1rem;
+}
+
+.fourth-container .custom-card-container {
+    margin-top: 1rem;
+}
+
+/* fifth Section */
+.fifth-container {
+    position: relative;
+}
+
+.fifth-container .custom-container {
+    position: relative;
+}
+
+.fifth-container .custom-container::before {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/assets-custom/23.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    height: 40rem;
+    left: -100%;
+    position: absolute;
+    top: 10%;
+    width: 300%;
+    z-index: -1;
+}
+
+.fifth-container .custom-container .custom-row {
+    background-color: #fff;
+    position: relative;
+    box-shadow: 1px 1px 20px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 5rem;
+    padding: 0;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    z-index: 2;
+}
+
+.fifth-container .custom-container .custom-row .col-12{
+    padding: 0;
+}
+
+.fifth-container .card-content {
+    padding: 0 3rem;
+}
+
+.fifth-container .image-content {
+    position: absolute;
+    z-index: -1;
+    width: 175%;
+    top: -20%;
+    left: -30%;
+}
+
+.fifth-container .custom-title {
+    background-color: #EA00FF;
+    margin-top: 1rem;
+    padding: 2rem 0;
+}
+
+.fifth-container .custom-title h2 {
+    font-size: 2em;
+}
+
+.fifth-container .custom-container-2 {
+    max-width: 1600px;
+    padding: 0 2rem;
+}
+
+.fifth-container .card-content-2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 6rem;
+}
+
+.fifth-container .card-content-2 .custom-card-item {
+    background-color: #009BDB;
+    color: #fff;
+    padding: 2rem;
+    margin-right: 4%;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fifth-container .card-content-2 .custom-card-item:last-child {
+    margin-right: 0;
+}
+
+.fifth-container .card-content-2 .custom-card-item .custom-card-image {
+    margin-bottom: 1rem;
+    width: 75%;
+}
+
+.fifth-container .card-content-2 .custom-card-item .custom-card-text {
+    text-align: center;
+}
+
+.fifth-container .custom-container-3 {
+    margin-top: 5rem;
+}
+
+/* Card section */
+.card-container-section {
+    position: relative;
+    margin-top: -10rem;
+}
+
+.card-container-section .container {
+    max-width: 1600px;
+    padding: 0 2rem;
+}
+
+.card-container-section p {
+    margin: 0;
+}
+
+.card-container-section .card-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.card-container-section .card-content .custom-card-item {
+    background-color: #fff;
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    margin-right: 5%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-container-section .card-content .custom-card-item .custom-card-number {
+    text-align: center;
+    width: 25%;
+}
+
+.card-container-section .card-content .custom-card-item .custom-card-number p {
+    background-color: #EA00FF;
+    color: #fff;
+    font-size: 2em;
+    border-radius: 50%;
+    line-height: 1.5em;
+    padding: 1rem;
+}
+
+.custom-section-color .card-content .custom-card-item .custom-card-number p {
+    background-color: #009bdb;
+}
+
+.card-container-section .card-content .custom-card-item .custom-card-text {
+    width: 70%;
+}
+
+.card-container-section .card-content .custom-card-item:last-child {
+    margin-right: 0;
+}
+
+.card-container-section .button-container a {
+    background-color: #EA00FF;
+    border: 2px solid #EA00FF;
+    color: #fff;
+}
+
+.card-container-section .button-container a:hover {
+    background-color: #fff;
+    border: 2px solid #EA00FF;
+    color: #EA00FF;
+}
+
+.card-container-section .title-content {
+    border-top: 5px solid #ccc;
+    margin-top: 5rem;
+    padding-top: 5rem;
+}
+
+
+/* sixth section */
+
+.sixth-container {
+    background-color: #DCF8FC;
+    position: relative;
+    padding-bottom: 10rem !important;
+}
+
+/* seventh section */
+.seventh-container {
+    background-color: #DCF8FC;
+    position: relative;
+    padding-bottom: 10rem !important;
+}
+
+
+
+/* Responsive */
+
+@media (max-width: 1399px) {
+    .first-container .title-content h1 {
+        font-size: 2em;
+    }
+
+    .second-container .title-content .title-2 h2 {
+        font-size: 1.5em;
+    }
+
+    .second-container .title-content .title-1 h2 {
+        font-size: 2em;
+    }
+
+    .second-container .image-content {
+        width: 40%;
+        z-index: -1;
+    }
+}
+
+@media (max-width: 1199px) {
+    .third-container .sub-content .container-fluid .row .col-12:nth-child(1) .sub-body {
+        background-position: center 70% !important;
+        margin-bottom: 3rem;
+    }
+    
+    .third-container .sub-content .container-fluid .row .col-12:nth-child(2) .sub-body {
+        background-position: center 10% !important;
+        margin-bottom: 3rem;
+    }
+    
+    .third-container .sub-content .container-fluid .row .col-12:nth-child(3) .sub-body {
+        background-position: center 100% !important;
+    }
+    
+    .third-container .sub-content .container-fluid .row .col-12:nth-child(4) .sub-body {
+        background-position: center 15% !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .title-content {
+        margin-bottom: 1rem;
+    }
+
+    .title-content .title-2 h2 {
+        font-size: 1.5em;
+    }
+
+    .title-content .title-1 h2 {
+        font-size: 2.5em;
+    }
+
+    .subtitle-content {
+        font-size: 1.2em;
+    }
+
+    .first-container .custom-box-2 {
+        margin-top: 2rem;
+    }
+
+    .second-container {
+        padding-bottom: 5rem !important;
+    }
+
+    .second-container .custom-container {
+        margin-top: -8rem;
+    }
+
+    .second-container .image-content {
+        position: initial;
+        margin-top: 1rem;
+        width: 75%;
+    }
+
+    .fourth-container .image-content,
+    .second-container .custom-card-content {
+        margin-top: 1rem;
+    }
+
+    .fifth-container .image-content {
+        position: initial;
+        width: 100%;
+    }
+
+    .fifth-container .card-content-2 .custom-card-item {
+        margin-right: 0;
+        width: 45%;
+        margin-bottom: 2rem;
+    }
+
+    .fifth-container .card-content-2 .custom-card-item:nth-child(2n + 1) {
+        margin-right: 10%;
+        width: 45%;
+        margin-bottom: 3rem;
+    }
+
+    .fifth-container .custom-container-3 {
+        margin-top: 1rem;
+    }
+
+    .fifth-container .custom-container .custom-row {
+        margin-top: 2rem;
+    }
+
+    .sixth-container,
+    .seventh-container {
+        padding-bottom: 5rem !important;
+    }
+
+    .card-container-section {
+        margin-top: -5rem;
+    }
+
+    .card-container-section .card-content .custom-card-item .custom-card-number p {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 767px) {
+    .second-container .custom-card-content .custom-card-item {
+        margin-right: 0 !important;
+        width: 100%;
+    }
+
+    .third-container .sub-content .container-fluid .row .col-12:nth-child(n+1) .sub-body {
+        align-items: center;
+        background: #000;
+        margin-right: 0 !important;
+        margin-bottom: 2rem !important;
+        height: 150px;
+    }
+
+    .third-container .sub-content .container-fluid .row .col-12:nth-child(2n+1) .sub-body {
+        align-items: center;
+        background: #009bdb;
+        margin-right: 0 !important;
+        margin-bottom: 2rem !important;
+        height: 150px;
+    }
+
+    .third-container .sub-text {
+        font-size: 16px;
+        margin-top: 0;
+    }
+
+    .third-container .sub-content {
+        margin-bottom: 0;
+    }
+
+    .card-container-section .card-content .custom-card-item {
+        margin-right: 0;
+        max-width: 540px;
+        width: 100%;
+        margin: 1rem auto !important;
+    }
+
+    .card-container-section .card-content {
+        width: 60%;
+        margin-bottom: 0;
+    }
+
+    .card-container-section .title-content {
+        margin-top: 2rem;
+        padding-top: 2rem;
+    }
+
+    .fifth-container .card-content-2 {
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .title-content .title-2 h2 {
+        font-size: 1.2em;
+    }
+    
+    .title-content .title-1 h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .fifth-container .custom-container .custom-row {
+        margin: 1rem;
+    }
+
+    .fifth-container .card-content-2 .custom-card-item {
+        margin-right: 0 !important;
+        width: 100% !important;
+    }
+
+    .card-container-section .card-content {
+        width: 75%;
+    }
+
+    .first-container {
+        padding-bottom: 10rem !important;
+    }
+
+    .second-container .custom-container {
+        margin-top: -8rem;
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .card-container-section .card-content {
+        width: 90%;
+    }
+
+    .fourth-container .button-container a {
+        padding: 1rem 2rem;
+    }
+
+    .fifth-container .card-content {
+        padding: 0;
+    }
+
+    .fifth-container .custom-container .custom-row {
+        padding: 2rem 0;
+    }
+
+    .second-container .title-content .title-2 h2 {
+        font-size: 1.2em;
+    }
+}
