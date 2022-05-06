@@ -1059,6 +1059,14 @@
     .thrid-container .title-content {
         width: 100%;
     }
+
+    .second-container .title-content .title-1 h3 {
+        font-size: 1.2em;
+    }
+
+    .second-container .title-content .title-2 h2 {
+        font-size: 2em;
+    }
 }
 
 @media (min-width: 1999px) {

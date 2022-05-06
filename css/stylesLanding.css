@@ -1455,6 +1455,19 @@
     color: #EA00FF;
 }
 
+.thirtieth-container .custom-price-body {
+    flex-wrap: wrap;
+}
+
+.thirtieth-container .custom-price-body .custom-price-item {
+    width: 32%;
+    margin-right: 2%;
+}
+
+.thirtieth-container .custom-price-body .custom-price-item:last-child {
+    margin-right: 0;
+}
+
 /* Thirty one section */
 .thirty-one-container {
     position: relative;
@@ -1799,6 +1812,11 @@
     .twenty-eighth-container .image-content {
         position: initial;
         width: 100%;
+    }
+
+    .thirtieth-container .custom-price-body .custom-price-item {
+        width: 100%;
+        margin-right: 0;
     }
 
     .thirty-one-container .text-content-2 .image-list-absolute {
