@@ -491,6 +491,10 @@
     .secondary-menu-body .secondary-menu-name {
         width: 50px;
     }
+
+    .secondary-menu-active {
+        z-index: 99999 !important;
+    }
 }
 
 @media (max-width: 767px) {

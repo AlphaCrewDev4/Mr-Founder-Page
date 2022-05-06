@@ -369,7 +369,7 @@ input {
     position: fixed;
     left: 0;
     top: calc(50vh - 125px);
-    z-index: 9999999999;
+    z-index: 999;
 }
 
 .secondary-menu-active {
