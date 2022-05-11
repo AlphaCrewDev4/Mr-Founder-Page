@@ -239,15 +239,37 @@
         autoplayTimeout: 4500,
         smartSpeed: 6000,
         autoplayHoverPause: true,
+        margin: 48,
         responsive: {
             0: {
                 items: 1,
             },
-            767: {
+            991: {
                 items: 2,
             },
             1200: {
                 items: 3,
+            }
+        }
+    });
+
+    //Logo Carrousel
+    $('#slideLogo').owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 4500,
+        smartSpeed: 6000,
+        autoplayHoverPause: true,
+        margin: 32,
+        responsive: {
+            0: {
+                items: 2,
+            },
+            767: {
+                items: 3,
+            },
+            1200: {
+                items: 4,
             }
         }
     });
