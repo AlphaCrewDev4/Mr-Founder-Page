@@ -680,7 +680,6 @@ input {
 /* Testimonial section */
 .testimonial-container {
     position: relative;
-    font-size: 16px;
 }
 
 .testimonial-container .video-content {
@@ -708,6 +707,7 @@ input {
 .testimonial-container .custom-card {
     width: 70%;
     margin-left: 5%;
+    font-size: 16px;
 }
 
 .testimonial-container .custom-card-image {
@@ -754,26 +754,26 @@ input {
 
 .testimonial-container .arrow-left {
     position: absolute;
-    top: 35%;
-    left: -10%;
+    top: calc(50% - 48px);
+    left: -5%;
 }
 
 .testimonial-container .arrow-right {
     position: absolute;
-    top: 35%;
-    right: -10%;
+    top: calc(50% - 48px);
+    right: -5%;
 }
 
 .testimonial-container .arrow-left span,
 .testimonial-container .arrow-right span {
     color: #00dcff;
-    font-size: 5em;
+    font-size: 3em;
     transition: all 0.3s ease-in-out;
 }
 
 .testimonial-container .arrow-left span:hover,
 .testimonial-container .arrow-right span:hover {
-    font-size: 6em;
+    color: #EA00FF;
 }
 
 .testimonial-container .owl-dots span {
@@ -810,6 +810,11 @@ input {
 
     .info-container .title-info h4 {
         font-size: 24px;
+    }
+
+    .testimonial-container .arrow-right,
+    .testimonial-container .arrow-left {
+        top: calc(50% - 40px);
     }
 }
 
@@ -988,16 +993,6 @@ input {
 
     .contact-container .title-content h3 {
         text-align: center;
-    }
-
-    .testimonial-container .arrow-left span, 
-    .testimonial-container .arrow-right span {
-        font-size: 3em;
-    }
-
-    .testimonial-container .arrow-left span:hover, 
-    .testimonial-container .arrow-right span:hover {
-        font-size: 3.5em;
     }
 
     .secondary-menu-left {
@@ -1180,21 +1175,20 @@ input {
         font-size: 2em;
     }
 
-    .testimonial-container .arrow-left span:hover, 
-    .testimonial-container .arrow-right span:hover {
-        font-size: 2.5em;
-    }
-
     .testimonial-container .arrow-right {
-        right: -5%;
+        right: -7%;
     }
 
     .testimonial-container .arrow-left {
-        left: -5%;
+        left: -7%;
     }
 
     .contact-container {
         padding: 2rem !important;
+    }
+
+    .meet-container .mobile-view {
+        width: 90%;
     }
 }
 

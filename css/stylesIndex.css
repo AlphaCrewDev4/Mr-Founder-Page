@@ -1,11 +1,11 @@
 /*General Styles*/
 .title-content .title-1 h3 {
-    font-size: 84px;
+    font-size: 2em;
     font-weight: 500;
 }
 
 .title-content .title-2 h2 {
-    font-size: 160px;
+    font-size: 2.5em;
     font-weight: bold;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .first-container .image-content {
-    width: 80%;
+    width: 100%;
 }
 
 .first-container .custom-box-2 {
@@ -45,7 +45,7 @@
 
 .first-container .title-content h1 {
     color: #fff;
-    font-size: 2.3em;
+    font-size: 2.8em;
     text-align: center;
 }
 
@@ -161,7 +161,7 @@
 }
 
 /* third section*/
-.third-container .title-1 h3 {
+.third-container .title-2 h2 {
     color: #00dcff;
     text-align: center;
 }
@@ -173,9 +173,9 @@
 
 .third-container .image-content {
     position: absolute;
-    right: 15%;
+    right: 20%;
     top: 0;
-    width: 30%;
+    width: 25%;
     z-index: -1;
 }
 
@@ -261,19 +261,8 @@
     text-align: center;
 }
 
-.fourth-container .title-content .custom-title-1 h3 {
-    font-size: 68px;
-    margin-left: -30%;
-}
-
-.fourth-container .title-content .custom-title-2 h2 {
-    font-size: 200px;
-    color: #EA00FF;
-    line-height: 3rem;
-}
-
 .fourth-container .custom-card-container {
-    margin-top: 14rem;
+    margin-top: 10rem;
     width: 100%;
 }
 
@@ -318,9 +307,10 @@
 
 .fourth-container .custom-card-container .custom-card-body {
     text-align: center;
-    font-size: 48px;
+    font-size: 1.2em;
     padding: 0 1rem;
     font-weight: 500;
+    margin-top: 2rem;
 }
 
 .fourth-container .button-container a {
@@ -341,10 +331,12 @@
 
 
 /* sixth section */
+.sixth-container {
+    position: relative;
+}
 
 .sixth-container .title-content {
-    display: flex;
-    width: 100%;
+    margin-bottom: 2rem;
 }
 
 .sixth-container .title-content .title-1 h3 {
@@ -383,9 +375,12 @@
 }
 
 /* eighth section*/
+.eighth-container {
+    position: relative;
+}
 
 .eighth-container .title-content {
-    width: 100%;
+    margin-bottom: 2rem;
 }
 
 .eighth-container .title-2 h2 {
@@ -398,12 +393,13 @@
 
 /* nineth section */
 .nineth-container {
-    background: url("../images/New-assets-home/background.jpg");
+    background: url("../images/New-assets-home/home-mr-found3r-14.png"), linear-gradient(90deg, #E0F9FF 0%, #DFFFFF 100%);
     background-position: center 0;
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: -10%;
     padding-top: 15% !important;
+    z-index: 2;
 }
 
 .nineth-container .title-content {
@@ -412,12 +408,7 @@
 
 .nineth-container .title-2 h2 {
     color: #00D8F0;
-    font-size: 100px;
     line-height: 4rem;
-}
-
-.nineth-container .title-1 h3 {
-    font-size: 60px;
 }
 
 .nineth-container .custom-title {
@@ -588,16 +579,8 @@
     padding-left: 2rem;
 }
 
-.meet-container .meet-item .title-content .title-1 h3 {
-    font-size: 40px;
-}
-
 .meet-container .title-content .title-2 h2 {
     color: #EA00FF;
-}
-
-.meet-container .meet-item .title-content .title-2 h2 {
-    font-size: 80px;
 }
 
 .meet-container .title-content .subtitle {
@@ -674,7 +657,6 @@
 
 .custom-logo-container .title-content .title-1 h3 {
     text-align: center;
-    font-size: 2em;
 }
 
 .custom-logo-container .card-content {
@@ -689,6 +671,14 @@
 /* table section */
 .table-container {
     position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.table-container .container {
+    max-width: 1600px;
+    width: 90%;
 }
 
 .table-container p {
@@ -702,11 +692,13 @@
 
 .table-container .table-body .table {
     width: 100%;
+    border-collapse: separate !important;
+    border-spacing: 0;
 }
 
 .table-container .table-body .table tbody td {
     border: 2px solid #D9DBDC;
-    padding: 1rem 0.5rem;
+    padding: 6px;
 }
 
 .table-container .table-body .table tbody .row-type-1 td {
@@ -741,7 +733,7 @@
 }
 
 .table-container .table-body .table .image-content img {
-    width: 35px;
+    width: 20px;
     margin-right: 6px;
 }
 
@@ -783,13 +775,15 @@
     border-bottom-right-radius: 25px;
 }
 
+.table-container .table-body .table .row-type-1 .custom-border-top {
+    border-top-left-radius: 25px;
+}
+
 /* tech section */
 /* background: linear-gradient(90deg, #E0F9FF 0%, #DFFFFF 100%); */
 .tech-container {
-    background: url("../images/New-assets-home/another-background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: #DFFFFF;
+    background: linear-gradient(90deg, #E0F9FF 0%, #DFFFFF 100%);
     position: relative;
     padding-bottom: 0 !important;
 }
@@ -797,11 +791,11 @@
 .tech-container .card-content {
     margin-top: 3rem;
     width: 100%;
+    z-index: 3;
 }
 
 .tech-container .card-content .card-boby {
     flex-wrap: wrap;
-    margin-top: 3rem;
     width: 100%;
 }
 
@@ -828,7 +822,7 @@
 
 @media (max-width: 1399px) {
     .first-container .title-content h1 {
-        font-size: 2em;
+        font-size: 2.4em;
     }
 
     .first-container::before {
@@ -843,56 +837,24 @@
         height: 130px;
     }
 
-    .sixth-container .text-content-absolute {
-        font-size: 20px;
-    }
-
     .fourth-container .custom-card-container {
-        margin-top: 12rem;
+        margin-top: 8rem;
     }
 
     .fourth-container .custom-card-container .custom-card-image {
         height: 297px;
     }
 
-    .fourth-container .custom-card-container .custom-card-body {
-        font-size: 40px;
-    }
-
-    .eighth-container .title-2 h2 {
-        font-size: 140px;
-    }
-
-    .nineth-container .title-1 h3 {
-        font-size: 52px;
-    }
-
-    .nineth-container .title-2 h2 {
-        font-size: 80px;
-    }
-
     .meet-container .person-info h4 {
         font-size: 28px;
     }
 
-    .tech-container .title-content .title-1 h3 {
-        font-size: 2.5em;
+    .meet-container .arrows-content {
+        bottom: 0;
     }
 }
 
 @media (max-width: 1199px) {
-    .title-content .title-1 h3 {
-        font-size: 64px;
-    }
-
-    .title-content .title-2 h2 {
-        font-size: 120px;
-    }
-    
-    .first-container .subtitle-content h2 {
-        font-size: 28px;
-    }
-
     .second-container .card-text-principal {
         font-size: 28px;
     }
@@ -931,83 +893,46 @@
         margin-bottom: 0;
     }
 
-    .sixth-container .text-content-absolute {
-        font-size: 16px;
-    }
-
-    .fourth-container .title-content .custom-title-1 h3 {
-        font-size: 48px;
-    }
-    
-    .fourth-container .title-content .custom-title-2 h2 {
-        font-size: 160px;
-    }
-
     .fourth-container .custom-card-container .custom-card-image {
         height: 243px;
     }
 
     .fourth-container .custom-card-container {
-        margin-top: 10rem;
+        margin-top: 6rem;
     }
     
     .fourth-container .custom-card-container .custom-card-body {
-        font-size: 32px;
         margin-top: 1rem;
     }
 
-    .nineth-container .title-2 h2 {
-        font-size: 72px;
-    }
-
-    .nineth-container .title-1 h3 {
-        font-size: 48px;
-    }
-
-    .tenth-container{
-        padding-top: 0 !important;
-    }
-
-    .eleventh-container {
-        padding: 7rem 0 !important;
-    }
-    
     .sixth-container .custom-list-item .number {
         font-size: 52px;
     }
-    
-    .eleventh-container .title-content h3 {
-        font-size: 100px;
+
+    .tenth-container .blog-item {
+        margin-bottom: 3rem;
+    }
+
+    .tenth-container .button-container {
+        margin-top: 0;
     }
 
     .meet-container .button-container {
         margin-top: 1rem;
     }
 
-    .meet-container .meet-item .title-content .title-1 h3 {
-        font-size: 28px;
-    }
-
-    .meet-container .meet-item .title-content .title-2 h2 {
-        font-size: 48px;
-    }
-
     .meet-container .person-info h4 {
         font-size: 24px;
-    }
-
-    .table-container .table-body .table .image-content img {
-        width: 25px;
     }
 }
 
 @media (max-width: 991px) {
     .title-content .title-1 h3 {
-        font-size: 56px;
+        font-size: 1.8em;
     }
 
     .title-content .title-2 h2 {
-        font-size: 88px;
+        font-size: 2.3em;
     }
 
     .first-container .custom-box-2 {
@@ -1075,9 +1000,13 @@
         top: calc(0% - 30px);
     }
 
+    .fourth-container .custom-card-container {
+        margin-top: 3rem;
+    }
+
     .fourth-container .custom-card-container .custom-card-image {
         height: 558px;
-        margin-top: 8rem;
+        margin-top: 12rem;
     }
 
     .sixth-container .text-content-absolute {
@@ -1129,6 +1058,9 @@
 
     .meet-container .mobile-view {
         display: flex;
+        width: 75%;
+        margin: 0 auto;
+        margin-bottom: 1rem;
     }
 
     .meet-container .person-heads {
@@ -1165,10 +1097,6 @@
         left: 35%;
     }
 
-    .table-container .title-content .title-1 h3 {
-        font-size: 2em;
-    }
-
     .tech-container .card-content .card-boby .custom-card-item {
         width: 22%;
         margin-right: 4%;
@@ -1184,14 +1112,6 @@
 }
 
 @media (max-width: 767px) {
-    .title-content .title-1 h3 {
-        font-size: 40px;
-    }
-
-    .title-content .title-2 h2 {
-        font-size: 60px;
-    }
-
     .first-container .title-content h1 {
         font-size: 2.5em;
     }
@@ -1212,19 +1132,6 @@
         background: #333 !important;
         margin-bottom: 3rem;
         height: auto;
-    }
-
-    .fourth-container .title-content .custom-title-2 h2 {
-        font-size: 120px;
-    }
-
-    .fourth-container .title-content .custom-title-1 h3 {
-        font-size: 40px;
-        margin-left: -50%;
-    }
-
-    .fourth-container .custom-card-container {
-        margin-top: 5rem;
     }
 
     .fourth-container .custom-card-container .custom-card-image {
@@ -1265,6 +1172,10 @@
     .tech-container .title-content .title-1 h3 {
         font-size: 2em;
     }
+
+    .table-container {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 575px) {
@@ -1286,22 +1197,8 @@
         height: 70px;
     }
 
-    .second-container .card-text-principal {
-        font-size: 20px;
-        padding: 0.5rem 2rem;
-    }
-
     .fourth-container .title-content {
         margin-top: 2rem;
-    }
-
-    .fourth-container .title-content .custom-title-1 h3 {
-        font-size: 32px;
-        margin-left: -30%;
-    }
-
-    .fourth-container .title-content .custom-title-2 h2{
-        font-size: 80px;
     }
 
     .fourth-container .custom-card-container .custom-card-image {
@@ -1377,19 +1274,16 @@
     .tech-container .card-content .card-boby .custom-card-item:nth-child(3n) {
         margin-right: 0;
     }
-
-    .tech-container .card-content .card-boby {
-        margin-top: 1rem;
-    }
 }
 
 @media (max-width: 425px) {
-    .eighth-container .title-content .title-2 h2{
-        font-size: 48px;
+    .second-container .card-text-principal {
+        font-size: 20px;
+        padding: 0.5rem 2rem;
     }
 
-    .eighth-container .title-content .title-1 h3 {
-        font-size: 32px;
+    .eighth-container .title-content {
+        width: 100%;
     }
     
     .fourth-container .custom-card-container .custom-card-image {
@@ -1410,8 +1304,8 @@
 }
 
 @media (min-width: 2300px) {
-    .first-container .image-content {
-        width: 90%;
+    .first-container {
+        padding-bottom: 5% !important;
     }
 }
 

@@ -1,11 +1,11 @@
 /*General Styles*/
 .title-content .title-1 h3 {
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 500;
 }
 
 .title-content .title-2 h2 {
-    font-size: 5em;
+    font-size: 2.5em;
     font-weight: bold;
 }
 
@@ -105,11 +105,6 @@
     position: relative;
 }
 
-.second-container .title-content {
-    display: flex;
-    width: 100%;
-}
-
 .second-container .title-content h2 {
     color: #B224EF;
 }
@@ -183,11 +178,6 @@
     background-size: cover;
     margin-top: -15%;
     padding-top: 20% !important;
-}
-
-.fourth-container .title-content {
-    display: flex;
-    width: 80%;
 }
 
 .fourth-container .title-content h2 {
@@ -279,17 +269,9 @@
     position: relative;
 }
 
-.testimonial-container .title-content .title-1 h3 {
-    font-size: 4em;
-}
-
 /* Seventh section */
 .seventh-container {
     position: relative;
-}
-
-.seventh-container .title-content {
-    width: 50%;
 }
 
 .seventh-container .title-content .title-2 h2 {
@@ -557,7 +539,6 @@
 
 .eleventh-container .title-content .title-2 h2 {
     color: #EA00FF;
-    font-size: 2.5em;
 }
 
 .eleventh-container .title-content .title-1 h3 {
@@ -759,12 +740,22 @@
 /* Responsive */
 
 @media (max-width: 1399px) {
+    .title-content .title-1 h3 {
+        font-size: 1.8em;
+        font-weight: 500;
+    }
+    
+    .title-content .title-2 h2 {
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+
     .first-container .buttons-content {
         margin-top: 2rem;
     }
 
     .seventh-container .title-content {
-        width: 60%;
+        width: 40%;
     }
 
     .eleventh-container .card-container {
@@ -791,10 +782,6 @@
 
     .twelfth-container {
         margin-top: 3rem;
-    }
-
-    .testimonial-container .title-content .title-1 h3 {
-        font-size: 3em;
     }
 
     .nineth-container .custom-box-1 {
@@ -826,11 +813,11 @@
     }
 
     .title-content .title-1 h3 {
-        font-size: 2em;
+        font-size: 1.9em;
     }
 
     .title-content .title-2 h2 {
-        font-size: 4em;
+        font-size: 2.1em;
     }
 
     .first-container::before {
@@ -1038,6 +1025,10 @@
 }
 
 @media( max-width: 425px ) {
+    .fifth-container .title-content .title-1 h3 {
+        font-size: 18px;
+    }
+    
     .fifth-container .title-content .title-2 h2 {
         font-size: 40px;
     }
