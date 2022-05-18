@@ -400,6 +400,18 @@
     margin-top: -10%;
     padding-top: 15% !important;
     z-index: 2;
+    position: relative;
+}
+
+.nineth-container::before {
+    background-color: #BCF3FA;
+    content: "";
+    height: 200px;
+    left: 0;
+    position: absolute;
+    bottom: -12rem;
+    width: 100%;
+    z-index: -1;
 }
 
 .nineth-container .title-content {
@@ -818,6 +830,65 @@
     margin-right: 0;
 }
 
+/* Youtube section */
+.youtube-container {
+    background: url("../images/New-assets-home/home-mr-found3r-16.png");
+    background-position: center  0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--light);
+    position: relative;
+    padding-top: 18% !important;
+    margin-top: -18%;
+    z-index: 2;
+}
+
+.youtube-container .title-content {
+    position: relative;
+}
+
+.youtube-container .title-content .title-2 h2 {
+    margin: 0;
+}
+
+.youtube-container .custom-card-content {
+    margin-top: 6rem;
+}
+
+.youtube-container .custom-card-content .video-content {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.youtube-container .custom-card-content .video-item {
+    width: 48%;
+    margin-bottom: 3rem;
+}
+
+.youtube-container .custom-card-content .video-content .video-item:first-child {
+    margin-right: 4%;
+}
+
+.youtube-container .image-conntent {
+    position: absolute;
+    width: 125%;
+}
+
+.youtube-container .image-title-absolute {
+    position: absolute;
+    width: 8%;
+    left: 6%;
+    bottom: -5rem;
+}
+
+.youtube-container .image-content-absolute {
+    position: absolute;
+    width: 8%;
+    right: 15%;
+    bottom: 10%;
+}
+
 /* Responsive */
 
 @media (max-width: 1399px) {
@@ -923,6 +994,10 @@
 
     .meet-container .person-info h4 {
         font-size: 24px;
+    }
+
+    .youtube-container .title-image{
+        width: 25%;
     }
 }
 
@@ -1109,6 +1184,12 @@
     .tech-container .card-content .card-boby .custom-card-item:nth-child(4n) {
         margin-right: 0;
     }
+
+    .youtube-container .image-conntent {
+        position: initial;
+        width: 75%;
+        margin-top: 1rem;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1175,6 +1256,25 @@
 
     .table-container {
         font-size: 16px;
+    }
+
+    .youtube-container .custom-card-content .video-item {
+        width: 100%;
+        margin-right: 0 !important;
+    }
+
+    .youtube-container {
+        padding-top: 20rem !important;
+        margin-top: -15rem;
+    }
+
+    .youtube-container .image-title-absolute,
+    .youtube-container .image-content-absolute {
+        display: none;
+    }
+
+    .youtube-container .custom-card-content {
+        margin-top: 1rem;
     }
 }
 
@@ -1274,6 +1374,18 @@
     .tech-container .card-content .card-boby .custom-card-item:nth-child(3n) {
         margin-right: 0;
     }
+
+    .nineth-container::before {
+        bottom: -12rem;
+    }
+
+    .youtube-container .title-content .title-2 h2 {
+        font-size: 1.5em;
+    }
+
+    .youtube-container .title-image {
+        width: 40%;
+    }
 }
 
 @media (max-width: 425px) {
@@ -1306,6 +1418,10 @@
 @media (min-width: 2300px) {
     .first-container {
         padding-bottom: 5% !important;
+    }
+
+    .youtube-container {
+        margin-top: -15%;
     }
 }
 

@@ -1,3 +1,13 @@
+/* Root */
+:root {
+    --light: #fff;
+    --dark: #000;
+    --pink: #ea00ff;
+    --light-blue: #009bdb;
+    --light-blue-v2: #00D8EF;
+    --red: #ff0000;
+}
+
 /*General Styles*/
 ul, ol {
     list-style: none;
@@ -43,6 +53,20 @@ input {
 
 .custom-w-50 {
     width: 50%;
+}
+
+.custom-pink-color,
+.custom-pink-color h2,
+.custom-pink-color h3,
+.custom-pink-color h1 {
+    color: var(--pink) !important;
+}
+
+.custom-blue-color,
+.custom-blue-color h2,
+.custom-blue-color h3,
+.custom-blue-color h1 {
+    color: var(--light-blue) !important;
 }
 
 /* style general button */
@@ -680,6 +704,10 @@ input {
 /* Testimonial section */
 .testimonial-container {
     position: relative;
+}
+
+.testimonial-container .title-content {
+    margin-bottom: 0 !important;
 }
 
 .testimonial-container .video-content {
