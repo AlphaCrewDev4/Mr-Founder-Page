@@ -69,6 +69,11 @@ input {
     color: var(--light-blue) !important;
 }
 
+section[id],
+div[id] {
+    scroll-margin-top: 10rem;
+}
+
 /* style general button */
 
 .button-container {
@@ -948,7 +953,7 @@ input {
     }
 
     .sticky .custom-nav-list {
-        top: 7.5rem;
+        top: 5rem;
     }
 
     #menu-toggle ~ .custom-nav-list li a {

@@ -135,6 +135,7 @@
 /* Second Section */
 .second-container {
     position: relative;
+    scroll-margin-top: 25rem !important;
     z-index: 2;
 }
 
