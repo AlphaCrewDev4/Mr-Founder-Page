@@ -871,8 +871,9 @@
 }
 
 .youtube-container .image-conntent {
+    bottom: -4rem;
     position: absolute;
-    width: 125%;
+    width: 140%;
 }
 
 .youtube-container .image-title-absolute {
