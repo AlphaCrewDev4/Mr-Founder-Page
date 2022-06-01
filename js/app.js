@@ -273,4 +273,43 @@
             }
         }
     });
+
+
+    // Work Home section 
+    const workButtons = document.querySelectorAll('#work-btn a');
+    const workSections = document.querySelectorAll('#work-section');
+    _.map(workButtons, (item, index) => {
+        item.addEventListener('click', (e) => {
+            e.preventDefault();
+            _.map(workSections, (itemSection, indexSection) => {
+                if(index === indexSection) {
+                    workButtons[indexSection].parentElement.classList.add('button-active');
+                    itemSection.classList.add('sub-content-active');
+                } else {
+                    workButtons[indexSection].parentElement.classList.remove('button-active');
+                    itemSection.classList.remove('sub-content-active');
+                }
+            });
+        });
+    });
+
+    // Tech Home section 
+    const techButtons = document.querySelectorAll('#tech-btn a');
+    const techSections = document.querySelectorAll('#tech-section');
+    _.map(techButtons, (item, index) => {
+        item.addEventListener('click', (e) => {
+            e.preventDefault();
+            _.map(techSections, (itemSection, indexSection) => {
+                if(index === indexSection) {
+                    techButtons[indexSection].parentElement.classList.add('button-active');
+                    itemSection.classList.add('card-content-active');
+                } else {
+                    techButtons[indexSection].parentElement.classList.remove('button-active');
+                    itemSection.classList.remove('card-content-active');
+                }
+            });
+        });
+    });
+
+
 })();
