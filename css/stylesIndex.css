@@ -212,6 +212,7 @@
 
 /* third section*/
 .third-container {
+    display: none;
     position: relative;
 }
 
@@ -396,7 +397,7 @@
 }
 
 .sixth-container .sub-text {
-    padding: 0.5rem;
+    padding: 2rem;
     width: 80%;
     font-size: 20px;
     display: flex;
@@ -405,6 +406,20 @@
 
 .sixth-container .image {
     width: 90%;
+}
+
+.sixth-container .button-container a {
+    background-color: var(--dark-v2);
+    border: 2px solid var(--dark-v2);
+    color: var(--light);
+    padding: 1rem 3rem;
+    text-align: center;
+}
+
+.sixth-container .button-container a:hover {
+    background-color: var(--light);
+    border: 2px solid var(--dark-v2);
+    color: var(--dark-v2);
 }
 
 /* Calculator section */
@@ -423,6 +438,7 @@
 
 /* eighth section*/
 .eighth-container {
+    display: none;
     position: relative;
 }
 
@@ -434,24 +450,15 @@
     color: #00dcff;
 }
 
-.image-full-container {
-    padding: 0 !important;
-}
-
 /* nineth section */
 .nineth-container {
-    background: url("../images/Assets-Home/new-assets/fondito-03.png");
-    background-position: center 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: -10%;
-    padding-top: 15% !important;
+    background-color: #DBF5FB;
     z-index: 2;
     position: relative;
 }
 
 .nineth-container::before {
-    background-color: #DBF6FB;
+    background-color: #DBF5FB;
     content: "";
     height: 200px;
     left: 0;
@@ -462,6 +469,7 @@
 }
 
 .nineth-container .title-content {
+    margin-top: 8rem;
     width: 100%;
 }
 
@@ -554,6 +562,17 @@
 }
 
 /* Image full container */
+.image-full-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-top: 0 !important;
+}
+
+.image-full-container .container-fluid {
+    max-width: 1600px;
+}
+
 .image-full-container .image {
     width: 90%;
 }
@@ -855,6 +874,8 @@
     background: linear-gradient(90deg, var(--light-blue) 0%, var(--light-blue-v2) 100%);
     border: 2px solid var(--light-blue);
     color: var(--light);
+    padding: 1rem 3rem;
+    font-size: 20px;
 }
 
 .tech-container .button-content .button-container a:hover {
@@ -975,6 +996,7 @@
 /* Professionals section */
 .professionals-container {
     position: relative;
+    padding-bottom: 0 !important;
 }
 
 /* Responsive */
@@ -1078,6 +1100,10 @@
     .youtube-container .title-image{
         width: 25%;
     }
+
+    .tech-container .button-content .button-container a {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -1094,7 +1120,6 @@
     }
 
     .first-container .subtitle-content {
-        width: 100%;
         text-align: center;
     }
 
@@ -1163,10 +1188,9 @@
         margin-top: 12rem;
     }
 
-    .sixth-container .text-content-absolute {
-        position: initial;
-        width: 90%;
-        margin: 0 auto;
+    .sixth-container .image {
+        margin-top: 3rem;
+        width: 100%;
     }
 
     .calculator-container .title-content {
@@ -1176,6 +1200,10 @@
     .nineth-container .button-absolute {
         bottom: 25%;
         right: 20%;
+    }
+
+    .nineth-container .title-content {
+        margin-top: 0;
     }
 
     .tenth-container {
@@ -1266,8 +1294,13 @@
 
     .youtube-container .image-conntent {
         position: initial;
-        width: 75%;
+        width: 100%;
         margin-top: 1rem;
+        margin-bottom: -2rem;
+    }
+
+    .tech-container .button-content {
+        flex-direction: column;
     }
 }
 
@@ -1297,6 +1330,10 @@
     .fourth-container .custom-card-container .custom-card-image {
         height: 396px;
         margin-top: 8rem;
+    }
+
+    .sixth-container .sub-text {
+        padding: 1rem;
     }
 
     .nineth-container .sub-content,
@@ -1351,9 +1388,17 @@
     .youtube-container .custom-card-content {
         margin-top: 1rem;
     }
+
+    .tech-container .button-content .button-container a {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 575px) {
+    .title-content .title-2 h2 {
+        font-size: 2em;
+    }
+
     .first-container .title-content {
         text-align: center;
     }
