@@ -224,6 +224,7 @@ div[id] {
     padding: 1rem;
     position: absolute;
     transition: all 0.3s ease-in-out;
+    width: 100%;
     z-index: 2;
 }
 
@@ -791,7 +792,7 @@ div[id] {
 }
 
 .testimonial-container .custom-slide-card .custom-person-info .custom-card-image {
-    width: 25%;
+    width: 20%;
 }
 
 .testimonial-container .custom-slide-card .custom-person-info .custom-card-image img {
@@ -800,7 +801,7 @@ div[id] {
 
 .testimonial-container .custom-slide-card .custom-person-info .custom-person-names {
     margin-left: 1rem;
-    width: 75%;
+    width: 80%;
 }
 
 .testimonial-container .custom-slide-card .custom-card-body {
@@ -851,12 +852,18 @@ div[id] {
 
 /* Responsive */
 @media (max-width: 1399px) {
-   
+    .custom-nav-item a {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 1199px) {
     #body {
         font-size: 18px;
+    }
+
+    .custom-nav-item {
+        padding: 0 1.2rem;
     }
 
     .custom-nav-buttons a {

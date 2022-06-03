@@ -11,7 +11,7 @@
     const header = document.querySelector('.custom-nav');
     const personItem = document.querySelectorAll('#personItem');
     const meetVideo = document.querySelectorAll("#meetVideo");
-    const menuToggleItem = document.querySelector('#toggle-item');
+    const menuToggleItem = document.querySelectorAll('#toggle-item');
 
     //AOS function
     AOS.init();
@@ -35,9 +35,13 @@
         }
     });
 
-    menuToggleItem?.addEventListener('click', (event)=> {
-        event.preventDefault();
-    });
+    if ( _.size(menuToggleItem) > 0) {
+        _.map(menuToggleItem, (item) => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+            });
+        });
+    }
 
     //Secondary Menu
 
