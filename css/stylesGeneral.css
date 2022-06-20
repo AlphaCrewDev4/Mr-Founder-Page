@@ -849,6 +849,85 @@ div[id] {
     background: transparent !important;
 }
 
+/* tech section */
+.tech-container {
+    background: #DFFFFF;
+    background: linear-gradient(90deg, #E0F9FF 0%, #DFFFFF 100%);
+    position: relative;
+}
+
+.tech-container .button-content {
+    margin: 1rem 0;
+}
+
+.tech-container .button-content .button-container a {
+    background: var(--light-blue);
+    background: linear-gradient(90deg, var(--light-blue) 0%, var(--light-blue-v2) 100%);
+    border: 2px solid var(--light-blue);
+    color: var(--light);
+    padding: 1rem 3rem;
+    font-size: 20px;
+}
+
+.tech-container .button-content .button-container a:hover {
+    background: var(--light);
+    border: 2px solid var(--light-blue);
+    color: var(--light-blue);
+}
+
+.tech-container .button-content .button-active a {
+    background: var(--dark-v2);
+    border: 2px solid var(--dark-v2);
+    color: var(--light);
+}
+
+.tech-container .button-content .button-active a:hover {
+    background: var(--light);
+    border: 2px solid var(--dark-v2);
+    color: var(--dark-v2);
+}
+
+.tech-container .button-content .button-container a img {
+    display: none;
+}
+
+.tech-container .card-content {
+    margin-top: 3rem;
+    width: 100%;
+    z-index: 3;
+    display: none;
+}
+
+.tech-container .card-content-active {
+    animation: move_section 0.3s ease-in;
+    display: block;
+}
+
+.tech-container .card-content .card-boby {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.tech-container .card-content .card-boby .custom-card-item {
+    width: 15%;
+    margin-right: 2%;
+    background-color: #fff;
+    padding: 1.5rem;
+    box-shadow: 1px 1px 15px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 3rem;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.tech-container .card-content .card-boby .custom-card-item:hover {
+    padding: 0.5rem;
+}
+
+.tech-container .card-content .card-boby .custom-card-item:nth-child(6n) {
+    margin-right: 0;
+}
+
 
 /* Responsive */
 @media (max-width: 1399px) {
@@ -885,6 +964,10 @@ div[id] {
     }
 
     .testimonial-container .custom-slide-container {
+        font-size: 18px;
+    }
+
+    .tech-container .button-content .button-container a {
         font-size: 18px;
     }
 }
@@ -1129,6 +1212,46 @@ div[id] {
     .secondary-menu-active .open {
         display: none;
     }
+
+    .tech-container .card-content {
+        margin-top: 1rem;
+    }
+
+    .tech-container .card-content .card-boby .custom-card-item {
+        width: 22%;
+        margin-right: 4%;
+    }
+
+    .tech-container .card-content .card-boby .custom-card-item:nth-child(6n) {
+        margin-right: 4%;
+    }
+
+    .tech-container .card-content .card-boby .custom-card-item:nth-child(4n) {
+        margin-right: 0;
+    }
+
+    .tech-container .button-content .button-container a,
+    .tech-container .button-content .button-active a {
+        padding: 0 1rem !important;
+        background: none !important;
+        border: none !important;
+    }
+
+    .tech-container .button-content .button-container a {
+        opacity: 0.5;
+    }
+
+    .tech-container .button-content .button-active a {
+        opacity: 1;
+    }
+
+    .tech-container .button-content .button-container a img {
+        display: block;
+    }
+
+    .tech-container .button-content .button-container a span {
+        display: none;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1205,6 +1328,10 @@ div[id] {
     .testimonial-container .custom-slide-container {
         font-size: 16px;
     }
+
+    .tech-container .card-content .card-boby .custom-card-item {
+        padding: 1rem;
+    }
 }
 
 @media (max-width: 575px) {
@@ -1276,6 +1403,36 @@ div[id] {
 
     .testimonial-container .custom-slide-card .custom-person-info .custom-person-names {
         margin-right: 0.5rem;
+    }
+
+    .tech-container .card-content {
+        padding: 0 1rem;
+    }
+
+    .tech-container .card-content .card-boby .custom-card-item {
+        width: 30.5%;
+        margin-right: 4%;
+        margin-bottom: 2rem;
+    }
+
+    .tech-container .card-content .card-boby .custom-card-item:nth-child(6n) {
+        margin-right: 4%;
+    }
+
+    .tech-container .card-content .card-boby .custom-card-item:nth-child(4n) {
+        margin-right: 4%;
+    }
+
+    .tech-container .card-content .card-boby .custom-card-item:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    .tech-container .button-content .button-container {
+        margin-top: 0;
+    }
+
+    .tech-container .button-content .button-container a {
+        padding: 0 0.5rem !important;
     }
 }
 
