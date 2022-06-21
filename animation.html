@@ -1,1319 +1,1341 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Animation Services - Mr. Founder</title>
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/styleAnimation.css" />
+		<link rel="stylesheet" href="css/stylesGeneral.css" />
+		<link rel="stylesheet" href="css/verifiedEvents.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animation Services - Mr. Founder</title>
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styleAnimation.css">
-    <link rel="stylesheet" href="css/stylesGeneral.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <!-- START FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- END FONT AWESOME -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- START FONT AWESOME -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+			integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- END FONT AWESOME -->
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.js"
+			integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+			integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+			integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 
-    <!-- ANIMATION AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
+		<!-- ANIMATION AOS -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+	</head>
 
-<body>
-    <div class="container-fluid">
-        <header class="custom-nav">
-            <div class="custom-bar">
-                <div class="custom-bar-body">
-                    <div class="custom-bar-list">
-                        <div class="custom-bar-item">
-                            <a href="#">Sign In</a>
-                        </div>
-                        <div class="custom-bar-item">
-                            <a href="#">Sign Up</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="custom-nav-body">
-                <div class="custom-nav-left">
-                    <nav class="custom-nav-list">
-                        <ul class="custom-nav-container">
-                            <li class="custom-nav-item">
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li class="custom-nav-item custom-item-toggle">
-                                <a class="toggle-item" id="toggle-item" href="#">Services</a>
-                                <ul class="custom-burger-item">
-                                    <li class="active"><a href="animation.html">Animation</a></li>
-                                    <li><a href="custom.html">Software Development</a></li>
-                                    <li><a href="marketing.html">Digital Marketing</a></li>
-                                </ul>
-                            </li>
-                            <li class="custom-nav-item">
-                                <a href="about-us.html">About us</a>
-                            </li>
-                            <li class="custom-nav-item">
-                                <a href="#">Portfolio</a>
-                            </li>
-                            <li class="custom-nav-item">
-                                <a href="https://mrfound3r.com/blog/">Blog</a>
-                            </li>
-                            <li class="custom-nav-item">
-                                <a href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="custom-nav-right">
-                    <div class="custom-menu-responsive">
-                        <input id="menu-toggle" type="checkbox" />
-                        <label class='menu-button-container' for="menu-toggle">
-                            <div class='menu-button'></div>
-                        </label>
-                    </div>
-                    <div class="logo-container d-flex justify-content-end">
-                        <a class="d-flex justify-content-end custom-link-logo" href="index.html"><img class="logo"
-                                src="images/logo-actualizado/1.png" alt="Mr.Founder logo" /></a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <section id="body" class="container-fluid">
-            <div class="row">
-                <section class="col-12 first-container" id="home">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-lg-6 custom-box-2 d-flex flex-column justify-content-start align-items-center"
-                                data-aos="fade-up" data-aos-duration="1000" style="z-index: 3;">
-                                <div class="title-content">
-                                    <h1>Video Animation Services</h1>
-                                </div>
-                                <div class="buttons-content d-flex" data-aos="fade-up" data-aos-duration="1000">
-                                    <div class="button-2">
-                                        <a href="#">Schedule A Demo</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6 custom-box-1" data-aos="fade-right" data-aos-duration="1000">
-                                <div class="image-content d-flex justify-content-center">
-                                    <img src="images/assets/Artboard 5.png" alt="Mr.Founder animation" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-12 second-container">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-                                <div class="title-content custom-w-75 d-flex flex-column">
-                                    <div class="title-1 d-flex justify-content-start">
-                                        <h3>Steal Your Competitors Audience With</h3>
-                                    </div>
-                                    <div class="title-2 d-flex justify-content-center">
-                                        <h2>2D & 3D Animated</h2>
-                                    </div>
-                                    <div class="title-1 d-flex justify-content-end">
-                                        <h3>Videos</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-12 col-lg-6 d-flex align-items-center custom-box-1"
-                                            style="position: relative;">
-                                            <div class="video-content">
-                                                <video controls>
-                                                    <source
-                                                        src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741436/cascade-video_cprall.mp4" />
-                                                </video>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-6 custom-box-2">
-                                            <div class="text-content">
-                                                <div class="title">
-                                                    <h4>This is the best thing that could've happened
-                                                        to your channel and/or your business!
-                                                    </h4>
-                                                </div>
-                                                <div class="text-body">
-                                                    <p>The way people consume content has
-                                                        always been evolving.</p>
-                                                    <p>→From textbooks to blogs. → From blogs to
-                                                        tweets. → From boring pre-recorded video
-                                                        content to engaging 2D &3D animations.</p>
-                                                    <p>Today, 66% of consumers prefer to watch
-                                                        videos about products/services rather than
-                                                        read about them.</p>
-                                                    <p class="custom-text">And this is the best thing that could've
-                                                        happened to your channel
-                                                        and/or your business</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-12 thrid-container">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="card-content">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-12 col-lg-6 d-flex flex-column align-items-center">
-                                                <div class="title-content d-flex flex-column">
-                                                    <div class="title-1 d-flex justify-content-start">
-                                                        <h3>Why choose</h3>
-                                                    </div>
-                                                    <div class="title-1 custom-title-1 d-flex justify-content-end">
-                                                        <h3>this method?</h3>
-                                                    </div>
-                                                </div>
-                                                <div class="card-text">
-                                                    <p>Your competitors are still stubbornly embracing the
-                                                        analog way of publishing their campaign assets with:</p>
-                                                    <ol>
-                                                        <li>Physical books/ magazines / Flyers</li>
-                                                        <li>Dull online and offline press releases</li>
-                                                        <li>Hours worth of boring pre-recorded
-                                                            educational videos</li>
-                                                        <li>Dry animated videos produced by subpar animators</li>
-                                                    </ol>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-lg-6">
-                                                <div class="image-content">
-                                                    <img src="images/assets-animation/3.png" alt="Mr.Founder options" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-content">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-12 col-lg-6 custom-box-1">
-                                                <div class="image-content">
-                                                    <img src="images/assets-animation/4.png" alt="Mr.Founder opportunities" />
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="col-12 col-lg-6 custom-box-2 d-flex flex-column align-items-center">
-                                                <div class="title-content d-flex flex-column">
-                                                    <div class="title-1 d-flex justify-content-start">
-                                                        <h3>It's the best</h3>
-                                                    </div>
-                                                    <div class="title-1 custom-title-2 d-flex justify-content-end">
-                                                        <h3>opportunity For You</h3>
-                                                    </div>
-                                                </div>
-                                                <div class="card-text">
-                                                    <p>With the rise in popularity of 2D & 3D animation you
-                                                        now have the opportunity to:</p>
-                                                    <ol>
-                                                        <li>Steal your competitors' audience</li>
-                                                        <li>Grow your audience</li>
-                                                        <li>Retain your audience</li>
-                                                        <li>Increase your brand awareness</li>
-                                                        <li>Increase your sales</li>
-                                                    </ol>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-12 fourth-container">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-                                <div class="title-content custom-w-60 custom-box-1 d-flex flex-column">
-                                    <div class="title-1 d-flex justify-content-start">
-                                        <h3>And with</h3>
-                                    </div>
-                                    <div class="title-2 d-flex justify-content-center">
-                                        <h2>Mr. Found3r's</h2>
-                                    </div>
-                                    <div class="title-1 custom-title-1 d-flex justify-content-end">
-                                        <h3>storytelling abilities</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-12 col-lg-6">
-                                            <div class="text-content">
-                                                <div class="text-body">
-                                                    <p>Along with our engineering approach we can
-                                                        produce state-of-the-art educational 2d and 3d
-                                                        animations that can help explain complex subjects
-                                                        to your audience.</p>
-                                                    <p>We've created thousands of animated videos for
-                                                        companies around the world.</p>
-                                                    <p>Our strength lies in our storytelling abilities and our
-                                                        engineering approach to producing complex
-                                                        educational content. </p>
-                                                    <p class="custom-text">We have the experience, skills, and tools to
-                                                        be able to take your ideas and turn them into something amazing!
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="button-container">
-                                                <a href="#">Learn More</a>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-6 d-flex justify-content-end align-items-center"
-                                            style="position: relative;">
-                                            <div class="video-content">
-                                                <video controls>
-                                                    <source
-                                                        src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741436/cascade-video_cprall.mp4" />
-                                                </video>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-12 fifth-container">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-                                <div class="title-content custom-w-75 d-flex flex-column">
-                                    <div class="title-1 d-flex justify-content-start">
-                                        <h3>We Produce 2D & 3D</h3>
-                                    </div>
-                                    <div class="title-2 d-flex justify-content-center">
-                                        <h2>eLearning Videos</h2>
-                                    </div>
-                                    <div class="title-1 d-flex justify-content-end">
-                                        <h3>and more for Startups and Enterprises</h3>
-                                    </div>
-                                </div>
-                                <div class="video-content">
-                                    <div class="video-item">
-                                        <video controls>
-                                            <source
-                                                src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741436/cascade-video_cprall.mp4" />
-                                        </video>
-                                    </div>
-                                </div>
-                                <div class="button-container">
-                                    <a href="#">Schedule A Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-12 testimonial-container">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 d-flex flex-column align-items-center justify-content-center">
-                                <div class="title-content">
-                                    <div class="title-2">
-                                        <h2 style="color: #00dcff;">Testimonials</h2>
-                                    </div>
-                                </div>
-                                <div class="video-content" data-aos="fade-up" data-aos-duration="2000">
-                                    <div class="video-slider owl-carousel">
-                                        <div class="video-item">
-                                            <video controls>
-                                                <source
-                                                    src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741436/cascade-video_cprall.mp4" />
-                                            </video>
-                                        </div>
-                                        <div class="video-item">
-                                            <video controls>
-                                                <source
-                                                    src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741434/mixkit-waves-coming-to-the-beach-5016_ijezdw.mp4" />
-                                            </video>
-                                        </div>
-                                        <div class="video-item">
-                                            <video controls>
-                                                <source
-                                                    src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741444/mixkit-stars-in-space-1610_plfura.mp4" />
-                                            </video>
-                                        </div>
-                                    </div>
-                                    <div class="arrow-left" id="arrow-left-1">
-                                        <span>
-                                            <i class="fas fa-angle-left"></i>
-                                        </span>
-                                    </div>
-                                    <div class="arrow-right" id="arrow-right-1">
-                                        <span>
-                                            <i class="fas fa-angle-right"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 custom-slide-container">
-                                <div class="container">
-                                    <div class="custom-slider owl-carousel" data-aos="fade-right"
-                                        data-aos-duration="2000">
-                                        <div class="custom-slide-card d-flex align-items-center">
-                                            <div class="custom-card-image">
-                                                <img src="images/image-test-10.png" alt="person mr- founder" />
-                                            </div>
-                                            <div class="custom-card">
-                                                <div class="custom-card-head text-center">
-                                                    <h3 class="custom-card-title" style="color: #333;">
-                                                        Jane Doe - CEO
-                                                    </h3>
-                                                </div>
-                                                <div class="custom-card-stars d-flex justify-content-center">
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="custom-card-body text-center">
-                                                    <p>"I just basically told them what I
-                                                        needed. Before I knew it, I had
-                                                        myself a stunningly appealing </p>
-                                                </div>
-                                                <div class="custom-card-footer text-center">
-                                                    <p>Entreprise Name</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="custom-slide-card d-flex align-items-center">
-                                            <div class="custom-card-image">
-                                                <img src="images/image-test-10.png" alt="person mr- founder" />
-                                            </div>
-                                            <div class="custom-card">
-                                                <div class="custom-card-head text-center">
-                                                    <h3 class="custom-card-title" style="color: #333;">
-                                                        Jane Doe - CEO
-                                                    </h3>
-                                                </div>
-                                                <div class="custom-card-stars d-flex justify-content-center">
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="custom-card-body text-center">
-                                                    <p>"I just basically told them what I
-                                                        needed. Before I knew it, I had
-                                                        myself a stunningly appealing </p>
-                                                </div>
-                                                <div class="custom-card-footer text-center">
-                                                    <p>Entreprise Name</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="custom-slide-card d-flex align-items-center">
-                                            <div class="custom-card-image">
-                                                <img src="images/image-test-10.png" alt="person mr- founder" />
-                                            </div>
-                                            <div class="custom-card">
-                                                <div class="custom-card-head text-center">
-                                                    <h3 class="custom-card-title" style="color: #333;">
-                                                        Jane Doe - CEO
-                                                    </h3>
-                                                </div>
-                                                <div class="custom-card-stars d-flex justify-content-center">
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="custom-card-body text-center">
-                                                    <p>"I just basically told them what I
-                                                        needed. Before I knew it, I had
-                                                        myself a stunningly appealing </p>
-                                                </div>
-                                                <div class="custom-card-footer text-center">
-                                                    <p>Entreprise Name</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="custom-slide-card d-flex align-items-center">
-                                            <div class="custom-card-image">
-                                                <img src="images/image-test-10.png" alt="person mr- founder" />
-                                            </div>
-                                            <div class="custom-card">
-                                                <div class="custom-card-head text-center">
-                                                    <h3 class="custom-card-title" style="color: #333;">
-                                                        Jane Doe - CEO
-                                                    </h3>
-                                                </div>
-                                                <div class="custom-card-stars d-flex justify-content-center">
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="custom-card-body text-center">
-                                                    <p>"I just basically told them what I
-                                                        needed. Before I knew it, I had
-                                                        myself a stunningly appealing </p>
-                                                </div>
-                                                <div class="custom-card-footer text-center">
-                                                    <p>Entreprise Name</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="custom-slider owl-carousel" data-aos="fade-left"
-                                        data-aos-duration="2000">
-                                        <div class="custom-slide-card d-flex align-items-center">
-                                            <div class="custom-card-image">
-                                                <img src="images/image-test-10.png" alt="person mr- founder" />
-                                            </div>
-                                            <div class="custom-card">
-                                                <div class="custom-card-head text-center">
-                                                    <h3 class="custom-card-title" style="color: #333;">
-                                                        Jane Doe - CEO
-                                                    </h3>
-                                                </div>
-                                                <div class="custom-card-stars d-flex justify-content-center">
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="custom-card-body text-center">
-                                                    <p>"I just basically told them what I
-                                                        needed. Before I knew it, I had
-                                                        myself a stunningly appealing </p>
-                                                </div>
-                                                <div class="custom-card-footer text-center">
-                                                    <p>Entreprise Name</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="custom-slide-card d-flex align-items-center">
-                                            <div class="custom-card-image">
-                                                <img src="images/image-test-10.png" alt="person mr- founder" />
-                                            </div>
-                                            <div class="custom-card">
-                                                <div class="custom-card-head text-center">
-                                                    <h3 class="custom-card-title" style="color: #333;">
-                                                        Jane Doe - CEO
-                                                    </h3>
-                                                </div>
-                                                <div class="custom-card-stars d-flex justify-content-center">
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="custom-card-body text-center">
-                                                    <p>"I just basically told them what I
-                                                        needed. Before I knew it, I had
-                                                        myself a stunningly appealing </p>
-                                                </div>
-                                                <div class="custom-card-footer text-center">
-                                                    <p>Entreprise Name</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="custom-slide-card d-flex align-items-center">
-                                            <div class="custom-card-image">
-                                                <img src="images/image-test-10.png" alt="person mr- founder" />
-                                            </div>
-                                            <div class="custom-card">
-                                                <div class="custom-card-head text-center">
-                                                    <h3 class="custom-card-title" style="color: #333;">
-                                                        Jane Doe - CEO
-                                                    </h3>
-                                                </div>
-                                                <div class="custom-card-stars d-flex justify-content-center">
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="custom-card-body text-center">
-                                                    <p>"I just basically told them what I
-                                                        needed. Before I knew it, I had
-                                                        myself a stunningly appealing </p>
-                                                </div>
-                                                <div class="custom-card-footer text-center">
-                                                    <p>Entreprise Name</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="custom-slide-card d-flex align-items-center">
-                                            <div class="custom-card-image">
-                                                <img src="images/image-test-10.png" alt="person mr- founder" />
-                                            </div>
-                                            <div class="custom-card">
-                                                <div class="custom-card-head text-center">
-                                                    <h3 class="custom-card-title" style="color: #333;">
-                                                        Jane Doe - CEO
-                                                    </h3>
-                                                </div>
-                                                <div class="custom-card-stars d-flex justify-content-center">
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    <span>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="custom-card-body text-center">
-                                                    <p>"I just basically told them what I
-                                                        needed. Before I knew it, I had
-                                                        myself a stunningly appealing </p>
-                                                </div>
-                                                <div class="custom-card-footer text-center">
-                                                    <p>Entreprise Name</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-12 seventh-container">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 d-flex justify-content-center">
-                                <div class="title-content custom-w-50 d-flex flex-column">
-                                    <div class="title-1 d-flex justify-content-start">
-                                        <h3>What</h3>
-                                    </div>
-                                    <div class="title-2 d-flex justify-content-center">
-                                        <h2>can we do</h2>
-                                    </div>
-                                    <div class="title-1 d-flex justify-content-end">
-                                        <h3>for you?</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-12 eighth-container">
-                    <div class="container-fluid custom-w-75 d-flex justify-content-center">
-                        <div class="row">
-                            <div class="col-12 col-xl-4">
-                                <div class="card-body">
-                                    <div class="card-title-1">
-                                        <h4>Explainer</h4>
-                                    </div>
-                                    <div class="card-title-2 d-flex justify-content-end">
-                                        <h4>Videos</h4>
-                                    </div>
-                                    <div class="card-text">
-                                        <p>Need an explainer video, but you
-                                            don't know where to start?</p>
-                                    </div>
-                                    <div class="button-container">
-                                        <a href="#">Learn More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-xl-7 d-flex justify-content-center align-items-center">
-                                <div class="video-content">
-                                    <div class="video-slider-2 owl-carousel">
-                                        <div class="video-item">
-                                            <video controls>
-                                                <source
-                                                    src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741436/cascade-video_cprall.mp4" />
-                                            </video>
-                                        </div>
-                                        <div class="video-item">
-                                            <video controls>
-                                                <source
-                                                    src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741434/mixkit-waves-coming-to-the-beach-5016_ijezdw.mp4" />
-                                            </video>
-                                        </div>
-                                        <div class="video-item">
-                                            <video controls>
-                                                <source
-                                                    src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741444/mixkit-stars-in-space-1610_plfura.mp4" />
-                                            </video>
-                                        </div>
-                                    </div>
-                                    <div class="arrow-left" id="arrow-left-2">
-                                        <span>
-                                            <i class="fas fa-angle-left"></i>
-                                        </span>
-                                    </div>
-                                    <div class="arrow-right" id="arrow-right-2">
-                                        <span>
-                                            <i class="fas fa-angle-right"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-12 nineth-container">
-                    <div class="container-fluid custom-w-75 d-flex justify-content-center">
-                        <div class="row">
-                            <div class="col-12 col-xl-7 custom-box-1 d-flex justify-content-center align-items-center">
-                                <div class="video-content">
-                                    <div class="video-slider-3 owl-carousel">
-                                        <div class="video-item">
-                                            <video controls>
-                                                <source
-                                                    src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741436/cascade-video_cprall.mp4" />
-                                            </video>
-                                        </div>
-                                        <div class="video-item">
-                                            <video controls>
-                                                <source
-                                                    src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741434/mixkit-waves-coming-to-the-beach-5016_ijezdw.mp4" />
-                                            </video>
-                                        </div>
-                                        <div class="video-item">
-                                            <video controls>
-                                                <source
-                                                    src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741444/mixkit-stars-in-space-1610_plfura.mp4" />
-                                            </video>
-                                        </div>
-                                    </div>
-                                    <div class="arrow-left" id="arrow-left-3">
-                                        <span>
-                                            <i class="fas fa-angle-left"></i>
-                                        </span>
-                                    </div>
-                                    <div class="arrow-right" id="arrow-right-3">
-                                        <span>
-                                            <i class="fas fa-angle-right"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-xl-4 custom-box-2">
-                                <div class="card-body">
-                                    <div class="card-title-1">
-                                        <h4>Product Demo</h4>
-                                    </div>
-                                    <div class="card-title-2 d-flex justify-content-end">
-                                        <h4>Videos</h4>
-                                    </div>
-                                    <div class="card-text">
-                                        <p>You have a great product but don't
-                                            know how to explain it in a way that
-                                            your customers will understand?</p>
-                                    </div>
-                                    <div class="button-container">
-                                        <a href="#">Learn More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-12 eighth-container">
-                    <div class="container-fluid custom-w-75 d-flex justify-content-center">
-                        <div class="row">
-                            <div class="col-12 col-xl-4">
-                                <div class="card-body">
-                                    <div class="card-title-1">
-                                        <h4>Marketing</h4>
-                                    </div>
-                                    <div class="card-title-2 d-flex justify-content-end">
-                                        <h4>Videos</h4>
-                                    </div>
-                                    <div class="card-text">
-                                        <p>You know you need to be using video in
-                                            your marketing, but you don’t have the time
-                                            or resources to make it happen.</p>
-                                    </div>
-                                    <div class="button-container">
-                                        <a href="#">Learn More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-xl-7 custom-p d-flex justify-content-center align-items-center">
-                                <div class="video-content">
-                                    <div class="video-slider-4 owl-carousel">
-                                        <div class="video-item">
-                                            <video controls>
-                                                <source
-                                                    src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741436/cascade-video_cprall.mp4" />
-                                            </video>
-                                        </div>
-                                        <div class="video-item">
-                                            <video controls>
-                                                <source
-                                                    src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741434/mixkit-waves-coming-to-the-beach-5016_ijezdw.mp4" />
-                                            </video>
-                                        </div>
-                                        <div class="video-item">
-                                            <video controls>
-                                                <source
-                                                    src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741444/mixkit-stars-in-space-1610_plfura.mp4" />
-                                            </video>
-                                        </div>
-                                    </div>
-                                    <div class="arrow-left" id="arrow-left-4">
-                                        <span>
-                                            <i class="fas fa-angle-left"></i>
-                                        </span>
-                                    </div>
-                                    <div class="arrow-right" id="arrow-right-4">
-                                        <span>
-                                            <i class="fas fa-angle-right"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-12 tenth-container">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-lg-6 custom-box-1">
-                                <div class="image-content">
-                                    <img src="images/assets-animation/7.png" alt="Phone with apps" />
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6 custom-box-2 d-flex flex-column justify-content-center">
-                                <div class="title-content d-flex flex-column">
-                                    <div class="title-1 d-flex justify-content-start">
-                                        <h3>The Way People</h3>
-                                    </div>
-                                    <div class="title-2 d-flex justify-content-center">
-                                        <h2>consume content</h2>
-                                    </div>
-                                    <div class="title-1 d-flex justify-content-end">
-                                        <h3>has Always Been Evolving</h3>
-                                    </div>
-                                </div>
-                                <div class="text-content">
-                                    <p>We now live in a fast-paced generation where people
-                                        prefer to consume content in bite-sized formats.</p>
-                                    <p>That's why 350+ page textbooks were replaced with
-                                        12-minute blog posts. Blogs were then replaced with
-                                        280-character Tweets.</p>
-                                    <p>Pretty soon, a 1-hour educational pre-recorded video
-                                        - like books and blog posts - will rarely be consumed.</p>
-                                </div>
-                                <div class="text-content-color">
-                                    <p>But thanks to this evolution in content consumption,
-                                        you now have a new opportunity that you've
-                                        never had before.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-12 eleventh-container">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 d-flex flex-column justify-content-center" style="position: relative;">
-                                <div class="title-content d-flex flex-column">
-                                    <div class="title-1 d-flex justify-content-start">
-                                        <h3>The Shift From Recorded Videos To</h3>
-                                    </div>
-                                    <div class="title-2 d-flex justify-content-center">
-                                        <h2>2D & 3D Animation Is The Best Thing</h2>
-                                    </div>
-                                    <div class="title-1 d-flex justify-content-end">
-                                        <h3>That Could've Happened To You</h3>
-                                    </div>
-                                </div>
-                                <div class="card-container" data-aos="fade-up" data-aos-duration="1000">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-12 col-lg-4 card-color">
-                                                <div class="card-body d-flex">
-                                                    <div class="card-image">
-                                                        <img src="images/assets-animation/8.png" alt="Animation icon 1" />
-                                                    </div>
-                                                    <div class="card-text">
-                                                        <p>Video animation has become
-                                                            one of the most popular forms of
-                                                            communication because it
-                                                            engages people emotionally.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-lg-4 card-color">
-                                                <div class="card-body d-flex">
-                                                    <div class="card-image">
-                                                        <img src="images/assets-animation/9.png" alt="Animation icon 2" />
-                                                    </div>
-                                                    <div class="card-text">
-                                                        <p>Meaning they remember what
-                                                            they see more clearly than if they
-                                                            read it or heard about it from
-                                                            someone else simply talking about
-                                                            it on a video.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-lg-4 card-color">
-                                                <div class="card-body d-flex">
-                                                    <div class="card-image">
-                                                        <img src="images/assets-animation/10.png" alt="Animation icon 3" />
-                                                    </div>
-                                                    <div class="card-text">
-                                                        <p>And research has proven that a
-                                                            staggering 66% of consumers
-                                                            prefer watching videos about
-                                                            products/services than reading
-                                                            about them!</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-12 twelfth-container">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
-                                <div class="title-content d-flex flex-column">
-                                    <div class="title-1 d-flex justify-content-start">
-                                        <h3>Already Using</h3>
-                                    </div>
-                                    <div class="title-2 d-flex justify-content-center">
-                                        <h2>Animated Videos</h2>
-                                    </div>
-                                    <div class="title-1 d-flex justify-content-end">
-                                        <h3>But Still Not Getting Results?</h3>
-                                    </div>
-                                </div>
-                                <div class="text-content">
-                                    <p>It can be hard to find the time to create videos that are
-                                        both high quality and communicate your message
-                                        perfectly. </p>
-                                    <p>Not only do you need the time and resources, but you also
-                                        need the skill set to produce compelling videos.</p>
-                                    <p>And lone freelancers or even an agency without the
-                                        experiences and know-how will not be able to produce the
-                                        quality of videos that brings results.</p>
-                                </div>
-                                <div class="text-content-color">
-                                    <p>Because what you need is a team that can produce
-                                        engaging, high-quality videos that can make
-                                        complex educational content easy to consume.</p>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6 d-flex align-items-center justify-content-end">
-                                <div class="image-content">
-                                    <img src="images/assets-animation/11.png" alt="phone with animated apps" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-12 thirteenth-container">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-lg-4 custom-box-1" style="position: relative;">
-                                <div class="image-content">
-                                    <img src="images/assets-animation/12.png" alt="Mr.Founder animation" />
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-8 custom-box-2">
-                                <div class="title-content d-flex flex-column">
-                                    <div class="title-1 d-flex justify-content-start">
-                                        <h3>Reach New Heights With</h3>
-                                    </div>
-                                    <div class="title-1 custom-title-1 d-flex justify-content-end">
-                                        <h3>Video Animation Now</h3>
-                                    </div>
-                                </div>
-                                <div class="text-content">
-                                    <p>Whether you're a Youtube content creator, a startup, or a COO of
-                                        a company looking to achieve success using animated videos, we
-                                        got you!
-                                    </p>
-                                    <p>We have a 100% Money-Back Guarantee in case you're not
-                                        satisfied with our services.</p>
-                                    <p>And not only will we give you a full refund, but we'll also give you
-                                        $100 for wasting your time.</p>
-                                    <p>So schedule a call now and let's start producing 2D & 3D animated
-                                        videos to you need to help your channel or business:</p>
-                                </div>
-                                <div class="list-content">
-                                    <div class="list-body d-flex">
-                                        <div class="list-item d-flex" data-aos="fade-right" data-aos-duration="1000">
-                                            <div class="list-text">
-                                                <p>Steal your competitor's
-                                                    audience</p>
-                                            </div>
-                                            <div class="list-image">
-                                                <div
-                                                    class="image-list-content d-flex align-items-center justify-content-center">
-                                                    <img src="images/image-test16.PNG" alt="check mark" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="list-item d-flex" data-aos="fade-right" data-aos-duration="1000">
-                                            <div class="list-text">
-                                                <p>Build brand awareness</p>
-                                            </div>
-                                            <div class="list-image">
-                                                <div
-                                                    class="image-list-content d-flex align-items-center justify-content-center">
-                                                    <img src="images/image-test16.PNG" alt="check mark" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="list-body d-flex">
-                                        <div class="list-item d-flex" data-aos="fade-left" data-aos-duration="1000">
-                                            <div class="list-text">
-                                                <p>Increase sales</p>
-                                            </div>
-                                            <div class="list-image">
-                                                <div
-                                                    class="image-list-content d-flex align-items-center justify-content-center">
-                                                    <img src="images/image-test16.PNG" alt="check mark" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="list-item d-flex" data-aos="fade-left" data-aos-duration="1000">
-                                            <div class="list-text">
-                                                <p>Educate your audience</p>
-                                            </div>
-                                            <div class="list-image">
-                                                <div
-                                                    class="image-list-content d-flex align-items-center justify-content-center">
-                                                    <img src="images/image-test16.PNG" alt="check mark" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="button-container">
-                                    <a href="#">Schedule A Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-12 contact-container">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-lg-6">
-                                <div class="d-flex flex-column" style="position: relative; z-index: 2;">
-                                    <div class="title-content">
-                                        <h3>Contact us</h3>
-                                    </div>
-                                    <div class="text-content custom-w-60 text-center">
-                                        <p>Are you interested in our services?
-                                            Do not hesitate! contact us by any
-                                            means and we will gladly assist you.</p>
-                                    </div>
-                                    <div class="image-absolute">
-                                        <img src="images/Assets-Home/13.png" alt="Mr.Founder call icon" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <form action="#" method="POST">
-                                    <div class="input-body d-flex flex-column">
-                                        <div class="input-container d-flex">
-                                            <input class="custom-input" type="text" placeholder="Name" />
-                                            <input class="custom-input" type="text" placeholder="Email" />
-                                        </div>
-                                        <div class="input-container d-flex">
-                                            <input class="custom-input" type="text" placeholder="Phone" />
-                                            <input class="custom-input" type="text" placeholder="Location" />
-                                        </div>
-                                        <div class="button-container">
-                                            <a href="#">Send Message</a>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-12 info-container">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-md-6 col-lg-3">
-                                <div class="info-body">
-                                    <div class="title-info image-info">
-                                        <img src="images/logo-actualizado/2.png" alt="Mr.Founder footer logo" />
-                                    </div>
-                                    <div class="custom-text-info">
-                                        <p>Our engineering and marketing
-                                            teams help companies &
-                                            startups scale without the
-                                            hassle, risk, and expense of
-                                            building a team from zero.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-3">
-                                <div class="info-body">
-                                    <div class="title-info">
-                                        <h4>Share With US</h4>
-                                    </div>
-                                    <div class="custom-text-info">
-                                        <p>Follow us on our social networks to
-                                            be aware of all our updates and
-                                            promotions</p>
-                                    </div>
-                                    <div class="icon-content d-flex">
-                                        <div class="icon-item">
-                                            <a href="#" target="_blank">
-                                                <span>
-                                                    <i class="fab fa-facebook-f"></i>
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="icon-item">
-                                            <a href="#" target="_blank">
-                                                <span>
-                                                    <i class="fab fa-instagram"></i>
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="icon-item">
-                                            <a href="#" target="_blank">
-                                                <span>
-                                                    <i class="fab fa-twitter"></i>
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="icon-item">
-                                            <a href="#" target="_blank">
-                                                <span>
-                                                    <i class="fab fa-youtube"></i>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-3">
-                                <div class="info-body">
-                                    <div class="title-info">
-                                        <h4>Our Services</h4>
-                                    </div>
-                                    <div class="custom-text-info">
-                                        <ul class="nav-footer">
-                                            <li class="nav-footer-item">
-                                                <a href="custom.html">Software Development</a>
-                                            </li>
-                                            <li class="nav-footer-item">
-                                                <a href="animation.html">Video Animation</a>
-                                            </li>
-                                            <li class="nav-footer-item">
-                                                <a href="marketing.html">Digital Marketing</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-3">
-                                <div class="info-body">
-                                    <div class="title-info">
-                                        <h4>Contact Info</h4>
-                                    </div>
-                                    <div class="custom-text-info">
-                                        <div class="info-item d-flex align-items-center">
-                                            <span>
-                                                <i class="fas fa-map-marker-alt"></i>
-                                            </span>
-                                            <p>433 Belle Grove Dr. #831372
-                                                Richardson, TX-75080
-                                            </p>
-                                        </div>
-                                        <div class="info-item d-flex align-items-center">
-                                            <span>
-                                                <i class="fas fa-phone-alt"></i>
-                                            </span>
-                                            <p>+1 (800) 685-1031
-                                            </p>
-                                        </div>
-                                        <div class="info-item d-flex align-items-center">
-                                            <span>
-                                                <i class="far fa-envelope"></i>
-                                            </span>
-                                            <p>contact@alphacrewstudio.com
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </section>
-        <footer class="custom-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 custom-footer-body d-flex justify-content-between">
-                        <div class="custom-footer-container">
-                            <p>
-                                Copyright <span id="custom-year"></span>, <a href="https://alphacrewstudio.com/"
-                                    target="_blank">AlphaCrew Studio</a>, LLC All Rights Reserved.
-                            </p>
-                        </div>
-                        <div class="custom-footer-terms">
-                            <div class="terms-list">
-                                <a href="#">Terms of Use</a>
-                                <a href="#">Privacy Policy</a>
-                                <a href="#">Cookie Policy</a>
-                                <a href="#">Disclaimer</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
+	<body>
+		<div class="tt-promo-fixed fadeout" id="proofContainer" style="display: none">
+			<button class="tt-btn-close"></button>
+			<div class="tt-img">
+				<a href="./index.html"><img id="proofImage" src="" data-src="" alt="plan subscribed" /></a>
+			</div>
+			<div class="tt-description" id="proofDescr"> </div>
+		</div>
+		<div class="container-fluid">
+			<header class="custom-nav">
+				<div class="custom-bar">
+					<div class="custom-bar-body">
+						<div class="custom-bar-list">
+							<div class="custom-bar-item">
+								<a href="#">Sign In</a>
+							</div>
+							<div class="custom-bar-item">
+								<a href="#">Sign Up</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="custom-nav-body">
+					<div class="custom-nav-left">
+						<nav class="custom-nav-list">
+							<ul class="custom-nav-container">
+								<li class="custom-nav-item">
+									<a href="index.html">Home</a>
+								</li>
+								<li class="custom-nav-item custom-item-toggle">
+									<a class="toggle-item" id="toggle-item" href="#">Services</a>
+									<ul class="custom-burger-item">
+										<li class="active"><a href="animation.html">Animation</a></li>
+										<li><a href="custom.html">Software Development</a></li>
+										<li><a href="marketing.html">Digital Marketing</a></li>
+									</ul>
+								</li>
+								<li class="custom-nav-item">
+									<a href="about-us.html">About us</a>
+								</li>
+								<li class="custom-nav-item">
+									<a href="#">Portfolio</a>
+								</li>
+								<li class="custom-nav-item">
+									<a href="https://mrfound3r.com/blog/">Blog</a>
+								</li>
+								<li class="custom-nav-item">
+									<a href="contact.html">Contact</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="custom-nav-right">
+						<div class="custom-menu-responsive">
+							<input id="menu-toggle" type="checkbox" />
+							<label class="menu-button-container" for="menu-toggle">
+								<div class="menu-button"></div>
+							</label>
+						</div>
+						<div class="logo-container d-flex justify-content-end">
+							<a class="d-flex justify-content-end custom-link-logo" href="index.html"
+								><img class="logo" src="images/logo-actualizado/1.png" alt="Mr.Founder logo"
+							/></a>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section id="body" class="container-fluid">
+				<div class="row">
+					<section class="col-12 first-container" id="home">
+						<div class="container">
+							<div class="row">
+								<div
+									class="col-12 col-lg-6 custom-box-2 d-flex flex-column justify-content-start align-items-center"
+									data-aos="fade-up"
+									data-aos-duration="1000"
+									style="z-index: 3"
+								>
+									<div class="title-content">
+										<h1>Video Animation Services</h1>
+									</div>
+									<div class="buttons-content d-flex" data-aos="fade-up" data-aos-duration="1000">
+										<div class="button-2">
+											<a href="#">Schedule A Demo</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-6 custom-box-1" data-aos="fade-right" data-aos-duration="1000">
+									<div class="image-content d-flex justify-content-center">
+										<img src="images/assets/Artboard 5.png" alt="Mr.Founder animation" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="col-12 second-container">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 d-flex flex-column justify-content-center align-items-center">
+									<div class="title-content custom-w-75 d-flex flex-column">
+										<div class="title-1 d-flex justify-content-start">
+											<h3>Steal Your Competitors Audience With</h3>
+										</div>
+										<div class="title-2 d-flex justify-content-center">
+											<h2>2D & 3D Animated</h2>
+										</div>
+										<div class="title-1 d-flex justify-content-end">
+											<h3>Videos</h3>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="container">
+										<div class="row">
+											<div class="col-12 col-lg-6 d-flex align-items-center custom-box-1" style="position: relative">
+												<div class="video-content">
+													<video controls>
+														<source
+															src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741436/cascade-video_cprall.mp4"
+														/>
+													</video>
+												</div>
+											</div>
+											<div class="col-12 col-lg-6 custom-box-2">
+												<div class="text-content">
+													<div class="title">
+														<h4>This is the best thing that could've happened to your channel and/or your business! </h4>
+													</div>
+													<div class="text-body">
+														<p>The way people consume content has always been evolving.</p>
+														<p
+															>→From textbooks to blogs. → From blogs to tweets. → From boring pre-recorded video content to
+															engaging 2D &3D animations.</p
+														>
+														<p
+															>Today, 66% of consumers prefer to watch videos about products/services rather than read about
+															them.</p
+														>
+														<p class="custom-text"
+															>And this is the best thing that could've happened to your channel and/or your business</p
+														>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="col-12 thrid-container">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<div class="card-content">
+										<div class="container">
+											<div class="row">
+												<div class="col-12 col-lg-6 d-flex flex-column align-items-center">
+													<div class="title-content d-flex flex-column">
+														<div class="title-1 d-flex justify-content-start">
+															<h3>Why choose</h3>
+														</div>
+														<div class="title-1 custom-title-1 d-flex justify-content-end">
+															<h3>this method?</h3>
+														</div>
+													</div>
+													<div class="card-text">
+														<p
+															>Your competitors are still stubbornly embracing the analog way of publishing their campaign
+															assets with:</p
+														>
+														<ol>
+															<li>Physical books/ magazines / Flyers</li>
+															<li>Dull online and offline press releases</li>
+															<li>Hours worth of boring pre-recorded educational videos</li>
+															<li>Dry animated videos produced by subpar animators</li>
+														</ol>
+													</div>
+												</div>
+												<div class="col-12 col-lg-6">
+													<div class="image-content">
+														<img src="images/assets-animation/3.png" alt="Mr.Founder options" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card-content">
+										<div class="container">
+											<div class="row">
+												<div class="col-12 col-lg-6 custom-box-1">
+													<div class="image-content">
+														<img src="images/assets-animation/4.png" alt="Mr.Founder opportunities" />
+													</div>
+												</div>
+												<div class="col-12 col-lg-6 custom-box-2 d-flex flex-column align-items-center">
+													<div class="title-content d-flex flex-column">
+														<div class="title-1 d-flex justify-content-start">
+															<h3>It's the best</h3>
+														</div>
+														<div class="title-1 custom-title-2 d-flex justify-content-end">
+															<h3>opportunity For You</h3>
+														</div>
+													</div>
+													<div class="card-text">
+														<p>With the rise in popularity of 2D & 3D animation you now have the opportunity to:</p>
+														<ol>
+															<li>Steal your competitors' audience</li>
+															<li>Grow your audience</li>
+															<li>Retain your audience</li>
+															<li>Increase your brand awareness</li>
+															<li>Increase your sales</li>
+														</ol>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="col-12 fourth-container">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 d-flex flex-column justify-content-center align-items-center">
+									<div class="title-content custom-w-60 custom-box-1 d-flex flex-column">
+										<div class="title-1 d-flex justify-content-start">
+											<h3>And with</h3>
+										</div>
+										<div class="title-2 d-flex justify-content-center">
+											<h2>Mr. Found3r's</h2>
+										</div>
+										<div class="title-1 custom-title-1 d-flex justify-content-end">
+											<h3>storytelling abilities</h3>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="container">
+										<div class="row">
+											<div class="col-12 col-lg-6">
+												<div class="text-content">
+													<div class="text-body">
+														<p
+															>Along with our engineering approach we can produce state-of-the-art educational 2d and 3d
+															animations that can help explain complex subjects to your audience.</p
+														>
+														<p>We've created thousands of animated videos for companies around the world.</p>
+														<p
+															>Our strength lies in our storytelling abilities and our engineering approach to producing
+															complex educational content.
+														</p>
+														<p class="custom-text"
+															>We have the experience, skills, and tools to be able to take your ideas and turn them into
+															something amazing!
+														</p>
+													</div>
+												</div>
+												<div class="button-container">
+													<a href="#">Learn More</a>
+												</div>
+											</div>
+											<div class="col-12 col-lg-6 d-flex justify-content-end align-items-center" style="position: relative">
+												<div class="video-content">
+													<video controls>
+														<source
+															src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741436/cascade-video_cprall.mp4"
+														/>
+													</video>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="col-12 fifth-container">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 d-flex flex-column justify-content-center align-items-center">
+									<div class="title-content custom-w-75 d-flex flex-column">
+										<div class="title-1 d-flex justify-content-start">
+											<h3>We Produce 2D & 3D</h3>
+										</div>
+										<div class="title-2 d-flex justify-content-center">
+											<h2>eLearning Videos</h2>
+										</div>
+										<div class="title-1 d-flex justify-content-end">
+											<h3>and more for Startups and Enterprises</h3>
+										</div>
+									</div>
+									<div class="video-content">
+										<div class="video-item">
+											<video controls>
+												<source src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741436/cascade-video_cprall.mp4" />
+											</video>
+										</div>
+									</div>
+									<div class="button-container">
+										<a href="#">Schedule A Demo</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="col-12 testimonial-container">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 d-flex flex-column align-items-center justify-content-center">
+									<div class="title-content">
+										<div class="title-2">
+											<h2 style="color: #00dcff">Testimonials</h2>
+										</div>
+									</div>
+									<div class="video-content" data-aos="fade-up" data-aos-duration="2000">
+										<div class="video-slider owl-carousel">
+											<div class="video-item">
+												<video controls>
+													<source src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741436/cascade-video_cprall.mp4" />
+												</video>
+											</div>
+											<div class="video-item">
+												<video controls>
+													<source
+														src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741434/mixkit-waves-coming-to-the-beach-5016_ijezdw.mp4"
+													/>
+												</video>
+											</div>
+											<div class="video-item">
+												<video controls>
+													<source
+														src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741444/mixkit-stars-in-space-1610_plfura.mp4"
+													/>
+												</video>
+											</div>
+										</div>
+										<div class="arrow-left" id="arrow-left-1">
+											<span>
+												<i class="fas fa-angle-left"></i>
+											</span>
+										</div>
+										<div class="arrow-right" id="arrow-right-1">
+											<span>
+												<i class="fas fa-angle-right"></i>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 custom-slide-container">
+									<div class="container">
+										<div class="custom-slider owl-carousel" data-aos="fade-right" data-aos-duration="2000">
+											<div class="custom-slide-card d-flex align-items-center">
+												<div class="custom-card-image">
+													<img src="images/image-test-10.png" alt="person mr- founder" />
+												</div>
+												<div class="custom-card">
+													<div class="custom-card-head text-center">
+														<h3 class="custom-card-title" style="color: #333"> Jane Doe - CEO </h3>
+													</div>
+													<div class="custom-card-stars d-flex justify-content-center">
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+													</div>
+													<div class="custom-card-body text-center">
+														<p
+															>"I just basically told them what I needed. Before I knew it, I had myself a stunningly
+															appealing
+														</p>
+													</div>
+													<div class="custom-card-footer text-center">
+														<p>Entreprise Name</p>
+													</div>
+												</div>
+											</div>
+											<div class="custom-slide-card d-flex align-items-center">
+												<div class="custom-card-image">
+													<img src="images/image-test-10.png" alt="person mr- founder" />
+												</div>
+												<div class="custom-card">
+													<div class="custom-card-head text-center">
+														<h3 class="custom-card-title" style="color: #333"> Jane Doe - CEO </h3>
+													</div>
+													<div class="custom-card-stars d-flex justify-content-center">
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+													</div>
+													<div class="custom-card-body text-center">
+														<p
+															>"I just basically told them what I needed. Before I knew it, I had myself a stunningly
+															appealing
+														</p>
+													</div>
+													<div class="custom-card-footer text-center">
+														<p>Entreprise Name</p>
+													</div>
+												</div>
+											</div>
+											<div class="custom-slide-card d-flex align-items-center">
+												<div class="custom-card-image">
+													<img src="images/image-test-10.png" alt="person mr- founder" />
+												</div>
+												<div class="custom-card">
+													<div class="custom-card-head text-center">
+														<h3 class="custom-card-title" style="color: #333"> Jane Doe - CEO </h3>
+													</div>
+													<div class="custom-card-stars d-flex justify-content-center">
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+													</div>
+													<div class="custom-card-body text-center">
+														<p
+															>"I just basically told them what I needed. Before I knew it, I had myself a stunningly
+															appealing
+														</p>
+													</div>
+													<div class="custom-card-footer text-center">
+														<p>Entreprise Name</p>
+													</div>
+												</div>
+											</div>
+											<div class="custom-slide-card d-flex align-items-center">
+												<div class="custom-card-image">
+													<img src="images/image-test-10.png" alt="person mr- founder" />
+												</div>
+												<div class="custom-card">
+													<div class="custom-card-head text-center">
+														<h3 class="custom-card-title" style="color: #333"> Jane Doe - CEO </h3>
+													</div>
+													<div class="custom-card-stars d-flex justify-content-center">
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+													</div>
+													<div class="custom-card-body text-center">
+														<p
+															>"I just basically told them what I needed. Before I knew it, I had myself a stunningly
+															appealing
+														</p>
+													</div>
+													<div class="custom-card-footer text-center">
+														<p>Entreprise Name</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="custom-slider owl-carousel" data-aos="fade-left" data-aos-duration="2000">
+											<div class="custom-slide-card d-flex align-items-center">
+												<div class="custom-card-image">
+													<img src="images/image-test-10.png" alt="person mr- founder" />
+												</div>
+												<div class="custom-card">
+													<div class="custom-card-head text-center">
+														<h3 class="custom-card-title" style="color: #333"> Jane Doe - CEO </h3>
+													</div>
+													<div class="custom-card-stars d-flex justify-content-center">
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+													</div>
+													<div class="custom-card-body text-center">
+														<p
+															>"I just basically told them what I needed. Before I knew it, I had myself a stunningly
+															appealing
+														</p>
+													</div>
+													<div class="custom-card-footer text-center">
+														<p>Entreprise Name</p>
+													</div>
+												</div>
+											</div>
+											<div class="custom-slide-card d-flex align-items-center">
+												<div class="custom-card-image">
+													<img src="images/image-test-10.png" alt="person mr- founder" />
+												</div>
+												<div class="custom-card">
+													<div class="custom-card-head text-center">
+														<h3 class="custom-card-title" style="color: #333"> Jane Doe - CEO </h3>
+													</div>
+													<div class="custom-card-stars d-flex justify-content-center">
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+													</div>
+													<div class="custom-card-body text-center">
+														<p
+															>"I just basically told them what I needed. Before I knew it, I had myself a stunningly
+															appealing
+														</p>
+													</div>
+													<div class="custom-card-footer text-center">
+														<p>Entreprise Name</p>
+													</div>
+												</div>
+											</div>
+											<div class="custom-slide-card d-flex align-items-center">
+												<div class="custom-card-image">
+													<img src="images/image-test-10.png" alt="person mr- founder" />
+												</div>
+												<div class="custom-card">
+													<div class="custom-card-head text-center">
+														<h3 class="custom-card-title" style="color: #333"> Jane Doe - CEO </h3>
+													</div>
+													<div class="custom-card-stars d-flex justify-content-center">
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+													</div>
+													<div class="custom-card-body text-center">
+														<p
+															>"I just basically told them what I needed. Before I knew it, I had myself a stunningly
+															appealing
+														</p>
+													</div>
+													<div class="custom-card-footer text-center">
+														<p>Entreprise Name</p>
+													</div>
+												</div>
+											</div>
+											<div class="custom-slide-card d-flex align-items-center">
+												<div class="custom-card-image">
+													<img src="images/image-test-10.png" alt="person mr- founder" />
+												</div>
+												<div class="custom-card">
+													<div class="custom-card-head text-center">
+														<h3 class="custom-card-title" style="color: #333"> Jane Doe - CEO </h3>
+													</div>
+													<div class="custom-card-stars d-flex justify-content-center">
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+														<span>
+															<i class="fa-solid fa-star"></i>
+														</span>
+													</div>
+													<div class="custom-card-body text-center">
+														<p
+															>"I just basically told them what I needed. Before I knew it, I had myself a stunningly
+															appealing
+														</p>
+													</div>
+													<div class="custom-card-footer text-center">
+														<p>Entreprise Name</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="col-12 seventh-container">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 d-flex justify-content-center">
+									<div class="title-content custom-w-50 d-flex flex-column">
+										<div class="title-1 d-flex justify-content-start">
+											<h3>What</h3>
+										</div>
+										<div class="title-2 d-flex justify-content-center">
+											<h2>can we do</h2>
+										</div>
+										<div class="title-1 d-flex justify-content-end">
+											<h3>for you?</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="col-12 eighth-container">
+						<div class="container-fluid custom-w-75 d-flex justify-content-center">
+							<div class="row">
+								<div class="col-12 col-xl-4">
+									<div class="card-body">
+										<div class="card-title-1">
+											<h4>Explainer</h4>
+										</div>
+										<div class="card-title-2 d-flex justify-content-end">
+											<h4>Videos</h4>
+										</div>
+										<div class="card-text">
+											<p>Need an explainer video, but you don't know where to start?</p>
+										</div>
+										<div class="button-container">
+											<a href="#">Learn More</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-xl-7 d-flex justify-content-center align-items-center">
+									<div class="video-content">
+										<div class="video-slider-2 owl-carousel">
+											<div class="video-item">
+												<video controls>
+													<source src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741436/cascade-video_cprall.mp4" />
+												</video>
+											</div>
+											<div class="video-item">
+												<video controls>
+													<source
+														src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741434/mixkit-waves-coming-to-the-beach-5016_ijezdw.mp4"
+													/>
+												</video>
+											</div>
+											<div class="video-item">
+												<video controls>
+													<source
+														src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741444/mixkit-stars-in-space-1610_plfura.mp4"
+													/>
+												</video>
+											</div>
+										</div>
+										<div class="arrow-left" id="arrow-left-2">
+											<span>
+												<i class="fas fa-angle-left"></i>
+											</span>
+										</div>
+										<div class="arrow-right" id="arrow-right-2">
+											<span>
+												<i class="fas fa-angle-right"></i>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="col-12 nineth-container">
+						<div class="container-fluid custom-w-75 d-flex justify-content-center">
+							<div class="row">
+								<div class="col-12 col-xl-7 custom-box-1 d-flex justify-content-center align-items-center">
+									<div class="video-content">
+										<div class="video-slider-3 owl-carousel">
+											<div class="video-item">
+												<video controls>
+													<source src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741436/cascade-video_cprall.mp4" />
+												</video>
+											</div>
+											<div class="video-item">
+												<video controls>
+													<source
+														src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741434/mixkit-waves-coming-to-the-beach-5016_ijezdw.mp4"
+													/>
+												</video>
+											</div>
+											<div class="video-item">
+												<video controls>
+													<source
+														src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741444/mixkit-stars-in-space-1610_plfura.mp4"
+													/>
+												</video>
+											</div>
+										</div>
+										<div class="arrow-left" id="arrow-left-3">
+											<span>
+												<i class="fas fa-angle-left"></i>
+											</span>
+										</div>
+										<div class="arrow-right" id="arrow-right-3">
+											<span>
+												<i class="fas fa-angle-right"></i>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-xl-4 custom-box-2">
+									<div class="card-body">
+										<div class="card-title-1">
+											<h4>Product Demo</h4>
+										</div>
+										<div class="card-title-2 d-flex justify-content-end">
+											<h4>Videos</h4>
+										</div>
+										<div class="card-text">
+											<p>You have a great product but don't know how to explain it in a way that your customers will understand?</p>
+										</div>
+										<div class="button-container">
+											<a href="#">Learn More</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="col-12 eighth-container">
+						<div class="container-fluid custom-w-75 d-flex justify-content-center">
+							<div class="row">
+								<div class="col-12 col-xl-4">
+									<div class="card-body">
+										<div class="card-title-1">
+											<h4>Marketing</h4>
+										</div>
+										<div class="card-title-2 d-flex justify-content-end">
+											<h4>Videos</h4>
+										</div>
+										<div class="card-text">
+											<p
+												>You know you need to be using video in your marketing, but you don’t have the time or resources to make it
+												happen.</p
+											>
+										</div>
+										<div class="button-container">
+											<a href="#">Learn More</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-xl-7 custom-p d-flex justify-content-center align-items-center">
+									<div class="video-content">
+										<div class="video-slider-4 owl-carousel">
+											<div class="video-item">
+												<video controls>
+													<source src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741436/cascade-video_cprall.mp4" />
+												</video>
+											</div>
+											<div class="video-item">
+												<video controls>
+													<source
+														src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741434/mixkit-waves-coming-to-the-beach-5016_ijezdw.mp4"
+													/>
+												</video>
+											</div>
+											<div class="video-item">
+												<video controls>
+													<source
+														src="https://res.cloudinary.com/dhlflricg/video/upload/v1648741444/mixkit-stars-in-space-1610_plfura.mp4"
+													/>
+												</video>
+											</div>
+										</div>
+										<div class="arrow-left" id="arrow-left-4">
+											<span>
+												<i class="fas fa-angle-left"></i>
+											</span>
+										</div>
+										<div class="arrow-right" id="arrow-right-4">
+											<span>
+												<i class="fas fa-angle-right"></i>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="col-12 tenth-container">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 col-lg-6 custom-box-1">
+									<div class="image-content">
+										<img src="images/assets-animation/7.png" alt="Phone with apps" />
+									</div>
+								</div>
+								<div class="col-12 col-lg-6 custom-box-2 d-flex flex-column justify-content-center">
+									<div class="title-content d-flex flex-column">
+										<div class="title-1 d-flex justify-content-start">
+											<h3>The Way People</h3>
+										</div>
+										<div class="title-2 d-flex justify-content-center">
+											<h2>consume content</h2>
+										</div>
+										<div class="title-1 d-flex justify-content-end">
+											<h3>has Always Been Evolving</h3>
+										</div>
+									</div>
+									<div class="text-content">
+										<p>We now live in a fast-paced generation where people prefer to consume content in bite-sized formats.</p>
+										<p
+											>That's why 350+ page textbooks were replaced with 12-minute blog posts. Blogs were then replaced with
+											280-character Tweets.</p
+										>
+										<p>Pretty soon, a 1-hour educational pre-recorded video - like books and blog posts - will rarely be consumed.</p>
+									</div>
+									<div class="text-content-color">
+										<p
+											>But thanks to this evolution in content consumption, you now have a new opportunity that you've never had
+											before.</p
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="col-12 eleventh-container">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 d-flex flex-column justify-content-center" style="position: relative">
+									<div class="title-content d-flex flex-column">
+										<div class="title-1 d-flex justify-content-start">
+											<h3>The Shift From Recorded Videos To</h3>
+										</div>
+										<div class="title-2 d-flex justify-content-center">
+											<h2>2D & 3D Animation Is The Best Thing</h2>
+										</div>
+										<div class="title-1 d-flex justify-content-end">
+											<h3>That Could've Happened To You</h3>
+										</div>
+									</div>
+									<div class="card-container" data-aos="fade-up" data-aos-duration="1000">
+										<div class="container">
+											<div class="row">
+												<div class="col-12 col-lg-4 card-color">
+													<div class="card-body d-flex">
+														<div class="card-image">
+															<img src="images/assets-animation/8.png" alt="Animation icon 1" />
+														</div>
+														<div class="card-text">
+															<p
+																>Video animation has become one of the most popular forms of communication because it
+																engages people emotionally.</p
+															>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-lg-4 card-color">
+													<div class="card-body d-flex">
+														<div class="card-image">
+															<img src="images/assets-animation/9.png" alt="Animation icon 2" />
+														</div>
+														<div class="card-text">
+															<p
+																>Meaning they remember what they see more clearly than if they read it or heard about it
+																from someone else simply talking about it on a video.</p
+															>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-lg-4 card-color">
+													<div class="card-body d-flex">
+														<div class="card-image">
+															<img src="images/assets-animation/10.png" alt="Animation icon 3" />
+														</div>
+														<div class="card-text">
+															<p
+																>And research has proven that a staggering 66% of consumers prefer watching videos about
+																products/services than reading about them!</p
+															>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="col-12 twelfth-container">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+									<div class="title-content d-flex flex-column">
+										<div class="title-1 d-flex justify-content-start">
+											<h3>Already Using</h3>
+										</div>
+										<div class="title-2 d-flex justify-content-center">
+											<h2>Animated Videos</h2>
+										</div>
+										<div class="title-1 d-flex justify-content-end">
+											<h3>But Still Not Getting Results?</h3>
+										</div>
+									</div>
+									<div class="text-content">
+										<p
+											>It can be hard to find the time to create videos that are both high quality and communicate your message
+											perfectly.
+										</p>
+										<p>Not only do you need the time and resources, but you also need the skill set to produce compelling videos.</p>
+										<p
+											>And lone freelancers or even an agency without the experiences and know-how will not be able to produce the
+											quality of videos that brings results.</p
+										>
+									</div>
+									<div class="text-content-color">
+										<p
+											>Because what you need is a team that can produce engaging, high-quality videos that can make complex
+											educational content easy to consume.</p
+										>
+									</div>
+								</div>
+								<div class="col-12 col-lg-6 d-flex align-items-center justify-content-end">
+									<div class="image-content">
+										<img src="images/assets-animation/11.png" alt="phone with animated apps" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="col-12 thirteenth-container">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 col-lg-4 custom-box-1" style="position: relative">
+									<div class="image-content">
+										<img src="images/assets-animation/12.png" alt="Mr.Founder animation" />
+									</div>
+								</div>
+								<div class="col-12 col-lg-8 custom-box-2">
+									<div class="title-content d-flex flex-column">
+										<div class="title-1 d-flex justify-content-start">
+											<h3>Reach New Heights With</h3>
+										</div>
+										<div class="title-1 custom-title-1 d-flex justify-content-end">
+											<h3>Video Animation Now</h3>
+										</div>
+									</div>
+									<div class="text-content">
+										<p
+											>Whether you're a Youtube content creator, a startup, or a COO of a company looking to achieve success using
+											animated videos, we got you!
+										</p>
+										<p>We have a 100% Money-Back Guarantee in case you're not satisfied with our services.</p>
+										<p>And not only will we give you a full refund, but we'll also give you $100 for wasting your time.</p>
+										<p
+											>So schedule a call now and let's start producing 2D & 3D animated videos to you need to help your channel or
+											business:</p
+										>
+									</div>
+									<div class="list-content">
+										<div class="list-body d-flex">
+											<div class="list-item d-flex" data-aos="fade-right" data-aos-duration="1000">
+												<div class="list-text">
+													<p>Steal your competitor's audience</p>
+												</div>
+												<div class="list-image">
+													<div class="image-list-content d-flex align-items-center justify-content-center">
+														<img src="images/image-test16.PNG" alt="check mark" />
+													</div>
+												</div>
+											</div>
+											<div class="list-item d-flex" data-aos="fade-right" data-aos-duration="1000">
+												<div class="list-text">
+													<p>Build brand awareness</p>
+												</div>
+												<div class="list-image">
+													<div class="image-list-content d-flex align-items-center justify-content-center">
+														<img src="images/image-test16.PNG" alt="check mark" />
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="list-body d-flex">
+											<div class="list-item d-flex" data-aos="fade-left" data-aos-duration="1000">
+												<div class="list-text">
+													<p>Increase sales</p>
+												</div>
+												<div class="list-image">
+													<div class="image-list-content d-flex align-items-center justify-content-center">
+														<img src="images/image-test16.PNG" alt="check mark" />
+													</div>
+												</div>
+											</div>
+											<div class="list-item d-flex" data-aos="fade-left" data-aos-duration="1000">
+												<div class="list-text">
+													<p>Educate your audience</p>
+												</div>
+												<div class="list-image">
+													<div class="image-list-content d-flex align-items-center justify-content-center">
+														<img src="images/image-test16.PNG" alt="check mark" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="button-container">
+										<a href="#">Schedule A Demo</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="col-12 contact-container">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 col-lg-6">
+									<div class="d-flex flex-column" style="position: relative; z-index: 2">
+										<div class="title-content">
+											<h3>Contact us</h3>
+										</div>
+										<div class="text-content custom-w-60 text-center">
+											<p
+												>Are you interested in our services? Do not hesitate! contact us by any means and we will gladly assist
+												you.</p
+											>
+										</div>
+										<div class="image-absolute">
+											<img src="images/Assets-Home/13.png" alt="Mr.Founder call icon" />
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-6">
+									<form action="#" method="POST">
+										<div class="input-body d-flex flex-column">
+											<div class="input-container d-flex">
+												<input class="custom-input" type="text" placeholder="Name" />
+												<input class="custom-input" type="text" placeholder="Email" />
+											</div>
+											<div class="input-container d-flex">
+												<input class="custom-input" type="text" placeholder="Phone" />
+												<input class="custom-input" type="text" placeholder="Location" />
+											</div>
+											<div class="button-container">
+												<a href="#">Send Message</a>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="col-12 info-container">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 col-md-6 col-lg-3">
+									<div class="info-body">
+										<div class="title-info image-info">
+											<img src="images/logo-actualizado/2.png" alt="Mr.Founder footer logo" />
+										</div>
+										<div class="custom-text-info">
+											<p
+												>Our engineering and marketing teams help companies & startups scale without the hassle, risk, and expense
+												of building a team from zero.</p
+											>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 col-lg-3">
+									<div class="info-body">
+										<div class="title-info">
+											<h4>Share With US</h4>
+										</div>
+										<div class="custom-text-info">
+											<p>Follow us on our social networks to be aware of all our updates and promotions</p>
+										</div>
+										<div class="icon-content d-flex">
+											<div class="icon-item">
+												<a href="#" target="_blank">
+													<span>
+														<i class="fab fa-facebook-f"></i>
+													</span>
+												</a>
+											</div>
+											<div class="icon-item">
+												<a href="#" target="_blank">
+													<span>
+														<i class="fab fa-instagram"></i>
+													</span>
+												</a>
+											</div>
+											<div class="icon-item">
+												<a href="#" target="_blank">
+													<span>
+														<i class="fab fa-twitter"></i>
+													</span>
+												</a>
+											</div>
+											<div class="icon-item">
+												<a href="#" target="_blank">
+													<span>
+														<i class="fab fa-youtube"></i>
+													</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 col-lg-3">
+									<div class="info-body">
+										<div class="title-info">
+											<h4>Our Services</h4>
+										</div>
+										<div class="custom-text-info">
+											<ul class="nav-footer">
+												<li class="nav-footer-item">
+													<a href="custom.html">Software Development</a>
+												</li>
+												<li class="nav-footer-item">
+													<a href="animation.html">Video Animation</a>
+												</li>
+												<li class="nav-footer-item">
+													<a href="marketing.html">Digital Marketing</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 col-lg-3">
+									<div class="info-body">
+										<div class="title-info">
+											<h4>Contact Info</h4>
+										</div>
+										<div class="custom-text-info">
+											<div class="info-item d-flex align-items-center">
+												<span>
+													<i class="fas fa-map-marker-alt"></i>
+												</span>
+												<p>433 Belle Grove Dr. #831372 Richardson, TX-75080 </p>
+											</div>
+											<div class="info-item d-flex align-items-center">
+												<span>
+													<i class="fas fa-phone-alt"></i>
+												</span>
+												<p>+1 (800) 685-1031 </p>
+											</div>
+											<div class="info-item d-flex align-items-center">
+												<span>
+													<i class="far fa-envelope"></i>
+												</span>
+												<p>contact@alphacrewstudio.com </p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</section>
+			<footer class="custom-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 custom-footer-body d-flex justify-content-between">
+							<div class="custom-footer-container">
+								<p>
+									Copyright <span id="custom-year"></span>, <a href="https://alphacrewstudio.com/" target="_blank">AlphaCrew Studio</a>,
+									LLC All Rights Reserved.
+								</p>
+							</div>
+							<div class="custom-footer-terms">
+								<div class="terms-list">
+									<a href="#">Terms of Use</a>
+									<a href="#">Privacy Policy</a>
+									<a href="#">Cookie Policy</a>
+									<a href="#">Disclaimer</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="text/javascript" src="js/lodash-core.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
-</body>
-
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script type="text/javascript" src="js/lodash-core.min.js"></script>
+		<!-- START FIREBASE -->
+		<script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-app.js"></script>
+		<!-- Add Firebase products that you want to use -->
+		<script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-firestore.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-storage.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-functions.js"></script>
+		<!-- END FIREBASE -->
+		<!-- MOMENT.JS FOR TIME & DATE -->
+		<script type="text/javascript" src="./js/moment.js"></script>
+        <script src="js/verifiedEvents.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+	</body>
 </html>

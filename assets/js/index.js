@@ -25,20 +25,7 @@ const accordion = document.getElementsByClassName("accordion");
 var app_fireBase = {};
 // console.log = function() {}; //disables all console.log
 
-(function () {
-	var config = {
-		apiKey: "AIzaSyDO9m47u1ZO2lpKcMKX-BnYOw5T1sftRl8",
-		authDomain: "dashboard-project-aedff.firebaseapp.com",
-		projectId: "dashboard-project-aedff",
-		storageBucket: "dashboard-project-aedff.appspot.com",
-		messagingSenderId: "961403023345",
-		appId: "1:961403023345:web:07f6c93cdd8b078a15de50",
-	};
-	firebase.initializeApp(config);
 
-	app_fireBase = firebase;
-})();
-const db = firebase.firestore();
 
 let instance = $("#userPhone").intlTelInput({
 	autoHideDialCode: true,

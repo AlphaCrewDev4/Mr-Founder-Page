@@ -1,760 +1,838 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Custom Software Development - Mr. Founder</title>
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/stylesCustom.css" />
+		<link rel="stylesheet" href="css/stylesGeneral.css" />
+		<link rel="stylesheet" href="css/verifiedEvents.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://kit.fontawesome.com/9fec6034d2.js" crossorigin="anonymous"></script>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.js"
+			integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+			integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+			integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Software Development - Mr. Founder</title>
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/stylesCustom.css">
-    <link rel="stylesheet" href="css/stylesGeneral.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/9fec6034d2.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<!-- START FONT AWESOME -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+			integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- END FONT AWESOME -->
 
-    <!-- START FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- END FONT AWESOME -->
+		<!-- ANIMATION AOS -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+	</head>
 
-    <!-- ANIMATION AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
+	<body>
+		<div class="tt-promo-fixed fadeout" id="proofContainer" style="display: none">
+			<button class="tt-btn-close"></button>
+			<div class="tt-img">
+				<a href="./index.html"><img id="proofImage" src="" data-src="" alt="plan subscribed" /></a>
+			</div>
+			<div class="tt-description" id="proofDescr"> </div>
+		</div>
+		<div class="container-fluid">
+			<header class="custom-nav">
+				<div class="custom-bar">
+					<div class="custom-bar-body">
+						<div class="custom-bar-list">
+							<div class="custom-bar-item">
+								<a href="#">Sign In</a>
+							</div>
+							<div class="custom-bar-item">
+								<a href="#">Sign Up</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="custom-nav-body">
+					<div class="custom-nav-left">
+						<nav class="custom-nav-list">
+							<ul class="custom-nav-container">
+								<li class="custom-nav-item">
+									<a href="index.html">Home</a>
+								</li>
+								<li class="custom-nav-item custom-item-toggle">
+									<a class="toggle-item" id="toggle-item" href="#">Services</a>
+									<ul class="custom-burger-item">
+										<li><a href="animation.html">Animation</a></li>
+										<li class="active"><a href="custom.html">Software Development</a></li>
+										<li><a href="marketing.html">Digital Marketing</a></li>
+									</ul>
+								</li>
+								<li class="custom-nav-item">
+									<a href="about-us.html">About us</a>
+								</li>
+								<li class="custom-nav-item">
+									<a href="#">Portfolio</a>
+								</li>
+								<li class="custom-nav-item">
+									<a href="https://mrfound3r.com/blog/">Blog</a>
+								</li>
+								<li class="custom-nav-item">
+									<a href="contact.html">Contact</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="custom-nav-right">
+						<div class="custom-menu-responsive">
+							<input id="menu-toggle" type="checkbox" />
+							<label class="menu-button-container" for="menu-toggle">
+								<div class="menu-button"></div>
+							</label>
+						</div>
+						<div class="logo-container d-flex justify-content-end">
+							<a class="d-flex justify-content-end custom-link-logo" href="index.html"
+								><img class="logo" src="images/logo-actualizado/1.png" alt="Mr.Founder logo"
+							/></a>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section id="body" class="container-fluid">
+				<div class="row">
+					<section class="col-12 first-container" id="home">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 col-lg-6 custom-box-1 d-flex justify-content-center" data-aos="fade-right" data-aos-duration="1000">
+									<div class="image-content d-flex justify-content-center">
+										<img src="images/assets-custom/3.png" alt="Custom Software Development Services" />
+									</div>
+								</div>
+								<div
+									class="col-12 col-lg-6 custom-box-2 d-flex flex-column justify-content-start align-items-center"
+									data-aos="fade-up"
+									data-aos-duration="1000"
+									style="z-index: 3"
+								>
+									<div class="title-content">
+										<h1>Custom Software Development Services</h1>
+									</div>
+									<div class="buttons-content d-flex">
+										<div class="button-2">
+											<a href="#">Book Your Free Consultation</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="col-12 second-container">
+						<div class="container custom-container">
+							<div class="row">
+								<div class="col-12 col-lg-4 custom-box-1 d-flex align-items-center justify-content-center">
+									<div class="image-content">
+										<img src="images/assets-custom/4.png" alt="" />
+									</div>
+								</div>
+								<div class="col-12 col-lg-8 custom-box-2 d-flex flex-column justify-content-center align-items-center">
+									<div class="title-content custom-w-100 d-flex flex-column">
+										<div class="title-2 d-flex justify-content-start">
+											<h2>Wondering if</h2>
+										</div>
+										<div class="title-1 d-flex justify-content-center">
+											<h2 style="color: #ea00ff">Software Development</h2>
+										</div>
+										<div class="title-2 d-flex justify-content-end">
+											<h2>is the right step for your business?</h2>
+										</div>
+									</div>
+									<div class="text-content custom-w-75">
+										<p
+											>Mr. Found3r has been in the software development business for over 5 years, and we know that not every company
+											needs or wants custom software.</p
+										>
+										<p>That's why we offer a wide range of services – so you can find the perfect one for your business.</p>
+										<p>We also have a team of experienced developers who are passionate about helping businesses grow.</p>
+										<p style="font-weight: bold">What To Expect:</p>
+									</div>
+									<div class="custom-card-content d-flex align-items-center">
+										<div class="custom-card-item d-flex align-items-center">
+											<div class="custom-card-image">
+												<img src="images/assets-custom/5.png" alt="service tailored" />
+											</div>
+											<div class="custom-card-text">
+												<p>Customized service tailored to your needs</p>
+											</div>
+										</div>
+										<div class="custom-card-item d-flex align-items-center">
+											<div class="custom-card-image">
+												<img src="images/assets-custom/6.png" alt="Guaranteed deliverables" />
+											</div>
+											<div class="custom-card-text">
+												<p>Guaranteed deliverables</p>
+											</div>
+										</div>
+										<div class="custom-card-item d-flex align-items-center">
+											<div class="custom-card-image">
+												<img src="images/assets-custom/7.png" alt="development process" />
+											</div>
+											<div class="custom-card-text">
+												<p>Highly efficient development process</p>
+											</div>
+										</div>
+										<div class="custom-card-item d-flex align-items-center">
+											<div class="custom-card-image">
+												<img src="images/assets-custom/7.png" alt="Fixed cost" />
+											</div>
+											<div class="custom-card-text">
+												<p>Fixed cost or on a time and materials, basis</p>
+											</div>
+										</div>
+									</div>
+									<div class="button-container fw-bold">
+										<a href="#">Book Your Free Consultation</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="col-12 third-container">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 d-flex flex-column align-items-center justify-content-center">
+									<div class="title-content custom-w-100 d-flex flex-column">
+										<div class="title-1 d-flex justify-content-center">
+											<h2 style="color: #ea00ff">eCommerce</h2>
+										</div>
+									</div>
+									<div class="subtitle-content custom-w-60 d-flex flex-column">
+										<p>Have you been looking for a way to get ahead in the eCommerce field?</p>
+									</div>
+									<div class="sub-content">
+										<div class="container-fluid">
+											<div class="row">
+												<div class="col-12 col-md-6 col-lg-6 col-xl-3">
+													<div class="sub-body">
+														<div class="sub-text">
+															<p
+																>Our top engineers will design, develop, implement and maintain market-leading eCommerce
+																applications for your business.</p
+															>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-6 col-xl-3">
+													<div class="sub-body">
+														<div class="sub-text">
+															<p
+																>We know that every company is different and has unique needs when it comes to their tech
+																stack.</p
+															>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-6 col-xl-3">
+													<div class="sub-body">
+														<div class="sub-text">
+															<p
+																>That’s why our team of experts will work with you one on one until we find a solution that
+																works best for your business!
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-6 col-xl-3">
+													<div class="sub-body">
+														<div class="sub-text">
+															<p
+																>You can rest easy knowing that our team of experts is working hard behind the scenes day in
+																and day out to ensure all projects go smoothly from start to finish.</p
+															>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="col-12 fourth-container">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 d-flex flex-column align-items-center justify-content-center">
+									<div class="title-content custom-w-100 d-flex flex-column">
+										<div class="title-2 d-flex justify-content-start">
+											<h2>With Mr. Found3r by your side You can focus on</h2>
+										</div>
+										<div class="title-1 d-flex justify-content-center">
+											<h2 style="color: #009bdb">Growing your business</h2>
+										</div>
+										<div class="title-2 d-flex justify-content-end">
+											<h2>while we handle everything else!</h2>
+										</div>
+									</div>
+									<div class="custom-card-container">
+										<div class="container">
+											<div class="row">
+												<div class="col-12 col-lg-6">
+													<div class="text-content">
+														<p>Let us take care of all those pesky technical issues so you don't have to!</p>
+														<p class="fw-bold">What To Expect:</p>
+													</div>
+													<div class="list-content">
+														<ul>
+															<li
+																>Maintain control of your codebase and not be stuck with technology that doesn't suit
+																you</li
+															>
+															<li>Increase your ROI through innovation</li>
+															<li>Automate and eliminate mundane tasks</li>
+															<li>Work with the top engineers in the industry</li>
+														</ul>
+													</div>
+													<div class="button-container">
+														<a href="#">Book Your Free Consultation</a>
+													</div>
+												</div>
+												<div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+													<div class="image-content">
+														<img src="images/assets-custom/14.png" alt="Growing your business" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="col-12 fifth-container">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 d-flex flex-column align-items-center justify-content-center">
+									<div class="title-content custom-w-75 d-flex flex-column">
+										<div class="title-1 d-flex justify-content-center">
+											<h2 style="color: #009bdb">MVP Development</h2>
+										</div>
+									</div>
+									<div class="subtitle-content custom-w-60 d-flex flex-column">
+										<p>Do you have an idea for a startup?</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container custom-container">
+							<div class="row custom-row">
+								<div class="col-12 d-flex flex-column align-items-center justify-content-center">
+									<div class="card-content">
+										<div class="container">
+											<div class="row">
+												<div class="col-12 col-lg-8 d-flex flex-column align-items-end justify-content-center">
+													<div class="image-title-content">
+														<img alt="validate your idea" src="images/assets-custom/assets-corregidos/texto-corregido.png" />
+													</div>
+													<div class="text-content text-center">
+														<p
+															>This will give you the opportunity to test and measure customer reactions, as well as make sure
+															the business model is sound before investing too much time or money into it.</p
+														>
+													</div>
+												</div>
+												<div class="col-12 col-lg-4" style="position: relative">
+													<div class="image-content">
+														<img src="images/assets-custom/15.png" alt="validate your idea" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="title-content custom-w-100 custom-title d-flex justify-content-center">
+										<div class="title-2 d-flex justify-content-start text-center custom-w-75">
+											<h2 style="color: #fff">You can focus on what matters most your customers and their needs</h2>
+										</div>
+									</div>
+									<div class="text-content custom-w-60 text-center">
+										<p>Mr. Found3r will handle all of the technical aspects so that you can get back to doing what’s important</p>
+										<p class="fw-bold">growing your business!</p>
+									</div>
+									<div class="button-container">
+										<a href="#">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container custom-container-2">
+							<div class="row">
+								<div class="col-12 d-flex flex-column align-items-center justify-content-center">
+									<div class="card-content-2">
+										<div class="custom-card-item">
+											<div class="custom-card-image">
+												<img
+													src="images/assets-custom/assets-corregidos/custom-software-assets-16.png"
+													alt="designing your product"
+												/>
+											</div>
+											<div class="custom-card-text">
+												<p>Begin to designing your product from the ground up with minimal resources</p>
+											</div>
+										</div>
+										<div class="custom-card-item">
+											<div class="custom-card-image">
+												<img
+													src="images/assets-custom/assets-corregidos/custom-software-assets-17.png"
+													alt="designing your product"
+												/>
+											</div>
+											<div class="custom-card-text">
+												<p>Unlock new revenue streams with quick prototypes</p>
+											</div>
+										</div>
+										<div class="custom-card-item">
+											<div class="custom-card-image">
+												<img
+													src="images/assets-custom/assets-corregidos/custom-software-assets-18.png"
+													alt="designing your product"
+												/>
+											</div>
+											<div class="custom-card-text">
+												<p>Get feedback on your business model from stakeholders</p>
+											</div>
+										</div>
+										<div class="custom-card-item">
+											<div class="custom-card-image">
+												<img
+													src="images/assets-custom/assets-corregidos/custom-software-assets-19.png"
+													alt="designing your product"
+												/>
+											</div>
+											<div class="custom-card-text">
+												<p>Make the best decisions regarding value proposition and business model</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container custom-container-3">
+							<div class="row">
+								<div class="col-12 d-flex flex-column align-items-center justify-content-center">
+									<div class="title-content d-flex flex-column">
+										<div class="title-1 d-flex justify-content-center">
+											<h2 style="color: #ea00ff">Mobile & Web Development</h2>
+										</div>
+									</div>
+									<div class="subtitle-content custom-w-60 d-flex flex-column">
+										<p>Don't have time to waste on developing a mobile app or website?</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="col-12 sixth-container">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 d-flex flex-column justify-content-center align-items-center">
+									<div class="title-content custom-w-100 d-flex flex-column">
+										<div class="title-2 d-flex justify-content-start">
+											<h2>That's where we come in</h2>
+										</div>
+										<div class="title-1 d-flex justify-content-center">
+											<h2 style="color: #009bdb">Let us take care of everything</h2>
+										</div>
+										<div class="title-2 d-flex justify-content-end">
+											<h2>so you can focus on what you're good at</h2>
+										</div>
+									</div>
+									<div class="card-content">
+										<div class="container">
+											<div class="row">
+												<div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+													<div class="image-content">
+														<img
+															src="images/assets-custom/assets-corregidos/celular-corregido-20-20.png"
+															alt="to work more efficiently"
+														/>
+													</div>
+												</div>
+												<div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+													<div class="text-content">
+														<p
+															>We've been doing this for a long time, and we know what works and what doesn't when it comes to
+															developing web apps and interactive websites.</p
+														>
+														<p
+															>We'll make sure your customers have the best experience possible with your brand, and that your
+															employees are able to work more efficiently than ever before.</p
+														>
+														<p
+															>Not only will you be getting a top-quality product, but you'll also be getting it at an
+															incredibly competitive price.</p
+														>
+														<p
+															>We want to help as many businesses as possible improve their mobile presence, so we're offering
+															our services at a fraction of the cost of our competitors.</p
+														>
+														<p class="fw-bold">What To Expect:</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="col-12 card-container-section">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 d-flex flex-column justify-content-center align-items-center">
+									<div class="card-content">
+										<div class="custom-card-item">
+											<div class="custom-card-number">
+												<p>01</p>
+											</div>
+											<div class="custom-card-text">
+												<p>Engage more customers creating one-of-a-kind brand experiences</p>
+											</div>
+										</div>
+										<div class="custom-card-item">
+											<div class="custom-card-number">
+												<p>02</p>
+											</div>
+											<div class="custom-card-text">
+												<p>Reach more consumers through strategy, design, and technology</p>
+											</div>
+										</div>
+										<div class="custom-card-item">
+											<div class="custom-card-number">
+												<p>03</p>
+											</div>
+											<div class="custom-card-text">
+												<p>Increase profits with engaging and intuitive web and app designs</p>
+											</div>
+										</div>
+									</div>
+									<div class="button-container">
+										<a href="#">Get Started</a>
+									</div>
+									<div class="title-content custom-w-100 d-flex flex-column">
+										<div class="title-1 d-flex justify-content-center">
+											<h2 style="color: #009bdb">Digital Acceleration</h2>
+										</div>
+									</div>
+									<div class="subtitle-content custom-w-60 d-flex flex-column">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus mi sed</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="col-12 seventh-container">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 d-flex flex-column justify-content-center align-items-center">
+									<div class="title-content custom-w-100 d-flex flex-column">
+										<div class="title-2 d-flex justify-content-start">
+											<h2>Wondering if you're</h2>
+										</div>
+										<div class="title-1 d-flex justify-content-center">
+											<h2 style="color: #ea00ff">Doing enough to get ahead</h2>
+										</div>
+										<div class="title-2 d-flex justify-content-end">
+											<h2>of the competition?</h2>
+										</div>
+									</div>
+									<div class="card-content">
+										<div class="container">
+											<div class="row">
+												<div class="col-12 col-lg-6 custom-box-1 d-flex justify-content-center align-items-center">
+													<div class="text-content">
+														<p
+															>You're not alone. A lot of business owners feel like they need to do more, but don't know where
+															to start.</p
+														>
+														<p
+															>That's where we come in. We use readily-available resources (especially cloud-based services),
+															to accelerate business transformation and make it a data-driven company.</p
+														>
+														<p
+															>This will increase the overall speed at which your business can answer new challenges. So you
+															can focus on what you're good at - running your business.</p
+														>
+														<p
+															>With Mr. Found3r, you'll get - fast, accurate insights into your business performance so you
+															can make informed decisions quickly and confidently.</p
+														>
+														<p>Stop guessing and start knowing with Mr. Found3r by your side!</p>
+														<p class="fw-bold">What To Expect:</p>
+													</div>
+												</div>
+												<div class="col-12 col-lg-6 custom-box-2 d-flex justify-content-center align-items-center">
+													<div class="image-content">
+														<img src="images/assets-custom/21.png" alt="to work more efficiently" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="col-12 card-container-section custom-section-color">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 d-flex flex-column justify-content-center align-items-center">
+									<div class="card-content">
+										<div class="custom-card-item">
+											<div class="custom-card-number">
+												<p>01</p>
+											</div>
+											<div class="custom-card-text">
+												<p>Engage more customers creating one-of-a-kind brand experiences</p>
+											</div>
+										</div>
+										<div class="custom-card-item">
+											<div class="custom-card-number">
+												<p>02</p>
+											</div>
+											<div class="custom-card-text">
+												<p>Reach more consumers through strategy, design, and technology</p>
+											</div>
+										</div>
+										<div class="custom-card-item">
+											<div class="custom-card-number">
+												<p>03</p>
+											</div>
+											<div class="custom-card-text">
+												<p>Increase profits with engaging and intuitive web and app designs</p>
+											</div>
+										</div>
+									</div>
+									<div class="button-container">
+										<a href="#">Get Started</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="col-12 contact-container">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 col-lg-6">
+									<div class="d-flex flex-column" style="position: relative; z-index: 2">
+										<div class="title-content">
+											<h3>Contact us</h3>
+										</div>
+										<div class="text-content custom-w-60 text-center">
+											<p
+												>Are you interested in our services? Do not hesitate! contact us by any means and we will gladly assist
+												you.</p
+											>
+										</div>
+										<div class="image-absolute">
+											<img src="images/Assets-Home/13.png" alt="Mr.Founder call icon" />
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-6">
+									<form action="#" method="POST">
+										<div class="input-body d-flex flex-column">
+											<div class="input-container d-flex">
+												<input class="custom-input" type="text" placeholder="Name" />
+												<input class="custom-input" type="text" placeholder="Email" />
+											</div>
+											<div class="input-container d-flex">
+												<input class="custom-input" type="text" placeholder="Phone" />
+												<input class="custom-input" type="text" placeholder="Location" />
+											</div>
+											<div class="button-container">
+												<a href="#">Send Message</a>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="col-12 info-container">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 col-md-6 col-lg-3">
+									<div class="info-body">
+										<div class="title-info image-info">
+											<img src="images/logo-actualizado/2.png" alt="Mr.Founder footer logo" />
+										</div>
+										<div class="custom-text-info">
+											<p
+												>Our engineering and marketing teams help companies & startups scale without the hassle, risk, and expense
+												of building a team from zero.</p
+											>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 col-lg-3">
+									<div class="info-body">
+										<div class="title-info">
+											<h4>Share With US</h4>
+										</div>
+										<div class="custom-text-info">
+											<p>Follow us on our social networks to be aware of all our updates and promotions</p>
+										</div>
+										<div class="icon-content d-flex">
+											<div class="icon-item">
+												<a href="#" target="_blank">
+													<span>
+														<i class="fab fa-facebook-f"></i>
+													</span>
+												</a>
+											</div>
+											<div class="icon-item">
+												<a href="#" target="_blank">
+													<span>
+														<i class="fab fa-instagram"></i>
+													</span>
+												</a>
+											</div>
+											<div class="icon-item">
+												<a href="#" target="_blank">
+													<span>
+														<i class="fab fa-twitter"></i>
+													</span>
+												</a>
+											</div>
+											<div class="icon-item">
+												<a href="#" target="_blank">
+													<span>
+														<i class="fab fa-youtube"></i>
+													</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 col-lg-3">
+									<div class="info-body">
+										<div class="title-info">
+											<h4>Our Services</h4>
+										</div>
+										<div class="custom-text-info">
+											<ul class="nav-footer">
+												<li class="nav-footer-item">
+													<a href="custom.html">Software Development</a>
+												</li>
+												<li class="nav-footer-item">
+													<a href="animation.html">Video Animation</a>
+												</li>
+												<li class="nav-footer-item">
+													<a href="marketing.html">Digital Marketing</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 col-lg-3">
+									<div class="info-body">
+										<div class="title-info">
+											<h4>Contact Info</h4>
+										</div>
+										<div class="custom-text-info">
+											<div class="info-item d-flex align-items-center">
+												<span>
+													<i class="fas fa-map-marker-alt"></i>
+												</span>
+												<p>433 Belle Grove Dr. #831372 Richardson, TX-75080 </p>
+											</div>
+											<div class="info-item d-flex align-items-center">
+												<span>
+													<i class="fas fa-phone-alt"></i>
+												</span>
+												<p>+1 (800) 685-1031 </p>
+											</div>
+											<div class="info-item d-flex align-items-center">
+												<span>
+													<i class="far fa-envelope"></i>
+												</span>
+												<p>contact@alphacrewstudio.com </p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</section>
+			<footer class="custom-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 custom-footer-body d-flex justify-content-between">
+							<div class="custom-footer-container">
+								<p>
+									Copyright <span id="custom-year"></span>, <a href="https://alphacrewstudio.com/" target="_blank">AlphaCrew Studio</a>,
+									LLC All Rights Reserved.
+								</p>
+							</div>
+							<div class="custom-footer-terms">
+								<div class="terms-list">
+									<a href="#">Terms of Use</a>
+									<a href="#">Privacy Policy</a>
+									<a href="#">Cookie Policy</a>
+									<a href="#">Disclaimer</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
 
-<body>
-    <div class="container-fluid">
-        <header class="custom-nav">
-            <div class="custom-bar">
-                <div class="custom-bar-body">
-                    <div class="custom-bar-list">
-                        <div class="custom-bar-item">
-                            <a href="#">Sign In</a>
-                        </div>
-                        <div class="custom-bar-item">
-                            <a href="#">Sign Up</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="custom-nav-body">
-                <div class="custom-nav-left">
-                    <nav class="custom-nav-list">
-                        <ul class="custom-nav-container">
-                            <li class="custom-nav-item">
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li class="custom-nav-item custom-item-toggle">
-                                <a class="toggle-item" id="toggle-item" href="#">Services</a>
-                                <ul class="custom-burger-item">
-                                    <li><a href="animation.html">Animation</a></li>
-                                    <li class="active"><a href="custom.html">Software Development</a></li>
-                                    <li><a href="marketing.html">Digital Marketing</a></li>
-                                </ul>
-                            </li>
-                            <li class="custom-nav-item">
-                                <a href="about-us.html">About us</a>
-                            </li>
-                            <li class="custom-nav-item">
-                                <a href="#">Portfolio</a>
-                            </li>
-                            <li class="custom-nav-item">
-                                <a href="https://mrfound3r.com/blog/">Blog</a>
-                            </li>
-                            <li class="custom-nav-item">
-                                <a href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="custom-nav-right">
-                    <div class="custom-menu-responsive">
-                        <input id="menu-toggle" type="checkbox" />
-                        <label class='menu-button-container' for="menu-toggle">
-                            <div class='menu-button'></div>
-                        </label>
-                    </div>
-                    <div class="logo-container d-flex justify-content-end">
-                        <a class="d-flex justify-content-end custom-link-logo" href="index.html"><img class="logo"
-                                src="images/logo-actualizado/1.png" alt="Mr.Founder logo" /></a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <section id="body" class="container-fluid">
-            <div class="row">
-                <section class="col-12 first-container" id="home">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-lg-6 custom-box-1 d-flex justify-content-center"
-                                data-aos="fade-right" data-aos-duration="1000">
-                                <div class="image-content d-flex justify-content-center">
-                                    <img src="images/assets-custom/3.png" alt="Custom Software Development Services" />
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6 custom-box-2 d-flex flex-column justify-content-start align-items-center"
-                                data-aos="fade-up" data-aos-duration="1000" style="z-index: 3;">
-                                <div class="title-content">
-                                    <h1>Custom Software Development Services</h1>
-                                </div>
-                                <div class="buttons-content d-flex">
-                                    <div class="button-2">
-                                        <a href="#">Book Your Free Consultation</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-12 second-container">
-                    <div class="container custom-container">
-                        <div class="row">
-                            <div class="col-12 col-lg-4 custom-box-1 d-flex align-items-center justify-content-center">
-                                <div class="image-content">
-                                    <img src="images/assets-custom/4.png" alt="" />
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-8 custom-box-2 d-flex flex-column justify-content-center align-items-center">
-                                <div class="title-content custom-w-100 d-flex flex-column">
-                                    <div class="title-2 d-flex justify-content-start">
-                                        <h2>Wondering if</h2>
-                                    </div>
-                                    <div class="title-1 d-flex justify-content-center">
-                                        <h2 style="color: #EA00FF;">Software Development</h2>
-                                    </div>
-                                    <div class="title-2 d-flex justify-content-end">
-                                        <h2>is the right step for your business?</h2>
-                                    </div>
-                                </div>
-                                <div class="text-content custom-w-75">
-                                    <p>Mr. Found3r has been in the software development business for over 5 years, and
-                                        we know that not every company needs or wants custom software.</p>
-                                    <p>That's why we offer a wide range of services – so you can find the perfect one
-                                        for your business.</p>
-                                    <p>We also have a team of experienced developers who are passionate about helping
-                                        businesses grow.</p>
-                                    <p style="font-weight: bold;">What To Expect:</p>
-                                </div>
-                                <div class="custom-card-content d-flex align-items-center">
-                                    <div class="custom-card-item d-flex align-items-center">
-                                        <div class="custom-card-image">
-                                            <img src="images/assets-custom/5.png" alt="service tailored" />
-                                        </div>
-                                        <div class="custom-card-text">
-                                            <p>Customized service tailored to your needs</p>
-                                        </div>
-                                    </div>
-                                    <div class="custom-card-item d-flex align-items-center">
-                                        <div class="custom-card-image">
-                                            <img src="images/assets-custom/6.png" alt="Guaranteed deliverables" />
-                                        </div>
-                                        <div class="custom-card-text">
-                                            <p>Guaranteed deliverables</p>
-                                        </div>
-                                    </div>
-                                    <div class="custom-card-item d-flex align-items-center">
-                                        <div class="custom-card-image">
-                                            <img src="images/assets-custom/7.png" alt="development process" />
-                                        </div>
-                                        <div class="custom-card-text">
-                                            <p>Highly efficient development process</p>
-                                        </div>
-                                    </div>
-                                    <div class="custom-card-item d-flex align-items-center">
-                                        <div class="custom-card-image">
-                                            <img src="images/assets-custom/7.png" alt="Fixed cost" />
-                                        </div>
-                                        <div class="custom-card-text">
-                                            <p>Fixed cost or on a time and materials, basis</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="button-container fw-bold">
-                                    <a href="#">Book Your Free Consultation</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-12 third-container">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 d-flex flex-column align-items-center justify-content-center">
-                                <div class="title-content custom-w-100 d-flex flex-column">
-                                    <div class="title-1 d-flex justify-content-center">
-                                        <h2 style="color: #EA00FF;">eCommerce</h2>
-                                    </div>
-                                </div>
-                                <div class="subtitle-content custom-w-60 d-flex flex-column">
-                                    <p>Have you been looking for a way to get ahead in
-                                        the eCommerce field?</p>
-                                </div>
-                                <div class="sub-content">
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-12 col-md-6 col-lg-6 col-xl-3">
-                                                <div class="sub-body">
-                                                    <div class="sub-text">
-                                                        <p>Our top engineers will design, develop, implement and
-                                                            maintain market-leading eCommerce applications for your
-                                                            business.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-6 col-lg-6 col-xl-3">
-                                                <div class="sub-body">
-                                                    <div class="sub-text">
-                                                        <p>We know that every company is different and has unique needs
-                                                            when it comes to their tech stack.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-6 col-lg-6 col-xl-3">
-                                                <div class="sub-body">
-                                                    <div class="sub-text">
-                                                        <p>That’s why our team of experts will work with you one on one
-                                                            until we find a solution that works best for your business!
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-6 col-lg-6 col-xl-3">
-                                                <div class="sub-body">
-                                                    <div class="sub-text">
-                                                        <p>You can rest easy knowing that our team of experts is working
-                                                            hard behind the scenes day in and day out to ensure all
-                                                            projects go smoothly from start to finish.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-12 fourth-container">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 d-flex flex-column align-items-center justify-content-center">
-                                <div class="title-content custom-w-100 d-flex flex-column">
-                                    <div class="title-2 d-flex justify-content-start">
-                                        <h2>With Mr. Found3r by your side You can focus on</h2>
-                                    </div>
-                                    <div class="title-1 d-flex justify-content-center">
-                                        <h2 style="color: #009bdb;">Growing your business</h2>
-                                    </div>
-                                    <div class="title-2 d-flex justify-content-end">
-                                        <h2>while we handle everything else!</h2>
-                                    </div>
-                                </div>
-                                <div class="custom-card-container">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-12 col-lg-6">
-                                                <div class="text-content">
-                                                    <p>Let us take care of all those pesky technical
-                                                        issues so you don't have to!</p>
-                                                    <p class="fw-bold">What To Expect:</p>
-                                                </div>
-                                                <div class="list-content">
-                                                    <ul>
-                                                        <li>Maintain control of your codebase and
-                                                            not be stuck with technology
-                                                            that doesn't suit you</li>
-                                                        <li>Increase your ROI through innovation</li>
-                                                        <li>Automate and eliminate mundane tasks</li>
-                                                        <li>Work with the top engineers in the industry</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="button-container">
-                                                    <a href="#">Book Your Free Consultation</a>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
-                                                <div class="image-content">
-                                                    <img src="images/assets-custom/14.png" alt="Growing your business" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-12 fifth-container">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 d-flex flex-column align-items-center justify-content-center">
-                                <div class="title-content custom-w-75 d-flex flex-column">
-                                    <div class="title-1 d-flex justify-content-center">
-                                        <h2 style="color: #009bdb;">MVP Development</h2>
-                                    </div>
-                                </div>
-                                <div class="subtitle-content custom-w-60 d-flex flex-column">
-                                    <p>Do you have an idea for a startup?</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container custom-container">
-                        <div class="row custom-row">
-                            <div class="col-12 d-flex flex-column align-items-center justify-content-center">
-                                <div class="card-content">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-12 col-lg-8 d-flex flex-column align-items-end justify-content-center">
-                                                <div class="image-title-content">
-                                                    <img alt="validate your idea" src="images/assets-custom/assets-corregidos/texto-corregido.png" />
-                                                </div>
-                                                <div class="text-content text-center">
-                                                    <p>This will give you the opportunity to test and measure customer reactions, as well as make sure the business model is sound before investing too much time or money into it.</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-lg-4" style="position: relative;">
-                                                <div class="image-content">
-                                                    <img src="images/assets-custom/15.png" alt="validate your idea" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="title-content custom-w-100 custom-title d-flex justify-content-center">
-                                    <div class="title-2 d-flex justify-content-start text-center custom-w-75">
-                                        <h2 style="color: #fff;">You can focus on what matters most
-                                            your customers and their needs</h2>
-                                    </div>
-                                </div>
-                                <div class="text-content custom-w-60 text-center">
-                                    <p>Mr. Found3r will handle all of the technical aspects so that
-                                        you can get back to doing what’s important</p>
-                                    <p class="fw-bold">growing your business!</p>
-                                </div>
-                                <div class="button-container">
-                                    <a href="#">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container custom-container-2">
-                        <div class="row">
-                            <div class="col-12 d-flex flex-column align-items-center justify-content-center">
-                                <div class="card-content-2">
-                                    <div class="custom-card-item">
-                                        <div class="custom-card-image">
-                                            <img src="images/assets-custom/assets-corregidos/custom-software-assets-16.png" alt="designing your product" />
-                                        </div>
-                                        <div class="custom-card-text">
-                                            <p>Begin to designing your product from the ground up with minimal resources</p>
-                                        </div>
-                                    </div>
-                                    <div class="custom-card-item">
-                                        <div class="custom-card-image">
-                                            <img src="images/assets-custom/assets-corregidos/custom-software-assets-17.png" alt="designing your product" />
-                                        </div>
-                                        <div class="custom-card-text">
-                                            <p>Unlock new revenue streams with quick prototypes</p>
-                                        </div>
-                                    </div>
-                                    <div class="custom-card-item">
-                                        <div class="custom-card-image">
-                                            <img src="images/assets-custom/assets-corregidos/custom-software-assets-18.png" alt="designing your product" />
-                                        </div>
-                                        <div class="custom-card-text">
-                                            <p>Get feedback on your business model from stakeholders</p>
-                                        </div>
-                                    </div>
-                                    <div class="custom-card-item">
-                                        <div class="custom-card-image">
-                                            <img src="images/assets-custom/assets-corregidos/custom-software-assets-19.png" alt="designing your product" />
-                                        </div>
-                                        <div class="custom-card-text">
-                                            <p>Make the best decisions regarding value proposition and business model</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container custom-container-3">
-                        <div class="row">
-                            <div class="col-12 d-flex flex-column align-items-center justify-content-center">
-                                <div class="title-content d-flex flex-column">
-                                    <div class="title-1 d-flex justify-content-center">
-                                        <h2 style="color: #EA00FF;">Mobile & Web Development</h2>
-                                    </div>
-                                </div>
-                                <div class="subtitle-content custom-w-60 d-flex flex-column">
-                                    <p>Don't have time to waste on developing a mobile app or website?</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-12 sixth-container">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-                                <div class="title-content custom-w-100 d-flex flex-column">
-                                    <div class="title-2 d-flex justify-content-start">
-                                        <h2>That's where we come in</h2>
-                                    </div>
-                                    <div class="title-1 d-flex justify-content-center">
-                                        <h2 style="color: #009bdb;">Let us take care of everything</h2>
-                                    </div>
-                                    <div class="title-2 d-flex justify-content-end">
-                                        <h2>so you can focus on what you're good at</h2>
-                                    </div>
-                                </div>
-                                <div class="card-content">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
-                                                <div class="image-content">
-                                                    <img src="images/assets-custom/assets-corregidos/celular-corregido-20-20.png" alt="to work more efficiently" />
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
-                                                <div class="text-content">
-                                                    <p>We've been doing this for a long time, and we know what works and what doesn't when it comes to developing web apps and interactive websites.</p>
-                                                    <p>We'll make sure your customers have the best experience possible with your brand, and that your employees are able to work more efficiently than ever before.</p>
-                                                    <p>Not only will you be getting a top-quality product, but you'll also be getting it at an incredibly competitive price.</p>
-                                                    <p>We want to help as many businesses as possible improve their mobile presence, so we're offering our services at a fraction of the cost of our competitors.</p>
-                                                    <p class="fw-bold">What To Expect:</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-12 card-container-section">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-                                <div class="card-content">
-                                    <div class="custom-card-item">
-                                        <div class="custom-card-number">
-                                            <p>01</p>
-                                        </div>
-                                        <div class="custom-card-text">
-                                            <p>Engage more customers creating one-of-a-kind brand experiences</p>
-                                        </div>
-                                    </div>
-                                    <div class="custom-card-item">
-                                        <div class="custom-card-number">
-                                            <p>02</p>
-                                        </div>
-                                        <div class="custom-card-text">
-                                            <p>Reach more consumers through strategy, design, and technology</p>
-                                        </div>
-                                    </div>
-                                    <div class="custom-card-item">
-                                        <div class="custom-card-number">
-                                            <p>03</p>
-                                        </div>
-                                        <div class="custom-card-text">
-                                            <p>Increase profits with engaging and intuitive web and app designs</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="button-container">
-                                    <a href="#">Get Started</a>
-                                </div>
-                                <div class="title-content custom-w-100 d-flex flex-column">
-                                    <div class="title-1 d-flex justify-content-center">
-                                        <h2 style="color: #009bdb;">Digital Acceleration</h2>
-                                    </div>
-                                </div>
-                                <div class="subtitle-content custom-w-60 d-flex flex-column">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit. Curabitur dapibus mi sed</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-12 seventh-container">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-                                <div class="title-content custom-w-100 d-flex flex-column">
-                                    <div class="title-2 d-flex justify-content-start">
-                                        <h2>Wondering if you're</h2>
-                                    </div>
-                                    <div class="title-1 d-flex justify-content-center">
-                                        <h2 style="color: #EA00FF;">Doing enough to get ahead</h2>
-                                    </div>
-                                    <div class="title-2 d-flex justify-content-end">
-                                        <h2>of the competition?</h2>
-                                    </div>
-                                </div>
-                                <div class="card-content">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-12 col-lg-6 custom-box-1 d-flex justify-content-center align-items-center">
-                                                <div class="text-content">
-                                                    <p>You're not alone. A lot of business owners feel like they need to do more, but don't know where to start.</p>
-                                                    <p>That's where we come in. We use readily-available resources (especially cloud-based services), to accelerate business transformation and make it a data-driven company.</p>
-                                                    <p>This will increase the overall speed at which your business can answer new challenges. So you can focus on what you're good at - running your business.</p>
-                                                    <p>With Mr. Found3r, you'll get - fast, accurate insights into your business performance so you can make informed decisions quickly and confidently.</p>
-                                                    <p>Stop guessing and start knowing with Mr. Found3r by your side!</p>
-                                                    <p class="fw-bold">What To Expect:</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-lg-6 custom-box-2 d-flex justify-content-center align-items-center">
-                                                <div class="image-content">
-                                                    <img src="images/assets-custom/21.png" alt="to work more efficiently" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-12 card-container-section custom-section-color">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-                                <div class="card-content">
-                                    <div class="custom-card-item">
-                                        <div class="custom-card-number">
-                                            <p>01</p>
-                                        </div>
-                                        <div class="custom-card-text">
-                                            <p>Engage more customers creating one-of-a-kind brand experiences</p>
-                                        </div>
-                                    </div>
-                                    <div class="custom-card-item">
-                                        <div class="custom-card-number">
-                                            <p>02</p>
-                                        </div>
-                                        <div class="custom-card-text">
-                                            <p>Reach more consumers through strategy, design, and technology</p>
-                                        </div>
-                                    </div>
-                                    <div class="custom-card-item">
-                                        <div class="custom-card-number">
-                                            <p>03</p>
-                                        </div>
-                                        <div class="custom-card-text">
-                                            <p>Increase profits with engaging and intuitive web and app designs</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="button-container">
-                                    <a href="#">Get Started</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-12 contact-container">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-lg-6">
-                                <div class="d-flex flex-column" style="position: relative; z-index: 2;">
-                                    <div class="title-content">
-                                        <h3>Contact us</h3>
-                                    </div>
-                                    <div class="text-content custom-w-60 text-center">
-                                        <p>Are you interested in our services?
-                                            Do not hesitate! contact us by any
-                                            means and we will gladly assist you.</p>
-                                    </div>
-                                    <div class="image-absolute">
-                                        <img src="images/Assets-Home/13.png" alt="Mr.Founder call icon" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <form action="#" method="POST">
-                                    <div class="input-body d-flex flex-column">
-                                        <div class="input-container d-flex">
-                                            <input class="custom-input" type="text" placeholder="Name" />
-                                            <input class="custom-input" type="text" placeholder="Email" />
-                                        </div>
-                                        <div class="input-container d-flex">
-                                            <input class="custom-input" type="text" placeholder="Phone" />
-                                            <input class="custom-input" type="text" placeholder="Location" />
-                                        </div>
-                                        <div class="button-container">
-                                            <a href="#">Send Message</a>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-12 info-container">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-md-6 col-lg-3">
-                                <div class="info-body">
-                                    <div class="title-info image-info">
-                                        <img src="images/logo-actualizado/2.png" alt="Mr.Founder footer logo" />
-                                    </div>
-                                    <div class="custom-text-info">
-                                        <p>Our engineering and marketing
-                                            teams help companies &
-                                            startups scale without the
-                                            hassle, risk, and expense of
-                                            building a team from zero.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-3">
-                                <div class="info-body">
-                                    <div class="title-info">
-                                        <h4>Share With US</h4>
-                                    </div>
-                                    <div class="custom-text-info">
-                                        <p>Follow us on our social networks to
-                                            be aware of all our updates and
-                                            promotions</p>
-                                    </div>
-                                    <div class="icon-content d-flex">
-                                        <div class="icon-item">
-                                            <a href="#" target="_blank">
-                                                <span>
-                                                    <i class="fab fa-facebook-f"></i>
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="icon-item">
-                                            <a href="#" target="_blank">
-                                                <span>
-                                                    <i class="fab fa-instagram"></i>
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="icon-item">
-                                            <a href="#" target="_blank">
-                                                <span>
-                                                    <i class="fab fa-twitter"></i>
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="icon-item">
-                                            <a href="#" target="_blank">
-                                                <span>
-                                                    <i class="fab fa-youtube"></i>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-3">
-                                <div class="info-body">
-                                    <div class="title-info">
-                                        <h4>Our Services</h4>
-                                    </div>
-                                    <div class="custom-text-info">
-                                        <ul class="nav-footer">
-                                            <li class="nav-footer-item">
-                                                <a href="custom.html">Software Development</a>
-                                            </li>
-                                            <li class="nav-footer-item">
-                                                <a href="animation.html">Video Animation</a>
-                                            </li>
-                                            <li class="nav-footer-item">
-                                                <a href="marketing.html">Digital Marketing</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-3">
-                                <div class="info-body">
-                                    <div class="title-info">
-                                        <h4>Contact Info</h4>
-                                    </div>
-                                    <div class="custom-text-info">
-                                        <div class="info-item d-flex align-items-center">
-                                            <span>
-                                                <i class="fas fa-map-marker-alt"></i>
-                                            </span>
-                                            <p>433 Belle Grove Dr. #831372
-                                                Richardson, TX-75080
-                                            </p>
-                                        </div>
-                                        <div class="info-item d-flex align-items-center">
-                                            <span>
-                                                <i class="fas fa-phone-alt"></i>
-                                            </span>
-                                            <p>+1 (800) 685-1031
-                                            </p>
-                                        </div>
-                                        <div class="info-item d-flex align-items-center">
-                                            <span>
-                                                <i class="far fa-envelope"></i>
-                                            </span>
-                                            <p>contact@alphacrewstudio.com
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </section>
-        <footer class="custom-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 custom-footer-body d-flex justify-content-between">
-                        <div class="custom-footer-container">
-                            <p>
-                                Copyright <span id="custom-year"></span>, <a href="https://alphacrewstudio.com/"
-                                    target="_blank">AlphaCrew Studio</a>, LLC All Rights Reserved.
-                            </p>
-                        </div>
-                        <div class="custom-footer-terms">
-                            <div class="terms-list">
-                                <a href="#">Terms of Use</a>
-                                <a href="#">Privacy Policy</a>
-                                <a href="#">Cookie Policy</a>
-                                <a href="#">Disclaimer</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="text/javascript" src="js/lodash-core.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
-</body>
-
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script type="text/javascript" src="js/lodash-core.min.js"></script>
+		<!-- START FIREBASE -->
+		<script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-app.js"></script>
+		<!-- Add Firebase products that you want to use -->
+		<script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-firestore.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-storage.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-functions.js"></script>
+		<!-- END FIREBASE -->
+		<!-- MOMENT.JS FOR TIME & DATE -->
+		<script type="text/javascript" src="./js/moment.js"></script>
+        <script src="js/verifiedEvents.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+	</body>
 </html>

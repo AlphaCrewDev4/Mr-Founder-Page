@@ -14,6 +14,7 @@
     />
     <link rel="stylesheet" href="css/stylesIndex.css" />
     <link rel="stylesheet" href="css/stylesGeneral.css" />
+    <link rel="stylesheet" href="css/verifiedEvents.css">
     <link rel="stylesheet" href="./css/marketing.css" />
 
     <link
@@ -54,6 +55,13 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
+    <div class="tt-promo-fixed fadeout" id="proofContainer" style="display: none">
+			<button class="tt-btn-close"></button>
+			<div class="tt-img">
+				<a href="./index.html"><img id="proofImage" src="" data-src="" alt="plan subscribed" /></a>
+			</div>
+			<div class="tt-description" id="proofDescr"> </div>
+		</div>
     <div class="container-fluid">
       <header class="custom-nav">
         <div class="custom-nav-body">
@@ -1298,6 +1306,17 @@
     <script>
       AOS.init();
     </script>
+   <!-- START FIREBASE -->
+		<script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-app.js"></script>
+		<!-- Add Firebase products that you want to use -->
+		<script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-firestore.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-storage.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-functions.js"></script>
+		<!-- END FIREBASE -->
+		<!-- MOMENT.JS FOR TIME & DATE -->
+		<script type="text/javascript" src="./js/moment.js"></script>
+        <script src="js/verifiedEvents.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
